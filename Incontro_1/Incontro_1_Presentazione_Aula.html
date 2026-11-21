@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VALUTARE PER CRESCERE — Incontro 1 (Presentazione d'Aula)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --card-alt: #263449;
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --accent: #38bdf8;
+      --accent-green: #4ade80;
+      --accent-amber: #fbbf24;
+      --accent-purple: #c084fc;
+      --danger: #f87171;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Lexend', 'Atkinson Hyperlegible', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      line-height: 1.5;
+    }
+    header {
+      background: #020617;
+      border-bottom: 1px solid var(--border);
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--accent);
+    }
+    .badge {
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      background: var(--card);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .badge.b1 { border-color: var(--accent-green); color: var(--accent-green); }
+    .badge.b2 { border-color: var(--accent); color: var(--accent); }
+    .badge.b3 { border-color: var(--accent-purple); color: var(--accent-purple); }
+    .badge.pausa { border-color: var(--accent-amber); color: var(--accent-amber); }
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    button, select {
+      font-family: inherit;
+      background: var(--card);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 0.45rem 0.85rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    button:hover, select:hover {
+      background: var(--card-alt);
+      border-color: var(--accent);
+    }
+    #progress-container {
+      width: 100%;
+      height: 5px;
+      background: #020617;
+    }
+    #progress-bar {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent-green), var(--accent), var(--accent-purple));
+      width: 5%;
+      transition: width 0.25s ease;
+    }
+    main {
+      flex: 1;
+      overflow-y: auto;
+      padding: 2rem 3.5rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    .slide {
+      display: none;
+      width: 100%;
+      max-width: 1220px;
+      animation: fadeIn 0.2s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .slide-header {
+      margin-bottom: 1.4rem;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.9rem;
+    }
+    .slide-kicker {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+    h1 {
+      font-size: 2.1rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+    h2 {
+      font-size: 1.35rem;
+      color: var(--accent);
+      margin-bottom: 0.65rem;
+    }
+    p, li {
+      font-size: 1.12rem;
+      color: var(--text);
+    }
+    ul, ol {
+      padding-left: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      margin-top: 1rem;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.1rem;
+      margin-top: 1rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 0.85rem;
+      padding: 1.25rem 1.4rem;
+    }
+    .card.highlight-green { border-left: 5px solid var(--accent-green); }
+    .card.highlight-blue { border-left: 5px solid var(--accent); }
+    .card.highlight-amber { border-left: 5px solid var(--accent-amber); }
+    .card.highlight-purple { border-left: 5px solid var(--accent-purple); }
+    .card.highlight-red { border-left: 5px solid var(--danger); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.8rem;
+      background: var(--card);
+      border-radius: 0.75rem;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 0.8rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      font-size: 1.02rem;
+    }
+    th {
+      background: #020617;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .prompt-box {
+      background: #020617;
+      border: 1px solid var(--accent);
+      border-radius: 0.75rem;
+      padding: 1rem 1.2rem;
+      font-family: 'Atkinson Hyperlegible', monospace;
+      font-size: 0.98rem;
+      white-space: pre-wrap;
+      margin-top: 0.75rem;
+      position: relative;
+      color: #e2e8f0;
+    }
+    .copy-btn {
+      position: absolute;
+      top: 0.6rem;
+      right: 0.6rem;
+      background: var(--accent);
+      color: #020617;
+      font-weight: 700;
+      border: none;
+      padding: 0.3rem 0.7rem;
+      font-size: 0.8rem;
+    }
+    .copy-btn:hover {
+      background: #7dd3fc;
+    }
+    .trainer-note {
+      margin-top: 1.25rem;
+      padding: 0.85rem 1.2rem;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px dashed var(--accent);
+      border-radius: 0.65rem;
+      font-size: 0.96rem;
+      color: var(--muted);
+    }
+    footer {
+      background: #020617;
+      border-top: 1px solid var(--border);
+      padding: 0.6rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <span>🎓 VALUTARE PER CRESCERE · Incontro 1 (5h)</span>
+      <span id="block-badge" class="badge b1">Blocco 1 · 00:00–01:30</span>
+    </div>
+    <div class="controls">
+      <button id="prev-btn" onclick="prevSlide()" title="Slide precedente (Freccia Sinistra)">◀ Prec</button>
+      <select id="slide-select" onchange="jumpToSlide(this.value)" aria-label="Seleziona slide"></select>
+      <span id="counter" class="badge">Slide 1 / 21</span>
+      <button id="next-btn" onclick="nextSlide()" title="Slide successiva (Freccia Destra / Spazio)">Succ ▶</button>
+      <button onclick="toggleFullScreen()" title="Schermo intero">⛶ Schermo Intero</button>
+    </div>
+  </header>
+  <div id="progress-container"><div id="progress-bar"></div></div>
+
+  <main>
+    <!-- SLIDE 1 -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:30" data-badge="b1" data-title="1. Benvenuti a Valutare per Crescere">
+      <div class="slide-header">
+        <div class="slide-kicker">Incontro 1 di 4 · Scuola Secondaria di Primo Grado (5 ore)</div>
+        <h1>VALUTARE PER CRESCERE</h1>
+        <p style="color:var(--accent); font-size:1.3rem; margin-top:0.3rem;">Valutare con l'IA: verifiche accessibili e personalizzate nella Secondaria</p>
+      </div>
+      <div class="grid-2">
+        <div class="card highlight-green">
+          <h2>🎯 Gli Obiettivi di Oggi (5 ore)</h2>
+          <ul>
+            <li>Scoprire cosa cambia con i <strong>nuovi modelli di Google Gemini</strong> (Multimodalità, Ragionamento <em>Thinking</em>, Canvas e Gem).</li>
+            <li>Applicare il <strong>Protocollo Privacy / GDPR</strong> (Profilo Funzionale Anonimizzato + strumenti locali per il PC personale).</li>
+            <li>Usare <strong>Gemini</strong> e <strong>Google NotebookLM</strong> (Mappe Mentali + Audio Overview) per creare un <strong>Pacchetto di Studio Accessibile (Lavoro 1)</strong>.</li>
+            <li>Impostare il <strong>Prompt Didattico in 5 Punti (R-C-N-A-F)</strong> sulla scala <strong>LOTS → HOTS</strong>.</li>
+          </ul>
+        </div>
+        <div class="card highlight-amber">
+          <h2>⏱️ Scansione Pomeridiana con Pause</h2>
+          <table>
+            <tr><th>Orario relativo</th><th>Fase</th></tr>
+            <tr><td><code>00:00 – 01:30</code></td><td>🟢 <strong>Blocco 1 (90')</strong> · Nuovi modelli Gemini, Accessibilità e GDPR</td></tr>
+            <tr><td><code>01:30 – 01:45</code></td><td>☕ <strong>PAUSA 1 (15 min)</strong></td></tr>
+            <tr><td><code>01:45 – 03:15</code></td><td>🔵 <strong>Blocco 2 (90')</strong> · Gemini Multimodale, NotebookLM e <strong>Lavoro 1</strong></td></tr>
+            <tr><td><code>03:15 – 03:30</code></td><td>☕ <strong>PAUSA 2 (15 min)</strong></td></tr>
+            <tr><td><code>03:30 – 05:00</code></td><td>🟣 <strong>Blocco 3 (90')</strong> · Restituzione Lavoro 1 e Prompt in 5 punti</td></tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 2 -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:30" data-badge="b1" data-title="2. Setup Operativo in Laboratorio">
+      <div class="slide-header">
+        <div class="slide-kicker">Logistica del Laboratorio Informatico · 10 minuti</div>
+        <h1>Setup Operativo sul tuo Google Drive</h1>
+      </div>
+      <div class="grid-2">
+        <div class="card highlight-blue">
+          <h2>📁 1. Crea la tua Cartella del Corso</h2>
+          <ol>
+            <li>Accedi a Chrome con il tuo account <strong>Google Workspace for Education</strong>.</li>
+            <li>Apri <strong>Google Drive</strong> e crea la cartella principale:<br/><code>Corso_Valutare_Per_Crescere</code></li>
+            <li>Crea all'interno le <strong>4 sottocartelle</strong> per i lavori del corso:
+              <ul>
+                <li><code>01_Studio_Accessibile</code> (Oggi!)</li>
+                <li><code>02_Verifica_Multilivello_UDL</code> (Incontro 2)</li>
+                <li><code>03_Rubrica_KSM_e_Banca_Quesiti</code> (Incontro 3)</li>
+                <li><code>04_Quiz_Digitale_e_Verifica_Multimodale</code> (Incontro 4)</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+        <div class="card highlight-amber">
+          <h2>🌐 2. Apri i 2 Strumenti IA di Oggi</h2>
+          <ul>
+            <li>Scheda 1: <strong>Google Gemini</strong> → <code>gemini.google.com</code></li>
+            <li>Scheda 2: <strong>Google NotebookLM</strong> → <code>notebooklm.google</code></li>
+          </ul>
+          <div class="trainer-note">
+            ⚠️ <strong>Regola di sicurezza in laboratorio:</strong> i PC della scuola sono condivisi. Salva sempre i tuoi lavori su Google Drive (mai sul Desktop locale) e ricorda di fare <strong>Logout</strong> a fine incontro!
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 3 -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:30" data-badge="b1" data-title="3. Il Filo Rosso: 4 Lavori -> 1 Kit">
+      <div class="slide-header">
+        <div class="slide-kicker">Imparare facendo · Nessun esame finale</div>
+        <h1>Il Filo Rosso: 4 Lavori in Aula → 1 Kit Pronto per la Classe</h1>
+      </div>
+      <p>Scegli <strong>un argomento reale della tua disciplina</strong> che affronterai in classe nelle prossime settimane: in ogni incontro costruirai un pezzo del tuo kit didattico e valutativo.</p>
+      <div class="grid-2" style="margin-top:1.2rem;">
+        <div class="card highlight-green">
+          <h2>1️⃣ Incontro 1 · LAVORO 1</h2>
+          <p><strong>Pacchetto di Studio Accessibile</strong>: testo adattato <em>Easy-to-Read</em> + glossario + Mappa Mentale e Audio Overview con <strong>Gemini e NotebookLM</strong>.</p>
+        </div>
+        <div class="card highlight-blue">
+          <h2>2️⃣ Incontro 2 · LAVORO 2</h2>
+          <p><strong>Verifica UDL Multilivello</strong> (Facilitata, Standard, Potenziamento) bilanciata sulla scala <strong>LOTS → HOTS</strong> con <em>"Caccia all'errore"</em>.</p>
+        </div>
+        <div class="card highlight-purple">
+          <h2>3️⃣ Incontro 3 · LAVORO 3A + 3B</h2>
+          <p><strong>Rubrica di Valutazione KSM</strong> (con scheda di autovalutazione studente) + <strong>Banca di 10 quesiti inclusivi</strong> esportata in Google Fogli.</p>
+        </div>
+        <div class="card highlight-amber">
+          <h2>4️⃣ Incontro 4 · LAVORO 4A + 4B</h2>
+          <p><strong>Google Modulo inclusivo</strong> con feedback formativo + <strong>Verifica multimodale integrata a video e materiali</strong>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 4 -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:30" data-badge="b1" data-title="4. Cosa cambia con i nuovi modelli di Gemini">
+      <div class="slide-header">
+        <div class="slide-kicker">Focus Tecnologico · Ecosistema Google Gratuito</div>
+        <h1>Cosa Cambia con i Nuovi Modelli di Google Gemini?</h1>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Nuova Funzionalità</th>
+            <th>Cosa significa sul piano tecnico</th>
+            <th>Vantaggio pratico per il docente di Scuola Media</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>📸 <strong>1. Multimodalità Nativa</strong></td>
+            <td>Elabora contemporaneamente testo, foto, schemi, grafici e PDF in un'unica ampia finestra di contesto.</td>
+            <td>Fotografi la pagina del libro cartaceo o una vecchia verifica stampata e la trasformi subito senza ricopiare nulla.</td>
+          </tr>
+          <tr>
+            <td>🧠 <strong>2. Modelli Rapidi (<em>Flash</em>) vs Ragionamento (<em>Thinking</em>)</strong></td>
+            <td>I modelli <em>Thinking</em> eseguono una catena di pensiero (<em>Chain-of-Thought</em>) verificando vincoli e calcoli prima di rispondere.</td>
+            <td>Usi <em>Flash</em> per glossari e testi ad alta leggibilità; usi <em>Thinking</em> per problemi di Matematica, verifiche LOTS→HOTS e <em>"Caccia all'errore"</em>.</td>
+          </tr>
+          <tr>
+            <td>✍️ <strong>3. Gemini Canvas & Gem</strong></td>
+            <td>Area di editing affiancata (Canvas) e assistenti pre-istruiti salvabili (Gem).</td>
+            <td>Selezioni col mouse solo 3 righe troppo difficili e le semplifichi al volo; salvi le regole della tua materia in un Gem.</td>
+          </tr>
+          <tr>
+            <td>📄 <strong>4. Esportazione 1-Clic in Workspace</strong></td>
+            <td>Ponte nativo tra Gemini, Google Documenti e Google Fogli.</td>
+            <td>Nessun copia-incolla manuale che perde la formattazione delle tabelle o delle griglie.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SLIDE 5 -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:30" data-badge="b1" data-title="5. Barriere allo studio e UDL nella Secondaria">
+      <div class="slide-header">
+        <div class="slide-kicker">Scuola Secondaria di I Grado (11–14 anni)</div>
+        <h1>Abbattere le Barriere Strumentali senza Abbassare la Dignità Cognitiva</h1>
+      </div>
+      <div class="grid-2">
+        <div class="card highlight-red">
+          <h2>🚧 Cosa blocca lo studio autonomo a casa?</h2>
+          <ul>
+            <li><strong>DSA (L. 170/2010)</strong>: affaticamento nella decodifica visiva e saturazione della <em>memoria di lavoro</em> su periodi lunghi.</li>
+            <li><strong>NAI / Italiano L2</strong>: competenza cognitiva integra, ma blocco sulla <em>lingua astratta dello studio</em> (passivi, subordinate, lessico tecnico non spiegato).</li>
+            <li><strong>Disabilità (L. 104/92) e FIL</strong>: bisogno di ancoraggi concreti, esempi quotidiani e passaggi guidati.</li>
+            <li><strong>ADHD / Funzioni Esecutive</strong>: smarrimento davanti al "muro di testo" privo di micro-obiettivi visivi.</li>
+          </ul>
+        </div>
+        <div class="card highlight-green">
+          <h2>💡 La Risposta UDL + IA</h2>
+          <ul>
+            <li><strong>Ridurre il Carico Cognitivo Estraneo</strong> (font, sintassi contorta, impaginazione confusa) per liberare energie sul <strong>Carico Pertinente</strong> (capire e ragionare).</li>
+            <li><strong>Molteplici canali (UDL)</strong>: Testo <em>Easy-to-Read</em> + Mappa Mentale visiva + Audio Overview parlato.</li>
+            <li><strong>Scaffolding</strong>: fornire la "rampa di accesso" (banca parole, esempio svolto, suggerimento) per far salire tutti verso il ragionamento!</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 6 -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:30" data-badge="b1" data-title="6. La Scala LOTS -> HOTS per guidare l'IA">
+      <div class="slide-header">
+        <div class="slide-kicker">Tassonomia di Anderson & Krathwohl (2001) + Criterio KSM</div>
+        <h1>Perché "Studiare solo a Memoria" (LOTS 1) Penalizza i Più Fragili</h1>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Fascia</th>
+            <th>Processo Cognitivo</th>
+            <th>Cosa fa l'IA se NON la guidiamo</th>
+            <th>Come istruiamo Gemini (Scaffolding Inclusivo)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>LOTS</strong></td>
+            <td><strong>1. Ricordare</strong> <code>[A1, B1]</code></td>
+            <td>❌ Genera 80% di domande mnemoniche (date, elenchi a vuoto).</td>
+            <td>✅ Banche di parole, immagini etichettate, abbinamenti guidati.</td>
+          </tr>
+          <tr>
+            <td><strong>LOTS</strong></td>
+            <td><strong>2. Comprendere</strong> <code>[A2, B2]</code></td>
+            <td>❌ Riassunti generici che tagliano i nessi causa-effetto.</td>
+            <td>✅ Testi <em>Easy-to-Read</em>, metafore concrete, spiegazioni dialogate.</td>
+          </tr>
+          <tr>
+            <td><strong>Ponte</strong></td>
+            <td><strong>3. Applicare</strong> <code>[C3]</code></td>
+            <td>❌ Esercizi privi di guida procedurale.</td>
+            <td>✅ Procedura spezzettata <em>Passo 1 / Passo 2</em> + 1° esercizio già svolto.</td>
+          </tr>
+          <tr>
+            <td><strong>HOTS</strong></td>
+            <td><strong>4. Analizzare · 5. Valutare · 6. Creare</strong></td>
+            <td>❌ Esclude gli HOTS dalle versioni facilitate!</td>
+            <td>✅ Tabelle comparative semicompilate + <strong>"Caccia all'errore"</strong> con frasi-avvio.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SLIDE 7 -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:30" data-badge="b1" data-title="7. Privacy, GDPR e Regola d'Oro">
+      <div class="slide-header">
+        <div class="slide-kicker">Tutela dei Minori · GDPR Art. 9 · AI Act · Linee Guida MIM</div>
+        <h1>Privacy e IA a Scuola: Cosa NON Va MAI Inserito Online</h1>
+      </div>
+      <div class="grid-2">
+        <div class="card highlight-red">
+          <h2>⛔ DIVIETO ASSOLUTO</h2>
+          <ul>
+            <li><strong>Nomi, cognomi o iniziali</strong> associabili alla classe o alla scuola.</li>
+            <li><strong>File PDF o foto di PEI e PDP</strong> o relazioni cliniche ASL.</li>
+            <li><strong>Codici diagnostici medici</strong> (es. <code>ICD-10 F81.0</code>, <code>F90.0</code>).</li>
+            <li><strong>Foto di quaderni</strong> con calligrafia riconoscibile e nome dell'alunno.</li>
+          </ul>
+          <p style="margin-top:0.8rem; color:var(--accent-amber);">⚠️ Attenzione: sostituire "Marco Rossi" con "M. R. della 2ª B" è solo <em>pseudonimizzazione</em>, non è vera anonimizzazione!</p>
+        </div>
+        <div class="card highlight-green">
+          <h2>✅ LA SOLUZIONE METODOLOGICA</h2>
+          <p style="font-size:1.2rem; font-weight:600; margin-bottom:0.6rem;">Il Protocollo del "Profilo Funzionale Anonimizzato"</p>
+          <p>A Gemini <strong>non serve l'etichetta medica</strong> per lavorare bene! Serve sapere:</p>
+          <ol style="margin-top:0.5rem;">
+            <li><strong>Età e classe</strong> (es. <em>2ª media, 12 anni</em>);</li>
+            <li><strong>Come funziona l'apprendimento</strong> (es. <em>affaticamento nella lettura di testi lunghi, memoria di lavoro fragile</em>);</li>
+            <li><strong>Quali regole di accessibilità applicare</strong> (es. <em>frasi di max 15 parole, parole chiave in grassetto, glossario</em>).</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 8 -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:30" data-badge="b1" data-title="8. Esempi di Profilo Funzionale Anonimizzato">
+      <div class="slide-header">
+        <div class="slide-kicker">Dal Kit Privacy del Corso · Pronto da copiare nei Prompt</div>
+        <h1>Dalla Diagnosi al Profilo Funzionale Anonimizzato</h1>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width:38%;">❌ Prompt VIETATO (Viola il GDPR)</th>
+            <th>✅ Prompt CORRETTO (Profilo Funzionale Anonimizzato)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><em>"Adatta questa pagina per Luca Bianchi della 1ª C che ha dislessia severa F81.0 e ADHD come da PDP..."</em></td>
+            <td><em>"Adatta questo testo per una 1ª media includendo accorgimenti per studenti con affaticamento nella decodifica della lettura e tempi brevi di attenzione: usa paragrafi di max 4 righe con titolo-domanda, frasi attive sotto le 16 parole e parole chiave in grassetto."</em></td>
+          </tr>
+          <tr>
+            <td><em>"Ecco il PEI di Sofia (L. 104 disabilità intellettiva lieve), falle una scheda di scienze..."</em></td>
+            <td><em>"Progetta una scheda per obiettivi minimi focalizzata sui 3 nuclei essenziali: usa frasi lineari Soggetto-Verbo-Complemento, collega ogni concetto a un esempio concreto quotidiano e inserisci 3 domande a scelta guidata con suggerimento."</em></td>
+          </tr>
+          <tr>
+            <td><em>"Fai una scheda per Youssef arrivato dall'Egitto un mese fa..."</em></td>
+            <td><em>"Adatta questa scheda per studenti di 12 anni con alta competenza cognitiva ma Italiano L2 a livello A1/A2: usa verbi al presente, lessico ad alta frequenza e spiega i 5 termini tecnici in un glossario semplice."</em></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SLIDE 9 -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:30" data-badge="b1" data-title="9. Demo Strumenti Locali Gratuiti (PC Personale)">
+      <div class="slide-header">
+        <div class="slide-kicker">Demo Live del Formatore · 100% Offline sul PC di Casa</div>
+        <h1>4 Strumenti Locali Gratuiti per la Privacy sul tuo PC Personale</h1>
+      </div>
+      <div class="grid-2">
+        <div class="card highlight-green">
+          <h2>🛡️ 1. PDF24 Creator (Windows · Offline)</h2>
+          <p>Funzione <strong>"Oscura PDF"</strong>: distrugge fisicamente nomi e dati sensibili da un PDF prima di usarlo. Funzione <strong>"Estrai pagine"</strong> per isolare 1 pagina da caricare in Gemini senza usare siti web esterni.</p>
+        </div>
+        <div class="card highlight-blue">
+          <h2>🤖 2. LM Studio / GPT4All (IA 100% Offline)</h2>
+          <p>Esegue modelli IA compatti (es. <em>Gemma 3, Qwen 2.5, Llama 3.2</em>) direttamente sulla memoria del tuo PC personale <strong>anche con il Wi-Fi spento</strong>. Zero dati inviati nel cloud.</p>
+        </div>
+        <div class="card highlight-purple">
+          <h2>🧩 3. Lumi Education (H5P Desktop)</h2>
+          <p>Crea sul tuo PC video interattivi, cloze e flashcard ed esporta tutto in <strong>un singolo file <code>.html</code></strong> da caricare su Google Classroom (zero account per gli studenti!).</p>
+        </div>
+        <div class="card highlight-amber">
+          <h2>📝 4. LibreOffice + Modulo Extra A</h2>
+          <p>Pulizia in 1 clic dei metadati autore ed esportazione in <strong>PDF/UA accessibile</strong> per le sintesi vocali.<br/>📌 <em>Segnalazione: in Drive trovate il <strong>Modulo Extra A</strong> sull'uso etico dell'IA da parte degli alunni a casa!</em></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 10 (PAUSA 1) -->
+    <section class="slide" data-block="Pausa 1 · 01:30–01:45" data-badge="pausa" data-title="10. PAUSA 1 (15 minuti)">
+      <div class="card highlight-amber" style="text-align:center; padding:3.5rem 2rem; margin-top:2rem;">
+        <div class="slide-kicker">Stacco Ergonomico · 01:30 – 01:45</div>
+        <h1 style="font-size:3rem; margin:1rem 0;">☕ PAUSA 1 — 15 Minuti</h1>
+        <p style="font-size:1.35rem; color:var(--muted);">Sgranchiamoci le gambe e prendiamo un caffè.<br/>Al rientro (`01:45`): <strong>Demo live su Gemini Multimodale, Google NotebookLM e Lavoro Pratico 1!</strong></p>
+      </div>
+    </section>
+
+    <!-- SLIDE 11 -->
+    <section class="slide" data-block="Blocco 2 · 01:45–03:15" data-badge="b2" data-title="11. Gemini Multimodale + Canvas per lo Studio">
+      <div class="slide-header">
+        <div class="slide-kicker">Blocco 2 (`01:45 – 03:15`) · Demo Live 1</div>
+        <h1>Dalla Foto del Libro alla Scheda Easy-to-Read con Gemini Multimodale</h1>
+      </div>
+      <div class="grid-2">
+        <div class="card highlight-blue">
+          <h2>🔄 Il Flusso Operativo in 4 Mosse</h2>
+          <ol>
+            <li><strong>Carica la foto/PDF</strong> della pagina del libro direttamente nella chat di <strong>Google Gemini</strong>.</li>
+            <li><strong>Attiva Canvas</strong> e incolla il Prompt strutturato con le regole <em>Easy-to-Read</em>.</li>
+            <li><strong>Modifica chirurgica in Canvas</strong>: seleziona col mouse una frase o un esercizio e perfezionalo in tempo reale.</li>
+            <li><strong>Esporta in Documenti</strong>: 1 clic per aprirlo su Google Docs, impostare il font <strong>Lexend (12 pt, interlinea 1,5)</strong> e testare la <strong>Digitazione Vocale</strong>.</li>
+          </ol>
+        </div>
+        <div class="card highlight-green">
+          <h2>📏 Le 5 Regole Easy-to-Read nel Prompt</h2>
+          <ul>
+            <li>Frasi attive di <strong>massimo 15–18 parole</strong>.</li>
+            <li><strong>Zero doppie negazioni</strong> e zero subordinate contorte.</li>
+            <li>Divisione in <strong>3–4 paragrafi brevi</strong> con <strong>titolo-domanda</strong>.</li>
+            <li>Termini tecnici della disciplina <strong>mantenuti in GRASSETTO</strong> e spiegati subito tra parentesi.</li>
+            <li><strong>Tabella Glossario</strong> + <strong>3 domande progressive</strong> (<code>LOTS 1 → 3</code>) con suggerimento <code>[Aiuto: ...]</code>.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 12 -->
+    <section class="slide" data-block="Blocco 2 · 01:45–03:15" data-badge="b2" data-title="12. Prompt Live: Adattamento Easy-to-Read">
+      <div class="slide-header">
+        <div class="slide-kicker">Pronto da Copiare e Testare su Gemini</div>
+        <h1>Prompt Template 1 — Scheda di Studio Accessibile</h1>
+      </div>
+      <div class="prompt-box"><button class="copy-btn" onclick="copyPrompt(this)">📋 Copia Prompt</button>[R - RUOLO] Agisci come un docente esperto di [MATERIA] nella Scuola Secondaria di Primo Grado e specialista in didattica inclusiva UDL.
+[C - CLASSE] Lavoriamo per una classe [1ª / 2ª / 3ª] media (studenti di [11 / 12 / 13] anni).
+[N - NUCLEI E SCALA COGNITIVA] Partendo dal testo o dall'immagine allegata su [ARGOMENTO], conserva tutti i concetti fondamentali della disciplina ma riorganizzali per accompagnare lo studente dal semplice ricordare (LOTS 1) alla comprensione delle relazioni causa-effetto e all'applicazione pratica (LOTS 2 e 3).
+[A - ACCESSIBILITÀ E PROFILO FUNZIONALE] Applica rigorosamente le regole Easy-to-Read per studenti con affaticamento nella lettura e memoria di lavoro fragile:
+- frasi brevi (massimo 15-18 parole) in forma attiva e zero doppie negazioni;
+- testo diviso in 3 o 4 paragrafi brevi, ciascuno introdotto da un titolo-domanda;
+- termini tecnici fondamentali mantenuti in GRASSETTO e spiegati subito tra parentesi con parole semplici.
+[F - FORMATO DI OUTPUT] Restituisci una scheda strutturata in 3 parti:
+1. TESTO AD ALTA LEGGIBILITÀ (con paragrafi titolati e parole chiave in grassetto);
+2. TABELLA GLOSSARIO (colonne: Termine tecnico | Spiegazione semplice | Esempio concreto quotidiano);
+3. TRE DOMANDE GUIDA ALLO STUDIO graduate (1 sul Ricordare con banca parole, 1 sul Comprendere, 1 sull'Applicare), ciascuna accompagnata da un suggerimento "[Aiuto: ...]".</div>
+    </section>
+
+    <!-- SLIDE 13 -->
+    <section class="slide" data-block="Blocco 2 · 01:45–03:15" data-badge="b2" data-title="13. Google NotebookLM: Zero Allucinazioni">
+      <div class="slide-header">
+        <div class="slide-kicker">Blocco 2 · Demo Live 2 (`notebooklm.google`)</div>
+        <h1>Google NotebookLM: L'IA Ancorata al 100% alle Fonti del Docente</h1>
+      </div>
+      <div class="grid-3">
+        <div class="card highlight-green">
+          <h2>🔒 1. Grounding & Citazioni</h2>
+          <p>Carichi i tuoi <strong>PDF, Google Docs, Slide e link YouTube</strong>. NotebookLM risponde <strong>solo</strong> usando i tuoi materiali e mette i numerini cliccabili che rimandano alla riga esatta della fonte.</p>
+        </div>
+        <div class="card highlight-blue">
+          <h2>🗺️ 2. Mappe Mentali Automatiche</h2>
+          <p>Con 1 clic nel pannello <em>Studio</em> genera una <strong>Mappa Mentale interattiva</strong> ad albero: puoi espandere i rami e <strong>scaricarla come immagine PNG</strong> da dare agli alunni!</p>
+        </div>
+        <div class="card highlight-purple">
+          <h2>🎧 3. Audio Overview (Podcast IT)</h2>
+          <p>Genera un <strong>dialogo audio a due voci in italiano</strong> che spiega la tua lezione! Straordinario per il ripasso a casa degli alunni con <strong>dislessia o fatica di lettura</strong>.</p>
+        </div>
+      </div>
+      <div class="prompt-box" style="margin-top:1rem;"><button class="copy-btn" onclick="copyPrompt(this)">📋 Copia Istruzione Audio</button>Istruzione per "Personalizza" nell'Audio Overview di NotebookLM:
+"Parlate in italiano rivolgendovi direttamente a studenti di [1ª/2ª/3ª] media. Usate un tono incoraggiante e chiaro. Spiegate bene i 3 concetti fondamentali del documento usando una metafora o un esempio vicino alla vita quotidiana dei ragazzi."</div>
+    </section>
+
+    <!-- SLIDE 14 -->
+    <section class="slide" data-block="Blocco 2 · 01:45–03:15" data-badge="b2" data-title="14. LAVORO PRATICO 1 (40 minuti)">
+      <div class="slide-header">
+        <div class="slide-kicker">Laboratorio Hands-On · 40 Minuti al PC</div>
+        <h1>🛠️ LAVORO PRATICO 1: Crea il tuo Pacchetto di Studio Accessibile</h1>
+      </div>
+      <div class="grid-2">
+        <div class="card highlight-green">
+          <h2>🟢 BINARIO BASE ("Pronti Via")</h2>
+          <ol>
+            <li>Scegli un testo/argomento della tua materia.</li>
+            <li>Usa il <strong>Prompt Template 1</strong> su <strong>Google Gemini</strong> (o scegli uno dei prompt della tua materia dal <em>Ricettario dei 30 Esempi</em>).</li>
+            <li>Verifica l'output (<em>Human-in-the-Loop</em>) e clicca su <strong>"Esporta in Documenti"</strong>.</li>
+            <li>Formatta il Documento Google con font <strong>Lexend (12 pt, interlinea 1,5, allineato a sinistra)</strong> e salvalo in Drive → <code>01_Studio_Accessibile</code>.</li>
+          </ol>
+        </div>
+        <div class="card highlight-blue">
+          <h2>🔵 BINARIO APPROFONDIMENTO</h2>
+          <ol>
+            <li>Parti da una <strong>foto/PDF</strong> di una pagina del libro in <strong>Gemini Multimodale + Canvas</strong> e modifica un paragrafo in tempo reale.</li>
+            <li>Crea un taccuino su <strong>Google NotebookLM</strong> caricando il tuo documento (+ un video YouTube).</li>
+            <li>Genera e scarica la <strong>Mappa Mentale PNG</strong> (incollala in cima al tuo Documento Google!) e avvia l'<strong>Audio Overview personalizzato</strong> per la tua classe.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 15 (PAUSA 2) -->
+    <section class="slide" data-block="Pausa 2 · 03:15–03:30" data-badge="pausa" data-title="15. PAUSA 2 (15 minuti)">
+      <div class="card highlight-amber" style="text-align:center; padding:3.5rem 2rem; margin-top:2rem;">
+        <div class="slide-kicker">Stacco Ergonomico · 03:15 – 03:30</div>
+        <h1 style="font-size:3rem; margin:1rem 0;">☕ PAUSA 2 — 15 Minuti</h1>
+        <p style="font-size:1.35rem; color:var(--muted);">Ristoro e movimento!<br/>Al rientro (`03:30`): <strong>Condivisione lampo del Lavoro 1 e avvio di "VerifichIAmo con l'IA" (Il Prompt in 5 Punti).</strong></p>
+      </div>
+    </section>
+
+    <!-- SLIDE 16 -->
+    <section class="slide" data-block="Blocco 3 · 03:30–05:00" data-badge="b3" data-title="16. Restituzione e Galleria del Lavoro 1">
+      <div class="slide-header">
+        <div class="slide-kicker">Blocco 3 (`03:30 – 04:10` · 40 min)</div>
+        <h1>Completamento e Confronto tra Pari sul Lavoro 1</h1>
+      </div>
+      <div class="grid-2">
+        <div class="card highlight-purple">
+          <h2>⏱️ Primi 20 Minuti: Finalizzazione</h2>
+          <ul>
+            <li>Completa l'esportazione della scheda in <strong>Google Documenti</strong>.</li>
+            <li>Incolla nel documento la <strong>Mappa Mentale</strong> scaricata da NotebookLM.</li>
+            <li>Assicurati che il file sia salvato nella cartella Drive <code>01_Studio_Accessibile</code>.</li>
+          </ul>
+        </div>
+        <div class="card highlight-green">
+          <h2>💬 Secondi 20 Minuti: 3 Domande di Debriefing</h2>
+          <ol>
+            <li>Quale differenza avete notato tra un riassunto tradizionale e la scheda strutturata con glossario e domande-guida?</li>
+            <li>In quale punto siete dovuti intervenire voi (<em>Human-in-the-Loop</em>) per correggere Gemini?</li>
+            <li>Come usereste la <strong>Mappa Mentale</strong> o l'<strong>Audio Overview</strong> di NotebookLM con i vostri alunni BES/DSA/NAI?</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 17 -->
+    <section class="slide" data-block="Blocco 3 · 03:30–05:00" data-badge="b3" data-title="17. Avvio VerifichIAmo con l'IA">
+      <div class="slide-header">
+        <div class="slide-kicker">VerifichIAmo con l'IA — Avvio (`04:10 – 05:00` · 50 min)</div>
+        <h1>Dallo Studio alla Verifica: Perché i Prompt Ingenui Falliscono?</h1>
+      </div>
+      <div class="grid-2">
+        <div class="card highlight-red">
+          <h2>❌ Prompt Ingenuo</h2>
+          <p><em>"Creami una verifica sui vulcani / sulle frazioni per la 1ª media, e fai anche una versione per alunni DSA."</em></p>
+          <h2 style="margin-top:1rem; color:var(--danger);">Cosa produce l'IA senza guida:</h2>
+          <ul>
+            <li>80% di domande puramente mnemoniche (<code>LOTS 1 — Ricordare</code>).</li>
+            <li>Versione "DSA" ottenuta <strong>tagliando gli esercizi di ragionamento</strong> (semplificazione al ribasso!).</li>
+            <li>Consegne lunghe o con doppie negazioni (<em>"Quale tra i seguenti NON è..."</em>).</li>
+          </ul>
+        </div>
+        <div class="card highlight-green">
+          <h2>✅ La Nostra Bussola: R-C-N-A-F</h2>
+          <p>Per ottenere da Gemini verifiche <strong>eque, accessibili e formative</strong>, controlliamo sempre <strong>5 leve</strong>:</p>
+          <ol>
+            <li><strong>[R] Ruolo</strong> esperto della disciplina e UDL</li>
+            <li><strong>[C] Classe</strong> e contesto (11–14 anni)</li>
+            <li><strong>[N] Nuclei fondanti</strong> e scala <strong>LOTS → HOTS / KSM</strong></li>
+            <li><strong>[A] Accessibilità</strong> e Profilo Funzionale Anonimizzato</li>
+            <li><strong>[F] Formato</strong> pronto per Documenti o Fogli</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 18 -->
+    <section class="slide" data-block="Blocco 3 · 03:30–05:00" data-badge="b3" data-title="18. Il Framework R-C-N-A-F in Azione">
+      <div class="slide-header">
+        <div class="slide-kicker">Ingegneria del Prompt su Google Gemini</div>
+        <h1>Anatomia del Prompt Didattico in 5 Punti (R-C-N-A-F)</h1>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Codice</th>
+            <th>Blocco del Prompt</th>
+            <th>Formula Operativa da usare su Gemini</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>[R]</strong></td>
+            <td><strong>RUOLO</strong></td>
+            <td><em>"Agisci come docente esperto di [Materia] nella Scuola Secondaria di I grado e progettista di prove inclusive UDL..."</em></td>
+          </tr>
+          <tr>
+            <td><strong>[C]</strong></td>
+            <td><strong>CLASSE</strong></td>
+            <td><em>"Classe [1ª/2ª/3ª] media (studenti di [11/12/13] anni), verifica formativa di [30/45] minuti..."</em></td>
+          </tr>
+          <tr>
+            <td><strong>[N]</strong></td>
+            <td><strong>NUCLEI E SCALA LOTS → HOTS</strong></td>
+            <td><em>"Sui nuclei [...], genera 4 quesiti progressivi: 1 Ricordare [A1], 1 Comprendere [B2], 1 Applicare [C3], 1 Valutare con 'Caccia all'errore' [C5/D4]..."</em></td>
+          </tr>
+          <tr>
+            <td><strong>[A]</strong></td>
+            <td><strong>ACCESSIBILITÀ (Profilo Anonimo)</strong></td>
+            <td><em>"Consegne numerate passo-passo, zero doppie negazioni, banca parole per il quesito 1, frase-avvio (sentence starter) per la Caccia all'errore..."</em></td>
+          </tr>
+          <tr>
+            <td><strong>[F]</strong></td>
+            <td><strong>FORMATO DI OUTPUT</strong></td>
+            <td><em>"Impagina la scheda pronta per 'Esporta in Documenti' con il correttorio e i codici [A-D][1-6] in fondo."</em></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SLIDE 19 -->
+    <section class="slide" data-block="Blocco 3 · 03:30–05:00" data-badge="b3" data-title="19. Esercitazione Guidata: Il tuo Primo Prompt di Verifica">
+      <div class="slide-header">
+        <div class="slide-kicker">Sperimentazione Rapida · 20 Minuti</div>
+        <h1>Prova Subito su Gemini il Prompt R-C-N-A-F sul tuo Argomento!</h1>
+      </div>
+      <p>Attiva in Gemini il modello di <strong>Ragionamento (<em>Thinking</em>)</strong> e trasforma la scheda di studio del tuo Lavoro 1 in una mini-verifica formativa di 4 quesiti:</p>
+      <div class="prompt-box"><button class="copy-btn" onclick="copyPrompt(this)">📋 Copia Prompt</button>[R] Agisci come docente esperto della mia disciplina nella Scuola Secondaria di I grado e specialista in valutazione formativa inclusiva UDL.
+[C] Stessa classe e argomento della scheda di studio che abbiamo appena creato in questa chat.
+[N] A partire esclusivamente dai concetti presenti nella scheda di studio, progetta una mini-verifica formativa di 4 quesiti lungo la scala LOTS -> HOTS (Anderson & Krathwohl):
+- Quesito 1 (LOTS - 1. Ricordare [A1]): completamento o abbinamento con banca delle parole chiave fornita;
+- Quesito 2 (LOTS - 2. Comprendere [B2]): spiegare una relazione causa-effetto con scelta guidata o domanda breve;
+- Quesito 3 (Ponte - 3. Applicare [C3]): applicare la regola/procedura a un caso concreto guidato passo-passo;
+- Quesito 4 (HOTS - 5. Valutare [C5/D4] "Caccia all'errore"): presenta l'affermazione o lo svolgimento di uno studente immaginario che contiene 1 errore tipico sull'argomento; chiedi all'alunno di individuare l'errore e correggerlo.
+[A] Mantieni alta leggibilità, zero doppie negazioni, parole chiave in grassetto e aggiungi per il Quesito 4 un suggerimento e l'inizio della frase di risposta ("L'errore si trova... perché...").
+[F] Restituisci la mini-verifica pronta per "Esporta in Documenti" seguita dalle soluzioni per il docente.</div>
+    </section>
+
+    <!-- SLIDE 20 -->
+    <section class="slide" data-block="Blocco 3 · 03:30–05:00" data-badge="b3" data-title="20. I 30 Esempi Proporzionali per Materia">
+      <div class="slide-header">
+        <div class="slide-kicker">Risorsa del Corso · Tutte le Discipline della Scuola Media</div>
+        <h1>Il Ricettario dei 30 Prompt Proporzionali alle Materie</h1>
+      </div>
+      <p>Nella cartella del corso trovate il <strong>Ricettario completo con 30 prompt già pronti</strong>, distribuiti esattamente in proporzione alle 30 ore settimanali della Scuola Secondaria di I grado:</p>
+      <div class="grid-3">
+        <div class="card highlight-blue">
+          <h2>📘 Area Lettere (33,3%)</h2>
+          <ul>
+            <li><strong>Italiano</strong>: 6 esempi (<code>#01–#06</code>)</li>
+            <li><strong>Storia</strong>: 2 esempi (<code>#14–#15</code>)</li>
+            <li><strong>Geografia</strong>: 2 esempi (<code>#16–#17</code>)</li>
+          </ul>
+        </div>
+        <div class="card highlight-green">
+          <h2>📐 Area STEM & Lingue (36,7%)</h2>
+          <ul>
+            <li><strong>Matematica</strong>: 4 esempi (<code>#07–#10</code>)</li>
+            <li><strong>Scienze</strong>: 2 esempi (<code>#18–#19</code>)</li>
+            <li><strong>Inglese</strong>: 3 esempi (<code>#11–#13</code>)</li>
+            <li><strong>2ª Lingua (Fr/Sp)</strong>: 2 esempi (<code>#20–#21</code>)</li>
+          </ul>
+        </div>
+        <div class="card highlight-purple">
+          <h2>🎨 Tecnico-Artistiche, Motorie, IRC (30%)</h2>
+          <ul>
+            <li><strong>Tecnologia</strong>: 2 esempi (<code>#22–#23</code>)</li>
+            <li><strong>Arte e Immagine</strong>: 2 esempi (<code>#24–#25</code>)</li>
+            <li><strong>Musica</strong>: 2 esempi (<code>#26–#27</code>)</li>
+            <li><strong>Ed. Fisica</strong>: 2 esempi (<code>#28–#29</code>)</li>
+            <li><strong>IRC / Ed. Civica</strong>: 1 esempio (<code>#30</code>)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 21 -->
+    <section class="slide" data-block="Blocco 3 · 03:30–05:00" data-badge="b3" data-title="21. Checklist Finale e Ponte verso Incontro 2">
+      <div class="slide-header">
+        <div class="slide-kicker">Chiusura Incontro 1 · Arrivederci all'Incontro 2!</div>
+        <h1>Checklist di Fine Giornata & Prossima Tappa</h1>
+      </div>
+      <div class="grid-2">
+        <div class="card highlight-green">
+          <h2>✅ Verifica nella tua Cartella Google Drive</h2>
+          <ul>
+            <li>✔ Cartella <code>Corso_Valutare_Per_Crescere / 01_Studio_Accessibile</code> creata.</li>
+            <li>✔ Documento Google con il tuo <strong>Pacchetto di Studio Accessibile (Lavoro 1)</strong> salvato.</li>
+            <li>✔ <strong>Mappa Mentale</strong> e/o <strong>Audio Overview</strong> generati su <strong>NotebookLM</strong>.</li>
+            <li>✔ Primo test di mini-verifica con il <strong>Prompt in 5 punti (R-C-N-A-F)</strong>.</li>
+            <li>🔒 <strong>Ricorda di effettuare il LOGOUT dal browser del laboratorio!</strong></li>
+          </ul>
+        </div>
+        <div class="card highlight-purple">
+          <h2>🚀 Cosa faremo nell'Incontro 2 (5 ore)</h2>
+          <p><strong>VerifichIAmo con l'IA — Parte I</strong>:</p>
+          <ul>
+            <li>Radiografia di una verifica reale con <strong>Gemini Multimodale</strong>;</li>
+            <li>Progettazione della <strong>Verifica UDL completa su 3 Livelli</strong> (Facilitata/Equipollente, Standard, Potenziamento) con il modello di <strong>Ragionamento (<em>Thinking</em>)</strong> e <strong>Gemini Canvas</strong>;</li>
+            <li>Creazione del tuo <strong>Gem disciplinare permanente</strong>;</li>
+            <li>Laboratorio di validazione critica (<em>Human-in-the-Loop</em>).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>Corso di Formazione Docenti: <strong>VALUTARE PER CRESCERE</strong> · Secondaria di I Grado</div>
+    <div>Usa le frecce della tastiera <code>◀</code> <code>▶</code> o <code>Spazio</code> per navigare tra le slide</div>
+  </footer>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const counter = document.getElementById('counter');
+    const progressBar = document.getElementById('progress-bar');
+    const blockBadge = document.getElementById('block-badge');
+    const slideSelect = document.getElementById('slide-select');
+    let currentSlide = 0;
+
+    function initSelect() {
+      slides.forEach((s, idx) => {
+        const opt = document.createElement('option');
+        opt.value = idx;
+        opt.textContent = s.dataset.title || `Slide ${idx + 1}`;
+        slideSelect.appendChild(opt);
+      });
+    }
+
+    function showSlide(n, slidesList, counterEl) {
+      if (n < 0) n = 0;
+      if (n >= slidesList.length) n = slidesList.length - 1;
+      currentSlide = n;
+      slidesList.forEach((slide, index) => {
+        slide.style.display = index === n ? 'block' : 'none';
+      });
+      counterEl.textContent = `Slide ${n + 1} / ${slidesList.length}`;
+      slideSelect.value = n;
+      const pct = ((n + 1) / slidesList.length) * 100;
+      progressBar.style.width = `${pct}%`;
+
+      const active = slidesList[n];
+      blockBadge.textContent = active.dataset.block || '';
+      blockBadge.className = `badge ${active.dataset.badge || 'b1'}`;
+    }
+
+    function nextSlide() { showSlide(currentSlide + 1, slides, counter); }
+    function prevSlide() { showSlide(currentSlide - 1, slides, counter); }
+    function jumpToSlide(val) { showSlide(parseInt(val, 10), slides, counter); }
+
+    function copyPrompt(btn) {
+      const box = btn.parentElement;
+      const text = box.innerText.replace(btn.innerText, '').trim();
+      navigator.clipboard.writeText(text).then(() => {
+        const old = btn.textContent;
+        btn.textContent = '✅ Copiato!';
+        setTimeout(() => { btn.textContent = old; }, 1600);
+      });
+    }
+
+    function toggleFullScreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(() => {});
+      } else {
+        document.exitFullscreen().catch(() => {});
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ') {
+        e.preventDefault();
+        nextSlide();
+      } else if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        prevSlide();
+      }
+    });
+
+    initSelect();
+    showSlide(0, slides, counter);
+  </script>
+</body>
+</html>
