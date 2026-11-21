@@ -35,11 +35,11 @@
 2. Vai su **Google Drive** e crea la cartella principale:  
    📁 `Corso_Valutare_Per_Crescere`
 3. Dentro la cartella crea le **5 sottocartelle** (una per ciascuna giornata del corso):
-   * `01_Giorno1_Studio_Accessibile` *(Oggi!)*
-   * `02_Giorno2_Verifica_Multilivello_UDL`
-   * `03_Giorno3_Rubrica_KSM_e_Feedback`
-   * `04_Giorno4_Banca_Quesiti_e_Quiz_Digitale`
-   * `05_Giorno5_Verifica_Multimodale_e_Kit_Finale`
+   * `01_Incontro1_Studio_Accessibile` *(Oggi!)*
+   * `02_Incontro2_Verifica_UDL_Multilivello`
+   * `03_Incontro3_Rubrica_KSM_e_Feedback`
+   * `04_Incontro4_Banca_Quesiti_e_Quiz_Digitale`
+   * `05_Incontro5_Verifica_Multimodale_e_Kit_Finale`
 4. Apri in due schede affiancate: **Google Gemini** (`gemini.google.com`) e **Google NotebookLM** (`notebooklm.google`).
 
 > ⚠️ **Promemoria in laboratorio**: siamo su PC condivisi della scuola → salvate tutto su Drive e ricordate il **Logout** a fine pomeriggio!
@@ -199,7 +199,7 @@ Scegli un argomento reale della tua disciplina (su cui lavorerai lungo tutti i 5
   1. Parti da una **foto/PDF** con **Gemini Multimodale in Canvas** e affina i paragrafi selezionandoli col mouse.
   2. Carica lo stesso materiale (+ un video YouTube) in un taccuino **Google NotebookLM**, genera la **Mappa Mentale** (scaricala in PNG e incollala in cima al tuo Documento Google!) e avvia l'**Audio Overview personalizzato** per la tua classe.
 
-*(Guida passo-passo in [02_Schede_Operative_4_Lavori_Pratici.md](file:///c:/Users/amart/Desktop/Corsi%20per%20docenti/Intelligenza%20Artificiale%20nella%20didattica%20e%20nella%20valutazione/Materiali_Trasversali/02_Schede_Operative_4_Lavori_Pratici.md))*
+*(Guida passo-passo in [02_Schede_Operative_5_Lavori_Pratici.md](file:///c:/Users/amart/Desktop/Corsi%20per%20docenti/Intelligenza%20Artificiale%20nella%20didattica%20e%20nella%20valutazione/Materiali_Trasversali/02_Schede_Operative_5_Lavori_Pratici.md))*
 
 ---
 

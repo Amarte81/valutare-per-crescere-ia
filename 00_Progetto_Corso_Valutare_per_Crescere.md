@@ -215,7 +215,7 @@ I **30 esempi di prompt e output IA** (su Gemini e NotebookLM) rispecchiano esat
 2. **Incontri 2, 3, 4 e 5 (4h ciascuno)** *(da produrre con la medesima doppia struttura: Presentazione d'aula + Dispensa di approfondimento con link tecnici)*.
 3. **Materiali Trasversali**:
    * `Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md` (30 esempi mappati sui 5 incontri);
-   * `Materiali_Trasversali/02_Schede_Operative_4_Lavori_Pratici.md` (Schede operative aggiornate ai **5 Lavori Pratici dei 5 giorni**);
+   * `Materiali_Trasversali/02_Schede_Operative_5_Lavori_Pratici.md` (Schede operative dei **5 Lavori Pratici dei 5 incontri**, ciascuno articolato in **Fase A nel Blocco 1** e **Fase B nel Blocco 2**);
    * `Materiali_Trasversali/03_Kit_Privacy_GDPR_e_Strumenti_Locali.md`.
 4. **Moduli Aggiuntivi Facoltativi**:
    * `Moduli_Extra/Modulo_Extra_A_Uso_Etico_IA_Alunni_Casa.md`;

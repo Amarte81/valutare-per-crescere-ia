@@ -12,7 +12,7 @@ Repository ufficiale dei materiali del corso di formazione docenti sull'Intellig
   - [Dispensa di Studio Approfondito (con Glossario e Link Esterni)](Incontro_1/Incontro_1_Dispensa_Studio_Approfondito.md)
 - **Materiali Trasversali**
   - [Ricettario dei Prompt: 30 Esempi Proporzionali per la Scuola Media (6 per incontro)](Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md)
-  - [Schede Operative per i 5 Lavori Pratici (5 Giorni × 4 Ore)](Materiali_Trasversali/02_Schede_Operative_4_Lavori_Pratici.md)
+  - [Schede Operative per i 5 Lavori Pratici (5 Incontri × 4 Ore)](Materiali_Trasversali/02_Schede_Operative_5_Lavori_Pratici.md)
   - [Kit Privacy GDPR e Strumenti Locali Gratuiti](Materiali_Trasversali/03_Kit_Privacy_GDPR_e_Strumenti_Locali.md)
 - **Moduli Aggiuntivi Facoltativi**
   - [Modulo Extra A — Uso Etico dell'IA da Parte degli Alunni a Casa](Moduli_Extra/Modulo_Extra_A_Uso_Etico_IA_Alunni_Casa.md)
