@@ -5,7 +5,7 @@
 
 > [!IMPORTANT]
 > **Quando si usa questo Kit nel corso**  
-> Questo documento viene introdotto nel **Blocco 1 dell'Incontro 1** e funge da riferimento operativo permanente per tutti e 4 gli incontri. Contiene:
+> Questo documento viene introdotto nel **Blocco 1 dell'Incontro 1** e funge da riferimento operativo permanente per tutti e 5 gli incontri da 4 ore. Contiene:
 > 1. La **Checklist di Sicurezza GDPR** per l'uso di Google Gemini, NotebookLM e altri strumenti online a scuola;
 > 2. Il **Dizionario di Conversione in Profilo Funzionale Anonimizzato** (pronto da copiare e incollare nei prompt per BES, DSA, L. 104, NAI, ADHD);
 > 3. Le **4 Mini-Guide passo-passo per il PC personale del docente** sugli strumenti gratuiti 100% locali e offline (**PDF24 Creator**, **LM Studio / GPT4All**, **Lumi Education H5P**, **LibreOffice**).
@@ -79,7 +79,7 @@ Ecco una tabella di **blocchi di testo pronti da copiare e incollare** direttame
 ### 🧩 Mini-Guida 3: Lumi Education — H5P Desktop (Creare video-verifiche e quiz interattivi offline)
 * **Cos'è**: Applicazione desktop gratuita e open-source che permette di creare sul proprio PC oltre 40 tipi di attività didattiche interattive (**H5P**: video con domande a comparsa, testi con buchi *cloze*, flashcard, linee del tempo, abbinamenti trascina-e-rilascia) **senza bisogno di creare account su siti esterni né per il docente né per gli studenti**.
 * **Sito ufficiale**: `https://app.lumi.education/` (disponibile per Windows, Mac e Linux).
-* **Il flusso d'oro con Google Gemini + Lumi (che vedremo nell'Incontro 4)**:
+* **Il flusso d'oro con Google Gemini + Lumi (che vedremo nell'Incontro 5)**:
   1. Generi con **Google Gemini** le domande o il testo *cloze* sull'argomento della lezione.
   2. Apri **Lumi** sul tuo PC → scegli **"H5P Editor" → "Interactive Video"** o **"Fill in the Blanks"** → incolli le domande.
   3. Clicchi su **`File → Esporta come file HTML`**: Lumi genera **un singolo file `.html`** che contiene già tutto.

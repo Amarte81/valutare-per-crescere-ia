@@ -23,12 +23,13 @@
 
 ---
 
-## Indice Rapido per Incontro del Corso
+## Indice Rapido per i 5 Incontri da 4 Ore (6 Esempi per Incontro)
 
-* **Usati nell'Incontro 1 (Studio accessibile, Gemini Multimodale, NotebookLM, Primi Prompt)**: `#01`, `#02`, `#07`, `#11`, `#16`, `#18`, `#20` *(7 esempi)*
-* **Usati nell'Incontro 2 (Verifiche UDL a 3 livelli, Gemini Thinking/Canvas, LOTS → HOTS)**: `#03`, `#04`, `#08`, `#14`, `#22`, `#24`, `#30` *(7 esempi)*
-* **Usati nell'Incontro 3 (Rubriche KSM, Feedback formativo, Area 1 Banche Quesiti in Fogli)**: `#05`, `#09`, `#12`, `#21`, `#23`, `#26`, `#28` *(7 esempi)*
-* **Usati nell'Incontro 4 (Area 2 Google Moduli ramificati/Quiz digitali + Area 3 NotebookLM/Video)**: `#06`, `#10`, `#13`, `#15`, `#17`, `#19`, `#25`, `#27`, `#29` *(9 esempi)*
+* **Incontro 1 (Giorno 1 · 4h — Accessibilità, autonomia e studio con Gemini e NotebookLM)**: `#01` (Italiano), `#02` (Italiano L2/NAI), `#07` (Matematica), `#11` (Inglese), `#16` (Geografia), `#18` (Scienze) *(6 esempi)*
+* **Incontro 2 (Giorno 2 · 4h — VerifichIAmo con l'IA Parte I: Verifiche UDL a 3 livelli, Gemini Thinking/Canvas, LOTS → HOTS)**: `#03` (Italiano narrativa), `#04` (Italiano grammatica), `#08` (Matematica Pitagora), `#14` (Storia Feudalesimo), `#22` (Tecnologia Energia), `#24` (Arte e Immagine) *(6 esempi)*
+* **Incontro 3 (Giorno 3 · 4h — VerifichIAmo con l'IA Parte II: Rubriche KSM, Autovalutazione e Feedback formativo)**: `#05` (Italiano Rubrica KSM), `#20` (2ª Lingua supporto e feedback), `#23` (Tecnologia Rubrica KSM disegno), `#26` (Musica Rubrica KSM), `#28` (Ed. Fisica Autovalutazione M), `#30` (IRC / Ed. Civica Scenario HOTS + Rubrica KSM) *(6 esempi)*
+* **Incontro 4 (Giorno 4 · 4h — Area 1 Banche Quesiti in Fogli + Area 2 Quiz Digitali e Moduli Ramificati)**: `#06` (Italiano Lessico), `#09` (Matematica Equazioni), `#10` (Matematica Modulo ramificato), `#12` (Inglese Past Simple), `#17` (Geografia Quiz Europa), `#21` (2ª Lingua Quesiti comunicativi) *(6 esempi)*
+* **Incontro 5 (Giorno 5 · 4h — Area 3 Verifiche integrate a Video/Materiali con NotebookLM + VerifichIAmo Parte III Sintesi)**: `#13` (Inglese Video-Listening), `#15` (Storia NotebookLM PDF+Video), `#19` (Scienze Video esperimento), `#25` (Arte Avanguardie), `#27` (Musica Ascolto su video/audio), `#29` (Ed. Fisica Video gesto motorio/Primo Soccorso) *(6 esempi)*
 
 ---
 

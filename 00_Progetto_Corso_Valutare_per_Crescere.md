@@ -11,11 +11,11 @@
 | :--- | :--- |
 | **Titolo** | **VALUTARE PER CRESCERE** — *Valutare con l'IA: verifiche accessibili e personalizzate nella Secondaria* |
 | **Target** | Docenti di scuola secondaria, con focus prevalente sulla **Scuola Secondaria di Primo Grado** (studenti 11–14 anni) |
-| **Durata complessiva** | **20 ore** articolate in **4 incontri da 5 ore** |
+| **Durata complessiva** | **20 ore** articolate in **5 incontri (5 giornate) da 4 ore ciascuno** |
 | **Modalità e logistica** | **In presenza**, in **fascia pomeridiana**, all'interno di un **laboratorio di informatica** |
 | **Competenze d'ingresso** | Conoscenza di **Google Workspace for Education**; dimestichezza con l'IA generativa **eterogenea** (da nulla a media) |
-| **Focus tecnologico** | **Google Gemini** (nuovi modelli multimodali, di ragionamento, Canvas/Gem ed esportazione diretta in Workspace), **Google NotebookLM** (incluse Mappe Mentali e Audio Overview) e gli strumenti gratuiti dell'ecosistema **Google Workspace for Education**, affiancati da soluzioni gratuite per quiz/video e per la privacy sul PC personale |
-| **Attestazione e attivazione** | Nessun attestato/esame finale obbligatorio; attivazione continua tramite **4 Lavori Pratici progressivi in aula** che compongono un **Kit Valutativo Inclusivo** spendibile subito in classe |
+| **Focus tecnologico** | **Google Gemini** (nuovi modelli multimodali, di ragionamento *Thinking*, Canvas/Gem ed esportazione diretta in Workspace), **Google NotebookLM** (incluse Mappe Mentali e Audio Overview) e gli strumenti gratuiti dell'ecosistema **Google Workspace for Education**, affiancati da soluzioni gratuite per quiz/video e per la privacy sul PC personale |
+| **Attestazione e attivazione** | Nessun attestato/esame finale obbligatorio; attivazione continua tramite **5 Lavori Pratici progressivi in aula (1 per ciascuna giornata)** che compongono un **Kit Valutativo Inclusivo** spendibile subito in classe |
 | **Moduli extra opzionali** | **2 Moduli Aggiuntivi Facoltativi** (messi a disposizione in Drive/Classroom per i soli docenti interessati) |
 
 ---
@@ -51,180 +51,172 @@ Per mantenere il focus costantemente sull'**uso dell'Intelligenza Artificiale**,
 
 ---
 
-## 3. Ergonomia degli Incontri Pomeridiani e Gestione dell'Aula
+## 3. Ergonomia dei 5 Incontri da 4 Ore e Gestione dell'Aula
 
-Poiché i docenti frequentano **dopo la mattinata di lezione in classe**, ogni incontro di **5 ore (300 minuti)** adotta una struttura anti-affaticamento e fortemente laboratoriale sull'IA:
+Il passaggio a **5 giornate da 4 ore (240 minuti per incontro)** offre una sostenibilità ergonomica superiore per docenti che arrivano in laboratorio dopo la mattinata a scuola, e permette di dividere ogni pomeriggio in **2 Blocchi simmetrici da 2 ore nominali (110 minuti netti ciascuno)** separati da **una pausa centrale di 20 minuti**:
 
-* **Scansione fissa dei 300 minuti**:
-  * `00:00 – 01:30` **Blocco 1** *(90 min)*
-  * `01:30 – 01:45` **Pausa 1** *(15 min — decompressione / caffè)*
-  * `01:45 – 03:15` **Blocco 2** *(90 min)*
-  * `03:15 – 03:30` **Pausa 2** *(15 min — ristoro / movimento)*
-  * `03:30 – 05:00` **Blocco 3** *(90 min)*
-  * *Totale per incontro*: **4h30 nette di attività attiva + 30 min di pause** (*Totale corso: 18h nette + 2h pause = 20h*).
-* **Micro-ritmo interno a ogni blocco da 90 min (regola 15–25–40–10)**:
-  * max 15' di inquadramento concettuale (sempre mostrato tramite confronto di prompt/output IA);
-  * ~25' di demo live su Gemini / NotebookLM / strumenti Google;
-  * ~40' di laboratorio pratico (*hands-on*) sull'IA;
-  * ~10' di confronto/debriefing.
+* **Scansione fissa dei 240 minuti (4 ore) di ogni giornata**:
+  * `00:00 – 01:50` **Blocco 1** *(110 min netti = 2h nominali)*
+  * `01:50 – 02:10` **Pausa Centrale** *(20 min — decompressione, caffè e movimento)*
+  * `02:10 – 04:00` **Blocco 2** *(110 min netti = 2h nominali)*
+  * *Totale per incontro*: **3h40 nette (220') di attività attiva + 20 min di pausa = 4 ore** (*Totale corso su 5 giorni: 1100' netti [18h20] + 100' pause [1h40] = 20 ore*).
+* **Micro-ritmo interno a ogni blocco da 110 min (regola 20–30–45–15)**:
+  * ~20' di inquadramento operativo (sempre mostrato tramite confronto di prompt/output su Gemini);
+  * ~30' di demo live guidata su Gemini / NotebookLM / strumenti Google;
+  * ~45' di laboratorio pratico (*hands-on*) al PC con micro-stacco visivo di 3–5 minuti all'avvio del lavoro;
+  * ~15' di confronto, validazione *Human-in-the-Loop* e salvataggio su Drive.
 * **Gestione della classe eterogenea (IA da livello nullo a medio)**:
-  * **Binario Base ("Pronti via")**: prompt-template a riempimento pronti da usare in Gemini.
-  * **Binario Intermedio ("Approfondimento")**: uso avanzato di Gemini (input multimodali, modelli di ragionamento, affinamento in Canvas, creazione di **Gem** disciplinari riutilizzabili).
+  * **Binario Base ("Pronti via")**: prompt-template a riempimento pronti da copiare in Gemini.
+  * **Binario Intermedio ("Approfondimento")**: uso avanzato di Gemini (input multimodali, modelli di ragionamento *Thinking*, affinamento in *Canvas*, creazione di **Gem** disciplinari riutilizzabili e uso combinato con *NotebookLM*).
   * **Coppie o isole disciplinari** (Lettere, Matematica/Scienze, Lingue, Tecnico-Artistico-Motorio/Sostegno) per favorire il supporto tra pari.
 * **Logistica del laboratorio informatico**:
-  * All'avvio dell'Incontro 1 ogni docente crea sul proprio Google Drive la cartella `Corso_Valutare_Per_Crescere` per salvare i 4 lavori (ricordando il logout a fine pomeriggio sui PC condivisi).
-  * Gli strumenti **locali** non richiedono installazione sui PC del laboratorio: vengono mostrati dal formatore sul proprio portatile con una mini-guida da portare a casa per il PC personale.
+  * All'avvio dell'Incontro 1 ogni docente crea sul proprio Google Drive la cartella `Corso_Valutare_Per_Crescere` (con 5 sottocartelle, una per giornata) per salvare i lavori e ricorda di fare logout a fine pomeriggio sui PC condivisi.
 
 ---
 
-## 4. Ripartizione del Monte Ore (Verifica Proporzioni)
+## 4. Ripartizione del Monte Ore su 5 Giorni × 4 Ore (Corrispondenza Esatta al 100%)
 
-| Area / Modulo del Corso | Quota attesa | Ore nominali | Minuti netti (su 1080') | % Effettiva | Collocazione |
-| :--- | :---: | :---: | :---: | :---: | :--- |
-| **Accessibilità, autonomia e studio degli studenti** | ~4/20 | **4h** | 220' | 20,4% | Incontro 1 |
-| **VerifichIAmo con l'Intelligenza Artificiale** *(cuore del corso)* | ~10/20 | **10h** | 540' | 50,0% | Incontro 1 (50') + Inc. 2 (270') + Inc. 3 (165') + Inc. 4 (55') |
-| **Area 1 — Progettare domande e quiz con il supporto dell'IA** | ~2/20 | **2h** | 105' | 9,7% | Incontro 3 |
-| **Area 2 — Quiz digitali per la valutazione** | ~2/20 | **2h** | 105' | 9,7% | Incontro 4 |
-| **Area 3 — Verifiche integrate a contenuti video e materiali** | ~2/20 | **2h** | 110' | 10,2% | Incontro 4 |
-| **TOTALE** | **20/20** | **20h** | **1080' (+120' pause)** | **100%** | **4 incontri × 5 ore** |
+Con **5 incontri da 4 ore** (ossia **10 blocchi da 2 ore nominali / 110' netti ciascuno**), ogni singolo modulo del corso occupa un **numero intero di blocchi da 2 ore**, eliminando qualsiasi spezzettamento tra un giorno e l'altro e rispettando al decimale le quote attese (`4/20`, `10/20`, `2/20`, `2/20`, `2/20`):
+
+| Area / Modulo del Corso | Quota attesa | Ore nominali | Blocchi da 2h | Minuti netti (su 1100') | % Effettiva | Collocazione nei 5 Giorni |
+| :--- | :---: | :---: | :---: | :---: | :---: | :--- |
+| **Accessibilità, autonomia e studio degli studenti** | **4/20** | **4h** | 2 blocchi | 220' | **20,0%** | **Incontro 1** (Intera giornata: Blocco 1 + Blocco 2) |
+| **VerifichIAmo con l'Intelligenza Artificiale** *(cuore del corso)* | **10/20** | **10h** | 5 blocchi | 550' | **50,0%** | **Incontro 2** (4h) + **Incontro 3** (4h) + **Incontro 5, Blocco 2** (2h sintesi e integrazione finale) |
+| **Area 1 — Progettare domande e quiz con il supporto dell'IA** | **2/20** | **2h** | 1 blocco | 110' | **10,0%** | **Incontro 4, Blocco 1** (2h) |
+| **Area 2 — Quiz digitali per la valutazione** | **2/20** | **2h** | 1 blocco | 110' | **10,0%** | **Incontro 4, Blocco 2** (2h) |
+| **Area 3 — Verifiche integrate a contenuti video e materiali** | **2/20** | **2h** | 1 blocco | 110' | **10,0%** | **Incontro 5, Blocco 1** (2h) |
+| **TOTALE** | **20/20** | **20h** | **10 blocchi** | **1100' (+100' pause)** | **100,0%** | **5 incontri × 4 ore** |
 
 ---
 
 ## 5. Ecosistema degli Strumenti Selezionati (Focus Ecosistema Google Gratuito)
 
-Selezione centrata sull'ecosistema gratuito di **Google** che i docenti hanno già a disposizione, senza disperdere l'attenzione su decine di servizi esterni:
-
 ### A. Intelligenza Artificiale nell'Ecosistema Google (Cuore Tecnologico del Corso)
 * **Google Gemini**:
   * **Input Multimodale**: caricamento di immagini/foto di libri cartacei, schemi, grafici e documenti PDF/Google Docs.
-  * **Modelli veloci vs Modelli di Ragionamento (*Thinking*)**: scelta del modello in base alla complessità cognitiva della prova da progettare (LOTS vs HOTS, problemi STEM, *error analysis*).
-  * **Gemini Canvas & Gem**: modifica mirata di singole parti della verifica senza riscrivere l'intero prompt, creazione di assistenti disciplinari personalizzati (**Gem**) ed **esportazione con 1 clic in Google Documenti e Google Fogli**.
+  * **Modelli veloci (*Flash*) vs Modelli di Ragionamento (*Thinking*)**: scelta del modello in base alla complessità cognitiva del compito (LOTS vs HOTS, problemi STEM, *error analysis*).
+  * **Gemini Canvas & Gem**: modifica mirata di singole parti del testo o della verifica senza riscrivere l'intero prompt, creazione di assistenti disciplinari personalizzati (**Gem**) ed **esportazione con 1 clic in Google Documenti e Google Fogli**.
 * **Google NotebookLM** *(100% gratuito con account Google)*:
   * IA ancorata *esclusivamente* alle fonti caricate dal docente (**PDF, Google Documenti, Google Presentazioni, link a video YouTube**) → azzera o quasi le allucinazioni.
-  * **Nuove funzioni chiave per l'inclusione e la valutazione**:
+  * **Funzioni chiave per l'inclusione e la valutazione**:
     1. **Mappe Mentali interattive automatiche** per visualizzare la struttura concettuale di un capitolo o di più fonti;
-    2. **Audio Overview (Podcast a due voci in italiano)** per offrire agli studenti (specialmente DSA/BES o con difficoltà di lettura) un ripasso audio discorsivo e coinvolgente sui materiali del docente;
+    2. **Audio Overview (Podcast a due voci in italiano)** per offrire agli studenti (specialmente DSA/BES o con difficoltà di lettura) un ripasso audio discorsivo sui materiali del docente;
     3. **Generazione di Guide allo studio, Glossari, FAQ e Verifiche** basate fedelmente sui materiali di classe.
 
 ### B. Strumenti Google Workspace for Education e Piattaforme Quiz/Video Gratuite
-* **Google Workspace for Education**:
-  * **Google Drive** (archivio del Kit Valutativo Inclusivo), **Google Documenti** (ricezione diretta degli output da Gemini, font inclusivi *Lexend/Atkinson*, digitazione vocale), **Google Fogli** (esportazione tabellare diretta delle banche quesiti da Gemini), **Google Moduli** (quiz digitali con feedback formativo e percorsi ramificati LOTS → HOTS), **Google Classroom** (assegnazione differenziata "invisibile" a singoli alunni e **Griglie di valutazione** native), **YouTube** (fonti video per NotebookLM, Moduli ed Edpuzzle).
-* **Piattaforme gratuite complementari per Quiz e Video-Verifiche (Area 2 e Area 3)**:
-  * **Wordwall** (piano free): trasforma una tabella generata da Gemini in quiz, abbinamenti, carte, cloze per BES/DSA/NAI.
-  * **Quizizz** (piano free): quiz senza timer ansiogeno, sintesi vocale, importazione immediata da Google Fogli.
-  * **Edpuzzle** (piano free): integrazione nativa con Google Classroom e YouTube, domande temporizzate lungo il video.
+* **Google Workspace for Education**: **Google Drive**, **Google Documenti** (font inclusivi *Lexend/Atkinson*, digitazione vocale), **Google Fogli** (esportazione tabellare diretta delle banche quesiti e delle rubriche da Gemini), **Google Moduli** (quiz digitali con feedback formativo e percorsi ramificati LOTS → HOTS), **Google Classroom** (assegnazione differenziata "invisibile" a singoli alunni e **Griglie di valutazione** native), **YouTube**.
+* **Piattaforme gratuite complementari (Area 2 e Area 3)**: **Wordwall** (piano free), **Quizizz** (piano free, senza timer + sintesi vocale), **Edpuzzle** (piano free, integrato a Classroom e YouTube).
 
 ### C. Soluzioni Locali Gratuite (per Privacy/Anonimizzazione e uso sul PC personale)
-* **PDF24 Creator** *(Windows, 100% gratuito e offline)*: oscuramento/redazione permanente di nomi e dati sensibili nei PDF; unione ed estrazione di pagine di verifiche senza upload su siti esterni.
-* **Lumi Education (H5P Desktop)** *(Windows/Mac/Linux, open-source e gratuito)*: creazione offline di video interattivi e verifiche multimodali H5P esportabili in un **unico file `.html` auto-contenuto**, distribuibile su Classroom senza account studenti.
-* **LM Studio** (o **GPT4All**) *(gratuiti, interfaccia grafica semplice)*: esecuzione di piccoli modelli IA **100% offline sul PC personale** per elaborare bozze sensibili senza cloud (con indicazioni chiare sui requisiti hardware/RAM).
-* **LibreOffice** *(gratuito e offline)*: editing accessibile e redazione locale di documenti/PDF.
+* **PDF24 Creator** *(Windows, 100% gratuito e offline)*: oscuramento/redazione permanente di nomi e dati sensibili nei PDF ed estrazione pagine senza upload su siti esterni.
+* **Lumi Education (H5P Desktop)** *(Windows/Mac/Linux, open-source e gratuito)*: creazione offline di video interattivi e verifiche multimodali H5P esportabili in un **unico file `.html` auto-contenuto** per Classroom.
+* **LM Studio / GPT4All** *(gratuiti, interfaccia grafica semplice)*: esecuzione di modelli IA **100% offline sul PC personale** per elaborare bozze sensibili senza cloud.
+* **LibreOffice** *(gratuito e offline)*: pulizia metadati ed esportazione in PDF accessibili (`PDF/UA`).
 
 ---
 
-## 6. Programma Dettagliato dei 4 Incontri (Syllabus)
+## 6. Programma Dettagliato dei 5 Incontri da 4 Ore (Syllabus)
 
-### Incontro 1 (5h) — *I nuovi modelli di Gemini e NotebookLM per l'accessibilità e l'autonomia nello studio*
-* **Moduli**: Accessibilità, autonomia e studio degli studenti (`4h`) + VerifichIAmo con l'IA — Avvio (`1h`).
-* **Obiettivo operativo**: usare la multimodalità di **Gemini** e le nuove funzioni di **NotebookLM** (Mappe Mentali, Audio Overview, Guide allo studio) per trasformare materiali scolastici in risorse di studio accessibili nel rispetto del GDPR.
+### Incontro 1 (Giorno 1 · 4h) — *Accessibilità, autonomia e studio degli studenti con Gemini e NotebookLM*
+* **Modulo coperto**: **Accessibilità, autonomia e studio degli studenti (`4h = 4/20`)**.
+* **Obiettivo operativo**: padroneggiare la multimodalità di **Gemini** (*Canvas*, *Easy-to-Read*, *Framework R-C-N-A-F per lo studio*) e le nuove funzioni di **Google NotebookLM** (*Mappe Mentali* e *Audio Overview*) per trasformare i materiali scolastici in risorse di studio accessibili nel pieno rispetto del GDPR.
 
 | Fascia | Blocco | Contenuti e Attività |
 | :--- | :--- | :--- |
-| `00:00 – 01:30` | **Blocco 1** *(90')* | • Accoglienza, creazione cartella `Corso_Valutare_Per_Crescere` su Drive e panoramica pratica su **cosa cambia con i nuovi modelli di Google Gemini** (input multimodale da foto/PDF, modello rapido vs modello di ragionamento *Thinking*, lavoro in *Canvas* ed esportazione in 1 clic su Google Docs/Fogli).<br>• **Superare le barriere allo studio nella Secondaria di I grado con l'IA**: usare Gemini per abbattere ostacoli linguistici, cognitivi e mnemonici per BES, DSA, L. 104, NAI e ADHD.<br>• **Privacy e GDPR nell'uso dell'IA**: protocollo del **Profilo Funzionale Anonimizzato** (come descrivere i bisogni a Gemini senza mai inserire dati personali o diagnosi) + demo delle soluzioni locali per il PC personale (**PDF24 Creator** per oscurare PDF + cenno a **LM Studio/GPT4All** offline).<br>• *Segnalazione rapida del Modulo Extra A (Uso etico dell'IA a casa).* |
-| `01:30 – 01:45` | **Pausa 1** *(15')* | *Decompressione / caffè* |
-| `01:45 – 03:15` | **Blocco 2** *(90')* | • **Gemini Multimodale per l'autonomia nello studio**: partire dalla foto/PDF di una pagina del libro di testo per generare in *Gemini Canvas* versioni ad alta leggibilità (*Easy-to-Read*), glossari visivi/bilingue per NAI, sintesi graduate e domande-guida che accompagnano dal ricordare (`LOTS 1`) al comprendere/applicare (`2–3`), con esportazione diretta in Google Documenti.<br>• **Google NotebookLM per lo studio inclusivo**: caricare dispense/slide/video del docente per generare automaticamente **Mappe Mentali interattive**, **Guide allo studio** e l'**Audio Overview (Podcast a due voci in italiano)** per lo studio multisensoriale.<br>• **LAVORO 1 (avvio)**: ogni docente carica una fonte reale della propria disciplina in **Gemini** e/o **NotebookLM** e produce un **Pacchetto di Studio Accessibile** (testo adattato + glossario + mappa o guida/audio di ripasso). |
-| `03:15 – 03:30` | **Pausa 2** *(15')* | *Ristoro / movimento* |
-| `03:30 – 05:00` | **Blocco 3** *(90')* | • Completamento, esportazione su Drive e condivisione rapida del **Lavoro 1** *(40')*.<br>• **[VerifichIAmo con l'IA — Avvio]** *(50')*: dalla scheda di studio alla verifica formativa; **Ingegneria del Prompt Didattico su Gemini in 5 punti** (*Ruolo, Classe/Target, Nuclei disciplinari, Profilo funzionale e vincoli di accessibilità, Formato di output*) con confronto live tra prompt ingenuo e prompt strutturato. |
+| `00:00 – 01:50` | **Blocco 1** *(110' · 2h nom.)* | • **Accoglienza e Setup (15')**: patto d'aula, creazione cartella `Corso_Valutare_Per_Crescere` su Google Drive (con le 5 sottocartelle dei 5 incontri) e apertura di Gemini e NotebookLM.<br>• **I nuovi modelli di Google Gemini per la scuola (25')**: multimodalità nativa (partire da foto/PDF del libro), differenza tra modello rapido (*Flash*) e modello di ragionamento (*Thinking*), modifica in tempo reale con **Gemini Canvas**, assistenti **Gem** ed esportazione in 1 clic su Google Documenti/Fogli.<br>• **Superare le barriere allo studio (11–14 anni) e strutturare il Prompt di Studio (25')**: UDL, carico cognitivo, perché studiare solo a memoria (`LOTS 1`) penalizza BES/DSA/NAI e come guidare Gemini con il **Prompt in 5 punti (`R-C-N-A-F`)** e le 5 regole *Easy-to-Read* per accompagnare lo studente da `Ricordare` a `Comprendere/Applicare`.<br>• **Privacy, GDPR e Strumenti Locali per il PC personale (30')**: divieto di caricare PEI/PDP/nomi, il **Protocollo del Profilo Funzionale Anonimizzato** + demo live sul PC del formatore di **PDF24 Creator** (*Oscura PDF*), **LM Studio/GPT4All** (IA offline), **Lumi H5P** e **LibreOffice** (*+ segnalazione del Modulo Extra A sull'uso etico dell'IA a casa*).<br>• **Demo Live 1 su Gemini Multimodale + Canvas (15')**: dalla foto di una pagina del libro di testo alla scheda *Easy-to-Read* esportata in Google Documenti (font *Lexend*, interlinea `1,5`, Digitazione Vocale). |
+| `01:50 – 02:10` | **Pausa** *(20')* | *Pausa centrale di decompressione, caffè e movimento* |
+| `02:10 – 04:00` | **Blocco 2** *(110' · 2h nom.)* | • **Google NotebookLM per lo studio inclusivo a "Zero Allucinazioni" (30')**: architettura di *Grounding* sulle sole fonti del docente (PDF, Google Docs, Slide, video YouTube) con citazioni cliccabili; demo live della generazione automatica di **Mappe Mentali interattive** (scaricabili in PNG) e dell'**Audio Overview (Podcast a due voci in italiano)** personalizzato per ragazzi di 11–14 anni.<br>• **🛠️ LAVORO PRATICO 1 (50')**: ogni docente sceglie un argomento reale della propria disciplina e produce (a doppio binario *Base / Approfondimento*) il proprio **Pacchetto di Studio Accessibile** (Scheda *Easy-to-Read* con glossario e domande-guida su Gemini + Mappa Mentale PNG e Audio Overview su NotebookLM), salvandolo su Drive in `01_Studio_Accessibile`.<br>• **Galleria tra pari, Debriefing e Chiusura Giorno 1 (30')**: condivisione lampo di 3 pacchetti di discipline diverse, riflessione sugli interventi *Human-in-the-Loop*, checklist finale e logout. |
 
 ---
 
-### Incontro 2 (5h) — *VerifichIAmo con l'IA (Parte I): controllare Gemini con LOTS → HOTS per verifiche UDL multilivello*
-* **Moduli**: VerifichIAmo con l'Intelligenza Artificiale — Parte I (`5h`).
-* **Obiettivo operativo**: usare i modelli di ragionamento di **Gemini**, l'input multimodale e *Gemini Canvas/Gem* per trasformare una verifica tradizionale in una verifica accessibile su 3 livelli bilanciata lungo la scala **LOTS → HOTS**.
+### Incontro 2 (Giorno 2 · 4h) — *VerifichIAmo con l'IA (Parte I): LOTS → HOTS e Verifiche UDL Multilivello con Gemini*
+* **Modulo coperto**: **VerifichIAmo con l'Intelligenza Artificiale — Parte I (`4h su 10h`)**.
+* **Obiettivo operativo**: usare il modello di **Ragionamento (*Thinking*)** di Gemini, l'input multimodale e *Gemini Canvas/Gem* per progettare verifiche accessibili su 3 livelli (Facilitata/Equipollente, Standard, Potenziamento) bilanciate lungo la scala **LOTS → HOTS**.
 
 | Fascia | Blocco | Contenuti e Attività |
 | :--- | :--- | :--- |
-| `00:00 – 01:30` | **Blocco 1** *(90')* | • **LOTS → HOTS come tecnica di controllo di Gemini** *(~45')*: confronto live su Gemini tra un prompt generico (che produce solo domande mnemoniche `A1`) e un prompt guidato dalla scala **Anderson & Krathwohl (`1. Ricordare → 6. Creare`) + KSM**.<br>• **Quando attivare il modello di Ragionamento (*Thinking*) di Gemini**: progettare quesiti HOTS rigorosi, problemi matematici/scientifici passo-passo e attività inclusive di *"Caccia all'errore"* (`HOTS 5 — Valutare`) con *scaffolding* per BES/DSA/NAI.<br>• **Attività lampo con Gemini Multimodale ("Radiografia e Riprogettazione")** *(45')*: dare in pasto a Gemini (anche tramite foto/PDF) una verifica tradizionale di scuola media, farle analizzare lo squilibrio LOTS/HOTS e rigenerarla in diretta in versione equipollente o differenziata. |
-| `01:30 – 01:45` | **Pausa 1** *(15')* | *Decompressione / caffè* |
-| `01:45 – 03:15` | **Blocco 2** *(90')* | • **Lavorare in Gemini Canvas per la differenziazione UDL su 3 livelli**: generare e rifinire in tempo reale sullo stesso nucleo tematico il **Livello Base/Facilitato** (con consegne numerate *step-by-step*, parole chiave, zero doppie negazioni e almeno 1 quesito HOTS guidato), il **Livello Standard** e il **Livello Potenziamento**.<br>• **Creare un assistente ricorrente (Gem / Template di istruzioni su Gemini)** pre-configurato sulla propria disciplina e sui criteri di accessibilità.<br>• **LAVORO 2 (avvio)**: partire da una propria verifica (o dall'argomento del Lavoro 1) e co-progettare con Gemini una **Verifica UDL Multilivello** bilanciata (~40% LOTS, ~40% Applicare/Analizzare, ~20% HOTS con scaffolding). |
-| `03:15 – 03:30` | **Pausa 2** *(15')* | *Ristoro / movimento* |
-| `03:30 – 05:00` | **Blocco 3** *(90')* | • **LAVORO 2 (affinamento in Gemini Canvas ed esportazione in 1 clic su Google Documenti)** *(45')*.<br>• **Validazione critica (*Human-in-the-Loop*)** *(25')*: individuare e correggere con prompt iterativi eventuali allucinazioni disciplinari, salti logici, lessico fuori fascia 11–14 anni o bias.<br>• Confronto a coppie/isole disciplinari e salvataggio su Drive *(20')*. |
+| `00:00 – 01:50` | **Blocco 1** *(110' · 2h nom.)* | • **Dal Prompt di Studio al Prompt di Verifica (`R-C-N-A-F`) (25')**: perché un prompt generico produce verifiche all'80% mnemoniche (`LOTS 1`) o taglia i quesiti di ragionamento nelle prove per BES/DSA.<br>• **Governare Gemini con la scala LOTS → HOTS e il Criterio KSM (40')**: la matrice di Anderson & Krathwohl (`1. Ricordare → 6. Creare`); quando attivare il modello di **Ragionamento (*Thinking*)** di Gemini per problemi STEM passo-passo e per progettare quesiti inclusivi di livello **HOTS (`5. Valutare — "Caccia all'errore"`)** con *scaffolding* e *sentence starters*.<br>• **Attività guidata con Gemini Multimodale: "Radiografia e Riprogettazione" (45')**: caricare la foto o il PDF di una verifica tradizionale di scuola media, far analizzare a Gemini lo squilibrio LOTS/HOTS e le barriere linguistiche/grafiche, e distinguere tra **prove equipollenti** e **prove differenziate/obiettivi minimi**. |
+| `01:50 – 02:10` | **Pausa** *(20')* | *Pausa centrale di decompressione, caffè e movimento* |
+| `02:10 – 04:00` | **Blocco 2** *(110' · 2h nom.)* | • **Co-progettare in Gemini Canvas la Verifica UDL su 3 Livelli + Creazione Gem (30')**: generare in parallelo **Versione A (Facilitata/BES-DSA-NAI)**, **Versione B (Standard)** e **Versione C (Potenziamento)** sullo stesso nucleo tematico; salvare le istruzioni in un **Gem disciplinare permanente**.<br>• **🛠️ LAVORO PRATICO 2 (55')**: ogni docente progetta con Gemini (*Thinking* + *Canvas*) la propria **Verifica UDL Multilivello** sull'argomento scelto al Giorno 1 (bilanciamento: ~40% LOTS, ~40% Ponte Applicare/Analizzare, ~20% HOTS con *"Caccia all'errore"* guidata), completa di correttorio ed esportata in Google Documenti nella cartella `02_Verifica_Multilivello_UDL`.<br>• **Controllo Critico (*Human-in-the-Loop*) e Confronto per Dipartimenti (25')**: verifica dell'assenza di allucinazioni, doppie negazioni o calcoli errati e restituzione in aula. |
 
 ---
 
-### Incontro 3 (5h) — *VerifichIAmo con l'IA (Parte II): griglie KSM, feedback generati con Gemini e banche quesiti (Area 1)*
-* **Moduli**: VerifichIAmo con l'IA — Parte II (`3h`) + Area 1 — Progettare domande e quiz con il supporto dell'IA (`2h`).
-* **Obiettivo operativo**: istruire **Gemini** per generare rubriche valutative KSM (esportabili in Fogli/Classroom), feedback formativi personalizzati e banche di quesiti inclusivi LOTS → HOTS pronte per l'importazione digitale.
+### Incontro 3 (Giorno 3 · 4h) — *VerifichIAmo con l'IA (Parte II): Rubriche KSM, Autovalutazione e Feedback Formativo*
+* **Modulo coperto**: **VerifichIAmo con l'Intelligenza Artificiale — Parte II (`4h su 10h`)**.
+* **Obiettivo operativo**: istruire **Gemini** per costruire Griglie e Rubriche di valutazione secondo **Anderson & Krathwohl × Criterio KSM** (esportabili in Google Fogli e Classroom), schede di autovalutazione in linguaggio studente e feedback formativi (*feed-forward*) personalizzati.
 
 | Fascia | Blocco | Contenuti e Attività |
 | :--- | :--- | :--- |
-| `00:00 – 01:30` | **Blocco 1** *(90')* | • **Generare Griglie e Rubriche con Gemini secondo Anderson & Krathwohl × Criterio KSM**: prompt ingegnerizzati per ottenere tabelle strutturate sui tre assi **K (Knowledge)**, **S (Skills)** e **M (Mindset/Metacognition)** con codici `[A-D][1-6]` e descrittori che progrediscono da **LOTS a HOTS**.<br>• **Dalla griglia docente all'autovalutazione studente con 1 prompt**: far riscrivere a Gemini la rubrica in "linguaggio studente" (11–14 anni) ed esportare la tabella direttamente in **Google Fogli / Griglie di Google Classroom**. |
-| `01:30 – 01:45` | **Pausa 1** *(15')* | *Decompressione / caffè* |
-| `01:45 – 03:15` | **Blocco 2** *(90')* | • **Gemini come generatore di Feedback Formativo (*Valutare per crescere*)** *(35')*: prompt per analizzare errori ricorrenti (anonimizzati) e generare commenti costruttivi, *feed-forward* ("il prossimo passo concreto") e micro-esercizi di recupero mirato.<br>• **LAVORO 3A** *(40')*: generare con Gemini la **Rubrica KSM** + la **scheda di autovalutazione** per la verifica del Lavoro 2 ed esportarle su Drive.<br>• **[Ponte verso Area 1]** *(15')*: come istruire i modelli di ragionamento di Gemini per creare quiz a scelta multipla che valutino anche il ragionamento (`HOTS`) e non solo la memoria (`LOTS`). |
-| `03:15 – 03:30` | **Pausa 2** *(15')* | *Ristoro / movimento* |
-| `03:30 – 05:00` | **Blocco 3** *(90')* | • **[Area 1 — Progettare domande e quiz con il supporto dell'IA]**:<br>  – Prompting per item inclusivi: scelta multipla con distrattori plausibili basati sui misconcezioni tipiche (non trabocchetto), vero/falso con scelta della motivazione, cloze, abbinamenti, micro-scenari e *"trova l'errore"*.<br>  – Generazione istantanea con Gemini di **varianti equivalenti** (file A/B, versione facilitata con 3 opzioni anziché 4 e suggerimento integrato) e del **feedback automatico per ogni opzione di risposta**.<br>  – **LAVORO 3B**: generare con Gemini una **banca di 10–12 quesiti inclusivi** (bilanciati LOTS → HOTS) ed usarne la funzione **"Esporta in Fogli"** per avere la tabella già pronta in **Google Fogli**. |
+| `00:00 – 01:50` | **Blocco 1** *(110' · 2h nom.)* | • **Progettare Griglie e Rubriche di Valutazione con Gemini (Anderson & Krathwohl × KSM) (45')**: strutturare gli indicatori sui tre assi **K (Knowledge 30–35%)**, **S (Skills 40–45%)** e **M (Mindset, Metacognition & Mastery 20–25%)** con codici `[A-D][1-6]` e descrittori su 4 livelli che progrediscono da **LOTS a HOTS** con verbi osservabili (eliminando gli avverbi vaghi *"poco/abbastanza/molto"* e tutelando l'uso degli strumenti compensativi).<br>• **Dalla Rubrica Docente all'Autovalutazione Studente e Google Classroom (25')**: far riscrivere a Gemini la griglia in prima persona per ragazzi di 11–14 anni (*Valutare per crescere*) ed esportare la tabella con 1 clic in **Google Fogli** per le **Griglie di Google Classroom**.<br>• **🛠️ LAVORO PRATICO 3 — Parte A (40')**: generare con Gemini la **Rubrica KSM** + la **Scheda di Autovalutazione Studente** per la verifica del Lavoro 2 ed esportarle in `03_Rubrica_KSM_e_Feedback`. |
+| `01:50 – 02:10` | **Pausa** *(20')* | *Pausa centrale di decompressione, caffè e movimento* |
+| `02:10 – 04:00` | **Blocco 2** *(110' · 2h nom.)* | • **Gemini come Assistente per il Feedback Formativo e il Recupero Mirato (40')**: come analizzare con Gemini errori tipici o risposte parziali (rigorosamente anonimizzate!) per generare commenti costruttivi in stile *Punto di forza + Dove migliorare + Prossimo passo concreto (feed-forward)* e micro-schede di recupero personalizzate per gruppi di livello.<br>• **🛠️ LAVORO PRATICO 3 — Parte B (45')**: simulare sulla propria verifica 3 profili di errore frequenti nella propria disciplina e far generare a Gemini un **set di Feedback Formativi pronti all'uso** + **1 micro-attività di recupero mirato**.<br>• **Debriefing e Validazione Deontologica del Feedback (25')**: controllo del tono educativo e della precisione disciplinare; salvataggio su Drive. |
 
 ---
 
-### Incontro 4 (5h) — *Quiz digitali (Area 2), verifiche multimodali con NotebookLM e video (Area 3) e Kit finale*
-* **Moduli**: Area 2 (`2h`) + Area 3 (`2h`) + VerifichIAmo con l'IA — Sintesi (`1h`).
-* **Obiettivo operativo**: trasformare i quesiti generati con Gemini in quiz digitali accessibili e usare **NotebookLM** (insieme a Moduli+YouTube / Edpuzzle) per creare verifiche multimodali integrate a video e materiali del docente.
+### Incontro 4 (Giorno 4 · 4h) — *Dalla Progettazione di Domande con l'IA (Area 1) ai Quiz Digitali Inclusivi (Area 2)*
+* **Moduli coperti**: **Area 1 — Progettare domande e quiz con il supporto dell'IA (`2h = 2/20`)** + **Area 2 — Quiz digitali per la valutazione (`2h = 2/20`)**.
+* **Obiettivo operativo**: progettare nel Blocco 1 una banca di quesiti strutturati inclusivi (LOTS → HOTS) con Gemini ed esportarla in **Google Fogli**, e trasformarla immediatamente nel Blocco 2 in un **Quiz Digitale accessibile** su **Google Moduli** (con feedback e percorsi ramificati) e **Wordwall / Quizizz**.
 
 | Fascia | Blocco | Contenuti e Attività |
 | :--- | :--- | :--- |
-| `00:00 – 01:30` | **Blocco 1** *(90')* | • **[Area 2 — Quiz digitali per la valutazione]**:<br>  – Dal lavoro di Gemini/Google Fogli al quiz digitale in **Google Moduli**: inserire i feedback formativi generati da Gemini per risposte corrette/errate, usare immagini/schemi di supporto e progettare un **percorso condizionale ramificato LOTS → HOTS** (sezione di *scaffolding* generata con Gemini in caso di errore; domanda HOTS di sfida se superato).<br>  – Assegnazione differenziata su **Google Classroom** e uso di Gemini per progettare attività di recupero a partire dalle statistiche degli errori più frequenti.<br>  – **LAVORO 4A**: realizzare il proprio **Google Modulo accessibile con feedback formativo** a partire dalla banca quesiti del Lavoro 3B. |
-| `01:30 – 01:45` | **Pausa 1** *(15')* | *Decompressione / caffè* |
-| `01:45 – 03:15` | **Blocco 2** *(90')* | • Chiusura **Area 2** *(15')*: importare con un clic la tabella di Google Fogli generata da Gemini in **Wordwall** (per BES/DSA/NAI) o **Quizizz** (modalità senza timer e con sintesi vocale).<br>• **[Area 3 — Verifiche integrate a contenuti video e materiali]** *(75')*:<br>  – **Google NotebookLM per verifiche multimodali ancorate alle fonti**: combinare in un unico taccuino un **video YouTube + PDF/dispensa + Google Presentazioni** per far generare a NotebookLM verifiche progressive (**LOTS → HOTS**), **Mappe Mentali interattive** e **Audio Overview (Podcast di ripasso)** senza alcuna allucinazione.<br>  – Integrare le domande generate dall'IA direttamente dentro i video didattici tramite **Google Moduli + Video YouTube** (100% interno a Workspace) oppure **Edpuzzle** (domande temporizzate lungo il video e collegamento a Classroom).<br>  – Demo lampo della soluzione **locale offline Lumi Education (H5P)** per il PC personale. |
-| `03:15 – 03:30` | **Pausa 2** *(15')* | *Ristoro / movimento* |
-| `03:30 – 05:00` | **Blocco 3** *(90')* | • **LAVORO 4B (Area 3)** *(35')*: usando **NotebookLM** (o Gemini su trascrizione YouTube), progettare e realizzare **1 micro-verifica integrata a un video e/o materiale proprio** (in NotebookLM, Google Moduli+YouTube o Edpuzzle).<br>• **[VerifichIAmo con l'IA — Sintesi finale]** *(55')*:<br>  – Assemblaggio nella cartella Drive del **Kit Valutativo Inclusivo completo** (Lavoro 1 + 2 + 3A/3B + 4A/4B).<br>  – **Galleria tra pari**: condivisione lampo di 3–4 kit di discipline diverse.<br>  – Checklist finale di qualità inclusiva, segnalazione del **Modulo Extra B (Prova orale inclusiva con Gemini e NotebookLM)** e impegno operativo per la settimana successiva. |
+| `00:00 – 01:50` | **Blocco 1 · AREA 1** *(110' · 2h nom.)* | • **[Area 1 — Progettare domande e quiz con il supporto dell'IA]**:<br>  – **Anatomia dei quesiti inclusivi (25')**: scelta multipla a 3 opzioni con distrattori plausibili basati su misconcezioni reali (mai trabocchetti lessicali o visivi per DSA/NAI), zero doppie negazioni, vero/falso con motivazione, cloze e abbinamenti.<br>  – **Quiz a scelta multipla di livello HOTS e varianti equivalenti (30')**: usare il modello *Thinking* di Gemini per creare item su micro-scenari e *"Individua l'errore nel ragionamento"*, generando in automatico varianti fila A/B, suggerimenti (*scaffolding*) e feedback formativi per ogni opzione.<br>  – **🛠️ LAVORO PRATICO 4A (55')**: generare con Gemini una **Banca di 10–12 quesiti inclusivi** (bilanciati LOTS → HOTS) sul proprio argomento ed esportarla con 1 clic tramite **"Esporta in Fogli"** nella cartella `04_Banca_Quesiti_e_Quiz_Digitale`. |
+| `01:50 – 02:10` | **Pausa** *(20')* | *Pausa centrale di decompressione, caffè e movimento* |
+| `02:10 – 04:00` | **Blocco 2 · AREA 2** *(110' · 2h nom.)* | • **[Area 2 — Quiz digitali per la valutazione]**:<br>  – **Google Moduli in chiave inclusiva e formativa (35')**: modalità Quiz, supporto visivo con immagini/schemi, inserimento dei feedback formativi per risposte corrette/errate e costruzione di un **percorso condizionale ramificato LOTS → HOTS** (*Sezione di rinforzo guidato* se lo studente sbaglia; *Sfida HOTS* se risponde correttamente), assegnazione differenziata su Classroom e lettura delle statistiche d'errore.<br>  – **Ambienti gamificati inclusivi gratuiti (20')**: importare la tabella di Google Fogli in **Wordwall** (cambio istantaneo di template per BES/DSA/NAI) o **Quizizz** (lettura vocale e modalità senza timer ansiogeno).<br>  – **🛠️ LAVORO PRATICO 4B (55')**: realizzare il proprio **Google Modulo accessibile con feedback formativo** (e ramificazione per il binario approfondimento) a partire dalla banca quesiti del Blocco 1. |
 
 ---
 
-## 7. Matrice di Distribuzione Proporzionale degli Esempi (Quadro Orario DPR 89/2009)
+### Incontro 5 (Giorno 5 · 4h) — *Verifiche Integrate a Video e Materiali (Area 3) e Sintesi Finale "VerifichIAmo con l'IA"*
+* **Moduli coperti**: **Area 3 — Verifiche integrate a contenuti video e materiali (`2h = 2/20`)** + **VerifichIAmo con l'Intelligenza Artificiale — Parte III: Sintesi e Integrazione del Kit (`2h su 10h`)**.
+* **Obiettivo operativo**: realizzare nel Blocco 1 una verifica multimodale integrata a video e materiali del docente (**NotebookLM**, **Google Moduli + YouTube**, **Edpuzzle**), e completare nel Blocco 2 l'assemblaggio, la revisione incrociata e la condivisione dell'intero **Kit Valutativo Inclusivo**.
 
-I **30 esempi di prompt e output IA** (su Gemini e NotebookLM) lungo i 4 incontri rispecchiano proporzionalmente il monte ore settimanale della Scuola Secondaria di I grado (**30 ore/settimana**), privilegiando le materie con più ore settimanali:
+| Fascia | Blocco | Contenuti e Attività |
+| :--- | :--- | :--- |
+| `00:00 – 01:50` | **Blocco 1 · AREA 3** *(110' · 2h nom.)* | • **[Area 3 — Verifiche integrate a contenuti video e materiali]**:<br>  – **La valutazione multimodale come leva inclusiva (15')**: integrare video, audio, immagini e documenti per valorizzare stili cognitivi diversi.<br>  – **Tre percorsi pratici online con domande in crescendo LOTS → HOTS (35')**:<br>    1. **Google NotebookLM Multimodale**: incrociare nello stesso taccuino **PDF/dispensa + Slide + link a video YouTube** per generare micro-verifiche ancorate al minutaggio del video e ai testi del docente, insieme a *Mappe Mentali* e *Audio Overview*;<br>    2. **Google Moduli + Video YouTube integrato** (100% interno a Workspace, zero account esterni);<br>    3. **Edpuzzle** (domande temporizzate e note vocali lungo il video, collegato a Google Classroom).<br>  – **Demo lampo (10')** della soluzione locale gratuita **Lumi Education (H5P Desktop)** per esportare video interattivi in un singolo file `.html`.<br>  – **🛠️ LAVORO PRATICO 5A (50')**: realizzare **1 micro-verifica integrata a un video e/o materiale proprio** salvandola in `05_Verifica_Multimodale_e_Kit_Finale`. |
+| `01:50 – 02:10` | **Pausa** *(20')* | *Pausa centrale di decompressione, caffè e movimento* |
+| `02:10 – 04:00` | **Blocco 2 · VERIFICHIAMO III** *(110' · 2h nom.)* | • **[VerifichIAmo con l'IA — Parte III: Dal Materiale alla Verifica Completa (2h)]**:<br>  – **Coerenza dell'ecosistema valutativo e simulazione in Google Classroom (25')**: come orchestrare in Classroom l'intero flusso (assegnazione differenziata "invisibile" del materiale di studio e della verifica UDL/Modulo, associazione della Rubrica KSM e restituzione del feedback formativo) + presentazione del **Modulo Extra B (Prova orale inclusiva con Gemini e NotebookLM)**.<br>  – **🛠️ LAVORO PRATICO 5B — Assemblaggio e Peer-Review del Kit Valutativo Inclusivo (45')**: ogni docente completa e verifica la coerenza dei 5 elementi prodotti nei 5 giorni (*1. Studio accessibile; 2. Verifica UDL a 3 livelli; 3. Rubrica KSM e feedback; 4. Banca quesiti e Quiz digitale; 5. Verifica multimodale su video/materiali*) e lo sottopone a una revisione incrociata (*peer review*) con un collega di dipartimento tramite la **Checklist di Qualità Inclusiva**.<br>  – **Showcase Finale tra Dipartimenti e Piano d'Azione (40')**: presentazione in plenaria di 4–5 Kit completi rappresentativi delle diverse discipline e definizione dell'impegno operativo per la classe. |
 
-| Disciplina | Ore sett. (su 30) | Quota % | Esempi IA (su 30) | Esempi applicativi con Gemini e NotebookLM nei 4 incontri |
+---
+
+## 7. Matrice di Distribuzione Proporzionale degli Esempi sui 5 Incontri (Quadro Orario DPR 89/2009)
+
+I **30 esempi di prompt e output IA** (su Gemini e NotebookLM) rispecchiano esattamente il monte ore settimanale della Scuola Secondaria di I grado (**30 ore/settimana**) e sono distribuiti in modo uniforme in **6 esempi per ciascuno dei 5 incontri (`5 × 6 = 30`)**:
+
+| Disciplina | Ore sett. (su 30) | Quota % | Esempi IA (su 30) | Distribuzione nei 5 Incontri da 4 Ore (6 esempi per incontro) |
 | :--- | :---: | :---: | :---: | :--- |
-| **Italiano** *(incl. approfondimento)* | ~6h | 20,0% | **6** | Inc. 1 (2: foto pagina antologia → *Easy-to-Read* in Gemini Canvas + glossario NAI) · Inc. 2 (2: verifica comprensione/grammatica UDL a 3 livelli) · Inc. 3 (1: rubrica KSM scrittura con Gemini) · Inc. 4 (1: quiz testo/lessico) |
-| **Matematica** | ~4h | 13,3% | **4** | Inc. 1 (1: procedura guidata con Gemini) · Inc. 2 (1: Gemini *Thinking* per problema *step-by-step* + *"Caccia all'errore"*) · Inc. 3 (1: banca quesiti LOTS→HOTS) · Inc. 4 (1: Modulo ramificato con feedback generati da Gemini) |
-| **Inglese** | 3h | 10,0% | **3** | Inc. 1 (1: adattamento testo per livelli A1/A2 in Gemini) · Inc. 3 (1: item cloze/comprensione esportati in Fogli) · Inc. 4 (1: video YouTube + NotebookLM/Moduli) |
-| **Storia** | ~2h | 6,7% | **2** | Inc. 2 (1: prompt Gemini LOTS→HOTS su cause-effetti storici) · Inc. 4 (1: NotebookLM Mappe Mentali + Audio Overview + domande su video storico) |
-| **Geografia** | ~2h | 6,7% | **2** | Inc. 1 (1: Gemini Multimodale su carta/grafico + glossario per NAI) · Inc. 4 (1: quiz digitale con immagini/carte) |
-| **Scienze** | ~2h | 6,7% | **2** | Inc. 1 (1: NotebookLM Mappa Mentale + Podcast audio su capitolo di scienze) · Inc. 4 (1: verifica integrata a video d'esperimento scientifico) |
-| **Seconda Lingua** *(Fr/Sp/Ted)* | 2h | 6,7% | **2** | Inc. 1 (1: glossario strutturato e dialoghi guidati con Gemini) · Inc. 3 (1: banca quesiti cloze/abbinamenti esportata in Fogli) |
-| **Tecnologia** | 2h | 6,7% | **2** | Inc. 2 (1: Gemini Multimodale su schema tecnico/energia → verifica a 3 livelli) · Inc. 3 (1: rubrica KSM per elaborato tecnico) |
-| **Arte e Immagine** | 2h | 6,7% | **2** | Inc. 2 (1: Gemini Vision per lettura guidata di un'opera d'arte LOTS→HOTS) · Inc. 4 (1: Google Modulo visivo con feedback IA) |
-| **Musica** | 2h | 6,7% | **2** | Inc. 3 (1: griglia KSM ascolto/esecuzione generata con Gemini) · Inc. 4 (1: verifica multimodale di ascolto su video/audio) |
-| **Educazione Fisica** | 2h | 6,7% | **2** | Inc. 3 (1: banca quiz regole/salute + scheda autovalutazione M con Gemini) · Inc. 4 (1: verifica su video di un gesto motorio) |
-| **IRC / Alternativa** *(+ Ed. Civica)* | 1h | 3,3% | **1** | Inc. 2–3 (1: micro-scenario etico/cittadinanza digitale progettato con Gemini per HOTS `Analizzare/Valutare` e asse `M`) |
-| **TOTALE** | **30h** | **100%** | **30** | *Il Sostegno è trasversale a tutti i 30 esempi tramite profili funzionali anonimizzati (DSA, L. 104, NAI, ADHD).* |
+| **Italiano** *(incl. approfondimento)* | ~6h | 20,0% | **6** | **Inc. 1** (`#01` *Easy-to-Read*, `#02` Glossario NAI) · **Inc. 2** (`#03` Verifica narrativa UDL, `#04` Analisi logica con *Detective Grammaticale*) · **Inc. 3** (`#05` Rubrica KSM scrittura) · **Inc. 4** (`#06` Banca quiz lessico per Moduli) |
+| **Matematica** | ~4h | 13,3% | **4** | **Inc. 1** (`#07` Frazioni *step-by-step*) · **Inc. 2** (`#08` Verifica Pitagora con *Thinking* e *Caccia all'errore*) · **Inc. 4** (`#09` Banca quesiti Equazioni in Fogli, `#10` Google Modulo ramificato Percentuali) |
+| **Inglese** | 3h | 10,0% | **3** | **Inc. 1** (`#11` Reading graduata A1/A2 con Word Bank fonetica) · **Inc. 4** (`#12` Banca quesiti Past Simple per Fogli/Wordwall) · **Inc. 5** (`#13` Video-verifica Listening su YouTube/NotebookLM) |
+| **Storia** | ~2h | 6,7% | **2** | **Inc. 2** (`#14` Verifica UDL Feudalesimo LOTS→HOTS con caccia all'anacronismo) · **Inc. 5** (`#15` Taccuino multimodale NotebookLM PDF + Video storico) |
+| **Geografia** | ~2h | 6,7% | **2** | **Inc. 1** (`#16` Gemini Multimodale su carta/grafico + glossario NAI) · **Inc. 4** (`#17` Quiz digitale visivo in Google Moduli sull'Europa) |
+| **Scienze** | ~2h | 6,7% | **2** | **Inc. 1** (`#18` NotebookLM Mappa Mentale + Audio Overview sulla Cellula) · **Inc. 5** (`#19` Verifica integrata a video di esperimento scientifico) |
+| **Seconda Lingua** *(Fr/Sp/Ted)* | 2h | 6,7% | **2** | **Inc. 3** (`#20` Dialogo guidato e feedback formativo per DSA) · **Inc. 4** (`#21` Banca quesiti comunicativi in Fogli/Wordwall) |
+| **Tecnologia** | 2h | 6,7% | **2** | **Inc. 2** (`#22` Gemini Multimodale su schema centrale energetica → verifica 3 livelli) · **Inc. 3** (`#23` Rubrica KSM disegno tecnico inclusiva per disgrafia) |
+| **Arte e Immagine** | 2h | 6,7% | **2** | **Inc. 2** (`#24` Gemini Vision per lettura opera d'arte LOTS→HOTS) · **Inc. 5** (`#25` Verifica visiva e multimodale sulle Avanguardie) |
+| **Musica** | 2h | 6,7% | **2** | **Inc. 3** (`#26` Rubrica KSM esecuzione con spartito compensativo) · **Inc. 5** (`#27` Verifica multimodale di ascolto guidato su video/audio) |
+| **Educazione Fisica** | 2h | 6,7% | **2** | **Inc. 3** (`#28` Scheda autovalutazione metacognitiva M + feedback Fair Play) · **Inc. 5** (`#29` Video-verifica su gesto motorio / Primo Soccorso) |
+| **IRC / Alternativa** *(+ Ed. Civica)* | 1h | 3,3% | **1** | **Inc. 3** (`#30` Micro-scenario etico/cittadinanza digitale con rubrica KSM per HOTS `Analizzare/Valutare` e asse `M`) |
+| **TOTALE** | **30h** | **100%** | **30** | **6 esempi per ciascuno dei 5 incontri** (*Sostegno trasversale a tutti i 30 esempi*) |
 
 ---
 
 ## 8. Moduli Aggiuntivi Facoltativi (per i soli docenti interessati)
 
-Pacchetti autonomi resi disponibili in Drive/Classroom, fruibili in autoformazione senza sottrarre tempo alle 20 ore in presenza:
-
-### Modulo Extra A — *Uso etico e consapevole dell'IA da parte degli alunni a casa*
-1. Limiti e rischi degli *AI detector* (falsi positivi, impatto su NAI e studenti con stile rigido).
-2. Usare **Gemini** per riprogettare compiti a casa *AI-resilient* e *AI-aware* (focus su processo, errori, riflessione metacognitiva `M` e `HOTS`).
-3. Educare ragazzi (11–14 anni) e famiglie: Gemini e NotebookLM come **palestra/tutor** vs **sostituto**, età minima e tutela della privacy.
-4. Allegati pratici: bozza modificabile di *Patto di classe sull'IA*, *Scheda informativa per le famiglie*, 3 esempi di compiti a casa riprogettati con Gemini.
-
-### Modulo Extra B — *Gestione della prova orale inclusiva con il supporto di Gemini e NotebookLM*
-1. L'orale come misura compensativa/dispensativa e gestione delle barriere nascoste (ansia, memoria di lavoro, recupero lessicale).
-2. Usare **Gemini** per generare interrogazioni programmate, **scalette/mappe "mute"** ammesse al colloquio e domande-guida progressive **LOTS → HOTS**.
-3. Usare **NotebookLM** (*Mappe Mentali* e *Audio Overview*) per l'allenamento autonomo all'orale e per costruire percorsi interdisciplinari in vista del colloquio dell'Esame di Stato di 3ª media.
-4. Allegato pratico: **Griglia di valutazione della prova orale (Anderson & Krathwohl × KSM)** generata e personalizzabile con Gemini.
+1. **Modulo Extra A — *Uso etico e consapevole dell'IA da parte degli alunni a casa*** *(segnalato nell'Incontro 1)*: limiti degli *AI detector*, progettazione di compiti a casa *AI-resilient* con Gemini, *Patto di classe sull'IA* e *Scheda informativa per le famiglie*.
+2. **Modulo Extra B — *Gestione della prova orale inclusiva con il supporto di Gemini e NotebookLM*** *(segnalato nell'Incontro 5)*: scalette "semi-mute", domande progressive **LOTS → HOTS**, allenamento all'orale con *Mappe Mentali* e *Audio Overview* di NotebookLM, preparazione al colloquio d'esame di 3ª media e **Griglia di valutazione della prova orale (Anderson & Krathwohl × KSM)**.
 
 ---
 
-## 9. Mappa dei Materiali da Produrre nella Fase 2 *(Indice pianificato)*
+## 9. Mappa dei Materiali del Progetto
 
-1. **Slide e note del formatore** per ciascuno dei 4 incontri (`Incontro_1` → `Incontro_4`), centrate sulle demo live di **Gemini** e **NotebookLM**.
-2. **Ricettario dei Prompt per Gemini (*Prompt Cookbook*)** a doppio binario (*Base / Approfondimento*) con i 30 esempi proporzionali alle materie, uso di input multimodali, modalità *Thinking*, *Canvas* e scala **LOTS → HOTS + KSM**.
-3. **Schede operative per i 4 Lavori Pratici in aula** (Lavoro 1, 2, 3A/3B, 4A/4B) con flussi guidati su Gemini, NotebookLM e Google Workspace.
-4. **Kit Privacy & Strumenti Locali** (Protocollo Profilo Funzionale Anonimizzato per i prompt + mini-guide per *PDF24 Creator*, *Lumi H5P*, *LM Studio/GPT4All*).
-5. **Modelli di Griglie/Rubriche KSM** (verifica scritta, compito autentico, autovalutazione studente) generabili con Gemini ed esportabili in Google Classroom.
-6. **I 2 Moduli Aggiuntivi Facoltativi completi** (*Modulo Extra A* e *Modulo Extra B*).
+1. **Incontro 1 (4h — Accessibilità, autonomia e studio)**:
+   * `Incontro_1/Incontro_1_Presentazione_Aula.html` (Slide deck interattivo per la lezione in laboratorio);
+   * `Incontro_1/Incontro_1_Slide_Visualizzazione_Aula.md` (Traccia visuale e note di regia su 4 ore);
+   * `Incontro_1/Incontro_1_Dispensa_Studio_Approfondito.md` (Manuale discorsivo di approfondimento con link esterni su tutti i termini tecnici, Glossario e Valutazione KSM delle fonti).
+2. **Incontri 2, 3, 4 e 5 (4h ciascuno)** *(da produrre con la medesima doppia struttura: Presentazione d'aula + Dispensa di approfondimento con link tecnici)*.
+3. **Materiali Trasversali**:
+   * `Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md` (30 esempi mappati sui 5 incontri);
+   * `Materiali_Trasversali/02_Schede_Operative_4_Lavori_Pratici.md` (Schede operative aggiornate ai **5 Lavori Pratici dei 5 giorni**);
+   * `Materiali_Trasversali/03_Kit_Privacy_GDPR_e_Strumenti_Locali.md`.
+4. **Moduli Aggiuntivi Facoltativi**:
+   * `Moduli_Extra/Modulo_Extra_A_Uso_Etico_IA_Alunni_Casa.md`;
+   * `Moduli_Extra/Modulo_Extra_B_Prova_Orale_Inclusiva.md`.

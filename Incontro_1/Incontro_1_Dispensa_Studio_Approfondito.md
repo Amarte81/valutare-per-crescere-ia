@@ -1,11 +1,11 @@
-# Dispensa di Studio e Approfondimento — Incontro 1 (5 ore)
+# Dispensa di Studio e Approfondimento — Incontro 1 di 5 (4 ore)
 
 ## VALUTARE PER CRESCERE
-### *I nuovi modelli di Google Gemini e NotebookLM per l'accessibilità, l'autonomia nello studio e le basi dell'Ingegneria del Prompt*
+### *I nuovi modelli di Google Gemini e NotebookLM per l'accessibilità, l'autonomia nello studio degli studenti (4/20 del corso) e le basi dell'Ingegneria del Prompt*
 
 > [!NOTE]
 > **Come utilizzare questa dispensa**  
-> Questo documento costituisce la **parte di studio approfondito e discorsivo** dell'Incontro 1. È pensato per essere letto con calma dal docente (prima o dopo il laboratorio pomeridiano) per consolidare le basi teoriche, tecnologiche e normative. Ogni **termine tecnico** è corredato da una spiegazione nel testo e da un **collegamento esterno autorevole** per chi desidera esplorare il lessico specialistico dell'Intelligenza Artificiale, della normativa sull'inclusione e della didattica digitale. In fondo al documento sono presenti il **Glossario Tecnico Completo con link esterni** (Capitolo 6) e la **Valutazione delle Fonti secondo il Criterio KSM** (Capitolo 7).
+> Questo documento costituisce la **parte di studio approfondito e discorsivo** dell'**Incontro 1 (Giorno 1 di 5 · 4 ore)**, interamente dedicato al modulo *"Accessibilità, autonomia e studio degli studenti"* (`4/20` del corso). È pensato per essere letto con calma dal docente (prima o dopo il laboratorio pomeridiano) per consolidare le basi teoriche, tecnologiche e normative. Ogni **termine tecnico** è corredato da una spiegazione nel testo e da un **collegamento esterno autorevole** per chi desidera esplorare il lessico specialistico dell'Intelligenza Artificiale, della normativa sull'inclusione e della didattica digitale. In fondo al documento sono presenti il **Glossario Tecnico Completo con link esterni** (Capitolo 6) e la **Valutazione delle Fonti secondo il Criterio KSM** (Capitolo 7).
 
 ---
 
@@ -171,7 +171,7 @@ Una volta caricate le fonti, il pannello **Studio** di NotebookLM mette a dispos
 
 ---
 
-## Capitolo 5 — Avvio a "VerifichIAmo con l'IA": l'Ingegneria del Prompt Didattico in 5 Punti
+## Capitolo 5 — Governare Gemini per lo Studio Accessibile (e Ponte verso l'Incontro 2): l'Ingegneria del Prompt in 5 Punti (`R-C-N-A-F`)
 
 ### 5.1 Dal Prompt Ingenuo al Prompt Ingegnerizzato
 L'**[Ingegneria del Prompt (*Prompt Engineering*)](https://cloud.google.com/discover/what-is-prompt-engineering?hl=it)** applicata alla didattica non consiste nell'imparare "formule magiche", ma nel comunicare all'IA tutte le variabili progettuali che un buon insegnante ha già nella propria testa.
