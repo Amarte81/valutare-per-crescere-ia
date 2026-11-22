@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VALUTARE PER CRESCERE — Incontro 3 (Versione LIM · Testo Grande & Animazioni)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Lexend:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --scale: 1;
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --text: #0f172a;
+      --muted: #334155;
+      --border: #cbd5e1;
+      --blue: #0369a1;
+      --blue-bg: #e0f2fe;
+      --green: #15803d;
+      --green-bg: #dcfce7;
+      --amber: #b45309;
+      --amber-bg: #fef3c7;
+      --purple: #6d28d9;
+      --purple-bg: #f3e8ff;
+      --red: #b91c1c;
+      --red-bg: #fee2e2;
+      --bar-bg: #0f172a;
+      --bar-text: #ffffff;
+    }
+    body.dark {
+      --bg: #0b1120;
+      --surface: #1e293b;
+      --text: #ffffff;
+      --muted: #e2e8f0;
+      --border: #475569;
+      --blue: #38bdf8;
+      --blue-bg: #0c4a6e;
+      --green: #4ade80;
+      --green-bg: #14532d;
+      --amber: #fbbf24;
+      --amber-bg: #78350f;
+      --purple: #c084fc;
+      --purple-bg: #4c1d95;
+      --red: #f87171;
+      --red-bg: #7f1d1d;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Atkinson Hyperlegible', 'Lexend', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      line-height: 1.42;
+    }
+    header {
+      background: var(--bar-bg);
+      color: var(--bar-text);
+      padding: 0.5rem 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      flex-shrink: 0;
+    }
+    .brand { display: flex; align-items: center; gap: 0.65rem; font-weight: 700; font-size: 1rem; }
+    .pill {
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      background: #1e293b;
+      color: #38bdf8;
+      border: 2px solid #38bdf8;
+    }
+    .pill.b1 { color: #4ade80; border-color: #4ade80; }
+    .pill.b2 { color: #38bdf8; border-color: #38bdf8; }
+    .pill.pausa { color: #fbbf24; border-color: #fbbf24; }
+    .controls { display: flex; align-items: center; gap: 0.45rem; flex-wrap: wrap; }
+    .controls button, .controls select {
+      font-family: inherit;
+      background: #1e293b;
+      color: #ffffff;
+      border: 2px solid #475569;
+      padding: 0.45rem 0.85rem;
+      border-radius: 0.55rem;
+      cursor: pointer;
+      font-size: 0.95rem;
+      font-weight: 700;
+      min-height: 40px;
+    }
+    .controls button:hover, .controls select:hover { background: #334155; border-color: #38bdf8; }
+    .nav-touch { background: #0284c7 !important; border-color: #38bdf8 !important; padding: 0.45rem 1.15rem !important; font-size: 1.05rem !important; }
+    #progress-container { width: 100%; height: 6px; background: #1e293b; flex-shrink: 0; }
+    #progress-bar { height: 100%; background: #0284c7; width: 6%; transition: width 0.25s ease; }
+
+    main {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1.4rem 2.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .slide { display: none; width: 100%; max-width: 1320px; margin: auto; animation: slideIn 0.3s ease; }
+    @keyframes slideIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    .kicker {
+      font-family: 'Lexend', sans-serif;
+      font-size: calc(1.05rem * var(--scale));
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--blue);
+      margin-bottom: 0.35rem;
+    }
+    h1 {
+      font-family: 'Lexend', sans-serif;
+      font-size: calc(2.6rem * var(--scale));
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.18;
+      margin-bottom: 1.1rem;
+      border-bottom: 4px solid var(--blue);
+      padding-bottom: 0.55rem;
+    }
+    h2 {
+      font-family: 'Lexend', sans-serif;
+      font-size: calc(1.62rem * var(--scale));
+      font-weight: 700;
+      margin-bottom: 0.65rem;
+      color: var(--blue);
+    }
+    p, li { font-size: calc(1.52rem * var(--scale)); color: var(--text); }
+    ul, ol { padding-left: 1.6rem; display: flex; flex-direction: column; gap: 0.7rem; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.35rem; margin-top: 0.8rem; }
+    .card {
+      background: var(--surface);
+      border: 3px solid var(--border);
+      border-radius: 1rem;
+      padding: 1.3rem 1.55rem;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.07);
+    }
+    .card.blue { border-left: 10px solid var(--blue); }
+    .card.green { border-left: 10px solid var(--green); }
+    .card.amber { border-left: 10px solid var(--amber); }
+    .card.purple { border-left: 10px solid var(--purple); }
+    .card.red { border-left: 10px solid var(--red); }
+    .card.green h2 { color: var(--green); }
+    .card.amber h2 { color: var(--amber); }
+    .card.purple h2 { color: var(--purple); }
+    .card.red h2 { color: var(--red); }
+
+    .callout {
+      margin-top: 1rem;
+      padding: 0.95rem 1.35rem;
+      border-radius: 0.85rem;
+      background: var(--blue-bg);
+      border: 3px solid var(--blue);
+      font-size: calc(1.42rem * var(--scale));
+      font-weight: 700;
+    }
+    .callout.green { background: var(--green-bg); border-color: var(--green); }
+    .callout.amber { background: var(--amber-bg); border-color: var(--amber); }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.75rem;
+      background: var(--surface);
+      border: 3px solid var(--border);
+      border-radius: 0.85rem;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 0.8rem 1.1rem;
+      text-align: left;
+      border-bottom: 2px solid var(--border);
+      font-size: calc(1.36rem * var(--scale));
+    }
+    th { background: var(--blue); color: #ffffff; font-family: 'Lexend', sans-serif; font-weight: 700; }
+    code {
+      font-family: 'Atkinson Hyperlegible', monospace;
+      font-weight: 700;
+      background: var(--blue-bg);
+      color: var(--blue);
+      padding: 0.1rem 0.4rem;
+      border-radius: 0.35rem;
+    }
+    a { color: var(--blue); font-weight: 700; text-decoration: underline; }
+    .big-copy-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 0.95rem;
+      padding: 0.85rem 1.55rem;
+      font-family: 'Lexend', sans-serif;
+      font-size: calc(1.28rem * var(--scale));
+      font-weight: 700;
+      background: var(--blue);
+      color: #ffffff;
+      border: none;
+      border-radius: 0.75rem;
+      cursor: pointer;
+    }
+    .hidden-prompt { display: none; }
+    .pause-box {
+      text-align: center;
+      padding: 3rem 2rem;
+      background: var(--amber-bg);
+      border: 6px solid var(--amber);
+      border-radius: 1.5rem;
+    }
+    .pause-box h1 { border: none; font-size: calc(3.5rem * var(--scale)); color: var(--amber); margin-bottom: 0.8rem; }
+
+    /* Visual Animations & Mockups */
+    .ksm-bar-wrap {
+      display: flex;
+      width: 100%;
+      height: 64px;
+      border-radius: 1rem;
+      overflow: hidden;
+      border: 3px solid var(--border);
+      margin: 1rem 0;
+      font-family: 'Lexend', sans-serif;
+      font-weight: 800;
+      font-size: calc(1.35rem * var(--scale));
+      color: #ffffff;
+    }
+    .ksm-seg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: growWidth 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      transform-origin: left;
+    }
+    @keyframes growWidth { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+    .stairs {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.85rem;
+      align-items: end;
+      margin-top: 1rem;
+    }
+    .step-box {
+      border-radius: 0.85rem;
+      padding: 1rem;
+      color: #ffffff;
+      font-weight: 700;
+      animation: riseUp 0.6s ease backwards;
+    }
+    .step-1 { background: #64748b; min-height: 155px; animation-delay: 0.05s; }
+    .step-2 { background: #0284c7; min-height: 195px; animation-delay: 0.18s; }
+    .step-3 { background: #15803d; min-height: 235px; animation-delay: 0.31s; }
+    .step-4 { background: #6d28d9; min-height: 275px; animation-delay: 0.44s; }
+    @keyframes riseUp { from { opacity: 0; transform: translateY(25px); } to { opacity: 1; transform: translateY(0); } }
+
+    .ui-mockup {
+      background: var(--surface);
+      border: 3px solid var(--border);
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .ui-top {
+      background: #1e293b;
+      color: #ffffff;
+      padding: 0.55rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    .dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+    .pulse-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: #15803d;
+      color: #ffffff;
+      padding: 0.5rem 1rem;
+      border-radius: 0.55rem;
+      font-weight: 800;
+      animation: pulseGlow 1.6s infinite;
+    }
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(21, 128, 61, 0.55); transform: scale(1); }
+      50% { box-shadow: 0 0 0 12px rgba(21, 128, 61, 0); transform: scale(1.03); }
+    }
+    .ff-flow {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.1rem;
+      margin-top: 1rem;
+    }
+    .ff-card {
+      border-radius: 1rem;
+      padding: 1.25rem;
+      border: 3px solid var(--border);
+      background: var(--surface);
+      animation: riseUp 0.55s ease backwards;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <span>📺 LIM · Incontro 3 di 5 (4h)</span>
+      <span id="block-badge" class="pill b1">Blocco 1 · 00:00–01:50</span>
+    </div>
+    <div class="controls">
+      <button onclick="changeScale(-0.1)" title="Riduci testo">A−</button>
+      <button onclick="resetScale()" title="Ripristina testo">100%</button>
+      <button onclick="changeScale(0.1)" title="Ingrandisci testo">A+</button>
+      <button id="theme-btn" onclick="toggleTheme()" title="Cambia contrasto Chiaro/Scuro">🌙 Scuro</button>
+      <button class="nav-touch" onclick="prevSlide()">◀ Prec</button>
+      <select id="slide-select" onchange="jumpToSlide(this.value)" aria-label="Vai alla slide"></select>
+      <span id="counter" class="pill">1 / 14</span>
+      <button class="nav-touch" onclick="nextSlide()">Succ ▶</button>
+      <button onclick="toggleFullScreen()">⛶</button>
+    </div>
+  </header>
+  <div id="progress-container"><div id="progress-bar"></div></div>
+
+  <main>
+    <!-- SLIDE 1 -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:50" data-badge="b1" data-title="1. Incontro 3: Rubriche KSM e Feedback">
+      <div class="kicker">Incontro 3 di 5 (4 ore) · VerifichIAmo con l'IA — Parte II (4h su 10/20)</div>
+      <h1>Rubriche KSM, Autovalutazione e Feedback</h1>
+      <div class="grid-2">
+        <div class="card green">
+          <h2>🎯 Cosa costruiamo oggi</h2>
+          <ul>
+            <li><strong>Rubrica KSM × Anderson & Krathwohl</strong> esportata in Google Fogli / Classroom (<em>Fase 3A</em>).</li>
+            <li><strong>Scheda di Autovalutazione</strong> in linguaggio studente (<em>Fase 3A</em>).</li>
+            <li><strong>Feedback Formativi (<em>Feed-Forward</em>)</strong> e Micro-Recupero (<em>Fase 3B</em>).</li>
+          </ul>
+        </div>
+        <div class="card amber">
+          <h2>⏱️ Scansione delle 4 Ore</h2>
+          <ul>
+            <li><strong><code>00:00 – 01:50</code></strong> · Blocco 1 (110' · Rubriche KSM)</li>
+            <li><strong><code>01:50 – 02:10</code></strong> · ☕ <strong>PAUSA (20')</strong></li>
+            <li><strong><code>02:10 – 04:00</code></strong> · Blocco 2 (110' · Feedback)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 2 -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:50" data-badge="b1" data-title="2. Dal Voto a Valutare per Crescere">
+      <div class="kicker">Docimologia & Inclusione · D.Lgs. 62/2017</div>
+      <h1>Perché il Solo Voto Numerico Non Basta?</h1>
+      <div class="grid-2">
+        <div class="card red">
+          <h2>❌ Voto Solitario (es. "5 ½" o "6")</h2>
+          <ul>
+            <li>Non spiega <strong>dove</strong> si trova l'inciampo.</li>
+            <li>Rischio <strong>Effetto Alone</strong> (penalizzare calligrafia o disortografia nei DSA!).</li>
+            <li>Non indica <strong>cosa fare domani</strong> per crescere.</li>
+          </ul>
+        </div>
+        <div class="card green">
+          <h2>✅ Rubrica KSM + Feed-Forward</h2>
+          <ul>
+            <li>Distingue <strong>Sapere (K)</strong>, <strong>Saper Fare (S)</strong> e <strong>Autonomia/Metacognizione (M)</strong>.</li>
+            <li>Rende trasparenti i criteri <strong>prima</strong> della prova.</li>
+            <li>Attiva l'<strong>autovalutazione</strong> del ragazzo.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 3 -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:50" data-badge="b1" data-title="3. Errore delle Griglie Generiche IA">
+      <div class="kicker">Confronto Live su Google Gemini</div>
+      <h1>Cosa Sbaglia l'IA con un Prompt Generico?</h1>
+      <div class="grid-2">
+        <div class="card red">
+          <h2>❌ Griglia Generica dell'IA</h2>
+          <p>Differenzia i livelli solo con <strong>avverbi vaghi</strong>:</p>
+          <p style="margin-top:0.6rem; font-style:italic;">"Conosce gli argomenti in modo <strong>scarso / sufficiente / buono / ottimo</strong>."</p>
+          <p style="margin-top:0.6rem;">👉 <strong>Inutile!</strong> Lo studente non capisce cosa deve fare per passare da 6 a 8.</p>
+        </div>
+        <div class="card green">
+          <h2>✅ Rubrica KSM × Anderson & Krathwohl</h2>
+          <ul>
+            <li>Ogni descrittore inizia con un <strong>verbo d'azione osservabile</strong> (<em>Individua, Spiega, Confronta, Argomenta</em>).</li>
+            <li>I 4 livelli salgono lungo la scala <strong>LOTS → HOTS</strong>.</li>
+            <li>Tutela l'uso degli <strong>strumenti compensativi</strong>.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 4 (ANIMAZIONE BARRA KSM) -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:50" data-badge="b1" data-title="4. Visualizzazione Animata: I 3 Assi KSM">
+      <div class="kicker">Ponderazione Standard della Rubrica · Bilanciamento Olistico</div>
+      <h1>I 3 Pilastri del Criterio KSM nella Griglia</h1>
+      <div class="ksm-bar-wrap" role="img" aria-label="Barra di bilanciamento KSM: K 35%, S 40%, M 25%">
+        <div class="ksm-seg" style="width:35%; background:#0284c7;">📘 K · Knowledge (35%)</div>
+        <div class="ksm-seg" style="width:40%; background:#15803d;">⚙️ S · Skills (40%)</div>
+        <div class="ksm-seg" style="width:25%; background:#6d28d9;">🧠 M · Mindset (25%)</div>
+      </div>
+      <table>
+        <thead>
+          <tr><th>Asse KSM</th><th>Codici A&K</th><th>Cosa Valuta nella Verifica</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>📘 K — Knowledge (35%)</strong></td><td><code>[A1, B2 → B4]</code></td><td>Comprensione di concetti e relazioni (anche con mappe/glossari).</td></tr>
+          <tr><td><strong>⚙️ S — Skills (40%)</strong></td><td><code>[C3 → C5]</code></td><td>Applicazione di procedure, calcoli, tabelle o struttura del testo.</td></tr>
+          <tr><td><strong>🧠 M — Mindset & Metacogn. (25%)</strong></td><td><code>[D2 → D6]</code></td><td><strong>"Caccia all'errore"</strong>, autonomia e autovalutazione consapevole.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SLIDE 5 (SCALA ANIMATA 4 LIVELLI) -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:50" data-badge="b1" data-title="5. Animazione: Scala dei 4 Livelli (LOTS -> HOTS)">
+      <div class="kicker">Progressione Qualitativa dei Descrittori</div>
+      <h1>Come Salgono i 4 Livelli nella Rubrica KSM</h1>
+      <div class="stairs">
+        <div class="step-box step-1">
+          <div style="font-size:1.1rem; opacity:0.9;">LIVELLO 1 · Voto 4–5</div>
+          <div style="font-size:1.45rem; margin:0.3rem 0;">Iniziale (D)</div>
+          <div style="font-size:1.15rem; font-weight:400;"><strong>LOTS parziale</strong> <code>[A1, C1, D1]</code>: individua dati isolati solo se guidato passo-passo.</div>
+        </div>
+        <div class="step-box step-2">
+          <div style="font-size:1.1rem; opacity:0.9;">LIVELLO 2 · Voto 6</div>
+          <div style="font-size:1.45rem; margin:0.3rem 0;">Base (C)</div>
+          <div style="font-size:1.15rem; font-weight:400;"><strong>LOTS consolidato</strong> <code>[B2, C3, D2]</code>: comprende i nuclei ed esegue procedure note (anche con supporti).</div>
+        </div>
+        <div class="step-box step-3">
+          <div style="font-size:1.1rem; opacity:0.9;">LIVELLO 3 · Voto 7–8</div>
+          <div style="font-size:1.45rem; margin:0.3rem 0;">Intermedio (B)</div>
+          <div style="font-size:1.15rem; font-weight:400;"><strong>Ponte LOTS → HOTS</strong> <code>[B4, C4, D4]</code>: analizza, confronta e corregge l'errore in autonomia.</div>
+        </div>
+        <div class="step-box step-4">
+          <div style="font-size:1.1rem; opacity:0.9;">LIVELLO 4 · Voto 9–10</div>
+          <div style="font-size:1.45rem; margin:0.3rem 0;">Avanzato (A)</div>
+          <div style="font-size:1.15rem; font-weight:400;"><strong>HOTS + Mastery</strong> <code>[B6, C6, D6]</code>: argomenta criticamente e rielabora in modo originale.</div>
+        </div>
+      </div>
+      <div class="callout green">⚖️ <strong>Equità PDP/PEI:</strong> usare gli strumenti compensativi (mappe, formulario, spartito facilitato) permette di raggiungere anche il <strong>Livello 4 Avanzato</strong>!</div>
+    </section>
+
+    <!-- SLIDE 6 (SCREENSHOT / MOCKUP INTERFACCIA GEMINI -> FOGLI -> CLASSROOM) -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:50" data-badge="b1" data-title="6. Schermata: Da Gemini a Google Classroom">
+      <div class="kicker">Visualizzazione Interfaccia · Zero Copia-Incolla Manuale</div>
+      <h1>Dal Pulsante di Gemini alle Griglie di Classroom</h1>
+      <div class="grid-2">
+        <div class="ui-mockup">
+          <div class="ui-top">
+            <span class="dot" style="background:#ef4444;"></span>
+            <span class="dot" style="background:#f59e0b;"></span>
+            <span class="dot" style="background:#22c55e;"></span>
+            <span>Schermata 1 · Google Gemini (sotto la Tabella Rubrica)</span>
+          </div>
+          <div style="padding:1.2rem;">
+            <div style="background:var(--blue-bg); padding:0.75rem; border-radius:0.5rem; font-size:1.15rem; margin-bottom:1rem;">
+              <strong>Tabella Rubrica KSM generata</strong> (3 righe × 6 colonne)
+            </div>
+            <p style="margin-bottom:0.8rem;">In basso a destra sotto la tabella clicca su:</p>
+            <div class="pulse-btn">📊 Esporta in Fogli</div>
+          </div>
+        </div>
+
+        <div class="ui-mockup">
+          <div class="ui-top">
+            <span class="dot" style="background:#ef4444;"></span>
+            <span class="dot" style="background:#f59e0b;"></span>
+            <span class="dot" style="background:#22c55e;"></span>
+            <span>Schermata 2 · Google Classroom (Compito)</span>
+          </div>
+          <div style="padding:1.2rem;">
+            <p style="margin-bottom:0.8rem;">Nella colonna destra del Compito in Classroom clicca su:</p>
+            <div class="pulse-btn" style="background:#0284c7;">➕ Griglia (Rubric) ▾</div>
+            <ul style="margin-top:0.9rem; font-size:1.25rem;">
+              <li><strong>Importa da Fogli</strong> (oppure <em>Crea griglia</em>)</li>
+              <li>Lo studente vede i livelli <strong>prima e dopo</strong> la consegna!</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 7 -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:50" data-badge="b1" data-title="7. I 6 Esempi Pronti (Incontro 3)">
+      <div class="kicker">Ricettario dei 30 Esempi · Clicca per Aprire il Prompt</div>
+      <h1>6 Modelli Pronti per il Laboratorio dell'Incontro 3</h1>
+      <div class="grid-2">
+        <div class="card blue">
+          <ul>
+            <li>📘 <a href="../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.html#esempio-05" target="_blank">#05 Italiano (3ª) ↗</a> · Rubrica KSM Testo Argomentativo</li>
+            <li>🇫🇷 <a href="../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.html#esempio-20" target="_blank">#20 2ª Lingua (1ª) ↗</a> · Supporto e Feedback DSA</li>
+            <li>⚙️ <a href="../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.html#esempio-23" target="_blank">#23 Tecnologia (1ª–2ª) ↗</a> · Rubrica Disegno (Disgrafia)</li>
+          </ul>
+        </div>
+        <div class="card green">
+          <ul>
+            <li>🎵 <a href="../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.html#esempio-26" target="_blank">#26 Musica (1ª–2ª) ↗</a> · Rubrica KSM Spartito Facilitato</li>
+            <li>🏃 <a href="../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.html#esempio-28" target="_blank">#28 Ed. Fisica (2ª) ↗</a> · Autovalutazione Motoria (Asse M)</li>
+            <li>🤝 <a href="../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.html#esempio-30" target="_blank">#30 IRC / Ed. Civica ↗</a> · Scenario Etico + Rubrica KSM</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 8 -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:50" data-badge="b1" data-title="8. Lavoro 3 - Fase 3A (Rubrica KSM)">
+      <div class="kicker">🛠️ LAVORO PRATICO 3 · FASE 3A (40 Minuti · Prima della Pausa)</div>
+      <h1>Genera la Rubrica KSM e l'Autovalutazione</h1>
+      <div class="card blue">
+        <ol>
+          <li>Apri la chat Gemini della tua verifica dell'Incontro 2 (modalità <strong>Thinking</strong>).</li>
+          <li>Copia e incolla il <strong>Prompt Template 3A</strong> col pulsante qui sotto.</li>
+          <li>Clicca su <strong>"Esporta in Fogli"</strong> sotto la Rubrica e salva la Scheda di Autovalutazione in <code>03_Incontro3_Rubrica_KSM_e_Feedback</code>.</li>
+        </ol>
+        <button class="big-copy-btn" onclick="copyHiddenPrompt('p3a', this)">📋 Copia Prompt Template 3A (Rubrica KSM + Autovalutazione)</button>
+        <pre id="p3a" class="hidden-prompt">[R - RUOLO] Agisci come esperto di valutazione formativa e docimologia nella Scuola Secondaria di Primo Grado.
+[C - CLASSE] Classe [1ª / 2ª / 3ª] media.
+[N - NUCLEI E MODELLO KSM] Costruisci la Griglia/Rubrica di valutazione per la verifica su [ARGOMENTO] (prodotta nel Lavoro 2), basandoti obbligatoriamente sulla Tassonomia di Anderson & Krathwohl (matrice 4x6: Conoscenze A Fattuale, B Concettuale, C Procedurale, D Metacognitiva x Processi 1. Ricordare, 2. Comprendere, 3. Applicare, 4. Analizzare, 5. Valutare, 6. Creare) e sul Criterio KSM:
+- Asse K (Knowledge — Conoscenze A e B — peso 35%)
+- Asse S (Skills — Abilità procedurali C — peso 40%)
+- Asse M (Mindset, Metacognition & Mastery — Metacognizione D, individuazione dell'errore e autonomia — peso 25%)
+[A - ACCESSIBILITÀ ED EQUITÀ] I descrittori devono valutare il raggiungimento del processo cognitivo anche attraverso l'uso legittimo degli strumenti compensativi e dello scaffolding presenti nella Versione Facilitata (prove equipollenti). Non usare avverbi vaghi ("poco, abbastanza, molto"), ma verbi d'azione osservabili che progrediscono da LOTS (Livelli 1-2) a HOTS (Livelli 3-4).
+[F - FORMATO DI OUTPUT] Restituisci:
+1. TABELLA RUBRICA DOCENTE (Colonne: Asse KSM e Peso % | Indicatore e Codice [A-D][1-6] | Livello 1 Iniziale (Voto 4-5) | Livello 2 Base (Voto 6) | Livello 3 Intermedio (Voto 7-8) | Livello 4 Avanzato (Voto 9-10));
+2. MINI-SCHEDA DI AUTOVALUTAZIONE PER LO STUDENTE ("Valutare per crescere"): 4 domande brevi in prima persona ("Che cosa ho capito bene...", "Dove ho trovato difficoltà...", "Come ho usato gli aiuti/schemi...", "Il mio prossimo passo per migliorare...") per riflettere sulla prova.</pre>
+      </div>
+    </section>
+
+    <!-- SLIDE 9 (PAUSA CENTRALE) -->
+    <section class="slide" data-block="Pausa Centrale · 01:50–02:10" data-badge="pausa" data-title="9. PAUSA CENTRALE (20 min)">
+      <div class="pause-box">
+        <div class="kicker" style="color:var(--amber);">01:50 – 02:10 · Metà Pomeriggio</div>
+        <h1>☕ PAUSA — 20 Minuti</h1>
+        <p style="font-size:calc(1.7rem * var(--scale)); font-weight:700;">Al rientro: <strong>Feedback Formativo (Feed-Forward)</strong>, Micro-Recupero mirato e <strong>Fase 3B</strong>!</p>
+      </div>
+    </section>
+
+    <!-- SLIDE 10 (ANIMAZIONE FEED-FORWARD 3 PASSI) -->
+    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="10. Schema Animato: Il Feedback che Fa Crescere">
+      <div class="kicker">Blocco 2 (`02:10 – 04:00`) · Modello Hattie & Timperley</div>
+      <h1>La Formula del Feed-Forward in 3 Passi</h1>
+      <div class="ff-flow">
+        <div class="ff-card" style="border-top:10px solid var(--green); animation-delay:0.05s;">
+          <h2 style="color:var(--green);">1. 🌟 Punto di Forza (Glow)</h2>
+          <p>Riconosce ciò che lo studente ha impostato o capito bene.</p>
+          <p style="margin-top:0.6rem; font-weight:700; color:var(--green);">👉 Protegge autostima e motivazione!</p>
+        </div>
+        <div class="ff-card" style="border-top:10px solid var(--amber); animation-delay:0.2s;">
+          <h2 style="color:var(--amber);">2. 🔍 Punto d'Attenzione (Grow)</h2>
+          <p>Spiega con parole semplici dove e perché è avvenuto l'inciampo.</p>
+          <p style="margin-top:0.6rem; font-weight:700; color:var(--amber);">👉 Valuta il procedimento, mai la persona!</p>
+        </div>
+        <div class="ff-card" style="border-top:10px solid var(--purple); animation-delay:0.35s;">
+          <h2 style="color:var(--purple);">3. 🚀 Prossimo Passo (Feed-Forward)</h2>
+          <p>Offre subito <strong>1 micro-esercizio guidato da 5–10 minuti</strong> per superare l'ostacolo.</p>
+          <p style="margin-top:0.6rem; font-weight:700; color:var(--purple);">👉 Trasforma l'errore in crescita!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 11 -->
+    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="11. Demo: 3 Profili d'Errore Anonimi">
+      <div class="kicker">100% Conforme al GDPR · Zero Nomi</div>
+      <h1>Simulare 3 Profili d'Inciampo con Gemini</h1>
+      <div class="card blue">
+        <ul>
+          <li><strong>Profilo 1 (Inciampo su Asse K)</strong>: confonde due termini o concetti di base.</li>
+          <li><strong>Profilo 2 (Inciampo su Asse S)</strong>: ha capito la regola ma sbaglia il passaggio procedurale o la tabella.</li>
+          <li><strong>Profilo 3 (Inciampo su Asse M)</strong>: svolge gli esercizi standard ma si blocca nella <em>"Caccia all'errore"</em>.</li>
+        </ul>
+      </div>
+      <div class="callout green">💡 Gemini genera in 10 secondi una <strong>banca di commenti formativi pronti da incollare su Classroom o sul Registro Elettronico</strong> + le 3 schede di recupero!</div>
+    </section>
+
+    <!-- SLIDE 12 -->
+    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="12. Lavoro 3 - Fase 3B (Feedback e Recupero)">
+      <div class="kicker">🛠️ LAVORO PRATICO 3 · FASE 3B (45 Minuti al PC)</div>
+      <h1>Genera il Kit di Feedback e Micro-Recupero</h1>
+      <div class="card green">
+        <ol>
+          <li>Nella stessa chat di Gemini della tua Rubrica KSM, incolla il <strong>Prompt Template 3B</strong> qui sotto.</li>
+          <li>Se appartieni al <strong>Binario Approfondimento</strong>, aggiungi anche un vero errore ricorrente (anonimo) della tua classe.</li>
+          <li>Clicca su <strong>"Esporta in Documenti"</strong> e salva in <code>03_Incontro3_Rubrica_KSM_e_Feedback</code>.</li>
+        </ol>
+        <button class="big-copy-btn" style="background:var(--green);" onclick="copyHiddenPrompt('p3b', this)">📋 Copia Prompt Template 3B (Feedback + Micro-Recupero)</button>
+        <pre id="p3b" class="hidden-prompt">[R - RUOLO] Agisci come docente esperto in valutazione formativa ("Valutare per crescere") nella Scuola Secondaria di Primo Grado.
+[C - CLASSE] Classe [1ª / 2ª / 3ª] media — Verifica su [ARGOMENTO].
+[N - FEEDBACK E RECUPERO] A partire dalla verifica e dalla Rubrica KSM appena create, simula 3 profili tipici di esito della prova (100% anonimi):
+- Profilo 1 (Difficoltà su Asse K): studente che confonde i termini chiave o le relazioni di base;
+- Profilo 2 (Difficoltà su Asse S): studente che ha capito la regola ma si blocca nell'applicazione procedurale o nella lettura della tabella;
+- Profilo 3 (Difficoltà su Asse M): studente che risolve gli esercizi standard ma non riesce ad argomentare la "Caccia all'errore".
+[A - TONO FORMATIVO E ACCESSIBILE] Per ciascuno dei 3 profili genera:
+1. Un Feedback Formativo in 3 righe rivolto direttamente allo studente secondo la struttura:
+   - 🌟 Punto di forza (cosa hai dimostrato di saper fare);
+   - 🔍 Punto di attenzione (dove si trova l'inciampo specifico);
+   - 🚀 Il tuo prossimo passo (consiglio pratico immediato — feed-forward);
+2. Una Micro-Attività di Recupero Mirato da 10 minuti (con scaffolding) specifica per superare quell'inciampo.
+[F - FORMATO DI OUTPUT] Scheda strutturata pronta per "Esporta in Documenti".</pre>
+      </div>
+    </section>
+
+    <!-- SLIDE 13 -->
+    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="13. Deontologia Human-in-the-Loop">
+      <div class="kicker">Etica della Valutazione & AI Act Europeo</div>
+      <h1>3 Regole Deontologiche sul Feedback con l'IA</h1>
+      <div class="grid-2">
+        <div class="card red">
+          <h2>1️⃣ Mai Voti Automatici Ciechi</h2>
+          <p>L'IA propone la griglia e la bozza del commento; <strong>il giudizio educativo finale è sempre dell'insegnante</strong>.</p>
+        </div>
+        <div class="card blue">
+          <h2>2️⃣ Anonimizzazione al 100%</h2>
+          <p>Si sottopone a Gemini solo la tipologia di errore o la frase trascritta senza nome.</p>
+        </div>
+      </div>
+      <div class="callout amber">🌱 <strong>3️⃣ Growth Mindset (Mentalità di crescita):</strong> il feedback valuta sempre la strategia usata nel compito, mai l'intelligenza del ragazzo!</div>
+    </section>
+
+    <!-- SLIDE 14 -->
+    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="14. Checklist e Ponte Incontro 4">
+      <div class="kicker">Chiusura Incontro 3 di 5 · Arrivederci al Giorno 4!</div>
+      <h1>Checklist Finale & Prossimo Incontro</h1>
+      <div class="grid-2">
+        <div class="card green">
+          <h2>✅ Nella tua cartella Drive</h2>
+          <ul>
+            <li>✔ Rubrica KSM in Google Fogli</li>
+            <li>✔ Scheda Autovalutazione + 3 Feedback e Micro-Recupero</li>
+            <li>🔒 <strong>Fai LOGOUT dal browser!</strong></li>
+          </ul>
+        </div>
+        <div class="card purple">
+          <h2>🚀 Incontro 4 (4 ore · Area 1 + Area 2)</h2>
+          <ul>
+            <li><strong>Blocco 1 (Area 1)</strong>: Banca di 10–12 quesiti inclusivi in Google Fogli</li>
+            <li><strong>Blocco 2 (Area 2)</strong>: Google Modulo Quiz con ramificazione + Wordwall/Quizizz</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const counter = document.getElementById('counter');
+    const progressBar = document.getElementById('progress-bar');
+    const blockBadge = document.getElementById('block-badge');
+    const slideSelect = document.getElementById('slide-select');
+    const themeBtn = document.getElementById('theme-btn');
+    let currentSlide = 0;
+    let currentScale = 1;
+
+    function initSelect() {
+      slides.forEach((s, idx) => {
+        const opt = document.createElement('option');
+        opt.value = idx;
+        opt.textContent = s.dataset.title || `Slide ${idx + 1}`;
+        slideSelect.appendChild(opt);
+      });
+    }
+
+    function showSlide(n, slidesList, counterEl) {
+      if (n < 0) n = 0;
+      if (n >= slidesList.length) n = slidesList.length - 1;
+      currentSlide = n;
+      slidesList.forEach((slide, index) => {
+        slide.style.display = index === n ? 'block' : 'none';
+      });
+      counterEl.textContent = `${n + 1} / ${slidesList.length}`;
+      slideSelect.value = n;
+      progressBar.style.width = `${((n + 1) / slidesList.length) * 100}%`;
+      const active = slidesList[n];
+      blockBadge.textContent = active.dataset.block || '';
+      blockBadge.className = `pill ${active.dataset.badge || 'b1'}`;
+    }
+
+    function nextSlide() { showSlide(currentSlide + 1, slides, counter); }
+    function prevSlide() { showSlide(currentSlide - 1, slides, counter); }
+    function jumpToSlide(val) { showSlide(parseInt(val, 10), slides, counter); }
+
+    function changeScale(delta) {
+      currentScale = Math.min(1.4, Math.max(0.75, +(currentScale + delta).toFixed(2)));
+      document.documentElement.style.setProperty('--scale', currentScale);
+    }
+    function resetScale() {
+      currentScale = 1;
+      document.documentElement.style.setProperty('--scale', 1);
+    }
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      themeBtn.textContent = document.body.classList.contains('dark') ? '☀️ Chiaro' : '🌙 Scuro';
+    }
+    function copyHiddenPrompt(id, btn) {
+      const text = document.getElementById(id).textContent.trim();
+      navigator.clipboard.writeText(text).then(() => {
+        const old = btn.textContent;
+        btn.textContent = '✅ Prompt Copiato negli Appunti!';
+        setTimeout(() => { btn.textContent = old; }, 1800);
+      });
+    }
+    function toggleFullScreen() {
+      if (!document.fullscreenElement) document.documentElement.requestFullscreen().catch(() => {});
+      else document.exitFullscreen().catch(() => {});
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); nextSlide(); }
+      else if (e.key === 'ArrowLeft') { e.preventDefault(); prevSlide(); }
+      else if (e.key === '+' || e.key === '=') { changeScale(0.1); }
+      else if (e.key === '-') { changeScale(-0.1); }
+    });
+
+    initSelect();
+    showSlide(0, slides, counter);
+  </script>
+</body>
+</html>

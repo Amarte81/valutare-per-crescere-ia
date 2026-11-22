@@ -27,7 +27,7 @@
       line-height: 1.6;
       padding: 2.5rem 1.5rem;
     }
-    .container { max-width: 1050px; margin: 0 auto; }
+    .container { max-width: 1120px; margin: 0 auto; }
     header {
       border-bottom: 2px solid var(--border);
       padding-bottom: 1.5rem;
@@ -44,7 +44,7 @@
     .subtitle { color: var(--muted); font-size: 1.15rem; }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
       gap: 1.25rem;
     }
     .card {
@@ -57,8 +57,8 @@
     .card.green { border-top: 4px solid var(--green); }
     .card.amber { border-top: 4px solid var(--amber); }
     .card.purple { border-top: 4px solid var(--purple); }
-    h2 { font-size: 1.25rem; margin-bottom: 0.85rem; color: #fff; }
-    ul { list-style: none; display: flex; flex-direction: column; gap: 0.65rem; }
+    h2 { font-size: 1.22rem; margin-bottom: 0.85rem; color: #fff; }
+    ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
     a {
       color: var(--accent);
       text-decoration: none;
@@ -75,26 +75,6 @@
       margin-bottom: 0.75rem;
     }
     .btn:hover { background: #7dd3fc; text-decoration: none; }
-    .header-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-top: 1rem;
-    }
-    .btn-outline {
-      display: inline-block;
-      background: var(--card);
-      color: var(--accent);
-      border: 1px solid var(--accent);
-      font-weight: 600;
-      font-size: 0.92rem;
-      padding: 0.45rem 0.9rem;
-      border-radius: 0.5rem;
-    }
-    .btn-outline:hover {
-      background: rgba(56, 189, 248, 0.15);
-      text-decoration: none;
-    }
     footer {
       margin-top: 2.5rem;
       padding-top: 1.25rem;
@@ -111,22 +91,12 @@
       <div class="kicker">Corso di Formazione Docenti · Secondaria di Primo Grado (20 ore = 5 Incontri × 4 Ore)</div>
       <h1>VALUTARE PER CRESCERE</h1>
       <p class="subtitle">Valutare con l'IA: verifiche accessibili e personalizzate nella Secondaria (Google Gemini, NotebookLM e Google Workspace)</p>
-      <div class="header-links">
-        <a class="btn-outline" href="https://amarte81.github.io/valutare-per-crescere-ia/" target="_blank" rel="noopener noreferrer">🌐 Apri Versione Online (GitHub Pages) ↗</a>
-        <a class="btn-outline" href="https://github.com/Amarte81/valutare-per-crescere-ia" target="_blank" rel="noopener noreferrer">📦 Repository su GitHub ↗</a>
-      </div>
     </header>
 
     <div class="grid">
-      <section class="card blue">
-        <h2>📋 Progetto del Corso (5 Giorni × 4 Ore)</h2>
-        <ul>
-          <li><a href="00_Progetto_Corso_Valutare_per_Crescere.html">Documento Master di Progettazione (Syllabus)</a></li>
-        </ul>
-      </section>
-
       <section class="card green">
         <h2>🎓 Incontro 1 di 5 (4 ore)</h2>
+        <p style="font-size:0.9rem; color:var(--muted); margin-bottom:0.6rem;">Accessibilità, autonomia e studio (4/20)</p>
         <a class="btn" href="Incontro_1/Incontro_1_Presentazione_LIM.html">📺 Versione LIM (Testo Grande · 17 Slide)</a>
         <ul>
           <li><a href="Incontro_1/Incontro_1_Presentazione_Aula.html">💻 Presentazione Standard (Schermo PC)</a></li>
@@ -137,6 +107,7 @@
 
       <section class="card blue">
         <h2>🧠 Incontro 2 di 5 (4 ore)</h2>
+        <p style="font-size:0.9rem; color:var(--muted); margin-bottom:0.6rem;">VerifichIAmo Parte I: LOTS → HOTS e UDL (4h)</p>
         <a class="btn" href="Incontro_2/Incontro_2_Presentazione_LIM.html">📺 Versione LIM (Testo Grande · 15 Slide)</a>
         <ul>
           <li><a href="Incontro_2/Incontro_2_Presentazione_Aula.html">💻 Presentazione Standard (Schermo PC)</a></li>
@@ -145,27 +116,54 @@
         </ul>
       </section>
 
-      <section class="card amber">
-        <h2>🧰 Materiali Trasversali</h2>
+      <section class="card purple">
+        <h2>📊 Incontro 3 di 5 (4 ore)</h2>
+        <p style="font-size:0.9rem; color:var(--muted); margin-bottom:0.6rem;">VerifichIAmo Parte II: Rubriche KSM e Feedback (4h)</p>
+        <a class="btn" href="Incontro_3/Incontro_3_Presentazione_LIM.html">📺 Versione LIM (Animazioni · 14 Slide)</a>
         <ul>
-          <li><a href="Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.html">Ricettario dei Prompt (30 Esempi · 6 per Giorno)</a></li>
-          <li><a href="Materiali_Trasversali/02_Schede_Operative_5_Lavori_Pratici.html">Schede Operative a Micro-Step per i 5 Lavori Pratici</a></li>
-          <li><a href="Materiali_Trasversali/03_Kit_Privacy_GDPR_e_Strumenti_Locali.html">Kit Privacy GDPR e Strumenti Locali Gratuiti</a></li>
-          <li><a href="Materiali_Trasversali/04_Kit_Materiali_Campione_Pronti_Aula.html">Kit Materiali Campione Pronti per l'Aula (Zero Tempi Morti)</a></li>
+          <li><a href="Incontro_3/Incontro_3_Presentazione_Aula.html">💻 Presentazione Standard (Schermo PC)</a></li>
+          <li><a href="Incontro_3/Incontro_3_Slide_Visualizzazione_Aula.html">Traccia Slide per il Formatore (4 ore)</a></li>
+          <li><a href="Incontro_3/Incontro_3_Dispensa_Studio_Approfondito.html">Dispensa di Studio Approfondito + Glossario</a></li>
         </ul>
       </section>
 
-      <section class="card purple">
-        <h2>📚 Moduli Aggiuntivi Facoltativi</h2>
+      <section class="card amber">
+        <h2>🧩 Incontro 4 di 5 (4 ore)</h2>
+        <p style="font-size:0.9rem; color:var(--muted); margin-bottom:0.6rem;">Area 1 Domande IA (2/20) + Area 2 Quiz Digitali (2/20)</p>
+        <a class="btn" href="Incontro_4/Incontro_4_Presentazione_LIM.html">📺 Versione LIM (Animazioni · 14 Slide)</a>
         <ul>
-          <li><a href="Moduli_Extra/Modulo_Extra_A_Uso_Etico_IA_Alunni_Casa.html">Modulo Extra A — Uso Etico dell'IA a Casa</a></li>
-          <li><a href="Moduli_Extra/Modulo_Extra_B_Prova_Orale_Inclusiva.html">Modulo Extra B — Gestione della Prova Orale Inclusiva</a></li>
+          <li><a href="Incontro_4/Incontro_4_Presentazione_Aula.html">💻 Presentazione Standard (Schermo PC)</a></li>
+          <li><a href="Incontro_4/Incontro_4_Slide_Visualizzazione_Aula.html">Traccia Slide per il Formatore (4 ore)</a></li>
+          <li><a href="Incontro_4/Incontro_4_Dispensa_Studio_Approfondito.html">Dispensa di Studio Approfondito + Glossario</a></li>
+        </ul>
+      </section>
+
+      <section class="card green">
+        <h2>🎬 Incontro 5 di 5 (4 ore)</h2>
+        <p style="font-size:0.9rem; color:var(--muted); margin-bottom:0.6rem;">Area 3 Video/Materiali (2/20) + Kit Finale (2h)</p>
+        <a class="btn" href="Incontro_5/Incontro_5_Presentazione_LIM.html">📺 Versione LIM (Animazioni · 14 Slide)</a>
+        <ul>
+          <li><a href="Incontro_5/Incontro_5_Presentazione_Aula.html">💻 Presentazione Standard (Schermo PC)</a></li>
+          <li><a href="Incontro_5/Incontro_5_Slide_Visualizzazione_Aula.html">Traccia Slide per il Formatore (4 ore)</a></li>
+          <li><a href="Incontro_5/Incontro_5_Dispensa_Studio_Approfondito.html">Dispensa di Studio Approfondito + Glossario</a></li>
+        </ul>
+      </section>
+
+      <section class="card blue">
+        <h2>🧰 Progetto, Ricettario & Moduli Extra</h2>
+        <ul>
+          <li><a href="00_Progetto_Corso_Valutare_per_Crescere.html">📋 Documento Master di Progettazione (Syllabus)</a></li>
+          <li><a href="Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.html">📘 Ricettario dei Prompt (30 Esempi · 6 per Giorno)</a></li>
+          <li><a href="Materiali_Trasversali/02_Schede_Operative_5_Lavori_Pratici.html">🛠️ Schede Operative per i 5 Lavori Pratici</a></li>
+          <li><a href="Materiali_Trasversali/03_Kit_Privacy_GDPR_e_Strumenti_Locali.html">🛡️ Kit Privacy GDPR e Strumenti Locali Gratuiti</a></li>
+          <li><a href="Moduli_Extra/Modulo_Extra_A_Uso_Etico_IA_Alunni_Casa.html">📚 Modulo Extra A — Uso Etico dell'IA a Casa</a></li>
+          <li><a href="Moduli_Extra/Modulo_Extra_B_Prova_Orale_Inclusiva.html">🗣️ Modulo Extra B — Prova Orale Inclusiva</a></li>
         </ul>
       </section>
     </div>
 
     <footer>
-      Corso "VALUTARE PER CRESCERE" · 5 Incontri da 4 Ore (20 ore) · Materiali per la formazione docenti
+      Corso "VALUTARE PER CRESCERE" · 5 Incontri da 4 Ore (20 ore) · Materiali completi per la formazione docenti
     </footer>
   </div>
 </body>

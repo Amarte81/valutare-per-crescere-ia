@@ -1,0 +1,6 @@
+# Esclusione documenti compilati e PDF
+*.pdf
+
+# File temporanei
+temp_*
+*.tmp
