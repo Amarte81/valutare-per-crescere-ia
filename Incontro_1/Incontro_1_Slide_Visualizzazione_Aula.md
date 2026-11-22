@@ -128,20 +128,23 @@ A Gemini **non serve l'etichetta medica**: lavora molto meglio con il **Profilo 
 *(Dimostrazione di 10 minuti sul PC del formatore — nessuna installazione richiesta sui PC della scuola)*
 
 1. 🛡️ **PDF24 Creator** *(Windows, 100% offline)*: funzione **"Oscura PDF"** per eliminare in modo irreversibile nomi e dati sensibili da un PDF prima di usarlo, e **"Estrai pagine"** senza caricare file su siti esterni.
+   * ⬇️ [Scarica PDF24 Creator](https://tools.pdf24.org/it/creator) · 📖 [Guida ufficiale "Oscura PDF" (IT)](https://tools.pdf24.org/it/oscurare-pdf) · ▶️ [Video tutorial (IT)](https://www.youtube.com/watch?v=a3-NpD6N3QI)
 2. 🤖 **LM Studio / GPT4All** *(Windows/Mac, 100% offline)*: far girare un modello IA locale sul proprio PC di casa anche **con il Wi-Fi spento**.
+   * ⬇️ [Scarica LM Studio](https://lmstudio.ai/) / [Scarica GPT4All](https://www.nomic.ai/gpt4all) · 📖 [Docs ufficiali LM Studio (EN)](https://lmstudio.ai/docs/app) / [Docs ufficiali GPT4All (EN)](https://docs.gpt4all.io/) · ▶️ [Video tutorial LM Studio (IT)](https://www.youtube.com/watch?v=8B9xdOx_URc) / [Video tutorial GPT4All (IT)](https://www.youtube.com/watch?v=qYltg-GEnuI)
 3. 🧩 **Lumi Education (H5P Desktop)** *(offline)*: creare video interattivi e quiz HTML5 sul PC di casa da caricare su Classroom come singolo file `.html`.
+   * ⬇️ [Scarica Lumi Desktop](https://app.lumi.education/) · 📖 [Guida ufficiale (EN)](https://docs.lumi.education/) · ▶️ [Video tutorial (IT)](https://www.youtube.com/watch?v=aemAUP1Hjek)
 4. 📝 **LibreOffice** *(offline)*: pulizia metadati ed esportazione in PDF accessibili (`PDF/UA`).
+   * ⬇️ [Scarica LibreOffice](https://it.libreoffice.org/) · 📖 [Guida ufficiale PDF/UA (IT)](https://help.libreoffice.org/latest/it/text/shared/01/ref_pdf_export_universal_accessibility.html) · ▶️ [Video tutorial PDF accessibili (IT)](https://www.youtube.com/watch?v=TBVsww3QGkU)
 
-> 📌 **Nota**: Nella cartella del corso trovate anche il **Modulo Extra A** (*Uso etico e consapevole dell'IA da parte degli alunni a casa*, con Patto di Classe e scheda per le famiglie).
+> 📌 **Materiale aggiuntivo consigliato**: consulta il [**Modulo Extra A — Uso etico e consapevole dell'IA da parte degli alunni a casa**](../Moduli_Extra/Modulo_Extra_A_Uso_Etico_IA_Alunni_Casa.md) (con Patto di Classe e scheda per le famiglie) e le 4 mini-guide passo-passo in [03_Kit_Privacy_GDPR_e_Strumenti_Locali.md](../Materiali_Trasversali/03_Kit_Privacy_GDPR_e_Strumenti_Locali.md).
 
 ---
 
-### SLIDE 10 — Demo Live 1 (10') & 🛠️ LAVORO PRATICO 1 · FASE 1A (30')
+### SLIDE 10 — Demo Live 1 (10') & 🛠️ LAVORO PRATICO 1 · FASE 1A (30' · 3 Micro-Step)
 **Dalla Foto del Libro alla Scheda Easy-to-Read in Gemini Canvas**:
-1. **Input Multimodale**: carico su Gemini la **foto/screenshot** di una pagina del libro di testo (o un PDF).
-2. **Attivo Gemini Canvas + Prompt `R-C-N-A-F`**: genero la scheda *Easy-to-Read* con glossario e domande-guida.
-3. **Rifinitura chirurgica in Canvas**: seleziono col mouse un solo capoverso e lo semplifico in tempo reale.
-4. **Esporta in Documenti**: con 1 clic apro il file in **Google Documenti**, imposto il font **Lexend** (`12 pt`, interlinea `1,5`, allineato a sinistra) e salvo in `01_Incontro1_Studio_Accessibile`.
+1. **Step 1A.1 — Riscaldamento (`5'`)**: scegli un tuo testo (o uno dei 4 testi pronti nel [Kit Materiali Campione](../Materiali_Trasversali/04_Kit_Materiali_Campione_Pronti_Aula.md)) e lancia un prompt ingenuo di 1 riga per osservare i limiti dell'IA senza guida.
+2. **Step 1A.2 — Prompt `R-C-N-A-F` (`15'`)**: inserisci il Profilo Funzionale Anonimizzato + **Prompt Template 1** (Binario Approfondimento: carica la foto/PDF della pagina del libro in **Gemini Canvas** e rifinisci un capoverso col mouse).
+3. **Step 1A.3 — Validazione & Esportazione (`10'`)**: controllo *Human-in-the-Loop*, clicca **"Esporta in Documenti"**, imposta **Lexend (`12 pt`, interlinea `1,5`, sinistra)** e salva in `01_Incontro1_Studio_Accessibile`.
 
 ---
 
@@ -177,15 +180,14 @@ Nel [Ricettario dei 30 Esempi](../Materiali_Trasversali/01_Ricettario_Prompt_30_
 
 ---
 
-### SLIDE 14 — 🛠️ LAVORO PRATICO 1 · FASE 1B (`02:45 – 03:30` · 45 minuti in Laboratorio)
+### SLIDE 14 — 🛠️ LAVORO PRATICO 1 · FASE 1B (`02:45 – 03:30` · 45 min · Ordine Anti-Attesa)
 ### *Completa il tuo "Pacchetto di Studio Accessibile" con Google NotebookLM*
 
-* **🟢 BINARIO BASE ("Pronti Via")**:
-  1. Completa la tua **Scheda *Easy-to-Read*** della Fase 1A in **Google Documenti** con font **Lexend** (`12 pt`, interlinea `1,5`, allineato a sinistra) e salvala in Drive → `01_Incontro1_Studio_Accessibile`.
-  2. Carica il Documento Google (o la tua dispensa PDF) in un taccuino **Google NotebookLM**, genera la **Mappa Mentale PNG** e incollala in cima al Documento Google.
-* **🔵 BINARIO APPROFONDIMENTO**:
-  1. Rifinisci in **Gemini Canvas** almeno un paragrafo partendo da una **foto/PDF** del libro di testo.
-  2. Nel taccuino **NotebookLM** aggiungi anche un **video YouTube**, genera la **Mappa Mentale PNG** e avvia l'**Audio Overview personalizzato** per la tua classe, salvando tutto in `01_Incontro1_Studio_Accessibile`.
+Segui i **4 micro-step** per azzerare i tempi di attesa della generazione audio:
+1. **Step 1B.1 (`5'`) — Avvia subito l'Audio Overview in background**: apri `notebooklm.google`, carica il tuo Documento Google della Fase 1A (+ un video YouTube per Approfondimento) e lancia subito **"Audio Overview → Personalizza"** (lascialo elaborare!).
+2. **Step 1B.2 (`15'`) — Mappa Mentale PNG**: mentre l'audio elabora, clicca su **"Mappa mentale"**, verifica i rami principali, scarica il **PNG** e incollalo in cima al Documento Google in `01_Incontro1_Studio_Accessibile`.
+3. **Step 1B.3 (`15'`) — Chat con Citazioni Verificabili**: chiedi una tabella comparativa basata solo sulle fonti e clicca su almeno **2 citazioni numerate** (*Grounding*).
+4. **Step 1B.4 (`10'`) — Ascolto e Salvataggio Audio**: ascolta i primi 60 secondi dell'Audio Overview ormai pronto e salvalo nella cartella Drive `01_Incontro1_Studio_Accessibile`.
 
 *(Guida passo-passo in [02_Schede_Operative_5_Lavori_Pratici.md](../Materiali_Trasversali/02_Schede_Operative_5_Lavori_Pratici.md))*
 
