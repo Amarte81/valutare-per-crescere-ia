@@ -7,11 +7,13 @@ Repository ufficiale dei materiali del corso di formazione docenti sull'Intellig
 
 - **[Documento Master di Progettazione (Syllabus — 5 Giorni × 4 Ore)](00_Progetto_Corso_Valutare_per_Crescere.md)**
 - **Incontro 1 di 5 (4 ore — Accessibilità, autonomia e studio degli studenti)**
-  - [Presentazione Interattiva d'Aula (HTML)](Incontro_1/Incontro_1_Presentazione_Aula.html)
+  - [📺 Presentazione Ottimizzata per LIM (Testo Grande / Alto Contrasto)](Incontro_1/Incontro_1_Presentazione_LIM.html)
+  - [💻 Presentazione Interattiva d'Aula Standard (HTML)](Incontro_1/Incontro_1_Presentazione_Aula.html)
   - [Traccia Slide per la Visualizzazione in Aula](Incontro_1/Incontro_1_Slide_Visualizzazione_Aula.md)
   - [Dispensa di Studio Approfondito (con Glossario e Link Esterni)](Incontro_1/Incontro_1_Dispensa_Studio_Approfondito.md)
 - **Incontro 2 di 5 (4 ore — VerifichIAmo con l'IA Parte I: LOTS → HOTS e Verifiche UDL Multilivello)**
-  - [Presentazione Interattiva d'Aula (HTML)](Incontro_2/Incontro_2_Presentazione_Aula.html)
+  - [📺 Presentazione Ottimizzata per LIM (Testo Grande / Alto Contrasto)](Incontro_2/Incontro_2_Presentazione_LIM.html)
+  - [💻 Presentazione Interattiva d'Aula Standard (HTML)](Incontro_2/Incontro_2_Presentazione_Aula.html)
   - [Traccia Slide per la Visualizzazione in Aula](Incontro_2/Incontro_2_Slide_Visualizzazione_Aula.md)
   - [Dispensa di Studio Approfondito (con Glossario e Link Esterni)](Incontro_2/Incontro_2_Dispensa_Studio_Approfondito.md)
 - **Materiali Trasversali**
