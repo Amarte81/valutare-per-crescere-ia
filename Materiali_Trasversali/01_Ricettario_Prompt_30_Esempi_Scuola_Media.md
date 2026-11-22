@@ -201,7 +201,7 @@
 ---
 
 <a id="esempio-09"></a>
-### Esempio #09 — Matematica (3ª Media · Incontro 3 — Area 1)
+### Esempio #09 — Matematica (3ª Media · Incontro 4 — Area 1)
 * **Tema**: Banca di 10 quesiti inclusivi sulle Equazioni di Primo Grado e problemi algebrici per Google Fogli.
 * **Strumento**: **Google Gemini (*Thinking*)** → *Esporta in Fogli*.
 * **Profilo Funzionale**: Distrattori basati sui reali errori di segno/trasporto (non casuali) + feedback esplicativo.
@@ -234,7 +234,7 @@
 - SEZIONE 1 (Domanda filtro - Ponte [C3]): "Uno zaino costa 60 euro ed è scontato del 20%. Quanto paghi alla cassa?" con 3 opzioni: A) 48 euro (corretta); B) 12 euro (errore tipico: ha calcolato lo sconto ma non lo ha tolto dal prezzo); C) 40 euro (errore: ha sottratto 20 euro invece del 20%).
 - SEZIONE 2A (Scaffolding per chi ha scelto B): spiega con un disegno testuale che 12 euro è lo sconto risparmiato e poni una domanda guidata più semplice per arrivare al prezzo finale.
 - SEZIONE 2B (Scaffolding per chi ha scelto C): spiega con una barra a 10 quadretti cosa significa 20% su 60 euro e proponi un quesito guidato di verifica.
-- SEZIONE 3 (Sfida HOTS [C5] per tutti): confrontare due promozioni diverse su una paio di scarpe e valutare quale conviene di più.
+- SEZIONE 3 (Sfida HOTS [C5] per tutti): confrontare due promozioni diverse su un paio di scarpe e valutare quale conviene di più.
 [A] Linguaggio chiaro, incoraggiante e concreto.
 [F] Restituisci i testi pronti da copiare nelle 4 Sezioni di Google Moduli con le indicazioni esatte di ramificazione ("Se risponde A -> vai a Sezione 3...").
 ```
@@ -264,7 +264,7 @@
 ---
 
 <a id="esempio-12"></a>
-### Esempio #12 — Inglese (2ª Media · Incontro 3 — Area 1)
+### Esempio #12 — Inglese (2ª Media · Incontro 4 — Area 1)
 * **Tema**: Banca quesiti su *Past Simple (Regular & Irregular Verbs)* con *Error Spotting* ed esportazione in Google Fogli.
 * **Strumento**: **Google Gemini** → *Esporta in Fogli* → **Wordwall / Quizizz / Google Moduli**.
 * **Profilo Funzionale**: DSA (non penalizzare il semplice refuso di *spelling*, ma valutare la regola morfosintattica).
@@ -284,7 +284,7 @@
 ---
 
 <a id="esempio-13"></a>
-### Esempio #13 — Inglese (3ª Media · Incontro 4 — Area 3)
+### Esempio #13 — Inglese (3ª Media · Incontro 5 — Area 3)
 * **Tema**: Verifica multimodale di *Listening & Comprehension* integrata a un video YouTube con **NotebookLM / Edpuzzle**.
 * **Strumento**: **Google NotebookLM** (o **Gemini** su trascrizione YouTube) + **Google Moduli / Edpuzzle**.
 * **Profilo Funzionale**: Supporto bimodale (video + sottotitoli in inglese + domande pre-orientate con minutaggio).
@@ -320,7 +320,7 @@
 - Q2 [B2 - Comprendere]: spiegare lo scambio reciproco della cerimonia dell'investitura (omaggio/fedeltà in cambio del beneficio/feudo);
 - Q3 [B3 - Applicare a un caso]: leggere la breve giornata di "Guglielmo" (4 righe) e dedurre a quale ordine della società medievale appartiene motivando la risposta;
 - Q4 [B4 - Analizzare]: confrontare in una tabella 2 differenze tra curtes (pars dominica vs pars massaricia);
-- Q5 [B5 - Valutare / HOTS]: "Lo Storico Cerca l'Errore": in un breve racconto sul castello medievale sono stati nascosti 2 anacronismi/errori storici (es. i contadini che mangiano patate e pomodori nel Anno Mille!): l'alunno deve scovarli e spiegare perché sono impossibili.
+- Q5 [B5 - Valutare / HOTS]: "Lo Storico Cerca l'Errore": in un breve racconto sul castello medievale sono stati nascosti 2 anacronismi/errori storici (es. i contadini che mangiano patate e pomodori nell'Anno Mille!): l'alunno deve scovarli e spiegare perché sono impossibili.
 [A] Nella Versione A inserisci in testa una mini-linea del tempo di riferimento, una banca parole per Q1-Q2, la tabella di Q4 già impostata con la prima riga compilata come esempio e un suggerimento per i 2 anacronismi di Q5.
 [F] Restituisci le 3 versioni pronte per "Esporta in Documenti" + griglia rapida di correzione con codici [A-D][1-6].
 ```
@@ -328,7 +328,7 @@
 ---
 
 <a id="esempio-15"></a>
-### Esempio #15 — Storia (3ª Media · Incontro 4 — Area 3)
+### Esempio #15 — Storia (3ª Media · Incontro 5 — Area 3)
 * **Tema**: Percorso multimodale su **Google NotebookLM** (Dispensa PDF + Video documentario YouTube sul Novecento) con Mappa Mentale, Audio Overview e verifica sulle fonti.
 * **Strumento**: **Google NotebookLM** (`notebooklm.google`).
 * **Profilo Funzionale**: Apprendimento multisensoriale (visivo + uditivo + testuale) e preparazione al colloquio d'esame.
@@ -414,7 +414,7 @@ Basandoti ESCLUSIVAMENTE sulla dispensa e sul video caricati in questo taccuino 
 ---
 
 <a id="esempio-19"></a>
-### Esempio #19 — Scienze (3ª Media · Incontro 4 — Area 3)
+### Esempio #19 — Scienze (3ª Media · Incontro 5 — Area 3)
 * **Tema**: Verifica integrata a un video di esperimento scientifico (Leggi della genetica di Mendel o Elettricità/Circuiti) basata sul metodo sperimentale (`Osservare → Ipotizzare → Verificare`).
 * **Strumento**: **Google Gemini (*Thinking*)** + **Google Moduli con Video YouTube** (o **Edpuzzle**).
 * **Profilo Funzionale**: Apprendimento esperienziale e visivo.
@@ -438,27 +438,27 @@ Basandoti ESCLUSIVAMENTE sulla dispensa e sul video caricati in questo taccuino 
 ## 🇫🇷🇪🇸 AREA LINGUE — SECONDA LINGUA COMUNITARIA: FRANCESE / SPAGNOLO (2 Esempi · 6,7% del monte ore)
 
 <a id="esempio-20"></a>
-### Esempio #20 — Francese / Spagnolo (1ª Media · Incontro 1)
-* **Tema**: Scheda di studio e dialogo guidato (*Se présenter / Presentarse* o *La famille / La familia*) con tabella colori e supporto fonetico.
-* **Strumento**: **Google Gemini (*Flash*)** → *Esporta in Documenti*.
-* **Profilo Funzionale**: Alunni con DSA (particolarmente efficace per il Francese, lingua opaca con lettere finali mute, o per i falsi amici in Spagnolo).
-* **Scala Cognitiva**: `LOTS [A1, B2] → Ponte [C3]`.
+### Esempio #20 — Francese / Spagnolo (1ª o 2ª Media · Incontro 3)
+* **Tema**: Dialogo guidato inclusivo (*Se présenter / Presentarse* o *La famille / La familia*) con **feedback formativo (*feed-forward*)**, mini-rubrica KSM e recupero mirato per DSA.
+* **Strumento**: **Google Gemini (*Thinking*)** → *Esporta in Documenti / Fogli*.
+* **Profilo Funzionale**: Alunni con DSA (particolarmente efficace per il Francese, lingua opaca con lettere finali mute, o per i falsi amici in Spagnolo) valutati sull'efficacia comunicativa senza penalizzazioni ortografiche punitive.
+* **Scala Cognitiva**: `LOTS [A1, B2] → Ponte [C3] → HOTS [D4, D5]` (Matrice `Anderson & Krathwohl × KSM`).
 
 ```text
-[R] Agisci come docente di [Francese / Spagnolo] nella Scuola Secondaria di I grado, specializzato in glottodidattica inclusiva per alunni con DSA.
-[C] Classe 1ª media (11 anni, principianti assoluti livello A1).
-[N] Costruisci una scheda di studio autonoma su "Presentarsi e parlare della propria famiglia / degli hobby" che permetta allo studente di comprendere un breve dialogo [B2] e riutilizzare le strutture per parlare di sé [C3].
-[A] Applica questi accorgimenti compensativi:
-- presenta un dialogo modello di 6 battute brevi con traduzione affiancata in una tabella a 2 colonne;
-- aggiungi un box "Trucchi di Pronuncia e Ortografia" (es. in Francese: quali lettere finali NON si pronunciano ma si scrivono; in Spagnolo: attenzione ai falsi amici);
-- proponi un esercizio di produzione personale guidata ("Tocca a te!") con frasi-modello a buchi da completare scegliendo le parole da un riquadro illustrato/categorizzato, così lo studente non deve scrivere da un foglio bianco.
-[F] Impaginazione tabellare pulita per "Esporta in Documenti".
+[R] Agisci come docente di [Francese / Spagnolo] nella Scuola Secondaria di I grado, specializzato in glottodidattica inclusiva per alunni con DSA e valutazione formativa ("Valutare per crescere").
+[C] Classe 1ª/2ª media (livello A1) — Prova di dialogo guidato ("Presentarsi e parlare della propria famiglia / degli hobby").
+[N] A partire da una breve prova di produzione dialogica guidata (6 battute con strutture modello e tabella colori/pronuncia per DSA), genera:
+1. Una MINI-RUBRICA DI VALUTAZIONE KSM (K 35% comprensione e lessico funzionale [A1, B2]; S 40% uso delle strutture comunicative nel dialogo [C3]; M 25% autonomia nell'uso della scheda di supporto e autocorrezione [D3 -> D5]) su 4 livelli con verbi osservabili;
+2. Un SET DI 3 FEEDBACK FORMATIVI (feed-forward) in italiano per 3 profili anonimi di errore tipico (es. confusione di lessico base, errore di struttura/ordine delle parole, blocco nella pronuncia/ortografia opaca), ciascuno strutturato in: Punto di forza + Punto di attenzione + Prossimo passo pratico;
+3. Una MICRO-ATTIVITÀ DI RECUPERO MIRATO da 10 minuti con box "Trucchi di Pronuncia e Ortografia" (lettere finali mute in Francese / falsi amici in Spagnolo) e frasi-modello a completamento guidato.
+[A] Specifica nei descrittori e nei feedback che per studenti con DSA/disortografia si premia l'efficacia comunicativa e l'uso corretto delle strutture di base, senza penalizzare i piccoli refusi ortografici residui.
+[F] Restituisci la Mini-Rubrica KSM in tabella (pronta per "Esporta in Fogli") seguita dai 3 Feedback Formativi e dalla Micro-Attività di recupero (pronti per "Esporta in Documenti").
 ```
 
 ---
 
 <a id="esempio-21"></a>
-### Esempio #21 — Francese / Spagnolo (2ª Media · Incontro 3 — Area 1)
+### Esempio #21 — Francese / Spagnolo (2ª Media · Incontro 4 — Area 1)
 * **Tema**: Banca di 10 quesiti comunicativi e situazionali (*Au restaurant / En el restaurante* o *En ville / Por la ciudad*) per Google Fogli e Wordwall.
 * **Strumento**: **Google Gemini** → *Esporta in Fogli* → **Wordwall / Google Moduli**.
 * **Profilo Funzionale**: Approccio comunicativo-funzionale (evitare la pura traduzione grammaticale decontestualizzata).
@@ -545,21 +545,22 @@ Basandoti ESCLUSIVAMENTE sulla dispensa e sul video caricati in questo taccuino 
 ---
 
 <a id="esempio-25"></a>
-### Esempio #25 — Arte e Immagine (3ª Media · Incontro 4 — Area 2)
-* **Tema**: Quiz digitale visivo in **Google Moduli** sulle Avanguardie del Novecento (Impressionismo, Espressionismo, Cubismo, Futurismo) con feedback formativo.
-* **Strumento**: **Google Gemini** → *Esporta in Fogli* → **Google Moduli**.
-* **Profilo Funzionale**: Apprendimento basato sul riconoscimento visivo dello stile anziché sul solo studio mnemonico di date.
-* **Scala Cognitiva**: `LOTS [B1, B2] → Ponte [B3, B4] → HOTS [B5]`.
+### Esempio #25 — Arte e Immagine (3ª Media · Incontro 5 — Area 3)
+* **Tema**: Verifica visiva e multimodale sulle Avanguardie del Novecento (*Impressionismo, Espressionismo, Cubismo, Futurismo*) integrata a un breve video documentario/tour museale e alle schede del docente.
+* **Strumento**: **Google NotebookLM** (Dispensa/Slide + Video YouTube) + **Google Moduli con Video YouTube** (o **Edpuzzle**).
+* **Profilo Funzionale**: Apprendimento multisensoriale (video + immagini di opere + minutaggi guida) basato sul riconoscimento visivo dello stile anziché sulla sola memorizzazione di date.
+* **Scala Cognitiva**: `LOTS [B1, B2] → Ponte [B3, B4] → HOTS [B5, B6]`.
 
 ```text
-[R] Agisci come docente di Arte e Immagine di 3ª media.
-[C] Classe 3ª media (13-14 anni) — Argomento: Riconoscere e comprendere il linguaggio visivo di Impressionismo, Espressionismo, Cubismo e Futurismo.
-[N] Genera una tabella di 8 quesiti a scelta multipla (3 opzioni A, B, C) pensati per Google Moduli, in cui ogni domanda è abbinata all'immagine di un dipinto celebre:
-- 3 quesiti LOTS [B1, B2]: osservando il dipinto indicato, individuare a quale movimento appartiene in base a pennellata, colore o scomposizione delle forme;
-- 3 quesiti Ponte [B3, B4]: collegare la scelta stilistica dell'artista (es. scomposizione da più punti di vista in Picasso o linee di velocità in Boccioni) al messaggio che voleva trasmettere;
-- 2 quesiti HOTS [B5]: "Caccia all'errore nella guida del museo": leggere una breve scheda descrittiva del quadro che contiene 1 errore stilistico/storico e individuarlo.
-[A] Indica per ogni domanda quale opera d'arte di pubblico dominio inserire in Google Moduli, usa frasi brevi e fornisci un feedback formativo che aiuti lo studente a "vedere" l'elemento visivo chiave.
-[F] Tabella pronta per "Esporta in Fogli": N. | Livello e Codice | Opera da inserire nel Modulo | Domanda | Opzione A | Opzione B | Opzione C | Risposta Corretta | Suggerimento Visivo | Feedback Formativo.
+[R] Agisci come docente di Arte e Immagine di 3ª media esperto in didattica visiva e valutazione multimodale inclusiva.
+[C] Classe 3ª media (13-14 anni) — Argomento: Riconoscere e comprendere il linguaggio visivo di Impressionismo, Espressionismo, Cubismo e Futurismo attraverso un breve video didattico (3-5 minuti) e le immagini delle opere caricate dal docente.
+[N] Incrociando il video YouTube e i materiali sulle Avanguardie, progetta una micro-verifica multimodale di 6 quesiti in crescendo LOTS -> HOTS:
+- Q1-Q2 (LOTS [B1, B2]): osservando l'opera mostrata nel video (con indicazione del minutaggio "[Guarda da 0:30 a 1:15]"), individuare il movimento artistico in base a pennellata, colore o scomposizione delle forme (3 opzioni A, B, C);
+- Q3-Q4 (Ponte [B3, B4]): mettere in relazione la scelta stilistica spiegata nel video (es. scomposizione da più punti di vista in Picasso o linee di velocità in Boccioni) con la scheda del docente;
+- Q5 (HOTS - Valutare [B5]): "Caccia all'errore nell'audioguida del museo": individuare 1 errore stilistico o storico nascosto in una breve descrizione di un quadro celebre;
+- Q6 (HOTS - Creare [B6]): breve scelta espressiva UDL (scrivere una didascalia di 3 righe per un museo per ragazzi OPPURE descrivere come fotograferesti un'aula scolastica in stile Cubista o Futurista, con 2 sentence starters di supporto).
+[A] Frasi brevi, zero doppie negazioni, lessico artistico spiegato tra parentesi (es. "prospettiva", "pennellata"), indicazione dell'opera di pubblico dominio/minutaggio per ogni quesito e feedback formativo che aiuti lo studente a "vedere" l'elemento visivo chiave.
+[F] Testo completo pronto per Google Moduli con Video YouTube integrato, NotebookLM o Edpuzzle.
 ```
 
 ---
@@ -587,7 +588,7 @@ Basandoti ESCLUSIVAMENTE sulla dispensa e sul video caricati in questo taccuino 
 ---
 
 <a id="esempio-27"></a>
-### Esempio #27 — Musica (2ª o 3ª Media · Incontro 4 — Area 3)
+### Esempio #27 — Musica (2ª o 3ª Media · Incontro 5 — Area 3)
 * **Tema**: Verifica multimodale di **Ascolto Guidato** integrata a un video/audio musicale su YouTube (es. *La Primavera* di Vivaldi, *Quinta Sinfonia* di Beethoven o un brano Jazz/Colonna sonora).
 * **Strumento**: **Google Gemini** + **Google Moduli con Video YouTube** (o **Edpuzzle**).
 * **Profilo Funzionale**: Canale uditivo primario; domande ancorate a minutaggi precisi del brano.
@@ -633,7 +634,7 @@ Basandoti ESCLUSIVAMENTE sulla dispensa e sul video caricati in questo taccuino 
 ---
 
 <a id="esempio-29"></a>
-### Esempio #29 — Educazione Fisica (3ª Media · Incontro 4 — Area 3)
+### Esempio #29 — Educazione Fisica (3ª Media · Incontro 5 — Area 3)
 * **Tema**: Verifica multimodale su video di un gesto tecnico-motorio o di Primo Soccorso / Sicurezza (es. *fondamentale del palleggio/bagher* oppure *catena del soccorso e posizione laterale di sicurezza*).
 * **Strumento**: **Google Gemini** + **Google Moduli con Video YouTube** (o **Edpuzzle**).
 * **Profilo Funzionale**: Osservazione visiva del movimento scomposto in fasi (*analisi biomeccanica/procedurale accessibile*).
@@ -656,7 +657,7 @@ Basandoti ESCLUSIVAMENTE sulla dispensa e sul video caricati in questo taccuino 
 ## 🤝 IRC / ATTIVITÀ ALTERNATIVA ED EDUCAZIONE CIVICA (1 Esempio · 3,3% del monte ore)
 
 <a id="esempio-30"></a>
-### Esempio #30 — IRC / Attività Alternativa & Educazione Civica (2ª o 3ª Media · Incontro 2–3)
+### Esempio #30 — IRC / Attività Alternativa & Educazione Civica (2ª o 3ª Media · Incontro 3)
 * **Tema**: Micro-scenario etico e di Cittadinanza Digitale (*Rispetto dell'altro, dialogo interculturale o responsabilità nelle chat di classe*) per valutare i processi superiori **HOTS (`4. Analizzare`, `5. Valutare`)** e l'asse **M (Mindset)**.
 * **Strumento**: **Google Gemini (Modello di Ragionamento *Thinking* + Canvas)**.
 * **Profilo Funzionale**: Dilemma realistico vicino ai ragazzi di 12–14 anni, con *scaffolding* argomentativo e rubrica KSM.

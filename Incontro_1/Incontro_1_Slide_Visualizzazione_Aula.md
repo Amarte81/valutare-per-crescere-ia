@@ -7,10 +7,10 @@
 > **Guida per il Formatore in Laboratorio (Scansione 4 ore = 240 min)**  
 > * Con la nuova struttura in **5 incontri da 4 ore**, l'**Incontro 1 (4h)** è interamente dedicato al modulo **"Accessibilità, autonomia e studio degli studenti" (4/20 del corso)**, senza dover comprimere nel finale l'avvio delle verifiche (che apre invece in modo organico l'Incontro 2).  
 > * **Scansione ergonomica delle 4 ore**:
->   * `00:00 – 01:50` **Blocco 1 (110 min · 2h nominali)**: Nuovi modelli di Gemini, barriere allo studio 11–14 anni, Prompt di studio `R-C-N-A-F`, Privacy/GDPR e Demo Live 1 su Gemini Multimodale + Canvas.
+>   * `00:00 – 01:50` **Blocco 1 (110 min · 2h nominali)**: Nuovi modelli di Gemini, barriere allo studio 11–14 anni, Prompt di studio `R-C-N-A-F`, Privacy/GDPR, Demo Live 1 e **Lavoro Pratico 1 · Fase 1A (30')**.
 >   * `01:50 – 02:10` ☕ **PAUSA CENTRALE (20 min)**.
->   * `02:10 – 04:00` **Blocco 2 (110 min · 2h nominali)**: Google NotebookLM (*Grounding*, Mappe Mentali, Audio Overview), **Lavoro Pratico 1 (50')** e Galleria/Debriefing finale (30').  
-> * Per la proiezione interattiva a schermo intero nel browser, apri [Incontro_1_Presentazione_Aula.html](file:///c:/Users/amart/Desktop/Corsi%20per%20docenti/Intelligenza%20Artificiale%20nella%20didattica%20e%20nella%20valutazione/Incontro_1/Incontro_1_Presentazione_Aula.html).
+>   * `02:10 – 04:00` **Blocco 2 (110 min · 2h nominali)**: Google NotebookLM (*Grounding*, Mappe Mentali, Audio Overview), **Lavoro Pratico 1 · Fase 1B (45')** e Galleria/Debriefing finale (30').  
+> * Per la proiezione interattiva a schermo intero nel browser, apri [Incontro_1_Presentazione_Aula.html](Incontro_1_Presentazione_Aula.html).
 
 ---
 
@@ -24,9 +24,9 @@
 * **Struttura del corso**: **20 ore in 5 incontri da 4 ore**
 * **Incontro 1 di 5 (4 ore)**: *Accessibilità, autonomia e studio degli studenti con Google Gemini e NotebookLM*
 * **Il nostro ritmo di oggi (4 ore)**:
-  * `00:00 – 01:50` **Blocco 1 (110')**: Nuovi modelli di Gemini, barriere allo studio, Prompt `R-C-N-A-F`, Privacy/GDPR e Demo Gemini Multimodale
+  * `00:00 – 01:50` **Blocco 1 (110')**: Nuovi modelli di Gemini, barriere allo studio, Prompt `R-C-N-A-F`, Privacy/GDPR, Demo Gemini e **Lavoro 1 · Fase 1A (30')**
   * `01:50 – 02:10` ☕ **PAUSA CENTRALE (20 min)**
-  * `02:10 – 04:00` **Blocco 2 (110')**: Google NotebookLM (Mappe Mentali + Audio Overview), **Lavoro Pratico 1 (50')** e Condivisione tra pari
+  * `02:10 – 04:00` **Blocco 2 (110')**: Google NotebookLM (Mappe Mentali + Audio Overview), **Lavoro 1 · Fase 1B (45')** e Condivisione tra pari
 
 ---
 
@@ -120,7 +120,7 @@ A Gemini **non serve l'etichetta medica**: lavora molto meglio con il **Profilo 
 | *"Adatta questo brano di storia per Luca Rossi della 1ª B che ha dislessia F81.0 e ADHD, ti incollo il suo PDP..."* | *"Adatta questo brano di storia per una 1ª media includendo supporti per studenti con affaticamento nella lettura di testi lunghi e tempi brevi di attenzione: usa paragrafi di max 4 righe, frasi attive sotto le 16 parole, parole chiave in grassetto e un glossario finale."* |
 | *"Prepara una scheda di scienze per Fatima, alunna NAI arrivata un mese fa..."* | *"Riscrivi questa scheda di scienze per studenti di 2ª media con Italiano L2 a livello A1/A2: usa verbi al presente, lessico ad alta frequenza e spiega i 5 termini scientifici obbligatori con esempi concreti quotidiani."* |
 
-*(Scheda completa in [03_Kit_Privacy_GDPR_e_Strumenti_Locali.md](file:///c:/Users/amart/Desktop/Corsi%20per%20docenti/Intelligenza%20Artificiale%20nella%20didattica%20e%20nella%20valutazione/Materiali_Trasversali/03_Kit_Privacy_GDPR_e_Strumenti_Locali.md))*
+*(Scheda completa in [03_Kit_Privacy_GDPR_e_Strumenti_Locali.md](../Materiali_Trasversali/03_Kit_Privacy_GDPR_e_Strumenti_Locali.md))*
 
 ---
 
@@ -136,42 +136,33 @@ A Gemini **non serve l'etichetta medica**: lavora molto meglio con il **Profilo 
 
 ---
 
-### SLIDE 10 — Demo Live 1: Dalla Foto del Libro alla Scheda Easy-to-Read in Gemini Canvas
-**Il flusso in 4 passaggi che userete tra poco nel Lavoro 1**:
+### SLIDE 10 — Demo Live 1 (10') & 🛠️ LAVORO PRATICO 1 · FASE 1A (30')
+**Dalla Foto del Libro alla Scheda Easy-to-Read in Gemini Canvas**:
 1. **Input Multimodale**: carico su Gemini la **foto/screenshot** di una pagina del libro di testo (o un PDF).
 2. **Attivo Gemini Canvas + Prompt `R-C-N-A-F`**: genero la scheda *Easy-to-Read* con glossario e domande-guida.
 3. **Rifinitura chirurgica in Canvas**: seleziono col mouse un solo capoverso e lo semplifico in tempo reale.
-4. **Esporta in Documenti**: con 1 clic apro il file in **Google Documenti**, imposto il font **Lexend** (`12 pt`, interlinea `1,5`, allineato a sinistra) e mostro la **Digitazione Vocale**.
+4. **Esporta in Documenti**: con 1 clic apro il file in **Google Documenti**, imposto il font **Lexend** (`12 pt`, interlinea `1,5`, allineato a sinistra) e salvo in `01_Incontro1_Studio_Accessibile`.
 
 ---
 
-## ☕ PAUSA CENTRALE (`01:50 – 02:10` · 20 minuti)
-*Pausa di 20 minuti esattamente a metà delle 4 ore! Al rientro: Google NotebookLM (Mappe Mentali + Audio Overview) e Lavoro Pratico 1.*
+## ☕ SLIDE 11 — PAUSA CENTRALE (`01:50 – 02:10` · 20 minuti)
+*Pausa di 20 minuti esattamente a metà delle 4 ore! Al rientro: Google NotebookLM (Mappe Mentali + Audio Overview) e Lavoro Pratico 1 · Fase 1B (45').*
 
 ---
 
 ## 🔵 BLOCCO 2 (`02:10 – 04:00` · 110 min / 2h nominali)
-### *Google NotebookLM, Lavoro Pratico 1 (50') e Condivisione tra Pari*
+### *Google NotebookLM, Lavoro Pratico 1 · Fase 1B (45') e Condivisione tra Pari*
 
 ---
 
-### SLIDE 11 — Google NotebookLM: L'IA a "Zero Allucinazioni" Ancorata alle Tue Fonti
+### SLIDE 12 — Google NotebookLM: L'IA a "Zero Allucinazioni" Ancorata alle Tue Fonti (con Demo Live 2)
 Perché **NotebookLM** (`notebooklm.google`) è uno strumento straordinario per lo studio inclusivo?
 
 * 🔒 **Lavora SOLO sulle fonti che carichi tu**: PDF, tuoi Google Documenti, tue Google Presentazioni, link web o **video YouTube**.
 * 🔢 **Citazioni verificabili**: ogni risposta ha un numerino cliccabile che mostra il punto esatto della tua dispensa da cui proviene.
 * 🗺️ **Mappe Mentali Interattive Automatiche**: con 1 clic nel pannello *Studio* genera lo schema ad albero navigabile e scaricabile in PNG!
 * 🎧 **Audio Overview (Podcast a due voci in italiano)**: genera un dialogo audio di 6–8 minuti che spiega la tua lezione agli alunni che faticano a leggere (personalizzabile per l'età 11–14 anni!).
-
----
-
-### SLIDE 12 — Demo Live 2 su NotebookLM (Scienze, Storia e Lingue)
-1. Creiamo un nuovo taccuino: *"Scienze 1ª Media — La Cellula"* (Esempio `#18` del Ricettario).
-2. Carichiamo **1 PDF del docente + 1 video YouTube** sull'argomento.
-3. Clicchiamo su **Mappa Mentale** → esploriamo i rami e scarichiamo l'immagine PNG da incollare nella scheda di studio.
-4. Clicchiamo su **Audio Overview → Personalizza**:
-   > *"Parlate in italiano rivolgendovi a ragazzi di 1ª media (11 anni). Usate un tono chiaro e incoraggiante. Spiegate con la metafora di una fabbrica la differenza tra cellula animale e vegetale."*
-5. Chiediamo nella chat del taccuino una **Tabella comparativa** e **3 domande graduali di autoverifica** basate solo sulle fonti caricate.
+* **Demo Live 2 (Esempio `#18` — Scienze 1ª Media, *La Cellula*)**: carichiamo 1 PDF + 1 video YouTube, generiamo la **Mappa Mentale PNG** e personalizziamo l'**Audio Overview** con la metafora della fabbrica ecologica.
 
 ---
 
@@ -186,30 +177,39 @@ Nel [Ricettario dei 30 Esempi](../Materiali_Trasversali/01_Ricettario_Prompt_30_
 
 ---
 
-### SLIDE 14 — 🛠️ LAVORO PRATICO 1 (`02:40 – 03:30` · 50 minuti in Laboratorio)
-### *Crea il tuo "Pacchetto di Studio Accessibile" con Gemini e NotebookLM*
-
-Scegli un argomento reale della tua disciplina (su cui lavorerai lungo tutti i 5 incontri) e segui il tuo binario:
+### SLIDE 14 — 🛠️ LAVORO PRATICO 1 · FASE 1B (`02:45 – 03:30` · 45 minuti in Laboratorio)
+### *Completa il tuo "Pacchetto di Studio Accessibile" con Google NotebookLM*
 
 * **🟢 BINARIO BASE ("Pronti Via")**:
-  1. Prendi un testo/pagina della tua materia (o uno dei 6 esempi del Giorno 1 dal Ricettario).
-  2. Usa il **Prompt Template 1 (`R-C-N-A-F`)** su **Google Gemini** per ottenere: *Testo ad alta leggibilità + Tabella Glossario + 3 domande guida progressive con aiuto*.
-  3. Verifica l'output (*Human-in-the-Loop*), clicca su **"Esporta in Documenti"**, applica il font **Lexend** (`12 pt`, interlinea `1,5`, allineato a sinistra) e salva in Drive → `01_Giorno1_Studio_Accessibile`.
+  1. Completa la tua **Scheda *Easy-to-Read*** della Fase 1A in **Google Documenti** con font **Lexend** (`12 pt`, interlinea `1,5`, allineato a sinistra) e salvala in Drive → `01_Incontro1_Studio_Accessibile`.
+  2. Carica il Documento Google (o la tua dispensa PDF) in un taccuino **Google NotebookLM**, genera la **Mappa Mentale PNG** e incollala in cima al Documento Google.
 * **🔵 BINARIO APPROFONDIMENTO**:
-  1. Parti da una **foto/PDF** con **Gemini Multimodale in Canvas** e affina i paragrafi selezionandoli col mouse.
-  2. Carica lo stesso materiale (+ un video YouTube) in un taccuino **Google NotebookLM**, genera la **Mappa Mentale** (scaricala in PNG e incollala in cima al tuo Documento Google!) e avvia l'**Audio Overview personalizzato** per la tua classe.
+  1. Rifinisci in **Gemini Canvas** almeno un paragrafo partendo da una **foto/PDF** del libro di testo.
+  2. Nel taccuino **NotebookLM** aggiungi anche un **video YouTube**, genera la **Mappa Mentale PNG** e avvia l'**Audio Overview personalizzato** per la tua classe, salvando tutto in `01_Incontro1_Studio_Accessibile`.
 
-*(Guida passo-passo in [02_Schede_Operative_5_Lavori_Pratici.md](file:///c:/Users/amart/Desktop/Corsi%20per%20docenti/Intelligenza%20Artificiale%20nella%20didattica%20e%20nella%20valutazione/Materiali_Trasversali/02_Schede_Operative_5_Lavori_Pratici.md))*
+*(Guida passo-passo in [02_Schede_Operative_5_Lavori_Pratici.md](../Materiali_Trasversali/02_Schede_Operative_5_Lavori_Pratici.md))*
 
 ---
 
-### SLIDE 15 — Galleria tra Pari, Debriefing e Chiusura Incontro 1 (`03:30 – 04:00` · 30 min)
-* **Condivisione lampo di 3 lavori di dipartimenti diversi (20')**:
+### SLIDE 15 — Galleria tra Pari e Debriefing (`03:30 – 03:50` · 20 min)
+* **Condivisione lampo di 3 lavori di dipartimenti diversi**:
   1. Cosa ha funzionato subito bene nell'adattamento *Easy-to-Read* di Gemini?
   2. Dove siete intervenuti voi (*Human-in-the-Loop*) per proteggere il rigore dei nuclei disciplinari?
   3. Come userete la **Mappa Mentale** e l'**Audio Overview** di NotebookLM su Google Classroom?
-* **Checklist di fine Giorno 1 (10')**:
-  - [x] Scheda di Studio *Easy-to-Read* esportata in Google Documenti nella cartella `01_Giorno1_Studio_Accessibile`;
+
+---
+
+### SLIDE 16 — Il Ricettario dei 30 Esempi Proporzionali (6 Esempi per ciascuno dei 5 Giorni)
+Distribuzione proporzionale alle 30 ore settimanali della Scuola Secondaria di I grado (DPR 89/2009):
+* **Area Lettere (`33,3%`)**: Italiano (`6`), Storia (`2`), Geografia (`2`).
+* **Area STEM & Lingue (`36,7%`)**: Matematica (`4`), Scienze (`2`), Inglese (`3`), 2ª Lingua (`2`).
+* **Tecnico-Artistiche, Motorie, IRC (`30%`)**: Tecnologia (`2`), Arte e Immagine (`2`), Musica (`2`), Ed. Fisica (`2`), IRC/Ed. Civica (`1`).
+
+---
+
+### SLIDE 17 — Checklist di Fine Giornata 1 & Ponte verso l'Incontro 2 (`03:50 – 04:00` · 10 min)
+* **Checklist di fine Giorno 1**:
+  - [x] Scheda di Studio *Easy-to-Read* esportata in Google Documenti nella cartella `01_Incontro1_Studio_Accessibile`;
   - [x] Mappa Mentale PNG (e/o Audio Overview) generata su NotebookLM;
   - [ ] 🔒 **Effettuare il LOGOUT dal proprio account Google sul PC del laboratorio!**
 

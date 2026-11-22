@@ -91,7 +91,7 @@ Cosa dire con precisione a Gemini nel punto **[A] Accessibilità**:
 
 ---
 
-## ☕ PAUSA CENTRALE (`01:50 – 02:10` · 20 minuti)
+## ☕ SLIDE 8 — PAUSA CENTRALE (`01:50 – 02:10` · 20 minuti)
 *Pausa rigenerante di 20 minuti! Al rientro (`02:10`): Gemini Canvas per le 3 Versioni UDL, creazione del tuo Gem disciplinare e Fase 2B del Lavoro Pratico 2.*
 
 ---
@@ -101,7 +101,7 @@ Cosa dire con precisione a Gemini nel punto **[A] Accessibilità**:
 
 ---
 
-### SLIDE 8 — Demo Live 1: Co-Progettare 3 Versioni Parallele in Gemini Canvas
+### SLIDE 9 — Demo Live 1: Co-Progettare 3 Versioni Parallele in Gemini Canvas
 Come generiamo in 5 minuti **3 versioni parallele sugli stessi obiettivi**:
 * **Versione A (Facilitata / Equipollente)**: consegne numerate *step-by-step*, zero doppie negazioni, banca parole, tabelle semicompilate, *sentence starters* per Q5–Q6.
 * **Versione B (Standard)**: consegne chiare ad alta leggibilità senza supporti precompilati.
@@ -110,7 +110,7 @@ Come generiamo in 5 minuti **3 versioni parallele sugli stessi obiettivi**:
 
 ---
 
-### SLIDE 9 — Demo Live 2: Crea il tuo "Gem" Disciplinare Permanente (3 minuti!)
+### SLIDE 10 — Demo Live 2: Crea il tuo "Gem" Disciplinare Permanente (3 minuti!)
 Per non riscrivere mai più il prompt lungo ogni volta che prepari una verifica:
 1. Nel menu laterale di Gemini clicca su **Gestore dei Gem → Nuovo Gem**.
 2. Nome: `"Progettista Verifiche UDL — [La mia Materia]"`.
@@ -119,7 +119,7 @@ Per non riscrivere mai più il prompt lungo ogni volta che prepari una verifica:
 
 ---
 
-### SLIDE 10 — I 6 Esempi Pronti per l'Incontro 2 nel Ricettario (Clicca per Aprire il Prompt)
+### SLIDE 11 — I 6 Esempi Pronti per l'Incontro 2 nel Ricettario (Clicca per Aprire il Prompt)
 Nel [Ricettario dei 30 Esempi](../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md) trovate 6 modelli pronti per il laboratorio di oggi:
 1. **[Esempio #03 — Italiano (3ª media)](../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-03)**: Comprensione e analisi narrativa UDL a 3 livelli con righe numerate e *Caccia all'errore interpretativo*.
 2. **[Esempio #04 — Italiano / Grammatica (2ª media)](../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-04)**: Analisi logica con *Box Bussola*, frasi già segmentate e *"Il Detective Grammaticale"*.
@@ -130,7 +130,17 @@ Nel [Ricettario dei 30 Esempi](../Materiali_Trasversali/01_Ricettario_Prompt_30_
 
 ---
 
-### SLIDE 11 — 🛠️ LAVORO PRATICO 2 · FASE 2B (`02:40 – 03:35` · 55 minuti in Laboratorio)
+### SLIDE 12 — Prompt Template 2 (Verifica UDL Multilivello LOTS → HOTS)
+Prompt pronto da copiare in **Gemini *Thinking* + Canvas** (disponibile anche con pulsante copia nella presentazione HTML e nella [Scheda Lavoro Pratico 2](../Materiali_Trasversali/02_Schede_Operative_5_Lavori_Pratici.md)):
+* **[R]** Docente esperto + progettista UDL, Anderson & Krathwohl, Criterio KSM;
+* **[C]** Classe 1ª/2ª/3ª media (45–50 min);
+* **[N]** 6 quesiti bilanciati: Q1–Q2 LOTS (`K`), Q3–Q4 Ponte (`S`), Q5 *"Caccia all'errore"* (`HOTS 5 — M`), Q6 Rielaborazione/Ipotesi (`HOTS 6 — M`);
+* **[A]** 3 Versioni parallele (A Facilitata/Equipollente, B Standard, C Potenziamento);
+* **[F]** 3 versioni distinte + Correttorio completo con codici `[A-D][1-6]`.
+
+---
+
+### SLIDE 13 — 🛠️ LAVORO PRATICO 2 · FASE 2B (`02:40 – 03:35` · 55 minuti in Laboratorio)
 ### *Costruisci la tua Verifica UDL a 3 Livelli (e il tuo Gem)*
 
 * **🟢 BINARIO BASE ("Pronti Via")**:
@@ -143,13 +153,16 @@ Nel [Ricettario dei 30 Esempi](../Materiali_Trasversali/01_Ricettario_Prompt_30_
 
 ---
 
-### SLIDE 12 — Controllo Critico (*Human-in-the-Loop*) e Chiusura Incontro 2 (`03:35 – 04:00` · 25 min)
+### SLIDE 14 — Controllo Critico (*Human-in-the-Loop*) (`03:35 – 03:50` · 15 min)
 Prima di salvare la versione definitiva, esegui con il collega di banco la **Caccia ai 4 Rischi dell'IA**:
 1. **Errori fattuali o di calcolo**: controlla sempre i risultati del correttorio!
 2. **Taratura 11–14 anni**: il linguaggio è adatto alla tua classe?
 3. **Doppie negazioni / ambiguità**: ogni consegna ha un solo verbo d'azione chiaro?
 4. **Equità**: la Versione A mantiene la dignità cognitiva (include il ragionamento con *scaffolding*)?
 
+---
+
+### SLIDE 15 — Checklist di Fine Giornata 2 & Ponte verso l'Incontro 3 (`03:50 – 04:00` · 10 min)
 * **Checklist di fine Incontro 2**:
   - [x] Verifica UDL a 3 Livelli + Correttorio salvati in `02_Incontro2_Verifica_UDL_Multilivello`;
   - [x] Gem disciplinare salvato (per chi ha svolto il Binario Approfondimento);

@@ -7,228 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #0f172a;
-      --card: #1e293b;
-      --card-alt: #263449;
-      --text: #f8fafc;
-      --muted: #cbd5e1;
-      --accent: #38bdf8;
-      --accent-green: #4ade80;
-      --accent-amber: #fbbf24;
-      --accent-purple: #c084fc;
-      --danger: #f87171;
-      --border: #334155;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Lexend', 'Atkinson Hyperlegible', system-ui, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-      line-height: 1.5;
-    }
-    header {
-      background: #020617;
-      border-bottom: 1px solid var(--border);
-      padding: 0.75rem 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-    }
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      font-weight: 700;
-      font-size: 1rem;
-      color: var(--accent);
-    }
-    .badge {
-      padding: 0.25rem 0.75rem;
-      border-radius: 999px;
-      font-size: 0.82rem;
-      font-weight: 600;
-      background: var(--card);
-      color: var(--text);
-      border: 1px solid var(--border);
-    }
-    .badge.b1 { border-color: var(--accent-green); color: var(--accent-green); }
-    .badge.b2 { border-color: var(--accent); color: var(--accent); }
-    .badge.pausa { border-color: var(--accent-amber); color: var(--accent-amber); }
-    .controls {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    button, select {
-      font-family: inherit;
-      background: var(--card);
-      color: var(--text);
-      border: 1px solid var(--border);
-      padding: 0.45rem 0.85rem;
-      border-radius: 0.5rem;
-      cursor: pointer;
-      font-size: 0.9rem;
-      transition: background 0.15s, border-color 0.15s;
-    }
-    button:hover, select:hover {
-      background: var(--card-alt);
-      border-color: var(--accent);
-    }
-    #progress-container {
-      width: 100%;
-      height: 5px;
-      background: #020617;
-    }
-    #progress-bar {
-      height: 100%;
-      background: linear-gradient(90deg, var(--accent-green), var(--accent), var(--accent-purple));
-      width: 6%;
-      transition: width 0.25s ease;
-    }
-    main {
-      flex: 1;
-      overflow-y: auto;
-      padding: 2rem 3.5rem;
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-    }
-    .slide {
-      display: none;
-      width: 100%;
-      max-width: 1220px;
-      animation: fadeIn 0.2s ease;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(6px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .slide-header {
-      margin-bottom: 1.4rem;
-      border-bottom: 2px solid var(--border);
-      padding-bottom: 0.9rem;
-    }
-    .slide-kicker {
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--accent);
-      font-weight: 600;
-      margin-bottom: 0.3rem;
-    }
-    h1 {
-      font-size: 2.1rem;
-      font-weight: 700;
-      color: #ffffff;
-    }
-    h2 {
-      font-size: 1.3rem;
-      color: var(--accent);
-      margin-bottom: 0.65rem;
-    }
-    p, li {
-      font-size: 1.08rem;
-      color: var(--text);
-    }
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    ul, ol {
-      padding-left: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.55rem;
-    }
-    .grid-2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.25rem;
-      margin-top: 1rem;
-    }
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.1rem;
-      margin-top: 1rem;
-    }
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 0.85rem;
-      padding: 1.25rem 1.4rem;
-    }
-    .card.highlight-green { border-left: 5px solid var(--accent-green); }
-    .card.highlight-blue { border-left: 5px solid var(--accent); }
-    .card.highlight-amber { border-left: 5px solid var(--accent-amber); }
-    .card.highlight-purple { border-left: 5px solid var(--accent-purple); }
-    .card.highlight-red { border-left: 5px solid var(--danger); }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 0.8rem;
-      background: var(--card);
-      border-radius: 0.75rem;
-      overflow: hidden;
-    }
-    th, td {
-      padding: 0.8rem 1rem;
-      text-align: left;
-      border-bottom: 1px solid var(--border);
-      font-size: 1.02rem;
-    }
-    th {
-      background: #020617;
-      color: var(--accent);
-      font-weight: 600;
-    }
-    .prompt-box {
-      background: #020617;
-      border: 1px solid var(--accent);
-      border-radius: 0.75rem;
-      padding: 1rem 1.2rem;
-      font-family: 'Atkinson Hyperlegible', monospace;
-      font-size: 0.94rem;
-      white-space: pre-wrap;
-      margin-top: 0.75rem;
-      position: relative;
-      color: #e2e8f0;
-    }
-    .copy-btn {
-      position: absolute;
-      top: 0.6rem;
-      right: 0.6rem;
-      background: var(--accent);
-      color: #020617;
-      font-weight: 700;
-      border: none;
-      padding: 0.3rem 0.7rem;
-      font-size: 0.8rem;
-    }
-    .copy-btn:hover {
-      background: #7dd3fc;
-    }
-    footer {
-      background: #020617;
-      border-top: 1px solid var(--border);
-      padding: 0.6rem 1.5rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 0.88rem;
-      color: var(--muted);
-    }
-  </style>
+  <link rel="stylesheet" href="../assets/presentazione.css" />
 </head>
 <body>
   <header>
@@ -426,7 +205,7 @@
     <!-- SLIDE 7 -->
     <section class="slide" data-block="Blocco 1 · 00:00–01:50" data-badge="b1" data-title="7. LAVORO 2 · Fase 2A: Radiografia Verifica (30')">
       <div class="slide-header">
-        <div class="slide-kicker">🛠️ LAVORO PRATICO 2 · FASE 2A (`01:20 – 01:50` · 30 Minuti)</div>
+        <div class="slide-kicker">🛠️ LAVORO PRATICO 2 · FASE 2A (<code>01:20 – 01:50</code> · 30 Minuti)</div>
         <h1>"Radiografia" di una Verifica Reale con Gemini Multimodale</h1>
       </div>
       <p>Carica in <strong>Google Gemini</strong> la foto, lo screenshot o il PDF di una tua verifica tradizionale e incolla questo prompt diagnostico:</p>
@@ -442,14 +221,14 @@ Restituisci:
       <div class="card highlight-amber" style="text-align:center; padding:3.5rem 2rem; margin-top:2rem;">
         <div class="slide-kicker">Stacco Ergonomico di Metà Pomeriggio · 01:50 – 02:10</div>
         <h1 style="font-size:3rem; margin:1rem 0;">☕ PAUSA CENTRALE — 20 Minuti</h1>
-        <p style="font-size:1.35rem; color:var(--muted);">Pausa caffè e movimento!<br/>Al rientro (`02:10`): <strong>Gemini Canvas per le 3 Versioni UDL, creazione del tuo Gem disciplinare e Fase 2B del Lavoro Pratico 2!</strong></p>
+        <p style="font-size:1.35rem; color:var(--muted);">Pausa caffè e movimento!<br/>Al rientro (<code>02:10</code>): <strong>Gemini Canvas per le 3 Versioni UDL, creazione del tuo Gem disciplinare e Fase 2B del Lavoro Pratico 2!</strong></p>
       </div>
     </section>
 
     <!-- SLIDE 9 -->
     <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="9. Gemini Canvas: Verifica UDL su 3 Livelli">
       <div class="slide-header">
-        <div class="slide-kicker">Blocco 2 (`02:10 – 04:00`) · Demo Live 1</div>
+        <div class="slide-kicker">Blocco 2 (<code>02:10 – 04:00</code>) · Demo Live 1</div>
         <h1>Co-Progettare 3 Versioni Parallele in Gemini Canvas</h1>
       </div>
       <div class="grid-3">
@@ -490,7 +269,7 @@ Restituisci:
         <div class="card highlight-green">
           <h2>🚀 Come lo userai tutto l'anno scolastico</h2>
           <p>Non dovrai più riscrivere il prompt lungo! Ti basterà aprire il tuo Gem e scrivere solo:</p>
-          <div class="prompt-box" style="margin-top:0.6rem;">Classe: 2ª media
+          <div class="prompt-box" style="margin-top:0.6rem;"><button class="copy-btn" onclick="copyPrompt(this)">📋 Copia Esempio</button>Classe: 2ª media
 Argomento: Le leve (Scienze/Tecnologia)
 3 nuclei: fulcro, potenza e resistenza, i 3 generi di leve
 [+ opzionale: allego la foto della pagina del libro]</div>
@@ -556,7 +335,7 @@ Ogni versione deve contenere 6 quesiti bilanciati:
     <!-- SLIDE 13 -->
     <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="13. LAVORO 2 · Fase 2B (55 minuti)">
       <div class="slide-header">
-        <div class="slide-kicker">Laboratorio Hands-On · `02:40 – 03:35` (55 Minuti al PC)</div>
+        <div class="slide-kicker">Laboratorio Hands-On · <code>02:40 – 03:35</code> (55 Minuti al PC)</div>
         <h1>🛠️ LAVORO PRATICO 2 · FASE 2B: Costruisci la Verifica UDL a 3 Livelli</h1>
       </div>
       <div class="grid-2">
@@ -583,7 +362,7 @@ Ogni versione deve contenere 6 quesiti bilanciati:
     <!-- SLIDE 14 -->
     <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="14. Controllo Critico Human-in-the-Loop">
       <div class="slide-header">
-        <div class="slide-kicker">Validazione tra Pari (`03:35 – 03:50` · 15 min)</div>
+        <div class="slide-kicker">Validazione tra Pari (<code>03:35 – 03:50</code> · 15 min)</div>
         <h1>Controllo Critico (<em>Human-in-the-Loop</em>): I 4 Rischi da Intercettare</h1>
       </div>
       <div class="grid-2">
@@ -609,7 +388,7 @@ Ogni versione deve contenere 6 quesiti bilanciati:
     <!-- SLIDE 15 -->
     <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="15. Checklist Finale e Ponte verso Incontro 3">
       <div class="slide-header">
-        <div class="slide-kicker">Chiusura Incontro 2 di 5 (`03:50 – 04:00`) · Arrivederci all'Incontro 3!</div>
+        <div class="slide-kicker">Chiusura Incontro 2 di 5 (<code>03:50 – 04:00</code>) · Arrivederci all'Incontro 3!</div>
         <h1>Checklist di Fine Giornata 2 & Anticipazione Incontro 3</h1>
       </div>
       <div class="grid-2">
@@ -640,74 +419,6 @@ Ogni versione deve contenere 6 quesiti bilanciati:
     <div>Usa le frecce della tastiera <code>◀</code> <code>▶</code> o <code>Spazio</code> per navigare tra le slide</div>
   </footer>
 
-  <script>
-    const slides = document.querySelectorAll('.slide');
-    const counter = document.getElementById('counter');
-    const progressBar = document.getElementById('progress-bar');
-    const blockBadge = document.getElementById('block-badge');
-    const slideSelect = document.getElementById('slide-select');
-    let currentSlide = 0;
-
-    function initSelect() {
-      slides.forEach((s, idx) => {
-        const opt = document.createElement('option');
-        opt.value = idx;
-        opt.textContent = s.dataset.title || `Slide ${idx + 1}`;
-        slideSelect.appendChild(opt);
-      });
-    }
-
-    function showSlide(n, slidesList, counterEl) {
-      if (n < 0) n = 0;
-      if (n >= slidesList.length) n = slidesList.length - 1;
-      currentSlide = n;
-      slidesList.forEach((slide, index) => {
-        slide.style.display = index === n ? 'block' : 'none';
-      });
-      counterEl.textContent = `Slide ${n + 1} / ${slidesList.length}`;
-      slideSelect.value = n;
-      const pct = ((n + 1) / slidesList.length) * 100;
-      progressBar.style.width = `${pct}%`;
-
-      const active = slidesList[n];
-      blockBadge.textContent = active.dataset.block || '';
-      blockBadge.className = `badge ${active.dataset.badge || 'b1'}`;
-    }
-
-    function nextSlide() { showSlide(currentSlide + 1, slides, counter); }
-    function prevSlide() { showSlide(currentSlide - 1, slides, counter); }
-    function jumpToSlide(val) { showSlide(parseInt(val, 10), slides, counter); }
-
-    function copyPrompt(btn) {
-      const box = btn.parentElement;
-      const text = box.innerText.replace(btn.innerText, '').trim();
-      navigator.clipboard.writeText(text).then(() => {
-        const old = btn.textContent;
-        btn.textContent = '✅ Copiato!';
-        setTimeout(() => { btn.textContent = old; }, 1600);
-      });
-    }
-
-    function toggleFullScreen() {
-      if (!document.fullscreenElement) {
-        document.documentElement.requestFullscreen().catch(() => {});
-      } else {
-        document.exitFullscreen().catch(() => {});
-      }
-    }
-
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'ArrowRight' || e.key === ' ') {
-        e.preventDefault();
-        nextSlide();
-      } else if (e.key === 'ArrowLeft') {
-        e.preventDefault();
-        prevSlide();
-      }
-    });
-
-    initSelect();
-    showSlide(0, slides, counter);
-  </script>
+  <script src="../assets/presentazione.js"></script>
 </body>
 </html>

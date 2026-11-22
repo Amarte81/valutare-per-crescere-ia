@@ -40,7 +40,7 @@
 
 1. **Scegli l'argomento e il Profilo Funzionale Anonimizzato (`5 min`)**:
    * Individua un argomento di 1ª, 2ª o 3ª media su cui lavorerai lungo tutti e 5 gli incontri.
-   * Apri il [03_Kit_Privacy_GDPR_e_Strumenti_Locali.md](file:///c:/Users/amart/Desktop/Corsi%20per%20docenti/Intelligenza%20Artificiale%20nella%20didattica%20e%20nella%20valutazione/Materiali_Trasversali/03_Kit_Privacy_GDPR_e_Strumenti_Locali.md) (Parte 2) e copia il blocco di **Profilo Funzionale Anonimizzato** adatto alla tua classe (zero nomi o diagnosi cliniche!).
+   * Apri il [03_Kit_Privacy_GDPR_e_Strumenti_Locali.md](03_Kit_Privacy_GDPR_e_Strumenti_Locali.md) (Parte 2) e copia il blocco di **Profilo Funzionale Anonimizzato** adatto alla tua classe (zero nomi o diagnosi cliniche!).
 2. **Genera la Scheda in Google Gemini (`25 min`)**:
    * 🟢 **Binario Base ("Pronti Via")**: incolla in `gemini.google.com` il **Prompt Template 1 (`R-C-N-A-F`)** qui sotto insieme a un testo della tua disciplina, verifica l'output (*Human-in-the-Loop*) e clicca su **"Esporta in Documenti"**.
    * 🔵 **Binario Approfondimento**: carica direttamente la **foto/screenshot** di una pagina del libro cartaceo (con testo e immagini/schemi), attiva **Gemini Canvas**, usa gli strumenti a comparsa di Canvas per semplificare al volo un paragrafo selezionato col mouse ed esporta in **Google Documenti**.
