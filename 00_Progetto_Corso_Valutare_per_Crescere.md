@@ -222,8 +222,9 @@ I **30 esempi di prompt e output IA** (su Gemini e NotebookLM) rispecchiano esat
    * `assets/presentazione.js` (Script condiviso di navigazione, schermo intero e copia prompt).
 5. **Materiali Trasversali**:
    * `Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md` (30 esempi mappati sui 5 incontri);
-   * `Materiali_Trasversali/02_Schede_Operative_5_Lavori_Pratici.md` (Schede operative dei **5 Lavori Pratici dei 5 incontri**, ciascuno articolato in **Fase A nel Blocco 1** e **Fase B nel Blocco 2**);
-   * `Materiali_Trasversali/03_Kit_Privacy_GDPR_e_Strumenti_Locali.md`.
+   * `Materiali_Trasversali/02_Schede_Operative_5_Lavori_Pratici.md` (Schede operative progressive a micro-step dei **5 Lavori Pratici**, ciascuno articolato in **Fase A nel Blocco 1** e **Fase B nel Blocco 2**);
+   * `Materiali_Trasversali/03_Kit_Privacy_GDPR_e_Strumenti_Locali.md`;
+   * `Materiali_Trasversali/04_Kit_Materiali_Campione_Pronti_Aula.md` (Testi campione, 4 verifiche tradizionali da "radiografare" e guida alla mini-playlist video YouTube per zero tempi morti in laboratorio).
 6. **Moduli Aggiuntivi Facoltativi**:
    * `Moduli_Extra/Modulo_Extra_A_Uso_Etico_IA_Alunni_Casa.md`;
    * `Moduli_Extra/Modulo_Extra_B_Prova_Orale_Inclusiva.md`.

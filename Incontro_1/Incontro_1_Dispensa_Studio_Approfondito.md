@@ -169,6 +169,10 @@ Una volta caricate le fonti, il pannello **Studio** di NotebookLM mette a dispos
 2. **Audio Overview (Podcast a due voci in italiano)**: NotebookLM genera una conversazione audio naturale tra due voci sintetiche che discutono, riassumono e spiegano con esempi chiari i punti chiave dei documenti caricati dal docente (il docente può anche cliccare su *"Personalizza"* prima di generare l'audio per dare un'istruzione specifica, ad esempio: *"Rivolgetevi a studenti di seconda media, usate un tono incoraggiante, spiegate bene i tre termini scientifici principali e fate un esempio quotidiano"*). Il file audio `.mp3`/`.wav` può essere scaricato e caricato su Google Classroom: per un alunno con dislessia severa, difficoltà visiva o stanchezza serale nello studio a casa, poter **ascoltare una spiegazione dialogata di 6–8 minuti basata esattamente sugli appunti del proprio professore** rappresenta un supporto straordinario.
 3. **Guide allo Studio, Glossari e Domande di Comprensione**: nella chat del taccuino il docente può chiedere a NotebookLM di estrarre un glossario dei termini presenti *solo* nei materiali caricati o di formulare domande graduando la difficoltà dalla comprensione letterale all'inferenza.
 
+> [!TIP]
+> **Strategia operativa "Anti-Attesa" in laboratorio (Fase 1B)**  
+> Poiché la generazione dell'**Audio Overview** richiede generalmente 3–5 minuti di elaborazione, nella pratica d'aula conviene seguire un **flusso parallelo a 2 corsie**: (1) caricare subito il documento e **avviare l'Audio Overview in background**; (2) generare nel frattempo la **Mappa Mentale PNG** e verificare le citazioni nella chat del taccuino; (3) ascoltare e scaricare l'audio ormai pronto al termine dei 30 minuti.
+
 ---
 
 ## Capitolo 5 — Governare Gemini per lo Studio Accessibile (e Ponte verso l'Incontro 2): l'Ingegneria del Prompt in 5 Punti (`R-C-N-A-F`)
@@ -197,6 +201,8 @@ In tutti i laboratori del corso utilizzeremo una struttura costante in **5 blocc
 | **Lessico disciplinare** | Spesso cancella i termini scientifici (*magma, lava, cratere, camino vulcanico*) impoverendo il contenuto, oppure lascia frasi complesse non spiegate. | Mantiene i **termini scientifici fondamentali in grassetto** e li spiega subito in modo trasparente nel testo e nella tabella glossario. |
 | **Struttura sintattica** | Un unico blocco di testo continuo, con subordinate lunghe e passivi (*"Viene definita eruzione effusiva quella in cui..."*). | Paragrafi brevi titolati con domande-guida (*"1. Che cos'è un vulcano?", "2. Perché il magma sale?"*), frasi attive sotto le 18 parole. |
 | **Domande di studio** | 3 domande tutte sul livello `1. Ricordare` (*"Cos'è il magma? Quali sono le parti del vulcano?"*) senza alcun supporto. | 4 domande graduate lungo la scala **LOTS → HOTS** (`Ricordare` con banca parole → `Comprendere` differenza magma/lava → `Applicare/Analizzare` confronto tra due tipi di eruzione in tabella guidata), ciascuna con un *suggerimento di avvio*. |
+
+*(Per esercitarsi subito sul confronto tra prompt ingenuo e prompt `R-C-N-A-F` anche senza avere un testo proprio a portata di mano, è disponibile il [Kit Materiali Campione Pronti per l'Aula](../Materiali_Trasversali/04_Kit_Materiali_Campione_Pronti_Aula.md)).*
 
 ---
 

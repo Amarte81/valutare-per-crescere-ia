@@ -10,7 +10,7 @@
 >   * `00:00 – 01:50` **Blocco 1 (110 min · 2h nominali)**: Dal prompt ingenuo al prompt di verifica `R-C-N-A-F`, governare Gemini *Thinking* con **LOTS → HOTS** e *"Caccia all'errore"*, Prove equipollenti vs differenziate e **Lavoro Pratico 2 — Fase 2A (Radiografia di una verifica reale, 30')**.
 >   * `01:50 – 02:10` ☕ **PAUSA CENTRALE (20 min)**.
 >   * `02:10 – 04:00` **Blocco 2 (110 min · 2h nominali)**: Co-progettazione in **Gemini Canvas** su 3 livelli UDL + creazione del **Gem disciplinare**, **Lavoro Pratico 2 — Fase 2B (55')** e Controllo Critico (*Human-in-the-Loop*) + Confronto tra dipartimenti (25').  
-> * Per la proiezione interattiva nel browser apri [Incontro_2_Presentazione_Aula.html](Incontro_2_Presentazione_Aula.html).
+> * Per la proiezione interattiva nel browser (completa di **illustrazione hero, grafici SVG animati e timer interattivi** su Slide 7, 8 e 13) apri [Incontro_2_Presentazione_Aula.html](Incontro_2_Presentazione_Aula.html).
 
 ---
 
@@ -82,17 +82,18 @@ Cosa dire con precisione a Gemini nel punto **[A] Accessibilità**:
 
 ---
 
-### SLIDE 7 — 🛠️ LAVORO PRATICO 2 · FASE 2A (`01:20 – 01:50` · 30 minuti)
+### SLIDE 7 — 🛠️ LAVORO PRATICO 2 · FASE 2A (`01:20 – 01:50` · 30 min · 3 Micro-Step)
 ### *"Radiografia" di una Verifica Reale con Gemini Multimodale*
-1. Carica in **Google Gemini** la **foto**, lo screenshot o il **PDF** di una tua verifica tradizionale (oppure un testo di verifica della tua materia).
-2. Incolla il **Prompt di Radiografia Tassonomica** (dalla [Scheda del Lavoro Pratico 2](../Materiali_Trasversali/02_Schede_Operative_5_Lavori_Pratici.md)):
-   * Gemini genera la **Tabella Diagnostica** (`N. Quesito | Codice [A-D][1-6] | Asse KSM | Barriere BES/DSA/NAI`), calcola la quota reale LOTS vs HOTS e propone 3 correttivi.
-3. Confronta la diagnosi con il tuo collega di banco: *quante domande erano solo `LOTS 1 — Ricordare`?*
+1. **Step 2A.1 (`5'`)**: carica in **Google Gemini** la foto/PDF di una tua verifica tradizionale, oppure prendi subito una delle **4 Verifiche Campione** dal [Kit Materiali Campione](../Materiali_Trasversali/04_Kit_Materiali_Campione_Pronti_Aula.md).
+2. **Step 2A.2 (`15'`)**: incolla il **Prompt di Radiografia Tassonomica** (dalla [Scheda del Lavoro Pratico 2](../Materiali_Trasversali/02_Schede_Operative_5_Lavori_Pratici.md)): Gemini genera la **Tabella Diagnostica** (`N. Quesito | Codice [A-D][1-6] | Asse KSM | Barriere BES/DSA/NAI`), calcola la quota reale LOTS vs HOTS e propone 3 correttivi.
+3. **Step 2A.3 (`10'`)**: confronta la diagnosi con il tuo collega di banco (*quante domande erano solo `LOTS 1 — Ricordare`?*) e annota i 2 correttivi prioritari.
+
+> ⏱️ *Regia in HTML:* avvia il **Timer integrato da `30:00`** direttamente sulla Slide 7.
 
 ---
 
 ## ☕ SLIDE 8 — PAUSA CENTRALE (`01:50 – 02:10` · 20 minuti)
-*Pausa rigenerante di 20 minuti! Al rientro (`02:10`): Gemini Canvas per le 3 Versioni UDL, creazione del tuo Gem disciplinare e Fase 2B del Lavoro Pratico 2.*
+*Pausa rigenerante di 20 minuti! Avvia il **Timer integrato da `20:00`** nella presentazione HTML. Al rientro (`02:10`): Gemini Canvas per le 3 Versioni UDL, creazione del tuo Gem disciplinare e Fase 2B del Lavoro Pratico 2.*
 
 ---
 
@@ -130,26 +131,21 @@ Nel [Ricettario dei 30 Esempi](../Materiali_Trasversali/01_Ricettario_Prompt_30_
 
 ---
 
-### SLIDE 12 — Prompt Template 2 (Verifica UDL Multilivello LOTS → HOTS)
-Prompt pronto da copiare in **Gemini *Thinking* + Canvas** (disponibile anche con pulsante copia nella presentazione HTML e nella [Scheda Lavoro Pratico 2](../Materiali_Trasversali/02_Schede_Operative_5_Lavori_Pratici.md)):
-* **[R]** Docente esperto + progettista UDL, Anderson & Krathwohl, Criterio KSM;
-* **[C]** Classe 1ª/2ª/3ª media (45–50 min);
-* **[N]** 6 quesiti bilanciati: Q1–Q2 LOTS (`K`), Q3–Q4 Ponte (`S`), Q5 *"Caccia all'errore"* (`HOTS 5 — M`), Q6 Rielaborazione/Ipotesi (`HOTS 6 — M`);
-* **[A]** 3 Versioni parallele (A Facilitata/Equipollente, B Standard, C Potenziamento);
-* **[F]** 3 versioni distinte + Correttorio completo con codici `[A-D][1-6]`.
+### SLIDE 12 — Prompt Chaining (2B.1 → 2B.2): Costruzione Incrementale Senza Errori
+Invece di un solo mega-prompt per 3 versioni tutte insieme, lavoriamo in **2 mosse progressive** su **Gemini *Thinking* + Canvas**:
+* **Mossa 1 (`Prompt 2B.1`)**: genera **solo la Versione B (Standard)** (6 quesiti bilanciati 40/40/20 con Q5 *"Caccia all'errore"*) + **Correttorio `[A-D][1-6]`** → **validazione immediata** di calcoli e contenuti;
+* **Mossa 2 (`Prompt 2B.2`)**: nella stessa chat chiedi a Gemini di generare la **Versione A (Facilitata/Equipollente con scaffolding)** e la **Versione C (Potenziamento)** esattamente parallele alla Versione B già validata!
 
 ---
 
-### SLIDE 13 — 🛠️ LAVORO PRATICO 2 · FASE 2B (`02:40 – 03:35` · 55 minuti in Laboratorio)
-### *Costruisci la tua Verifica UDL a 3 Livelli (e il tuo Gem)*
+### SLIDE 13 — 🛠️ LAVORO PRATICO 2 · FASE 2B (`02:40 – 03:35` · 55 min · 3 Micro-Step)
+### *Costruisci per Step la tua Verifica UDL a 3 Livelli (e il tuo Gem)*
 
-* **🟢 BINARIO BASE ("Pronti Via")**:
-  1. Attiva in Gemini il modello **Ragionamento (*Thinking*)** e incolla il **Prompt Template 2** (dalla [Scheda Lavoro Pratico 2](../Materiali_Trasversali/02_Schede_Operative_5_Lavori_Pratici.md)) sull'argomento scelto all'Incontro 1.
-  2. Verifica che siano presenti tutte e 3 le versioni (`A`, `B`, `C`), la *"Caccia all'errore"* e il correttorio con codici `[A-D][1-6]`.
-  3. Clicca su **"Esporta in Documenti"**, imposta **Lexend `12 pt`** (`interlinea 1,5`) e salva in Drive → `02_Incontro2_Verifica_UDL_Multilivello`.
-* **🔵 BINARIO APPROFONDIMENTO**:
-  1. Lavora in **Gemini Canvas** rifinendo chirurgicamente almeno 2 quesiti e verifica l'accessibilità della *"Caccia all'errore"* nella Versione A.
-  2. Crea e testa il tuo **Gem disciplinare permanente** `"Progettista Verifiche UDL - [Tua Materia]"`.
+1. **Step 2B.1 (`20'` — Cuore della prova)**: attiva **Gemini *Thinking* + Canvas**, lancia il **Prompt 2B.1** sull'argomento dell'Incontro 1 per generare la **Versione B + Correttorio** e verifica subito calcoli e taratura 11–14 anni.
+2. **Step 2B.2 (`20'` — Differenziazione UDL)**: lancia il **Prompt 2B.2** per ottenere **Versione A (Facilitata)** e **Versione C (Potenziamento)** parallele, rifinisci 1–2 consegne col mouse in **Canvas**, clicca **"Esporta in Documenti"** (**Lexend `12 pt`, interlinea `1,5`**) e salva in `02_Incontro2_Verifica_UDL_Multilivello`.
+3. **Step 2B.3 (`15'` — Approfondimento / Opzionale)**: apri **Gestore dei Gem → Nuovo Gem** e salva il tuo assistente permanente `"Progettista Verifiche UDL - [Tua Materia]"`.
+
+> ⏱️ *Regia in HTML:* usa il **diagramma di Prompt Chaining** sulla Slide 12 (con i due pulsanti di copia separati per Mossa 1 e Mossa 2) e avvia il **Timer integrato da `55:00`** sulla Slide 13.
 
 ---
 

@@ -58,6 +58,8 @@ Grazie alla [multimodalità nativa](https://cloud.google.com/use-cases/multimoda
 2. la quota reale di domande `LOTS` rispetto a `HOTS`;
 3. le barriere nascoste (frasi con più di 20 parole, doppie negazioni, consegne multiple non numerate, calcoli con decimali inutili che distolgono dall'obiettivo geometrico).
 
+*(Per esercitarsi nella "Radiografia" durante la Fase 2A anche senza avere un proprio file a disposizione, il corso fornisce **4 Verifiche Tradizionali Campione** con difetti mirati nel [Kit Materiali Campione Pronti per l'Aula](../Materiali_Trasversali/04_Kit_Materiali_Campione_Pronti_Aula.md#parte-2--4-verifiche-tradizionali-campione-per-lincontro-2-fase-2a)).*
+
 ### 3.2 Prove Equipollenti vs Prove Differenziate (Normativa Italiana nella Secondaria di I Grado)
 Quando si chiede a Gemini di generare una verifica multilivello, il docente deve conoscere con precisione la distinzione normativa prevista dal **[D.Lgs. 62/2017](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2017-04-13;62)** (valutazione nel primo ciclo), dalla **[Legge 170/2010 (DSA)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2010-10-08;170)** e dal **[Nuovo PEI (D.Lgs. 66/2017 e DI 182/2020)](https://www.mim.gov.it/inclusione-e-nuovo-pei)**:
 
@@ -70,8 +72,12 @@ Quando si chiede a Gemini di generare una verifica multilivello, il docente deve
 
 ## Capitolo 4 — Co-Progettare in Gemini Canvas, Creare il Proprio "Gem" e i 6 Esempi dell'Incontro 2
 
-### 4.1 Lavorare in affiancamento con Gemini Canvas
-**[Gemini Canvas](https://support.google.com/gemini/answer/16047329?hl=it)** trasforma la progettazione della verifica da un processo "tutto o niente" a un vero tavolo di lavoro editoriale:
+### 4.1 Lavorare in affiancamento con Gemini Canvas e il *Prompt Chaining* (Mossa 1 → Mossa 2)
+Chiedere a un modello IA, dentro un unico "mega-prompt", di scrivere simultaneamente **3 versioni complete × 6 quesiti + il correttorio con codici tassonomici** aumenta il rischio di output troncati, disallineamenti tra una versione e l'altra o errori di calcolo propagati su tutti i livelli. Per evitarlo, nell'Incontro 2 adottiamo la tecnica del **[Prompt Chaining (Concatenazione di Prompt)](https://cloud.google.com/discover/what-is-prompt-engineering?hl=it)** in **2 mosse progressive**:
+1. **Mossa 1 (`Prompt 2B.1` — Cuore della prova)**: con **Gemini *Thinking*** si genera *solo* la **Versione B (Standard)** bilanciata `40% LOTS / 40% Ponte / 20% HOTS` completa di correttorio `[A-D][1-6]`, eseguendo subito la validazione *Human-in-the-Loop* (calcoli, date, chiarezza della *"Caccia all'errore"*).
+2. **Mossa 2 (`Prompt 2B.2` — Differenziazione UDL parallela)**: nella stessa chat, solo dopo aver validato la Versione B, si chiede a Gemini di generare la **Versione A (Facilitata/Equipollente con *scaffolding*)** e la **Versione C (Potenziamento)** esattamente parallele agli stessi obiettivi.
+
+A questo punto **[Gemini Canvas](https://support.google.com/gemini/answer/16047329?hl=it)** trasforma la rifinitura della verifica da un processo "tutto o niente" a un vero tavolo di lavoro editoriale:
 * una volta generate le 3 versioni della verifica (`Versione A`, `Versione B`, `Versione C`), il docente può selezionare con il mouse **un singolo quesito** che risulta ancora troppo verboso o troppo semplice e chiedere direttamente sul riquadro contestuale: *"Elimina la doppia negazione in questa domanda"*, *"Aggiungi un esempio svolto prima del Punto 3"* oppure *"Sostituisci i numeri decimali con una terna pitagorica intera"*;
 * al termine, il pulsante **"Esporta in Documenti"** trasferisce l'impaginazione pulita in [Google Documenti](https://support.google.com/docs/?hl=it), pronta per essere formattata in [Lexend](https://fonts.google.com/specimen/Lexend) (`12 pt`, interlinea `1,5`) e assegnata in modo differenziato e "invisibile" ai singoli studenti tramite [Google Classroom](https://edu.google.com/intl/ALL_it/workspace-for-education/products/classroom/).
 
@@ -114,6 +120,7 @@ Prima di stampare o pubblicare su Google Classroom una verifica generata con l'I
 | **Gemini Canvas** | Interfaccia interattiva affiancata alla chat di Gemini che consente di selezionare e modificare singole frasi o quesiti senza rigenerare l'intera verifica. | [Guida di Google Gemini — Usare Canvas](https://support.google.com/gemini/answer/16047329?hl=it) |
 | **Metacognizione** | Consapevolezza e capacità di riflettere sui propri processi di apprendimento, sugli errori commessi e sulle strategie più efficaci per migliorarsi (Dimensione `D` di Anderson & Krathwohl e Asse `M` del Criterio KSM). | [Wikipedia IT — Metacognizione](https://it.wikipedia.org/wiki/Metacognizione) |
 | **Modelli di Ragionamento (*Thinking Models*)** | Modelli IA di nuova generazione (come Gemini *Thinking*) che eseguono una catena di pensiero passo-passo interna prima di generare l'output, riducendo gli errori logici e matematici. | [Google AI for Developers — Gemini Thinking](https://ai.google.dev/gemini-api/docs/thinking?hl=it) |
+| **Prompt Chaining (Concatenazione di Prompt)** | Tecnica di *Prompt Engineering* che scompone un compito complesso in 2 o più richieste sequenziali (es. Mossa 1: Versione B validata → Mossa 2: Versioni A e C parallele), migliorando precisione e controllo. | [Google Cloud — Che cos'è il Prompt Engineering](https://cloud.google.com/discover/what-is-prompt-engineering?hl=it) |
 | **Prove Equipollenti vs Differenziate** | Le prove *equipollenti* mantengono gli stessi obiettivi curricolari variando canali/tempi/supporti (PDP/PEI curricolare); le prove *differenziate* sono tarate sugli obiettivi personalizzati del PEI (L. 104/92). | [Ministero dell'Istruzione e del Merito — Inclusione e Nuovo PEI](https://www.mim.gov.it/inclusione-e-nuovo-pei) |
 | **System Instructions (Istruzioni di sistema)** | Regole permanenti di comportamento, ruolo, tono e formato fornite a monte al modello IA (ad esempio dentro un *Gem*) che guidano tutte le risposte successive. | [Google AI for Developers — System Instructions](https://ai.google.dev/gemini-api/docs/system-instructions?hl=it) |
 

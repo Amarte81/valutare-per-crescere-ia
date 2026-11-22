@@ -10,7 +10,7 @@
 >   * `00:00 – 01:50` **Blocco 1 (110 min · 2h nominali)**: Nuovi modelli di Gemini, barriere allo studio 11–14 anni, Prompt di studio `R-C-N-A-F`, Privacy/GDPR, Demo Live 1 e **Lavoro Pratico 1 · Fase 1A (30')**.
 >   * `01:50 – 02:10` ☕ **PAUSA CENTRALE (20 min)**.
 >   * `02:10 – 04:00` **Blocco 2 (110 min · 2h nominali)**: Google NotebookLM (*Grounding*, Mappe Mentali, Audio Overview), **Lavoro Pratico 1 · Fase 1B (45')** e Galleria/Debriefing finale (30').  
-> * Per la proiezione interattiva a schermo intero nel browser, apri [Incontro_1_Presentazione_Aula.html](Incontro_1_Presentazione_Aula.html).
+> * Per la proiezione interattiva a schermo intero nel browser (completa di **illustrazioni, diagrammi SVG animati e timer interattivi** su Slide 10, 11 e 14), apri [Incontro_1_Presentazione_Aula.html](Incontro_1_Presentazione_Aula.html).
 
 ---
 
@@ -79,7 +79,8 @@ Quando uno studente di 1ª, 2ª o 3ª media apre una pagina di sussidiario a cas
 * **Disabilità (L. 104/92) e FIL**: necessità di concetti essenziali concreti, esempi visivi e passaggi guidati.
 * **ADHD / Fragilità Esecutive**: pagina "muro di testo" senza punti di ancoraggio visivo → perdita immediata del filo attentivo.
 
-> 💡 **Principio UDL**: *Abbassare la barriera strumentale (grafica e linguistica) NON significa abbassare la dignità cognitiva del compito!*
+> 💡 **Principio UDL**: *Abbassare la barriera strumentale (grafica e linguistica) NON significa abbassare la dignità cognitiva del compito!*  
+> 🎨 *Regia in HTML:* usa il **diagramma a barre del Carico Cognitivo** (`Prima: 80% Estraneo` → `Dopo UDL+IA: 85% Pertinente`) per visualizzare la teoria di Sweller in 3 secondi.
 
 ---
 
@@ -146,10 +147,12 @@ A Gemini **non serve l'etichetta medica**: lavora molto meglio con il **Profilo 
 2. **Step 1A.2 — Prompt `R-C-N-A-F` (`15'`)**: inserisci il Profilo Funzionale Anonimizzato + **Prompt Template 1** (Binario Approfondimento: carica la foto/PDF della pagina del libro in **Gemini Canvas** e rifinisci un capoverso col mouse).
 3. **Step 1A.3 — Validazione & Esportazione (`10'`)**: controllo *Human-in-the-Loop*, clicca **"Esporta in Documenti"**, imposta **Lexend (`12 pt`, interlinea `1,5`, sinistra)** e salva in `01_Incontro1_Studio_Accessibile`.
 
+> 🎨 *Regia in HTML:* mostra il mockup **"Prima → Dopo Easy-to-Read"** e avvia il **Timer integrato da `30:00`** direttamente sulla Slide 10.
+
 ---
 
 ## ☕ SLIDE 11 — PAUSA CENTRALE (`01:50 – 02:10` · 20 minuti)
-*Pausa di 20 minuti esattamente a metà delle 4 ore! Al rientro: Google NotebookLM (Mappe Mentali + Audio Overview) e Lavoro Pratico 1 · Fase 1B (45').*
+*Pausa di 20 minuti esattamente a metà delle 4 ore! Avvia il **Timer integrato da `20:00`** nella presentazione HTML. Al rientro: Google NotebookLM (Mappe Mentali + Audio Overview) e Lavoro Pratico 1 · Fase 1B (45').*
 
 ---
 
@@ -188,6 +191,8 @@ Segui i **4 micro-step** per azzerare i tempi di attesa della generazione audio:
 2. **Step 1B.2 (`15'`) — Mappa Mentale PNG**: mentre l'audio elabora, clicca su **"Mappa mentale"**, verifica i rami principali, scarica il **PNG** e incollalo in cima al Documento Google in `01_Incontro1_Studio_Accessibile`.
 3. **Step 1B.3 (`15'`) — Chat con Citazioni Verificabili**: chiedi una tabella comparativa basata solo sulle fonti e clicca su almeno **2 citazioni numerate** (*Grounding*).
 4. **Step 1B.4 (`10'`) — Ascolto e Salvataggio Audio**: ascolta i primi 60 secondi dell'Audio Overview ormai pronto e salvalo nella cartella Drive `01_Incontro1_Studio_Accessibile`.
+
+> 🎨 *Regia in HTML:* mostra il **diagramma parallelo a 2 corsie** (Audio in background vs lavoro attivo su Mappa + Chat) e avvia il **Timer integrato da `45:00`**.
 
 *(Guida passo-passo in [02_Schede_Operative_5_Lavori_Pratici.md](../Materiali_Trasversali/02_Schede_Operative_5_Lavori_Pratici.md))*
 
