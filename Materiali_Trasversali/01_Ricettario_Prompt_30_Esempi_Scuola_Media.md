@@ -1,4 +1,4 @@
-# Ricettario dei Prompt Inclusivi — I 30 Esempi Proporzionali per la Scuola Media
+﻿# Ricettario dei Prompt Inclusivi — I 30 Esempi Proporzionali per la Scuola Media
 
 ## VALUTARE PER CRESCERE
 ### *30 Prompt pronti all'uso per Google Gemini e Google NotebookLM (strutturati secondo il Framework R-C-N-A-F, la scala LOTS → HOTS e il Criterio KSM)*
@@ -25,16 +25,17 @@
 
 ## Indice Rapido per i 5 Incontri da 4 Ore (6 Esempi per Incontro)
 
-* **Incontro 1 (Giorno 1 · 4h — Accessibilità, autonomia e studio con Gemini e NotebookLM)**: `#01` (Italiano), `#02` (Italiano L2/NAI), `#07` (Matematica), `#11` (Inglese), `#16` (Geografia), `#18` (Scienze) *(6 esempi)*
-* **Incontro 2 (Giorno 2 · 4h — VerifichIAmo con l'IA Parte I: Verifiche UDL a 3 livelli, Gemini Thinking/Canvas, LOTS → HOTS)**: `#03` (Italiano narrativa), `#04` (Italiano grammatica), `#08` (Matematica Pitagora), `#14` (Storia Feudalesimo), `#22` (Tecnologia Energia), `#24` (Arte e Immagine) *(6 esempi)*
-* **Incontro 3 (Giorno 3 · 4h — VerifichIAmo con l'IA Parte II: Rubriche KSM, Autovalutazione e Feedback formativo)**: `#05` (Italiano Rubrica KSM), `#20` (2ª Lingua supporto e feedback), `#23` (Tecnologia Rubrica KSM disegno), `#26` (Musica Rubrica KSM), `#28` (Ed. Fisica Autovalutazione M), `#30` (IRC / Ed. Civica Scenario HOTS + Rubrica KSM) *(6 esempi)*
-* **Incontro 4 (Giorno 4 · 4h — Area 1 Banche Quesiti in Fogli + Area 2 Quiz Digitali e Moduli Ramificati)**: `#06` (Italiano Lessico), `#09` (Matematica Equazioni), `#10` (Matematica Modulo ramificato), `#12` (Inglese Past Simple), `#17` (Geografia Quiz Europa), `#21` (2ª Lingua Quesiti comunicativi) *(6 esempi)*
-* **Incontro 5 (Giorno 5 · 4h — Area 3 Verifiche integrate a Video/Materiali con NotebookLM + VerifichIAmo Parte III Sintesi)**: `#13` (Inglese Video-Listening), `#15` (Storia NotebookLM PDF+Video), `#19` (Scienze Video esperimento), `#25` (Arte Avanguardie), `#27` (Musica Ascolto su video/audio), `#29` (Ed. Fisica Video gesto motorio/Primo Soccorso) *(6 esempi)*
+* **Incontro 1 (Giorno 1 · 4h — Accessibilità, autonomia e studio con Gemini e NotebookLM)**: [#01 Italiano](#esempio-01), [#02 Italiano L2/NAI](#esempio-02), [#07 Matematica](#esempio-07), [#11 Inglese](#esempio-11), [#16 Geografia](#esempio-16), [#18 Scienze](#esempio-18) *(6 esempi)*
+* **Incontro 2 (Giorno 2 · 4h — VerifichIAmo con l'IA Parte I: Verifiche UDL a 3 livelli, Gemini Thinking/Canvas, LOTS → HOTS)**: [#03 Italiano narrativa](#esempio-03), [#04 Italiano grammatica](#esempio-04), [#08 Matematica Pitagora](#esempio-08), [#14 Storia Feudalesimo](#esempio-14), [#22 Tecnologia Energia](#esempio-22), [#24 Arte e Immagine](#esempio-24) *(6 esempi)*
+* **Incontro 3 (Giorno 3 · 4h — VerifichIAmo con l'IA Parte II: Rubriche KSM, Autovalutazione e Feedback formativo)**: [#05 Italiano Rubrica KSM](#esempio-05), [#20 2ª Lingua supporto e feedback](#esempio-20), [#23 Tecnologia Rubrica KSM disegno](#esempio-23), [#26 Musica Rubrica KSM](#esempio-26), [#28 Ed. Fisica Autovalutazione M](#esempio-28), [#30 IRC / Ed. Civica Scenario HOTS + Rubrica KSM](#esempio-30) *(6 esempi)*
+* **Incontro 4 (Giorno 4 · 4h — Area 1 Banche Quesiti in Fogli + Area 2 Quiz Digitali e Moduli Ramificati)**: [#06 Italiano Lessico](#esempio-06), [#09 Matematica Equazioni](#esempio-09), [#10 Matematica Modulo ramificato](#esempio-10), [#12 Inglese Past Simple](#esempio-12), [#17 Geografia Quiz Europa](#esempio-17), [#21 2ª Lingua Quesiti comunicativi](#esempio-21) *(6 esempi)*
+* **Incontro 5 (Giorno 5 · 4h — Area 3 Verifiche integrate a Video/Materiali con NotebookLM + VerifichIAmo Parte III Sintesi)**: [#13 Inglese Video-Listening](#esempio-13), [#15 Storia NotebookLM PDF+Video](#esempio-15), [#19 Scienze Video esperimento](#esempio-19), [#25 Arte Avanguardie](#esempio-25), [#27 Musica Ascolto su video/audio](#esempio-27), [#29 Ed. Fisica Video gesto motorio/Primo Soccorso](#esempio-29) *(6 esempi)*
 
 ---
 
 ## 📘 AREA LETTERE — ITALIANO (6 Esempi · 20% del monte ore)
 
+<a id="esempio-01"></a>
 ### Esempio #01 — Italiano (1ª Media · Incontro 1)
 * **Tema**: Adattamento *Easy-to-Read* di un brano narrativo/mitologico da foto della pagina dell'antologia.
 * **Strumento**: **Google Gemini Multimodale + Gemini Canvas** → *Esporta in Documenti*.
@@ -55,6 +56,7 @@
 
 ---
 
+<a id="esempio-02"></a>
 ### Esempio #02 — Italiano (2ª Media · Incontro 1)
 * **Tema**: Scheda di studio e glossario visivo-contestuale per alunni NAI su un testo espositivo-storico/letterario.
 * **Strumento**: **Google Gemini (*Flash*)** + **Google NotebookLM (Audio Overview)**.
@@ -72,6 +74,7 @@
 
 ---
 
+<a id="esempio-03"></a>
 ### Esempio #03 — Italiano (3ª Media · Incontro 2)
 * **Tema**: Verifica UDL a 3 livelli di comprensione e analisi del testo narrativo (Novecento / Primo Levi o Verga).
 * **Strumento**: **Google Gemini (Modello di Ragionamento *Thinking* + Canvas)**.
@@ -95,6 +98,7 @@
 
 ---
 
+<a id="esempio-04"></a>
 ### Esempio #04 — Italiano / Grammatica (2ª Media · Incontro 2)
 * **Tema**: Verifica accessibile di Analisi Logica (Soggetto, Predicato, Complemento Oggetto, Complementi Indiretti) con *"Caccia all'errore"*.
 * **Strumento**: **Google Gemini (Modello di Ragionamento *Thinking*)**.
@@ -115,6 +119,7 @@
 
 ---
 
+<a id="esempio-05"></a>
 ### Esempio #05 — Italiano (3ª Media · Incontro 3)
 * **Tema**: Rubrica di valutazione KSM per la produzione di un testo argomentativo + scheda di autovalutazione e feedback formativo.
 * **Strumento**: **Google Gemini (*Thinking*)** → *Esporta in Fogli / Griglie di Google Classroom*.
@@ -134,6 +139,7 @@
 
 ---
 
+<a id="esempio-06"></a>
 ### Esempio #06 — Italiano (1ª Media · Incontro 4 — Area 2)
 * **Tema**: Banca quesiti per Google Modulo ramificato su Lessico, Sinonimi, Omonimi e Linguaggio Figurato.
 * **Strumento**: **Google Gemini** → *Esporta in Fogli* → **Google Moduli**.
@@ -152,6 +158,7 @@
 
 ## 📐 AREA STEM — MATEMATICA (4 Esempi · 13,3% del monte ore)
 
+<a id="esempio-07"></a>
 ### Esempio #07 — Matematica (1ª Media · Incontro 1)
 * **Tema**: Scheda procedurale *step-by-step* sulle Frazioni e sui problemi con le frazioni (a partire da foto degli esercizi del libro).
 * **Strumento**: **Google Gemini Multimodale + Canvas** → *Esporta in Documenti*.
@@ -171,6 +178,7 @@
 
 ---
 
+<a id="esempio-08"></a>
 ### Esempio #08 — Matematica (2ª Media · Incontro 2)
 * **Tema**: Verifica UDL a 3 livelli sul Teorema di Pitagora con problemi *step-by-step* e *"Caccia all'errore"*.
 * **Strumento**: **Google Gemini (Modello di Ragionamento *Thinking*)**.
@@ -192,6 +200,7 @@
 
 ---
 
+<a id="esempio-09"></a>
 ### Esempio #09 — Matematica (3ª Media · Incontro 3 — Area 1)
 * **Tema**: Banca di 10 quesiti inclusivi sulle Equazioni di Primo Grado e problemi algebrici per Google Fogli.
 * **Strumento**: **Google Gemini (*Thinking*)** → *Esporta in Fogli*.
@@ -211,6 +220,7 @@
 
 ---
 
+<a id="esempio-10"></a>
 ### Esempio #10 — Matematica (2ª Media · Incontro 4 — Area 2)
 * **Tema**: Progettazione di un Google Modulo condizionale ramificato su Proporzioni e Percentuali (Sconti).
 * **Strumento**: **Google Gemini** → **Google Moduli (Sezioni condizionali)**.
@@ -233,6 +243,7 @@
 
 ## 🇬🇧 AREA LINGUE — INGLESE (3 Esempi · 10% del monte ore)
 
+<a id="esempio-11"></a>
 ### Esempio #11 — Inglese (1ª Media · Incontro 1)
 * **Tema**: Reading graduata su 2 livelli (A1 facilitato e A1+/A2) su *Daily Routine* con glossario fonetico-visivo.
 * **Strumento**: **Google Gemini (*Flash* + Canvas)** → *Esporta in Documenti*.
@@ -252,6 +263,7 @@
 
 ---
 
+<a id="esempio-12"></a>
 ### Esempio #12 — Inglese (2ª Media · Incontro 3 — Area 1)
 * **Tema**: Banca quesiti su *Past Simple (Regular & Irregular Verbs)* con *Error Spotting* ed esportazione in Google Fogli.
 * **Strumento**: **Google Gemini** → *Esporta in Fogli* → **Wordwall / Quizizz / Google Moduli**.
@@ -271,6 +283,7 @@
 
 ---
 
+<a id="esempio-13"></a>
 ### Esempio #13 — Inglese (3ª Media · Incontro 4 — Area 3)
 * **Tema**: Verifica multimodale di *Listening & Comprehension* integrata a un video YouTube con **NotebookLM / Edpuzzle**.
 * **Strumento**: **Google NotebookLM** (o **Gemini** su trascrizione YouTube) + **Google Moduli / Edpuzzle**.
@@ -292,6 +305,7 @@
 
 ## 🏛️ AREA LETTERE — STORIA (2 Esempi · 6,7% del monte ore)
 
+<a id="esempio-14"></a>
 ### Esempio #14 — Storia (1ª Media · Incontro 2)
 * **Tema**: Verifica UDL a 3 livelli sulla Società Feudale bilanciata sulla scala **LOTS → HOTS** (superare le sole date a memoria!).
 * **Strumento**: **Google Gemini (Modello di Ragionamento *Thinking* + Canvas)**.
@@ -313,6 +327,7 @@
 
 ---
 
+<a id="esempio-15"></a>
 ### Esempio #15 — Storia (3ª Media · Incontro 4 — Area 3)
 * **Tema**: Percorso multimodale su **Google NotebookLM** (Dispensa PDF + Video documentario YouTube sul Novecento) con Mappa Mentale, Audio Overview e verifica sulle fonti.
 * **Strumento**: **Google NotebookLM** (`notebooklm.google`).
@@ -334,6 +349,7 @@ Basandoti ESCLUSIVAMENTE sulla dispensa e sul video caricati in questo taccuino 
 
 ## 🌍 AREA LETTERE — GEOGRAFIA (2 Esempi · 6,7% del monte ore)
 
+<a id="esempio-16"></a>
 ### Esempio #16 — Geografia (1ª Media · Incontro 1)
 * **Tema**: Lettura guidata di una carta fisica/climatica o di un grafico demografico tramite **Gemini Multimodale** + glossario per NAI/DSA.
 * **Strumento**: **Google Gemini Multimodale (Vision)**.
@@ -353,6 +369,7 @@ Basandoti ESCLUSIVAMENTE sulla dispensa e sul video caricati in questo taccuino 
 
 ---
 
+<a id="esempio-17"></a>
 ### Esempio #17 — Geografia (2ª Media · Incontro 4 — Area 2)
 * **Tema**: Quiz digitale visivo in **Google Moduli** su Stati, Ambienti ed Economia dell'Unione Europea con feedback formativo.
 * **Strumento**: **Google Gemini** → *Esporta in Fogli* → **Google Moduli (con carte/immagini)**.
@@ -374,6 +391,7 @@ Basandoti ESCLUSIVAMENTE sulla dispensa e sul video caricati in questo taccuino 
 
 ## 🔬 AREA STEM — SCIENZE (2 Esempi · 6,7% del monte ore)
 
+<a id="esempio-18"></a>
 ### Esempio #18 — Scienze (1ª Media · Incontro 1)
 * **Tema**: Studio multisensoriale su *La Cellula Animale e Vegetale* con **Google NotebookLM** (Mappa Mentale + Audio Overview + metafora della città/fabbrica).
 * **Strumento**: **Google NotebookLM** + **Google Gemini**.
@@ -395,6 +413,7 @@ Basandoti ESCLUSIVAMENTE sulla dispensa e sul video caricati in questo taccuino 
 
 ---
 
+<a id="esempio-19"></a>
 ### Esempio #19 — Scienze (3ª Media · Incontro 4 — Area 3)
 * **Tema**: Verifica integrata a un video di esperimento scientifico (Leggi della genetica di Mendel o Elettricità/Circuiti) basata sul metodo sperimentale (`Osservare → Ipotizzare → Verificare`).
 * **Strumento**: **Google Gemini (*Thinking*)** + **Google Moduli con Video YouTube** (o **Edpuzzle**).
@@ -418,6 +437,7 @@ Basandoti ESCLUSIVAMENTE sulla dispensa e sul video caricati in questo taccuino 
 
 ## 🇫🇷🇪🇸 AREA LINGUE — SECONDA LINGUA COMUNITARIA: FRANCESE / SPAGNOLO (2 Esempi · 6,7% del monte ore)
 
+<a id="esempio-20"></a>
 ### Esempio #20 — Francese / Spagnolo (1ª Media · Incontro 1)
 * **Tema**: Scheda di studio e dialogo guidato (*Se présenter / Presentarse* o *La famille / La familia*) con tabella colori e supporto fonetico.
 * **Strumento**: **Google Gemini (*Flash*)** → *Esporta in Documenti*.
@@ -437,6 +457,7 @@ Basandoti ESCLUSIVAMENTE sulla dispensa e sul video caricati in questo taccuino 
 
 ---
 
+<a id="esempio-21"></a>
 ### Esempio #21 — Francese / Spagnolo (2ª Media · Incontro 3 — Area 1)
 * **Tema**: Banca di 10 quesiti comunicativi e situazionali (*Au restaurant / En el restaurante* o *En ville / Por la ciudad*) per Google Fogli e Wordwall.
 * **Strumento**: **Google Gemini** → *Esporta in Fogli* → **Wordwall / Google Moduli**.
@@ -458,6 +479,7 @@ Basandoti ESCLUSIVAMENTE sulla dispensa e sul video caricati in questo taccuino 
 
 ## ⚙️ AREA TECNICO-ARTISTICA E MOTORIA — TECNOLOGIA (2 Esempi · 6,7% del monte ore)
 
+<a id="esempio-22"></a>
 ### Esempio #22 — Tecnologia (3ª Media · Incontro 2)
 * **Tema**: Verifica UDL a 3 livelli sulle Fonti Energetiche Rinnovabili e Non Rinnovabili (a partire dallo schema di una centrale elettrica caricato come immagine).
 * **Strumento**: **Google Gemini Multimodale + Ragionamento (*Thinking*)**.
@@ -479,6 +501,7 @@ Basandoti ESCLUSIVAMENTE sulla dispensa e sul video caricati in questo taccuino 
 
 ---
 
+<a id="esempio-23"></a>
 ### Esempio #23 — Tecnologia / Disegno Tecnico (1ª o 2ª Media · Incontro 3)
 * **Tema**: Rubrica di valutazione KSM per una tavola di Disegno Geometrico / Proiezioni Ortogonali + procedura guidata di autoverifica.
 * **Strumento**: **Google Gemini (*Thinking*)** → *Esporta in Fogli*.
@@ -500,6 +523,7 @@ Basandoti ESCLUSIVAMENTE sulla dispensa e sul video caricati in questo taccuino 
 
 ## 🎨 AREA TECNICO-ARTISTICA E MOTORIA — ARTE E IMMAGINE (2 Esempi · 6,7% del monte ore)
 
+<a id="esempio-24"></a>
 ### Esempio #24 — Arte e Immagine (2ª Media · Incontro 2)
 * **Tema**: Lettura guidata di un'opera d'arte con **Gemini Multimodale (Vision)** dalla descrizione oggettiva (`LOTS`) all'analisi simbolica e al confronto (`HOTS`).
 * **Strumento**: **Google Gemini Multimodale + Canvas** → *Esporta in Documenti*.
@@ -520,6 +544,7 @@ Basandoti ESCLUSIVAMENTE sulla dispensa e sul video caricati in questo taccuino 
 
 ---
 
+<a id="esempio-25"></a>
 ### Esempio #25 — Arte e Immagine (3ª Media · Incontro 4 — Area 2)
 * **Tema**: Quiz digitale visivo in **Google Moduli** sulle Avanguardie del Novecento (Impressionismo, Espressionismo, Cubismo, Futurismo) con feedback formativo.
 * **Strumento**: **Google Gemini** → *Esporta in Fogli* → **Google Moduli**.
@@ -541,6 +566,7 @@ Basandoti ESCLUSIVAMENTE sulla dispensa e sul video caricati in questo taccuino 
 
 ## 🎵 AREA TECNICO-ARTISTICA E MOTORIA — MUSICA (2 Esempi · 6,7% del monte ore)
 
+<a id="esempio-26"></a>
 ### Esempio #26 — Musica (1ª o 2ª Media · Incontro 3)
 * **Tema**: Rubrica di valutazione KSM per una prova pratica di Esecuzione Strumentale/Vocale o di Ascolto Musicale.
 * **Strumento**: **Google Gemini (*Thinking*)** → *Esporta in Fogli / Griglie di Classroom*.
@@ -560,6 +586,7 @@ Basandoti ESCLUSIVAMENTE sulla dispensa e sul video caricati in questo taccuino 
 
 ---
 
+<a id="esempio-27"></a>
 ### Esempio #27 — Musica (2ª o 3ª Media · Incontro 4 — Area 3)
 * **Tema**: Verifica multimodale di **Ascolto Guidato** integrata a un video/audio musicale su YouTube (es. *La Primavera* di Vivaldi, *Quinta Sinfonia* di Beethoven o un brano Jazz/Colonna sonora).
 * **Strumento**: **Google Gemini** + **Google Moduli con Video YouTube** (o **Edpuzzle**).
@@ -583,6 +610,7 @@ Basandoti ESCLUSIVAMENTE sulla dispensa e sul video caricati in questo taccuino 
 
 ## 🏃 AREA TECNICO-ARTISTICA E MOTORIA — EDUCAZIONE FISICA (2 Esempi · 6,7% del monte ore)
 
+<a id="esempio-28"></a>
 ### Esempio #28 — Educazione Fisica (2ª Media · Incontro 3)
 * **Tema**: Banca quesiti su Regole di gioco, Fair Play, Salute e Alimentazione + Scheda di Autovalutazione Metacognitiva motoria (Asse `M`).
 * **Strumento**: **Google Gemini** → *Esporta in Fogli / Documenti*.
@@ -604,6 +632,7 @@ Basandoti ESCLUSIVAMENTE sulla dispensa e sul video caricati in questo taccuino 
 
 ---
 
+<a id="esempio-29"></a>
 ### Esempio #29 — Educazione Fisica (3ª Media · Incontro 4 — Area 3)
 * **Tema**: Verifica multimodale su video di un gesto tecnico-motorio o di Primo Soccorso / Sicurezza (es. *fondamentale del palleggio/bagher* oppure *catena del soccorso e posizione laterale di sicurezza*).
 * **Strumento**: **Google Gemini** + **Google Moduli con Video YouTube** (o **Edpuzzle**).
@@ -626,6 +655,7 @@ Basandoti ESCLUSIVAMENTE sulla dispensa e sul video caricati in questo taccuino 
 
 ## 🤝 IRC / ATTIVITÀ ALTERNATIVA ED EDUCAZIONE CIVICA (1 Esempio · 3,3% del monte ore)
 
+<a id="esempio-30"></a>
 ### Esempio #30 — IRC / Attività Alternativa & Educazione Civica (2ª o 3ª Media · Incontro 2–3)
 * **Tema**: Micro-scenario etico e di Cittadinanza Digitale (*Rispetto dell'altro, dialogo interculturale o responsabilità nelle chat di classe*) per valutare i processi superiori **HOTS (`4. Analizzare`, `5. Valutare`)** e l'asse **M (Mindset)**.
 * **Strumento**: **Google Gemini (Modello di Ragionamento *Thinking* + Canvas)**.

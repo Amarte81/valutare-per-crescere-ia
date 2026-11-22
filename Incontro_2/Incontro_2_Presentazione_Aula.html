@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VALUTARE PER CRESCERE — Incontro 2 di 5 (4 ore · Presentazione d'Aula)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --card-alt: #263449;
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --accent: #38bdf8;
+      --accent-green: #4ade80;
+      --accent-amber: #fbbf24;
+      --accent-purple: #c084fc;
+      --danger: #f87171;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Lexend', 'Atkinson Hyperlegible', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      line-height: 1.5;
+    }
+    header {
+      background: #020617;
+      border-bottom: 1px solid var(--border);
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--accent);
+    }
+    .badge {
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      background: var(--card);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .badge.b1 { border-color: var(--accent-green); color: var(--accent-green); }
+    .badge.b2 { border-color: var(--accent); color: var(--accent); }
+    .badge.pausa { border-color: var(--accent-amber); color: var(--accent-amber); }
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    button, select {
+      font-family: inherit;
+      background: var(--card);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 0.45rem 0.85rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    button:hover, select:hover {
+      background: var(--card-alt);
+      border-color: var(--accent);
+    }
+    #progress-container {
+      width: 100%;
+      height: 5px;
+      background: #020617;
+    }
+    #progress-bar {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent-green), var(--accent), var(--accent-purple));
+      width: 6%;
+      transition: width 0.25s ease;
+    }
+    main {
+      flex: 1;
+      overflow-y: auto;
+      padding: 2rem 3.5rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    .slide {
+      display: none;
+      width: 100%;
+      max-width: 1220px;
+      animation: fadeIn 0.2s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .slide-header {
+      margin-bottom: 1.4rem;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.9rem;
+    }
+    .slide-kicker {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+    h1 {
+      font-size: 2.1rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: var(--accent);
+      margin-bottom: 0.65rem;
+    }
+    p, li {
+      font-size: 1.08rem;
+      color: var(--text);
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul, ol {
+      padding-left: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      margin-top: 1rem;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.1rem;
+      margin-top: 1rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 0.85rem;
+      padding: 1.25rem 1.4rem;
+    }
+    .card.highlight-green { border-left: 5px solid var(--accent-green); }
+    .card.highlight-blue { border-left: 5px solid var(--accent); }
+    .card.highlight-amber { border-left: 5px solid var(--accent-amber); }
+    .card.highlight-purple { border-left: 5px solid var(--accent-purple); }
+    .card.highlight-red { border-left: 5px solid var(--danger); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.8rem;
+      background: var(--card);
+      border-radius: 0.75rem;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 0.8rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      font-size: 1.02rem;
+    }
+    th {
+      background: #020617;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .prompt-box {
+      background: #020617;
+      border: 1px solid var(--accent);
+      border-radius: 0.75rem;
+      padding: 1rem 1.2rem;
+      font-family: 'Atkinson Hyperlegible', monospace;
+      font-size: 0.94rem;
+      white-space: pre-wrap;
+      margin-top: 0.75rem;
+      position: relative;
+      color: #e2e8f0;
+    }
+    .copy-btn {
+      position: absolute;
+      top: 0.6rem;
+      right: 0.6rem;
+      background: var(--accent);
+      color: #020617;
+      font-weight: 700;
+      border: none;
+      padding: 0.3rem 0.7rem;
+      font-size: 0.8rem;
+    }
+    .copy-btn:hover {
+      background: #7dd3fc;
+    }
+    footer {
+      background: #020617;
+      border-top: 1px solid var(--border);
+      padding: 0.6rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <span>🎓 VALUTARE PER CRESCERE · Incontro 2 di 5 (4h)</span>
+      <span id="block-badge" class="badge b1">Blocco 1 · 00:00–01:50</span>
+    </div>
+    <div class="controls">
+      <button id="prev-btn" onclick="prevSlide()" title="Slide precedente (Freccia Sinistra)">◀ Prec</button>
+      <select id="slide-select" onchange="jumpToSlide(this.value)" aria-label="Seleziona slide"></select>
+      <span id="counter" class="badge">Slide 1 / 15</span>
+      <button id="next-btn" onclick="nextSlide()" title="Slide successiva (Freccia Destra / Spazio)">Succ ▶</button>
+      <button onclick="toggleFullScreen()" title="Schermo intero">⛶ Schermo Intero</button>
+    </div>
+  </header>
+  <div id="progress-container"><div id="progress-bar"></div></div>
+
+  <main>
+    <!-- SLIDE 1 -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:50" data-badge="b1" data-title="1. Incontro 2: VerifichIAmo con l'IA (Parte I)">
+      <div class="slide-header">
+        <div class="slide-kicker">Incontro 2 di 5 (4 ore) · VerifichIAmo con l'Intelligenza Artificiale (Parte I · 4h su 10/20)</div>
+        <h1>Progettare Verifiche UDL Multilivello con Gemini</h1>
+        <p style="color:var(--accent); font-size:1.25rem; margin-top:0.3rem;">Modelli di Ragionamento (<em>Thinking</em>), Multimodalità, Canvas, Gem e Scala LOTS → HOTS</p>
+      </div>
+      <div class="grid-2">
+        <div class="card highlight-green">
+          <h2>🎯 Obiettivi Operativi di Oggi</h2>
+          <ul>
+            <li>Passare dal prompt ingenuo al <strong>Prompt di Verifica <code>R-C-N-A-F</code></strong>.</li>
+            <li>Governare <strong>Gemini <em>Thinking</em></strong> lungo la scala <strong>LOTS → HOTS</strong> integrando la <strong>"Caccia all'errore"</strong>.</li>
+            <li>Eseguire la <strong>Radiografia</strong> di una verifica reale con <strong>Gemini Multimodale</strong> (<em>Fase 2A</em>).</li>
+            <li>Co-progettare in <strong>Gemini Canvas</strong> una <strong>Verifica UDL a 3 Livelli</strong> e creare il tuo <strong>Gem disciplinare</strong> (<em>Fase 2B</em>).</li>
+          </ul>
+        </div>
+        <div class="card highlight-amber">
+          <h2>⏱️ Scansione delle 4 Ore</h2>
+          <table>
+            <tr><th>Orario</th><th>Attività</th></tr>
+            <tr><td><code>00:00 – 01:50</code></td><td>🟢 <strong>Blocco 1 (110')</strong> · Bias mnemonico, LOTS → HOTS, <em>Thinking</em>, Prove equipollenti e <strong>Lavoro 2 · Fase 2A (30')</strong></td></tr>
+            <tr><td><code>01:50 – 02:10</code></td><td>☕ <strong>PAUSA CENTRALE (20 min)</strong></td></tr>
+            <tr><td><code>02:10 – 04:00</code></td><td>🔵 <strong>Blocco 2 (110')</strong> · Gemini Canvas 3 Livelli, creazione <strong>Gem</strong>, <strong>Lavoro 2 · Fase 2B (55')</strong> e Validazione critica (25')</td></tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 2 -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:50" data-badge="b1" data-title="2. Prompt Ingenuo vs Prompt Ingegnerizzato">
+      <div class="slide-header">
+        <div class="slide-kicker">Confronto Live su Google Gemini</div>
+        <h1>Perché i Prompt Generici Producono Verifiche Inique?</h1>
+      </div>
+      <div class="grid-2">
+        <div class="card highlight-red">
+          <h2>❌ Prompt Ingenuo</h2>
+          <p><em>"Creami una verifica sul Teorema di Pitagora / sul Feudalesimo per la scuola media, e fai anche una versione facilitata per DSA."</em></p>
+          <ul style="margin-top:0.8rem;">
+            <li><strong>70–80% di domande solo mnemoniche</strong> (<code>LOTS 1 — Ricordare</code>).</li>
+            <li><strong>Versione "DSA" al ribasso</strong>: l'IA cancella i problemi di ragionamento invece di aggiungere supporti!</li>
+            <li><strong>Barriere nascoste</strong>: doppie negazioni (<em>"Quale NON è..."</em>), subordinate lunghe e consegne accorpate.</li>
+          </ul>
+        </div>
+        <div class="card highlight-green">
+          <h2>✅ Prompt Ingegnerizzato (R-C-N-A-F)</h2>
+          <p>Istruiamo Gemini con vincoli pedagogici e docimologici espliciti:</p>
+          <ol style="margin-top:0.8rem;">
+            <li><strong>Bilanciamento cognitivo</strong>: ~40% LOTS · ~40% Ponte · ~20% HOTS.</li>
+            <li><strong>Accessibilità senza sconti cognitivi</strong>: banca parole, tabelle semicompilate, numeri interi, <em>sentence starters</em>.</li>
+            <li><strong>3 Versioni parallele</strong> (A Facilitata, B Standard, C Potenziamento) + Correttorio codificato <code>[A-D][1-6]</code>.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 3 -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:50" data-badge="b1" data-title="3. La Ricetta LOTS -> HOTS x KSM">
+      <div class="slide-header">
+        <div class="slide-kicker">Tassonomia di Anderson & Krathwohl (2001) × Criterio KSM</div>
+        <h1>La Ricetta di Bilanciamento per una Verifica Inclusiva (45–50 min)</h1>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Quota</th>
+            <th>Livelli Anderson & Krathwohl</th>
+            <th>Asse KSM</th>
+            <th>Ruolo nella Verifica Inclusiva (Versione A con Scaffolding)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>~40%</strong></td>
+            <td><strong>LOTS</strong>: <code>1. Ricordare</code> · <code>2. Comprendere</code> <code>[A1, B2]</code></td>
+            <td><strong>K — Knowledge</strong></td>
+            <td>Rampa di accesso iniziale che riduce l'ansia e verifica i concetti essenziali (banca parole, mappe, righe numerate).</td>
+          </tr>
+          <tr>
+            <td><strong>~40%</strong></td>
+            <td><strong>Ponte</strong>: <code>3. Applicare</code> · <code>4. Analizzare</code> <code>[C3, B4]</code></td>
+            <td><strong>S — Skills</strong></td>
+            <td>Applicazione di procedure a casi concreti o confronto in tabella (passi numerati <em>Passo 1/2</em> e tabelle semicompilate).</td>
+          </tr>
+          <tr>
+            <td><strong>~20%</strong></td>
+            <td><strong>HOTS</strong>: <code>5. Valutare</code> · <code>6. Creare</code> <code>[B5, C5, D4, B6]</code></td>
+            <td><strong>M — Mindset & Metacognition</strong></td>
+            <td>Pensiero critico per <strong>tutti</strong> tramite <strong>"Caccia all'errore"</strong> + <em>sentence starters</em> (frasi-avvio guidate).</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SLIDE 4 -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:50" data-badge="b1" data-title="4. Modello Thinking di Gemini">
+      <div class="slide-header">
+        <div class="slide-kicker">Nuovi Modelli di Google Gemini</div>
+        <h1>Quando Attivare il Modello di Ragionamento (<em>Thinking</em>)</h1>
+      </div>
+      <div class="grid-2">
+        <div class="card highlight-blue">
+          <h2>⚡ Modello Rapido (<em>Flash</em>)</h2>
+          <p>Risponde di getto in pochi secondi. Ideale per l'Incontro 1:</p>
+          <ul style="margin-top:0.5rem;">
+            <li>Adattare un testo in <em>Easy-to-Read</em>;</li>
+            <li>Creare glossari o elenchi di parole chiave;</li>
+            <li>Riformulare una singola consegna.</li>
+          </ul>
+        </div>
+        <div class="card highlight-purple">
+          <h2>🧠 Modello di Ragionamento (<em>Thinking</em>)</h2>
+          <p>Esegue una <strong>catena di pensiero interna</strong> prima di rispondere. Indispensabile oggi per:</p>
+          <ul style="margin-top:0.5rem;">
+            <li>Verificare calcoli e terne pitagoriche intere (<a href="../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.html#esempio-08" target="_blank">Esempio #08 ↗</a>);</li>
+            <li>Mantenere il parallelismo di <strong>6 quesiti su 3 versioni UDL</strong>;</li>
+            <li>Progettare errori davvero realistici per la <strong>"Caccia all'errore"</strong>.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 5 -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:50" data-badge="b1" data-title="5. Error Analysis: la Caccia all'Errore">
+      <div class="slide-header">
+        <div class="slide-kicker">HOTS 5 — Valutare [B5, C5, D4] · Accessibile a Tutta la Classe</div>
+        <h1>Il Superpotere Inclusivo: la "Caccia all'Errore" (Error Analysis)</h1>
+      </div>
+      <p>Presentare lo svolgimento di uno <strong>studente immaginario</strong> con 1 errore concettuale o procedurale abbatte il blocco del foglio bianco, rimuove lo stigma dell'errore e attiva il pensiero critico di tutti!</p>
+      <div class="grid-2" style="margin-top:1rem;">
+        <div class="card highlight-blue">
+          <h2>📘 <a href="../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.html#esempio-04" target="_blank">Esempio #04 — Italiano Grammatica ↗</a></h2>
+          <p><em>"Il Detective Grammaticale"</em>: 3 frasi già analizzate con 1 errore di complemento ciascuna da scovare e correggere.</p>
+        </div>
+        <div class="card highlight-green">
+          <h2>📐 <a href="../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.html#esempio-08" target="_blank">Esempio #08 — Matematica Pitagora ↗</a></h2>
+          <p>Uno studente somma i quadrati invece di sottrarli per trovare un cateto: <em>"Perché geometricamente è impossibile?"</em></p>
+        </div>
+        <div class="card highlight-amber">
+          <h2>🏛️ <a href="../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.html#esempio-14" target="_blank">Esempio #14 — Storia Feudalesimo ↗</a></h2>
+          <p><em>"Lo Storico Cerca l'Anacronismo"</em>: contadini dell'Anno Mille che mangiano patate e pomodori!</p>
+        </div>
+        <div class="card highlight-purple">
+          <h2>⚙️ <a href="../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.html#esempio-22" target="_blank">Esempio #22 — Tecnologia Energia ↗</a></h2>
+          <p><em>"Caccia al guasto tecnico"</em>: pannelli fotovoltaici installati su una parete esposta a Nord in ombra.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 6 -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:50" data-badge="b1" data-title="6. Prove Equipollenti vs Differenziate">
+      <div class="slide-header">
+        <div class="slide-kicker">Cornice Normativa · D.Lgs. 62/2017 · L. 170/2010 · Nuovo PEI</div>
+        <h1>Prove Equipollenti vs Prove Differenziate nei Prompt di Gemini</h1>
+      </div>
+      <div class="grid-2">
+        <div class="card highlight-green">
+          <h2>⚖️ Prova Equipollente (Versione A — Facilitata)</h2>
+          <p>Per <strong>DSA (PDP)</strong>, <strong>BES/NAI</strong> e <strong>L. 104 curricolare</strong>:</p>
+          <ul style="margin-top:0.5rem;">
+            <li><strong>Stessi obiettivi della classe</strong> (piena validità del voto!).</li>
+            <li>Cambiano i supporti: riduzione quantitativa degli esercizi ripetitivi, banca parole, box formulario, numeri interi, tabelle semicompilate e <em>sentence starters</em>.</li>
+          </ul>
+        </div>
+        <div class="card highlight-blue">
+          <h2>🧩 Prova Differenziata (Personalizzata PEI)</h2>
+          <p>Per <strong>disabilità L. 104/92</strong> con obiettivi personalizzati nel PEI:</p>
+          <ul style="margin-top:0.5rem;">
+            <li>Obiettivi tarati sui <strong>3 nuclei essenziali concreti</strong> del PEI.</li>
+            <li>Sintassi Soggetto-Verbo-Complemento, forte supporto visivo, esempi svolti e scelta guidata a 2–3 opzioni nettamente distinte.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 7 -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:50" data-badge="b1" data-title="7. LAVORO 2 · Fase 2A: Radiografia Verifica (30')">
+      <div class="slide-header">
+        <div class="slide-kicker">🛠️ LAVORO PRATICO 2 · FASE 2A (`01:20 – 01:50` · 30 Minuti)</div>
+        <h1>"Radiografia" di una Verifica Reale con Gemini Multimodale</h1>
+      </div>
+      <p>Carica in <strong>Google Gemini</strong> la foto, lo screenshot o il PDF di una tua verifica tradizionale e incolla questo prompt diagnostico:</p>
+      <div class="prompt-box"><button class="copy-btn" onclick="copyPrompt(this)">📋 Copia Prompt Radiografia</button>Analizza questa verifica per la classe [1ª / 2ª / 3ª] della Scuola Secondaria di I grado secondo la Tassonomia di Anderson & Krathwohl (1. Ricordare, 2. Comprendere, 3. Applicare, 4. Analizzare, 5. Valutare, 6. Creare) e il Criterio KSM (Knowledge, Skills, Mindset/Metacognition).
+Restituisci:
+1. Una TABELLA DIAGNOSTICA con colonne: N. Quesito | Processo Cognitivo e Codice [A-D][1-6] | Asse KSM | Eventuali barriere linguistiche, visive o mnemoniche per alunni con DSA, BES o Italiano L2;
+2. La percentuale attuale di quesiti LOTS (1-3) rispetto ai quesiti HOTS (4-6);
+3. Tre proposte concrete per riequilibrare la prova senza abbassare gli obiettivi disciplinari.</div>
+    </section>
+
+    <!-- SLIDE 8 (PAUSA CENTRALE) -->
+    <section class="slide" data-block="Pausa Centrale · 01:50–02:10" data-badge="pausa" data-title="8. PAUSA CENTRALE (20 minuti)">
+      <div class="card highlight-amber" style="text-align:center; padding:3.5rem 2rem; margin-top:2rem;">
+        <div class="slide-kicker">Stacco Ergonomico di Metà Pomeriggio · 01:50 – 02:10</div>
+        <h1 style="font-size:3rem; margin:1rem 0;">☕ PAUSA CENTRALE — 20 Minuti</h1>
+        <p style="font-size:1.35rem; color:var(--muted);">Pausa caffè e movimento!<br/>Al rientro (`02:10`): <strong>Gemini Canvas per le 3 Versioni UDL, creazione del tuo Gem disciplinare e Fase 2B del Lavoro Pratico 2!</strong></p>
+      </div>
+    </section>
+
+    <!-- SLIDE 9 -->
+    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="9. Gemini Canvas: Verifica UDL su 3 Livelli">
+      <div class="slide-header">
+        <div class="slide-kicker">Blocco 2 (`02:10 – 04:00`) · Demo Live 1</div>
+        <h1>Co-Progettare 3 Versioni Parallele in Gemini Canvas</h1>
+      </div>
+      <div class="grid-3">
+        <div class="card highlight-green">
+          <h2>🟢 Versione A (Facilitata / Equipollente)</h2>
+          <p>Consegne numerate <em>step-by-step</em>, zero doppie negazioni, banca parole per Q1–Q2, tabella semicompilata per Q3–Q4, <em>sentence starters</em> per la "Caccia all'errore" (Q5–Q6).</p>
+        </div>
+        <div class="card highlight-blue">
+          <h2>🔵 Versione B (Standard)</h2>
+          <p>Stessi 6 quesiti e stessi nuclei fondanti con consegne chiare ad alta leggibilità, ma senza i suggerimenti e le tabelle precompilate.</p>
+        </div>
+        <div class="card highlight-purple">
+          <h2>🟣 Versione C (Potenziamento)</h2>
+          <p>Sostituisce il quesito finale con una sfida aperta di livello <code>HOTS 6 — Creare</code> o un collegamento interdisciplinare inedito.</p>
+        </div>
+      </div>
+      <div class="card highlight-amber" style="margin-top:1.1rem;">
+        <p>✍️ <strong>Potenza di Gemini Canvas:</strong> evidenzia col mouse un singolo quesito e chiedi <em>"Accorcia la consegna"</em> o <em>"Metti numeri interi"</em> senza rigenerare tutta la verifica. Al termine: <strong>1 clic su "Esporta in Documenti"</strong>!</p>
+      </div>
+    </section>
+
+    <!-- SLIDE 10 -->
+    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="10. Demo Live 2: Crea il tuo Gem Disciplinare">
+      <div class="slide-header">
+        <div class="slide-kicker">Automazione in 3 Minuti · Istruzioni di Sistema Permanenti</div>
+        <h1>Crea il tuo "Gem" Progettista di Verifiche UDL</h1>
+      </div>
+      <div class="grid-2">
+        <div class="card highlight-purple">
+          <h2>⚙️ Come crearlo in Google Gemini</h2>
+          <ol>
+            <li>Nel menu laterale sinistro di Gemini clicca su <strong>Gestore dei Gem → Nuovo Gem</strong>.</li>
+            <li>Dai un nome chiaro: <code>Progettista Verifiche UDL — [La mia Materia]</code>.</li>
+            <li>Incolla nel campo <strong>Istruzioni</strong> la struttura fissa del Prompt Template 2 (regola 40/40/20 LOTS→HOTS, 3 versioni UDL, Caccia all'errore, codici <code>[A-D][1-6]</code>).</li>
+            <li>Clicca su <strong>Salva</strong>!</li>
+          </ol>
+        </div>
+        <div class="card highlight-green">
+          <h2>🚀 Come lo userai tutto l'anno scolastico</h2>
+          <p>Non dovrai più riscrivere il prompt lungo! Ti basterà aprire il tuo Gem e scrivere solo:</p>
+          <div class="prompt-box" style="margin-top:0.6rem;">Classe: 2ª media
+Argomento: Le leve (Scienze/Tecnologia)
+3 nuclei: fulcro, potenza e resistenza, i 3 generi di leve
+[+ opzionale: allego la foto della pagina del libro]</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 11 -->
+    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="11. I 6 Esempi Pronti per l'Incontro 2">
+      <div class="slide-header">
+        <div class="slide-kicker">Dal Ricettario dei 30 Esempi Proporzionali · Clicca per Aprire il Prompt</div>
+        <h1>6 Modelli Pronti per il Laboratorio dell'Incontro 2</h1>
+      </div>
+      <div class="grid-3">
+        <div class="card highlight-blue">
+          <h2>📘 <a href="../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.html#esempio-03" target="_blank">#03 Italiano (3ª) ↗</a></h2>
+          <p>Verifica narrativa UDL a 3 livelli con righe numerate, <em>Caccia all'errore interpretativo</em> e <em>sentence starters</em>.</p>
+        </div>
+        <div class="card highlight-blue">
+          <h2>📘 <a href="../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.html#esempio-04" target="_blank">#04 Italiano Gramm. (2ª) ↗</a></h2>
+          <p>Analisi logica inclusiva con <em>Box Bussola</em>, sintagmi segmentati e <em>"Il Detective Grammaticale"</em>.</p>
+        </div>
+        <div class="card highlight-green">
+          <h2>📐 <a href="../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.html#esempio-08" target="_blank">#08 Matematica (2ª) ↗</a></h2>
+          <p>Teorema di Pitagora con <strong>Gemini Thinking</strong>, terne pitagoriche intere e <em>"Caccia all'errore matematico"</em>.</p>
+        </div>
+        <div class="card highlight-amber">
+          <h2>🏛️ <a href="../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.html#esempio-14" target="_blank">#14 Storia (1ª) ↗</a></h2>
+          <p>Società feudale LOTS → HOTS con linea del tempo compensativa e <em>"Caccia all'anacronismo"</em>.</p>
+        </div>
+        <div class="card highlight-purple">
+          <h2>⚙️ <a href="../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.html#esempio-22" target="_blank">#22 Tecnologia (3ª) ↗</a></h2>
+          <p><strong>Gemini Multimodale</strong> su schema centrale elettrica → 3 livelli + <em>"Caccia al guasto tecnico"</em>.</p>
+        </div>
+        <div class="card highlight-purple">
+          <h2>🎨 <a href="../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.html#esempio-24" target="_blank">#24 Arte e Imm. (2ª) ↗</a></h2>
+          <p><strong>Gemini Vision</strong> per lettura opera rinascimentale dalla descrizione (<code>LOTS</code>) alla rielaborazione UDL (<code>HOTS</code>).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 12 -->
+    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="12. Prompt Template 2 (Verifica UDL 3 Livelli)">
+      <div class="slide-header">
+        <div class="slide-kicker">Pronto da Copiare in Gemini Thinking + Canvas</div>
+        <h1>Prompt Template 2 — Verifica UDL Multilivello (LOTS → HOTS)</h1>
+      </div>
+      <div class="prompt-box"><button class="copy-btn" onclick="copyPrompt(this)">📋 Copia Prompt Template 2</button>[R - RUOLO] Agisci come docente esperto di [MATERIA] nella Scuola Secondaria di I Grado e progettista di prove di valutazione inclusive secondo l'UDL, la Tassonomia di Anderson & Krathwohl (LOTS -> HOTS) e il Criterio KSM.
+[C - CLASSE] Classe [1ª / 2ª / 3ª] media (durata: 45-50 minuti).
+[N - NUCLEI E SCALA COGNITIVA] Progetta una verifica su [ARGOMENTO] basata sui nuclei fondanti: [3 NUCLEI].
+Ogni versione deve contenere 6 quesiti bilanciati:
+- Q1 e Q2 (LOTS — 1. Ricordare / 2. Comprendere — Asse K);
+- Q3 e Q4 (Ponte — 3. Applicare / 4. Analizzare — Asse S);
+- Q5 (HOTS — 5. Valutare — Asse M): attività "Caccia all'errore" (svolgimento di uno studente immaginario con 1 errore concettuale/procedurale da individuare e correggere);
+- Q6 (HOTS — 6. Creare / Riflettere — Asse M): breve rielaborazione personale o ipotesi applicativa.
+[A - ACCESSIBILITÀ E 3 LIVELLI UDL] Genera 3 VERSIONI PARALLELE sugli stessi obiettivi:
+- VERSIONE A (Facilitata / Equipollente per BES, DSA, NAI): consegne numerate passo-passo, zero doppie negazioni, parole chiave in grassetto, banca parole per Q1-Q2, tabella semicompilata per Q3-Q4, suggerimento e sentence starter per Q5-Q6 ("L'errore si trova... perché...").
+- VERSIONE B (Standard): consegne ad alta leggibilità senza supporti precompilati.
+- VERSIONE C (Potenziamento): sostituisce Q6 con una sfida aperta di livello HOTS 6.
+[F - FORMATO] Impagina le 3 versioni in modo distinto + CORRETTORIO COMPLETO con codici [A-D][1-6].</div>
+    </section>
+
+    <!-- SLIDE 13 -->
+    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="13. LAVORO 2 · Fase 2B (55 minuti)">
+      <div class="slide-header">
+        <div class="slide-kicker">Laboratorio Hands-On · `02:40 – 03:35` (55 Minuti al PC)</div>
+        <h1>🛠️ LAVORO PRATICO 2 · FASE 2B: Costruisci la Verifica UDL a 3 Livelli</h1>
+      </div>
+      <div class="grid-2">
+        <div class="card highlight-green">
+          <h2>🟢 BINARIO BASE ("Pronti Via")</h2>
+          <ol>
+            <li>Attiva in Gemini il modello <strong>Ragionamento (<em>Thinking</em>)</strong>.</li>
+            <li>Usa il <strong>Prompt Template 2</strong> (o uno dei 6 esempi del Giorno 2 dal Ricettario) sull'argomento scelto all'Incontro 1.</li>
+            <li>Controlla le 3 versioni, la <em>"Caccia all'errore"</em> e il correttorio con codici <code>[A-D][1-6]</code>.</li>
+            <li>Clicca su <strong>"Esporta in Documenti"</strong>, formatta in <strong>Lexend (12 pt, interlinea 1,5)</strong> e salva in Drive → <code>02_Incontro2_Verifica_UDL_Multilivello</code>.</li>
+          </ol>
+        </div>
+        <div class="card highlight-blue">
+          <h2>🔵 BINARIO APPROFONDIMENTO</h2>
+          <ol>
+            <li>Genera la verifica in <strong>Gemini Canvas</strong> + <strong>Thinking</strong> e rifinisci col mouse almeno 2 quesiti in tempo reale.</li>
+            <li>Verifica che la <em>"Caccia all'errore"</em> nella Versione A resti un autentico quesito <strong>HOTS (<code>5. Valutare</code>)</strong> reso accessibile dallo <em>scaffolding</em>.</li>
+            <li>Crea e salva il tuo <strong>Gem disciplinare permanente</strong> <code>Progettista Verifiche UDL - [Materia]</code>.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 14 -->
+    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="14. Controllo Critico Human-in-the-Loop">
+      <div class="slide-header">
+        <div class="slide-kicker">Validazione tra Pari (`03:35 – 03:50` · 15 min)</div>
+        <h1>Controllo Critico (<em>Human-in-the-Loop</em>): I 4 Rischi da Intercettare</h1>
+      </div>
+      <div class="grid-2">
+        <div class="card highlight-red">
+          <h2>1️⃣ Allucinazioni e Calcoli</h2>
+          <p>Ricalcola sempre manualmente i numeri dei problemi STEM e controlla date/citazioni nel correttorio generato da Gemini.</p>
+        </div>
+        <div class="card highlight-amber">
+          <h2>2️⃣ Taratura 11–14 Anni</h2>
+          <p>Verifica che il registro lessicale non sia troppo accademico (da liceo/università) né eccessivamente infantile per la scuola media.</p>
+        </div>
+        <div class="card highlight-blue">
+          <h2>3️⃣ Ambiguità e Doppie Negazioni</h2>
+          <p>Ogni consegna deve avere <strong>un solo verbo d'azione chiaro</strong> e nessuna domanda ambigua con due risposte plausibili.</p>
+        </div>
+        <div class="card highlight-green">
+          <h2>4️⃣ Equità e Dignità Cognitiva</h2>
+          <p>Assicurati che nella Versione A (Facilitata) siano stati tolti gli ostacoli strumentali, <strong>ma sia rimasto il ragionamento</strong>!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 15 -->
+    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="15. Checklist Finale e Ponte verso Incontro 3">
+      <div class="slide-header">
+        <div class="slide-kicker">Chiusura Incontro 2 di 5 (`03:50 – 04:00`) · Arrivederci all'Incontro 3!</div>
+        <h1>Checklist di Fine Giornata 2 & Anticipazione Incontro 3</h1>
+      </div>
+      <div class="grid-2">
+        <div class="card highlight-green">
+          <h2>✅ Verifica nella tua Cartella Google Drive</h2>
+          <ul>
+            <li>✔ Documento Google con la <strong>Verifica UDL a 3 Livelli + Correttorio <code>[A-D][1-6]</code></strong> salvato in <code>02_Incontro2_Verifica_UDL_Multilivello</code>.</li>
+            <li>✔ Validazione critica (<em>Human-in-the-Loop</em>) completata.</li>
+            <li>✔ <strong>Gem disciplinare</strong> creato e salvato nel tuo account Gemini (Binario Approfondimento).</li>
+            <li>🔒 <strong>Ricorda di effettuare il LOGOUT dal browser del laboratorio!</strong></li>
+          </ul>
+        </div>
+        <div class="card highlight-purple">
+          <h2>🚀 Cosa faremo nell'Incontro 3 di 5 (4 ore)</h2>
+          <p><strong>VerifichIAmo con l'IA — Parte II (4h)</strong>:</p>
+          <ul>
+            <li>Costruiremo con Gemini la <strong>Rubrica di Valutazione KSM × Anderson & Krathwohl</strong> (esportata in Google Fogli per le Griglie di Classroom);</li>
+            <li>Tradurremo la rubrica nella <strong>Scheda di Autovalutazione Studente</strong>;</li>
+            <li>Genereremo la <strong>Banca di Feedback Formativi (<em>feed-forward</em>)</strong> e le micro-schede di recupero mirato!</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>Corso di Formazione Docenti: <strong>VALUTARE PER CRESCERE</strong> · 5 Incontri da 4 Ore (Incontro 2 di 5)</div>
+    <div>Usa le frecce della tastiera <code>◀</code> <code>▶</code> o <code>Spazio</code> per navigare tra le slide</div>
+  </footer>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const counter = document.getElementById('counter');
+    const progressBar = document.getElementById('progress-bar');
+    const blockBadge = document.getElementById('block-badge');
+    const slideSelect = document.getElementById('slide-select');
+    let currentSlide = 0;
+
+    function initSelect() {
+      slides.forEach((s, idx) => {
+        const opt = document.createElement('option');
+        opt.value = idx;
+        opt.textContent = s.dataset.title || `Slide ${idx + 1}`;
+        slideSelect.appendChild(opt);
+      });
+    }
+
+    function showSlide(n, slidesList, counterEl) {
+      if (n < 0) n = 0;
+      if (n >= slidesList.length) n = slidesList.length - 1;
+      currentSlide = n;
+      slidesList.forEach((slide, index) => {
+        slide.style.display = index === n ? 'block' : 'none';
+      });
+      counterEl.textContent = `Slide ${n + 1} / ${slidesList.length}`;
+      slideSelect.value = n;
+      const pct = ((n + 1) / slidesList.length) * 100;
+      progressBar.style.width = `${pct}%`;
+
+      const active = slidesList[n];
+      blockBadge.textContent = active.dataset.block || '';
+      blockBadge.className = `badge ${active.dataset.badge || 'b1'}`;
+    }
+
+    function nextSlide() { showSlide(currentSlide + 1, slides, counter); }
+    function prevSlide() { showSlide(currentSlide - 1, slides, counter); }
+    function jumpToSlide(val) { showSlide(parseInt(val, 10), slides, counter); }
+
+    function copyPrompt(btn) {
+      const box = btn.parentElement;
+      const text = box.innerText.replace(btn.innerText, '').trim();
+      navigator.clipboard.writeText(text).then(() => {
+        const old = btn.textContent;
+        btn.textContent = '✅ Copiato!';
+        setTimeout(() => { btn.textContent = old; }, 1600);
+      });
+    }
+
+    function toggleFullScreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(() => {});
+      } else {
+        document.exitFullscreen().catch(() => {});
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ') {
+        e.preventDefault();
+        nextSlide();
+      } else if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        prevSlide();
+      }
+    });
+
+    initSelect();
+    showSlide(0, slides, counter);
+  </script>
+</body>
+</html>

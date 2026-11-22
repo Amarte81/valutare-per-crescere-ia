@@ -176,13 +176,13 @@ Perché **NotebookLM** (`notebooklm.google`) è uno strumento straordinario per 
 ---
 
 ### SLIDE 13 — I 6 Esempi Pronti per l'Incontro 1 nel Ricettario dei 30 Prompt
-Nel [01_Ricettario_Prompt_30_Esempi_Scuola_Media.md](file:///c:/Users/amart/Desktop/Corsi%20per%20docenti/Intelligenza%20Artificiale%20nella%20didattica%20e%20nella%20valutazione/Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md) trovate già pronti i primi **6 esempi specifici per il Giorno 1**:
-1. **Esempio `#01` (Italiano 1ª media)**: Foto pagina antologia (*Ulisse e Polifemo*) → *Easy-to-Read* in Gemini Canvas per dislessia.
-2. **Esempio `#02` (Italiano 2ª media)**: Testo letterario/storico → Scheda e glossario ad alta frequenza per alunni **NAI (Italiano L2)** + Audio Overview.
-3. **Esempio `#07` (Matematica 1ª media)**: Foto esercizi sulle **Frazioni** → Scheda procedurale *Passo 1 / Passo 2* con esempio svolto per discalculia.
-4. **Esempio `#11` (Inglese 1ª media)**: Reading graduata su *Daily Routine* con **Word Bank fonetica** per DSA.
-5. **Esempio `#16` (Geografia 1ª media)**: **Gemini Multimodale** su carta fisica/climatica → Guida in 3 mosse alla lettura della carta + glossario.
-6. **Esempio `#18` (Scienze 1ª media)**: **NotebookLM** su *La Cellula* → Mappa Mentale + Audio Overview + metafora della fabbrica.
+Nel [Ricettario dei 30 Esempi](../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md) trovate già pronti i primi **6 esempi specifici per il Giorno 1** (clicca su ciascun esempio per aprire il prompt completo):
+1. **[Esempio #01 (Italiano 1ª media)](../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-01)**: Foto pagina antologia (*Ulisse e Polifemo*) → *Easy-to-Read* in Gemini Canvas per dislessia.
+2. **[Esempio #02 (Italiano 2ª media)](../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-02)**: Testo letterario/storico → Scheda e glossario ad alta frequenza per alunni **NAI (Italiano L2)** + Audio Overview.
+3. **[Esempio #07 (Matematica 1ª media)](../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-07)**: Foto esercizi sulle **Frazioni** → Scheda procedurale *Passo 1 / Passo 2* con esempio svolto per discalculia.
+4. **[Esempio #11 (Inglese 1ª media)](../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-11)**: Reading graduata su *Daily Routine* con **Word Bank fonetica** per DSA.
+5. **[Esempio #16 (Geografia 1ª media)](../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-16)**: **Gemini Multimodale** su carta fisica/climatica → Guida in 3 mosse alla lettura della carta + glossario.
+6. **[Esempio #18 (Scienze 1ª media)](../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-18)**: **NotebookLM** su *La Cellula* → Mappa Mentale + Audio Overview + metafora della fabbrica.
 
 ---
 

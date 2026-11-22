@@ -10,6 +10,10 @@ Repository ufficiale dei materiali del corso di formazione docenti sull'Intellig
   - [Presentazione Interattiva d'Aula (HTML)](Incontro_1/Incontro_1_Presentazione_Aula.html)
   - [Traccia Slide per la Visualizzazione in Aula](Incontro_1/Incontro_1_Slide_Visualizzazione_Aula.md)
   - [Dispensa di Studio Approfondito (con Glossario e Link Esterni)](Incontro_1/Incontro_1_Dispensa_Studio_Approfondito.md)
+- **Incontro 2 di 5 (4 ore — VerifichIAmo con l'IA Parte I: LOTS → HOTS e Verifiche UDL Multilivello)**
+  - [Presentazione Interattiva d'Aula (HTML)](Incontro_2/Incontro_2_Presentazione_Aula.html)
+  - [Traccia Slide per la Visualizzazione in Aula](Incontro_2/Incontro_2_Slide_Visualizzazione_Aula.md)
+  - [Dispensa di Studio Approfondito (con Glossario e Link Esterni)](Incontro_2/Incontro_2_Dispensa_Studio_Approfondito.md)
 - **Materiali Trasversali**
   - [Ricettario dei Prompt: 30 Esempi Proporzionali per la Scuola Media (6 per incontro)](Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md)
   - [Schede Operative per i 5 Lavori Pratici (5 Incontri × 4 Ore)](Materiali_Trasversali/02_Schede_Operative_5_Lavori_Pratici.md)

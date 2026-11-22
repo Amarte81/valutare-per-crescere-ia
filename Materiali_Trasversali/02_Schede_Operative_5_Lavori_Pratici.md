@@ -31,7 +31,7 @@
 
 * **Modulo**: Accessibilità, autonomia e studio degli studenti (`4h = 4/20`).
 * **Cartella Drive**: `Corso_Valutare_Per_Crescere / 01_Incontro1_Studio_Accessibile`
-* **Esempi di riferimento nel Ricettario**: `#01` (Italiano), `#02` (Italiano L2/NAI), `#07` (Matematica), `#11` (Inglese), `#16` (Geografia), `#18` (Scienze).
+* **Esempi di riferimento nel Ricettario**: [#01 Italiano](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-01), [#02 Italiano L2/NAI](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-02), [#07 Matematica](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-07), [#11 Inglese](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-11), [#16 Geografia](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-16), [#18 Scienze](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-18).
 * **Obiettivo**: partire da una pagina del libro di testo o da una propria dispensa per costruire un pacchetto di studio che abbatta le barriere di decodifica e memoria di lavoro (BES, DSA, L. 104, NAI, ADHD) nel rispetto del GDPR, accompagnando lo studente da `1. Ricordare` a `2. Comprendere` e `3. Applicare`.
 
 ---
@@ -81,7 +81,7 @@
 
 * **Modulo**: VerifichIAmo con l'Intelligenza Artificiale — Parte I (`4h su 10/20`).
 * **Cartella Drive**: `Corso_Valutare_Per_Crescere / 02_Incontro2_Verifica_UDL_Multilivello`
-* **Esempi di riferimento nel Ricettario**: `#03` (Italiano narrativa), `#04` (Italiano grammatica), `#08` (Matematica Pitagora), `#14` (Storia Feudalesimo), `#22` (Tecnologia Energia), `#24` (Arte e Immagine).
+* **Esempi di riferimento nel Ricettario**: [#03 Italiano narrativa](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-03), [#04 Italiano grammatica](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-04), [#08 Matematica Pitagora](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-08), [#14 Storia Feudalesimo](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-14), [#22 Tecnologia Energia](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-22), [#24 Arte e Immagine](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-24).
 * **Obiettivo**: analizzare criticamente una verifica tradizionale con Gemini Multimodale e progettare con il modello di **Ragionamento (*Thinking*)** e **Gemini Canvas** una **Verifica UDL su 3 livelli paralleli** (*Versione A Facilitata/Equipollente*, *Versione B Standard*, *Versione C Potenziamento*) bilanciata sulla scala **LOTS → HOTS**.
 
 ---
@@ -134,7 +134,7 @@ Ogni versione della prova deve contenere 6 quesiti così bilanciati lungo la sca
 
 * **Modulo**: VerifichIAmo con l'Intelligenza Artificiale — Parte II (`4h su 10/20`).
 * **Cartella Drive**: `Corso_Valutare_Per_Crescere / 03_Incontro3_Rubrica_KSM_e_Feedback`
-* **Esempi di riferimento nel Ricettario**: `#05` (Italiano Rubrica KSM), `#20` (2ª Lingua supporto e feedback), `#23` (Tecnologia Rubrica KSM disegno per disgrafia), `#26` (Musica Rubrica KSM), `#28` (Ed. Fisica Autovalutazione M), `#30` (IRC/Ed. Civica Scenario HOTS + Rubrica KSM).
+* **Esempi di riferimento nel Ricettario**: [#05 Italiano Rubrica KSM](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-05), [#20 2ª Lingua supporto e feedback](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-20), [#23 Tecnologia Rubrica KSM disegno](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-23), [#26 Musica Rubrica KSM](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-26), [#28 Ed. Fisica Autovalutazione M](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-28), [#30 IRC/Ed. Civica Scenario HOTS + Rubrica KSM](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-30).
 * **Obiettivo**: dotare la verifica creata nell'Incontro 2 di una **Rubrica di valutazione rigorosa** fondata sulla **Tassonomia di Anderson & Krathwohl × Criterio KSM**, di una **Scheda di Autovalutazione** comprensibile agli alunni di 11–14 anni e di un **Kit di Feedback Formativi (*feed-forward*) con esercizi di recupero mirato**.
 
 ---
@@ -197,7 +197,7 @@ Ogni versione della prova deve contenere 6 quesiti così bilanciati lungo la sca
 
 * **Moduli**: Area 1 — Progettare domande e quiz con il supporto dell'IA (`2h = 2/20`) + Area 2 — Quiz digitali per la valutazione (`2h = 2/20`).
 * **Cartella Drive**: `Corso_Valutare_Per_Crescere / 04_Incontro4_Banca_Quesiti_e_Quiz_Digitale`
-* **Esempi di riferimento nel Ricettario**: `#06` (Italiano Lessico), `#09` (Matematica Equazioni), `#10` (Matematica Modulo ramificato Percentuali), `#12` (Inglese Past Simple), `#17` (Geografia Quiz Europa), `#21` (2ª Lingua Quesiti comunicativi).
+* **Esempi di riferimento nel Ricettario**: [#06 Italiano Lessico](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-06), [#09 Matematica Equazioni](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-09), [#10 Matematica Modulo ramificato Percentuali](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-10), [#12 Inglese Past Simple](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-12), [#17 Geografia Quiz Europa](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-17), [#21 2ª Lingua Quesiti comunicativi](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-21).
 * **Obiettivo**: progettare nel Blocco 1 (Area 1) una banca di 10–12 quesiti strutturati inclusivi (LOTS → HOTS) con Gemini ed esportarla in **Google Fogli**, e trasformarla nel Blocco 2 (Area 2) in un **Quiz Digitale accessibile** su **Google Moduli** (con feedback e ramificazione) e **Wordwall / Quizizz**.
 
 ---
@@ -248,7 +248,7 @@ N. | Livello LOTS/HOTS e Codice [A-D][1-6] | Testo della Domanda | Opzione A | O
 
 * **Moduli**: Area 3 — Verifiche integrate a contenuti video e materiali (`2h = 2/20`) + VerifichIAmo con l'IA — Parte III: Sintesi e Integrazione (`2h su 10/20`).
 * **Cartella Drive**: `Corso_Valutare_Per_Crescere / 05_Incontro5_Verifica_Multimodale_e_Kit_Finale`
-* **Esempi di riferimento nel Ricettario**: `#13` (Inglese Video-Listening), `#15` (Storia NotebookLM PDF+Video), `#19` (Scienze Video esperimento), `#25` (Arte Avanguardie), `#27` (Musica Ascolto su video/audio), `#29` (Ed. Fisica Video gesto motorio/Primo Soccorso).
+* **Esempi di riferimento nel Ricettario**: [#13 Inglese Video-Listening](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-13), [#15 Storia NotebookLM PDF+Video](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-15), [#19 Scienze Video esperimento](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-19), [#25 Arte Avanguardie](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-25), [#27 Musica Ascolto su video/audio](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-27), [#29 Ed. Fisica Video gesto motorio/Primo Soccorso](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-29).
 * **Obiettivo**: realizzare nel Blocco 1 (Area 3) una verifica multimodale integrata a un video didattico e ai materiali del docente, e completare nel Blocco 2 (VerifichIAmo Parte III) l'assemblaggio, la simulazione per Google Classroom e la revisione incrociata (*Peer-Review*) dell'intero **Kit Valutativo Inclusivo** costruito nei 5 incontri.
 
 ---
