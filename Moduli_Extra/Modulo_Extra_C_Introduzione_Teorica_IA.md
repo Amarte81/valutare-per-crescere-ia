@@ -5,10 +5,6 @@
 
 **Autori:** Prof. Cristaldi Marco Rosario e Prof. Patanè Roberto
 
-> [!NOTE]
-> **Come usare questo materiale extra**  
-> Questo testo adatta i fondamenti teorici dell'**Intelligenza Artificiale (IA)** secondo le regole **Easy-to-Read**. Ogni sezione usa frasi brevi e attive, titoli-domanda, immagini esplicative e termini tecnici in **grassetto**. Il percorso accompagna lo studente dal **Ricordare `[A1]`** al **Comprendere le relazioni `[B2]`** fino all'**Applicare `[C3]`**. In fondo al documento trovi la **Tabella Glossario**.
-
 ---
 
 ## Parte 1 — Cos'è l'Intelligenza Artificiale e come nasce?
