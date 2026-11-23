@@ -35,16 +35,25 @@
 
 ### Fase 1A (Blocco 1 · `30 min` · 3 Micro-Step) — La Scheda di Studio *Easy-to-Read* con Gemini Multimodale e Canvas
 
-* **Step 1A.1 — Riscaldamento "Confronto Lampo" (`5 min`)**:
-  1. Scegli un argomento reale di 1ª, 2ª o 3ª media (su cui lavorerai lungo tutti e 5 gli incontri) oppure prendi un testo dal [Kit Materiali Campione](04_Kit_Materiali_Campione_Pronti_Aula.md#parte-1--testi-campione-pronti-per-lincontro-1-fase-1a).
-  2. Fai una prova rapida su `gemini.google.com` con un prompt ingenuo di 1 riga (*"Riassumi questo testo per la scuola media"*): osserva in 30 secondi cosa manca (lessico non spiegato, muro di testo, domande solo mnemoniche).
-* **Step 1A.2 — Ingegneria del Prompt `R-C-N-A-F` (`15 min`)**:
-  1. Apri il [03_Kit_Privacy_GDPR_e_Strumenti_Locali.md](03_Kit_Privacy_GDPR_e_Strumenti_Locali.md) (Parte 2) e scegli il blocco di **Profilo Funzionale Anonimizzato** adatto alla tua classe (zero nomi o diagnosi cliniche!).
-  2. 🟢 **Binario Base ("Pronti Via")**: apri una nuova chat su Gemini e incolla il **Prompt Template 1 (`R-C-N-A-F`)** qui sotto insieme al testo scelto.
-  3. 🔵 **Binario Approfondimento**: carica direttamente la **foto/screenshot** di una pagina del libro cartaceo (con testo e immagini/schemi), attiva **Gemini Canvas** e usa gli strumenti a comparsa di Canvas per semplificare al volo almeno un paragrafo selezionato col mouse.
-* **Step 1A.3 — Validazione *Human-in-the-Loop*, Esportazione e Formattazione Lexend (`10 min`)**:
-  1. Controlla che i nuclei disciplinari e i termini tecnici siano corretti e non banalizzati.
-  2. Clicca su **"Esporta in Documenti"**, imposta il font **Lexend** (o **Atkinson Hyperlegible**), corpo `12 pt`, interlinea `1,5`, allineamento **a sinistra** e sposta il file in `01_Incontro1_Studio_Accessibile`.
+#### Step 1A.1 — Riscaldamento "Confronto Lampo" (`5 min`)
+1. **Scegli il testo di partenza**: prendi una pagina del tuo libro di testo (o un tuo breve testo disciplinare di 1ª, 2ª o 3ª media su cui lavorerai lungo tutti e 5 gli incontri). Se non hai un file pronto, apri il [Kit Materiali Campione](04_Kit_Materiali_Campione_Pronti_Aula.md#parte-1--testi-campione-pronti-per-lincontro-1-fase-1a) e copia uno dei 4 testi pronti.
+2. **Apri Google Gemini**: vai su `https://gemini.google.com` ed effettua l'accesso con il tuo account Google.
+3. **Esegui il test con il prompt ingenuo**: clicca su **"+ Nuova chat"**, incolla il testo scelto e scrivi una richiesta generica di una sola riga, ad esempio: *"Riassumi questo testo per la scuola media e fai 3 domande"*.
+4. **Osserva i limiti in 30 secondi**: nota i tre difetti tipici di un prompt non guidato: (1) un **muro di testo** con frasi lunghe e dense, (2) **termini tecnici** non spiegati o eliminati, (3) domande solo di memoria (**LOTS 1**) senza alcun aiuto (*scaffolding*).
+
+![Step 1A.1 — Schermata di confronto con prompt ingenuo su Google Gemini e limiti tipici dell'output](assets_lavoro1/01_step1a1_prompt_ingenuo.png)
+
+---
+
+#### Step 1A.2 — Ingegneria del Prompt `R-C-N-A-F`, Upload Multimodale e Gemini Canvas (`15 min`)
+1. **Prepara il Profilo Funzionale Anonimizzato (GDPR)**: apri la Parte 2 del [03_Kit_Privacy_GDPR_e_Strumenti_Locali.md](03_Kit_Privacy_GDPR_e_Strumenti_Locali.md) e scegli la descrizione funzionale adatta alla tua classe. **Verifica sempre** di non inserire mai nomi, cognomi, classi identificabili o codici diagnostici (es. ICD-10).
+2. **Apri una nuova chat pulita** su `gemini.google.com` (in alto a sinistra clicca **"+ Nuova chat"**) così il modello non viene influenzato dalla prova ingenua precedente.
+3. **Allega il materiale e attiva Canvas**:
+   * 🟢 **Binario Base ("Pronti Via")**: incolla direttamente il **Prompt Template 1 (`R-C-N-A-F`)** qui sotto e, in coda, il testo di partenza copiato.
+   * 🔵 **Binario Approfondimento (Multimodale + Canvas)**: clicca sul pulsante **`+`** nella barra di input per caricare direttamente la **foto/screenshot o il PDF** della pagina del libro (con testo e schemi), poi clicca sul pulsante **`Canvas`** nella stessa barra prima di premere **Invia**.
+4. **Rifinitura chirurgica in Gemini Canvas**: quando il documento appare nel pannello laterale destro di **Canvas**, evidenzia con il mouse una sola frase o un paragrafo ancora troppo denso e clicca sugli strumenti rapidi a comparsa (**"Semplifica"** o **"Accorcia"**) per migliorarlo al volo senza rigenerare l'intera scheda.
+
+![Step 1A.2 — Caricamento foto, attivazione Gemini Canvas, Prompt R-C-N-A-F e modifica mirata in Canvas](assets_lavoro1/02_step1a2_gemini_canvas_rcnaf.png)
 
 ```text
 [R - RUOLO] Agisci come un docente esperto di [MATERIA] nella Scuola Secondaria di Primo Grado e specialista in didattica inclusiva UDL.
@@ -62,23 +71,66 @@
 
 ---
 
+#### Step 1A.3 — Validazione *Human-in-the-Loop*, Esportazione in Google Documenti e Formattazione Lexend (`10 min`)
+1. **Controllo disciplinare (*Human-in-the-Loop*)**: rileggi l'intera scheda generata da Gemini e verifica che i concetti chiave siano corretti, che non ci siano errori fattuali (allucinazioni) e che i termini disciplinari siano conservati e spiegati bene.
+2. **Esporta in 1 clic**: clicca sul pulsante **"Esporta in Documenti"** (in alto a destra in Canvas, oppure sotto la risposta nella chat standard) per aprire automaticamente la scheda in **Google Documenti**.
+3. **Applica la formattazione ad alta leggibilità**:
+   * premi `Ctrl + A` (su Mac `Cmd + A`) per selezionare tutto il documento;
+   * nel menu dei caratteri scegli **Lexend** (oppure **Atkinson Hyperlegible**);
+   * imposta la dimensione a **`12 pt`** (o `14 pt` per ipovisione/affaticamento visivo);
+   * clicca su **Interlinea e spaziatura paragrafi** → imposta **`1,5`**;
+   * imposta l'**allineamento a sinistra** ("a bandiera", **mai giustificato**).
+4. **Rinomina e archivia in Google Drive**: assegna un titolo chiaro in alto a sinistra (es. `Scheda_Studio_[Argomento]_EasyToRead`), clicca sull'icona della cartella **`📁 Sposta`** accanto al titolo e salva il file dentro `Corso_Valutare_Per_Crescere / 01_Incontro1_Studio_Accessibile`.
+
+![Step 1A.3 — Formattazione inclusiva in Google Documenti (Lexend 12pt, interlinea 1,5, sinistra) e salvataggio nella cartella Drive](assets_lavoro1/03_step1a3_docs_lexend_drive.png)
+
+---
+
 ### Fase 1B (Blocco 2 · `45 min` · 4 Micro-Step in Ordine Anti-Attesa) — Audio Overview, Mappa Mentale e Citazioni con Google NotebookLM
 
 > 💡 **Trucco di regia in laboratorio:** l'elaborazione dell'*Audio Overview* richiede 3–5 minuti. Lanciandolo **come primissimo step**, lavorerai in parallelo su Mappa Mentale e Chat senza alcun tempo morto!
 
-* **Step 1B.1 — Carica le Fonti e Avvia Subito l'Audio Overview in Background (`5 min`)**:
-  1. Apri **Google NotebookLM** (`notebooklm.google`) → clicca su **"+ Nuovo"** e carica il Documento Google della Fase 1A (o il PDF della tua dispensa + il link a un breve video **YouTube** sull'argomento).
-  2. Nel pannello **Studio**, vai subito su **"Audio Overview" → "Personalizza"**, incolla l'istruzione qui sotto e clicca su **Genera** (lascialo elaborare in background!):
-     > *"Parlate in italiano rivolgendovi direttamente a studenti di [1ª/2ª/3ª] media. Usate un tono incoraggiante e chiaro. Spiegate i 3 concetti chiave del documento usando una metafora o un esempio vicino alla vita quotidiana dei ragazzi."*
-* **Step 1B.2 — Genera e Incolla la Mappa Mentale Visiva (`15 min`)**:
-  1. Mentre l'audio si genera, nel pannello **Studio** clicca su **"Mappa mentale"**.
-  2. Espandi i rami concettuali per verificare che tutti i nuclei fondanti siano presenti, scarica l'immagine **PNG** e **incollala all'inizio del tuo Documento Google** della Fase 1A come mappa di orientamento pre-lettura.
-* **Step 1B.3 — Verifica del *Grounding* e Tabella Comparativa in Chat (`15 min`)**:
-  1. Chiedi nella chat di NotebookLM: *"Costruisci una tabella comparativa di ripasso basata solo sulle fonti caricate"*.
-  2. Clicca su almeno **2 citazioni numerate** per verificare dal vivo che NotebookLM rimandi alla riga esatta del tuo materiale (zero allucinazioni!).
-* **Step 1B.4 — Controllo Qualità e Salvataggio dell'Audio Overview (`10 min`)**:
-  1. Ascolta i primi 60 secondi dell'Audio Overview ormai pronto (verifica pronuncia, tono e registro 11–14 anni).
-  2. Scarica il file audio nella sottocartella Drive `01_Incontro1_Studio_Accessibile`.
+#### Step 1B.1 — Carica le Fonti e Avvia Subito l'Audio Overview in Background (`5 min`)
+1. **Crea il taccuino**: apri `https://notebooklm.google.com` e clicca su **"+ Nuovo taccuino"** (o **"+ Nuovo"**).
+2. **Carica le fonti certificate**: nel riquadro a sinistra (**Fonti**), clicca su **"+ Aggiungi fonti"**, scegli **Google Drive** e seleziona il Documento Google appena creato nella Fase 1A (puoi aggiungere anche il PDF della tua dispensa e/o il link a un breve video **YouTube** sull'argomento).
+3. **Personalizza e avvia l'Audio Overview**: spostati subito nel pannello **Studio** a destra, individua il riquadro **Audio Overview**, clicca su **"Personalizza"**, incolla l'istruzione qui sotto e clicca subito su **"Genera"**:
+   > *"Parlate in italiano rivolgendovi direttamente a studenti di [1ª/2ª/3ª] media. Usate un tono incoraggiante e chiaro. Spiegate i 3 concetti chiave del documento usando una metafora o un esempio vicino alla vita quotidiana dei ragazzi."*
+4. **Lascialo lavorare in background**: mentre compare l'indicatore di elaborazione (3–5 minuti), passa immediatamente allo Step 1B.2.
+
+![Step 1B.1 — Caricamento fonti in Google NotebookLM e avvio immediato dell'Audio Overview personalizzato in background](assets_lavoro1/04_step1b1_notebooklm_fonti_audio.png)
+
+---
+
+#### Step 1B.2 — Genera e Incolla la Mappa Mentale Visiva (`15 min`)
+1. **Avvia la Mappa Mentale**: mentre l'audio si genera, nel pannello **Studio** a destra clicca sul pulsante **"Mappa mentale"**.
+2. **Esplora e valida i nodi**: clicca sui nodi con il simbolo **`+`** per espandere tutti i rami concettuali e verifica che i nuclei fondanti del tuo argomento siano rappresentati in modo gerarchico e chiaro.
+3. **Scarica l'immagine PNG**: clicca sul pulsante **"Scarica"** (in alto a destra nella vista mappa) per salvare la mappa sul PC in formato **`.png`**.
+4. **Integra la mappa nella scheda di studio**: riapri il Documento Google della Fase 1A, posiziona il cursore all'inizio della prima pagina (subito sotto il titolo) e scegli `Inserisci → Immagine → Carica dal computer` per inserire la mappa come **organizzatore anticipato visivo** prima della lettura. Carica una copia del file `.png` anche nella cartella Drive `01_Incontro1_Studio_Accessibile`.
+
+![Step 1B.2 — Espansione dei rami della Mappa Mentale in NotebookLM e download in formato PNG](assets_lavoro1/05_step1b2_notebooklm_mappa_mentale.png)
+
+---
+
+#### Step 1B.3 — Verifica del *Grounding* e Tabella Comparativa in Chat (`15 min`)
+1. **Interroga solo le tue fonti**: nel pannello centrale (**Chat**) di NotebookLM, scrivi questo prompt:
+   > *"Costruisci una tabella comparativa di ripasso basata solo sulle fonti caricate, evidenziando differenze, cause ed effetti."*
+2. **Verifica le citazioni numerate**: nella risposta generata compariranno dei piccoli numeri cliccabili (**`[1]`**, **`[2]`**, ecc.). Clicca su almeno **2 citazioni numerate**.
+3. **Controlla l'evidenziazione a sinistra**: osserva che il pannello sinistro apre automaticamente la tua fonte e **evidenzia la riga esatta** da cui NotebookLM ha tratto quell'informazione. Questo conferma il funzionamento del **Grounding** (ancoraggio rigoroso alle fonti del docente, zero allucinazioni!).
+4. *(Facoltativo)* Clicca su **"Salva nella nota"** oppure copia la tabella comparativa in fondo al tuo Documento Google come schema di ripasso finale.
+
+![Step 1B.3 — Tabella comparativa in chat su NotebookLM con verifica dal vivo delle citazioni numerate (Grounding)](assets_lavoro1/06_step1b3_notebooklm_chat_citazioni.png)
+
+---
+
+#### Step 1B.4 — Controllo Qualità e Salvataggio dell'Audio Overview (`10 min`)
+1. **Ascolta i primi 60 secondi**: torna nel pannello **Studio** a destra, dove il player dell'**Audio Overview** sarà ormai pronto, e premi **`▶ Play`**. Verifica:
+   * la correttezza della pronuncia italiana dei termini disciplinari;
+   * il tono dialogico e incoraggiante;
+   * l'adeguatezza del registro linguistico per studenti di 11–14 anni.
+2. **Scarica il file audio**: clicca sul menu a tre puntini **`⋮`** accanto al player audio e seleziona **"Scarica"**.
+3. **Completa il Pacchetto di Studio Accessibile su Drive**: carica il file audio scaricato nella sottocartella `Corso_Valutare_Per_Crescere / 01_Incontro1_Studio_Accessibile`. Al termine della giornata la tua cartella conterrà tutti e 3 i canali del pacchetto multisensoriale (**Documento Google Lexend con Mappa PNG** + **Mappa PNG** + **Audio Overview**), pronti per essere caricati su **Google Classroom** senza richiedere alcun account IA agli studenti!
+
+![Step 1B.4 — Controllo qualità del player Audio Overview, download e verifica del Pacchetto di Studio Accessibile completo su Google Drive](assets_lavoro1/07_step1b4_notebooklm_audio_salvataggio.png)
 
 ---
 
