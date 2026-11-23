@@ -203,6 +203,7 @@ I **30 esempi di prompt e output IA** (su Gemini e NotebookLM) rispecchiano esat
 
 1. **Modulo Extra A — *Uso etico e consapevole dell'IA da parte degli alunni a casa*** *(segnalato nell'Incontro 1)*: limiti degli *AI detector*, progettazione di compiti a casa *AI-resilient* con Gemini, *Patto di classe sull'IA* e *Scheda informativa per le famiglie*.
 2. **Modulo Extra B — *Gestione della prova orale inclusiva con il supporto di Gemini e NotebookLM*** *(segnalato nell'Incontro 5)*: scalette "semi-mute", domande progressive **LOTS → HOTS**, allenamento all'orale con *Mappe Mentali* e *Audio Overview* di NotebookLM, preparazione al colloquio d'esame di 3ª media e **Griglia di valutazione della prova orale (Anderson & Krathwohl × KSM)**.
+3. **Modulo Extra C — *Introduzione teorica all'Intelligenza Artificiale (Percorso Easy-to-Read)*** *(a cura dei Prof. Cristaldi Marco Rosario e Prof. Patanè Roberto)*: fondamenti storici e teorici dell'IA (da Dartmouth 1956 al Test di Turing e alla Stanza Cinese), sistemi esperti, *Machine Learning* (classificazione, regressione, clustering, rinforzo), algoritmi bio-ispirati, reti neurali, *Deep Learning* e *IA Generativa*, strutturato secondo le regole **Easy-to-Read** con immagini, percorso graduato `[A1] → [B2] → [C3]` e Tabella Glossario.
 
 ---
 
@@ -227,4 +228,5 @@ I **30 esempi di prompt e output IA** (su Gemini e NotebookLM) rispecchiano esat
    * `Materiali_Trasversali/04_Kit_Materiali_Campione_Pronti_Aula.md` (Testi campione, 4 verifiche tradizionali da "radiografare" e guida alla mini-playlist video YouTube per zero tempi morti in laboratorio).
 6. **Moduli Aggiuntivi Facoltativi**:
    * `Moduli_Extra/Modulo_Extra_A_Uso_Etico_IA_Alunni_Casa.md`;
-   * `Moduli_Extra/Modulo_Extra_B_Prova_Orale_Inclusiva.md`.
+   * `Moduli_Extra/Modulo_Extra_B_Prova_Orale_Inclusiva.md`;
+   * `Moduli_Extra/Modulo_Extra_C_Introduzione_Teorica_IA.md` *(con immagini in `Moduli_Extra/assets_modulo_c/`)*.
