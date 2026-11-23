@@ -434,12 +434,48 @@
     <!-- SLIDE 10 -->
     <section class="slide" data-block="Blocco 1 · 00:00–01:50" data-badge="b1" data-title="10. Demo Live 1 & Lavoro 1 · Fase 1A (30')">
       <div class="slide-header">
-        <div class="slide-kicker">Demo Live 1 (10') + 🛠️ LAVORO PRATICO 1 · FASE 1A (30' · 3 Micro-Step: 5' + 15' + 10')</div>
+        <div class="slide-kicker">Demo Live 1 (10') + 🛠️ LAVORO PRATICO 1 · FASE 1A (30' · 3 Micro-Step)</div>
         <h1>Dalla Foto del Libro alla Scheda Easy-to-Read in Gemini Canvas</h1>
       </div>
-      <p style="margin-bottom:0.5rem;"><strong>Step 1A.1 (5'):</strong> prova un prompt ingenuo su un tuo testo (o dal <em>Kit Materiali Campione</em>) → <strong>Step 1A.2 (15'):</strong> lancia il Prompt <code>R-C-N-A-F</code> qui sotto → <strong>Step 1A.3 (10'):</strong> valida, clicca <strong>Esporta in Documenti</strong>, imposta <strong>Lexend 12 pt (1,5)</strong> e salva in <code>01_Incontro1_Studio_Accessibile</code>.</p>
-      <img class="hero-banner" style="max-height:155px; margin-bottom:0.65rem;" src="../assets/img/prima_dopo_easy.jpg" alt="Trasformazione visiva da pagina densa a scheda Easy-to-Read" />
-      <div class="prompt-box"><button class="copy-btn" onclick="copyPrompt(this)">📋 Copia Prompt Template 1</button>[R - RUOLO] Agisci come un docente esperto di [MATERIA] nella Scuola Secondaria di Primo Grado e specialista in didattica inclusiva UDL.
+
+      <div class="steps-grid">
+        <div class="step-card step-green">
+          <div class="step-card-top">
+            <span class="step-num">Step 1A.1</span>
+            <span class="step-time">5 min</span>
+          </div>
+          <h2>🔥 Confronto Lampo</h2>
+          <p>Scegli un tuo testo (o dal <em>Kit Campione</em>) e lancia un <strong>prompt ingenuo</strong> di 1 riga su <code>gemini.google.com</code> per osservarne i limiti.</p>
+          <button type="button" class="step-open-btn" onclick="openStepModal('modal-step-1a1', this)">🔍 Apri passaggi &amp; screenshot</button>
+        </div>
+
+        <div class="step-card step-blue">
+          <div class="step-card-top">
+            <span class="step-num">Step 1A.2</span>
+            <span class="step-time">15 min</span>
+          </div>
+          <h2>⚡ Prompt R-C-N-A-F &amp; Canvas</h2>
+          <p>Usa il <strong>Profilo Funzionale Anonimizzato</strong>, carica foto/testo con il <strong>Prompt Template 1</strong> e rifinisci un paragrafo in <strong>Gemini Canvas</strong>.</p>
+          <button type="button" class="step-open-btn" onclick="openStepModal('modal-step-1a2', this)">🔍 Apri passaggi &amp; screenshot</button>
+        </div>
+
+        <div class="step-card step-purple">
+          <div class="step-card-top">
+            <span class="step-num">Step 1A.3</span>
+            <span class="step-time">10 min</span>
+          </div>
+          <h2>✅ Validazione, Lexend &amp; Drive</h2>
+          <p>Controlla i nuclei (<em>Human-in-the-Loop</em>), clicca <strong>Esporta in Documenti</strong>, imposta <strong>Lexend 12 pt (1,5 · sinistra)</strong> e salva in Drive.</p>
+          <button type="button" class="step-open-btn" onclick="openStepModal('modal-step-1a3', this)">🔍 Apri passaggi &amp; screenshot</button>
+        </div>
+      </div>
+
+      <details class="prompt-accordion">
+        <summary>
+          <span>📋 Prompt Template 1 — Struttura R-C-N-A-F (pronto da copiare in Step 1A.2)</span>
+          <span class="accordion-hint"></span>
+        </summary>
+        <div class="prompt-box"><button class="copy-btn" onclick="copyPrompt(this)">📋 Copia Prompt Template 1</button>[R - RUOLO] Agisci come un docente esperto di [MATERIA] nella Scuola Secondaria di Primo Grado e specialista in didattica inclusiva UDL.
 [C - CLASSE] Lavoriamo per una classe [1ª / 2ª / 3ª] media (studenti di [11 / 12 / 13] anni).
 [N - NUCLEI E SCALA COGNITIVA] Partendo dal testo o dall'immagine allegata su [ARGOMENTO], conserva tutti i concetti fondamentali della disciplina ma riorganizzali per accompagnare lo studente dal semplice ricordare (LOTS 1) alla comprensione delle relazioni causa-effetto e all'applicazione pratica (LOTS 2 e 3).
 [A - ACCESSIBILITÀ E PROFILO FUNZIONALE] Applica rigorosamente le regole Easy-to-Read per studenti con affaticamento nella lettura e memoria di lavoro fragile:
@@ -450,7 +486,120 @@
 1. TESTO AD ALTA LEGGIBILITÀ (con paragrafi titolati e parole chiave in grassetto);
 2. TABELLA GLOSSARIO (colonne: Termine tecnico | Spiegazione semplice | Esempio concreto quotidiano);
 3. TRE DOMANDE GUIDA ALLO STUDIO graduate (1 sul Ricordare con banca parole, 1 sul Comprendere, 1 sull'Applicare), ciascuna accompagnata da un suggerimento "[Aiuto: ...]".</div>
-      <div class="timer-widget" data-minutes="30" data-label="Lavoro Pratico 1 · Fase 1A (5' + 15' + 10')"></div>
+      </details>
+
+      <div class="trainer-note">
+        💡 <strong>Clicca su ciascuno dei 3 Step</strong> per aprire la finestra guida con i passaggi dettagliati e lo screenshot esplicativo, oppure apri il menu a scomparsa qui sopra per copiare il <strong>Prompt Template 1</strong>.
+      </div>
+
+      <!-- MODAL STEP 1A.1 -->
+      <div id="modal-step-1a1" class="step-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-1a1" aria-hidden="true">
+        <div class="step-modal-dialog">
+          <div class="step-modal-header">
+            <div class="step-modal-title-wrap">
+              <span class="step-modal-kicker">Lavoro Pratico 1 · Fase 1A · 5 minuti</span>
+              <h3 id="modal-title-1a1">🔥 Step 1A.1 — Riscaldamento "Confronto Lampo"</h3>
+            </div>
+            <button type="button" class="modal-close-btn" onclick="closeStepModal()">✕ Chiudi</button>
+          </div>
+          <div class="step-modal-body">
+            <ol>
+              <li><strong>Scegli il testo di partenza</strong>: prendi una pagina del tuo libro di testo o una breve dispensa disciplinare (1ª, 2ª o 3ª media) su cui lavorerai lungo tutti e 5 gli incontri. Se non hai un testo pronto, usa uno dei 4 brani del <a href="../Materiali_Trasversali/04_Kit_Materiali_Campione_Pronti_Aula.html" target="_blank" rel="noopener noreferrer">Kit Materiali Campione ↗</a>.</li>
+              <li><strong>Apri Google Gemini</strong>: collegati a <a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer">gemini.google.com ↗</a> con il tuo account Google.</li>
+              <li><strong>Lancia un prompt ingenuo di 1 riga</strong>: clicca <strong>"+ Nuova chat"</strong>, incolla il testo e scrivi una richiesta generica (es. <em>"Riassumi questo testo per la scuola media e fai 3 domande"</em>).</li>
+              <li><strong>Osserva i 3 limiti tipici in 30 secondi</strong>: muro di testo continuo, lessico tecnico non spiegato (o eliminato) e domande solo mnemoniche (<code>LOTS 1</code>) prive di aiuti.</li>
+            </ol>
+            <figure class="step-modal-figure">
+              <img src="../Materiali_Trasversali/assets_lavoro1/01_step1a1_prompt_ingenuo.png" alt="Screenshot guida Step 1A.1: prompt ingenuo su Gemini e limiti dell'output" />
+              <figcaption>Guida visiva Step 1A.1 — I 3 limiti tipici di un prompt non guidato.</figcaption>
+            </figure>
+          </div>
+          <div class="step-modal-footer">
+            <span style="font-size:0.84rem; color:var(--muted);">Premi <code>Esc</code> o clicca fuori per chiudere</span>
+            <div class="step-modal-nav">
+              <button type="button" onclick="switchStepModal('modal-step-1a2')">Step 1A.2 ▶</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL STEP 1A.2 -->
+      <div id="modal-step-1a2" class="step-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-1a2" aria-hidden="true">
+        <div class="step-modal-dialog">
+          <div class="step-modal-header">
+            <div class="step-modal-title-wrap">
+              <span class="step-modal-kicker">Lavoro Pratico 1 · Fase 1A · 15 minuti</span>
+              <h3 id="modal-title-1a2">⚡ Step 1A.2 — Prompt R-C-N-A-F, Upload Multimodale e Gemini Canvas</h3>
+            </div>
+            <button type="button" class="modal-close-btn" onclick="closeStepModal()">✕ Chiudi</button>
+          </div>
+          <div class="step-modal-body">
+            <ol>
+              <li><strong>Scegli il Profilo Funzionale Anonimizzato (GDPR)</strong>: apri la Parte 2 del <a href="../Materiali_Trasversali/03_Kit_Privacy_GDPR_e_Strumenti_Locali.html" target="_blank" rel="noopener noreferrer">Kit Privacy GDPR ↗</a> e verifica di non inserire mai nomi, classi identificabili o codici diagnostici (es. ICD-10).</li>
+              <li><strong>Apri una nuova chat pulita</strong> su <code>gemini.google.com</code> (<strong>"+ Nuova chat"</strong>) per evitare interferenze dalla prova precedente.</li>
+              <li><strong>Scegli il tuo binario operativo</strong>:</li>
+            </ol>
+            <div class="step-modal-tracks">
+              <div class="step-track base">
+                <strong>🟢 Binario Base ("Pronti Via")</strong><br/>
+                Incolla direttamente il <strong>Prompt Template 1 (<code>R-C-N-A-F</code>)</strong> seguito dal testo di partenza e premi <strong>Invia</strong>.
+              </div>
+              <div class="step-track pro">
+                <strong>🔵 Binario Approfondimento (Multimodale + Canvas)</strong><br/>
+                Clicca <strong><code>+</code></strong> per allegare la <strong>foto/PDF</strong> della pagina del libro, attiva il pulsante <strong>Canvas</strong>, incolla il Prompt Template 1 e invia.
+              </div>
+            </div>
+            <ol start="4">
+              <li><strong>Rifinitura chirurgica in Canvas</strong>: nel pannello laterale destro seleziona col mouse una singola frase ancora densa e clicca sugli strumenti rapidi (<strong>"Semplifica"</strong> o <strong>"Accorcia"</strong>) senza rigenerare tutta la scheda.</li>
+            </ol>
+            <figure class="step-modal-figure">
+              <img src="../Materiali_Trasversali/assets_lavoro1/02_step1a2_gemini_canvas_rcnaf.png" alt="Screenshot guida Step 1A.2: upload foto, Canvas e Prompt R-C-N-A-F" />
+              <figcaption>Guida visiva Step 1A.2 — Caricamento foto (+), attivazione Canvas, Prompt R-C-N-A-F e modifica mirata.</figcaption>
+            </figure>
+          </div>
+          <div class="step-modal-footer">
+            <div class="step-modal-nav">
+              <button type="button" onclick="switchStepModal('modal-step-1a1')">◀ Step 1A.1</button>
+            </div>
+            <div class="step-modal-nav">
+              <button type="button" onclick="switchStepModal('modal-step-1a3')">Step 1A.3 ▶</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL STEP 1A.3 -->
+      <div id="modal-step-1a3" class="step-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-1a3" aria-hidden="true">
+        <div class="step-modal-dialog">
+          <div class="step-modal-header">
+            <div class="step-modal-title-wrap">
+              <span class="step-modal-kicker">Lavoro Pratico 1 · Fase 1A · 10 minuti</span>
+              <h3 id="modal-title-1a3">✅ Step 1A.3 — Validazione, Esportazione in Documenti, Lexend &amp; Drive</h3>
+            </div>
+            <button type="button" class="modal-close-btn" onclick="closeStepModal()">✕ Chiudi</button>
+          </div>
+          <div class="step-modal-body">
+            <ol>
+              <li><strong>Validazione <em>Human-in-the-Loop</em></strong>: rileggi la scheda generata e controlla che i nuclei disciplinari siano esatti, privi di allucinazioni e con i termini tecnici conservati e spiegati bene.</li>
+              <li><strong>Esporta in 1 clic</strong>: clicca su <strong>"Esporta in Documenti"</strong> (in alto a destra in Canvas o sotto la risposta in chat) per creare il file in <strong>Google Documenti</strong>.</li>
+              <li><strong>Imposta l'alta leggibilità</strong>: premi <code>Ctrl + A</code> (o <code>Cmd + A</code> su Mac) e applica font <strong>Lexend</strong> (o <em>Atkinson Hyperlegible</em>), dimensione <strong><code>12 pt</code></strong>, interlinea <strong><code>1,5</code></strong> e <strong>allineamento a sinistra</strong> (mai giustificato!).</li>
+              <li><strong>Rinomina e archivia su Drive</strong>: dai un nome chiaro al file (es. <code>Scheda_Studio_[Argomento]_EasyToRead</code>), clicca l'icona cartella <strong>📁 Sposta</strong> accanto al titolo e salvalo in <code>Corso_Valutare_Per_Crescere / 01_Incontro1_Studio_Accessibile</code>.</li>
+            </ol>
+            <figure class="step-modal-figure">
+              <img src="../Materiali_Trasversali/assets_lavoro1/03_step1a3_docs_lexend_drive.png" alt="Screenshot guida Step 1A.3: formattazione Lexend 12pt, interlinea 1,5 e salvataggio in Drive" />
+              <figcaption>Guida visiva Step 1A.3 — Formattazione Lexend in Google Documenti e spostamento nella cartella Drive.</figcaption>
+            </figure>
+          </div>
+          <div class="step-modal-footer">
+            <div class="step-modal-nav">
+              <button type="button" onclick="switchStepModal('modal-step-1a2')">◀ Step 1A.2</button>
+            </div>
+            <div class="step-modal-nav">
+              <button type="button" onclick="closeStepModal()">✅ Ho completato la Fase 1A</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- SLIDE 11 (PAUSA CENTRALE) -->

@@ -16,7 +16,49 @@ function initSelect() {
   });
 }
 
+let activeModalEl = null;
+let lastModalTrigger = null;
+
+function openStepModal(modalId, triggerBtn) {
+  const modal = document.getElementById(modalId);
+  if (!modal) return;
+  if (activeModalEl && activeModalEl !== modal) {
+    activeModalEl.classList.remove('is-open');
+    activeModalEl.setAttribute('aria-hidden', 'true');
+  }
+  if (triggerBtn) lastModalTrigger = triggerBtn;
+  activeModalEl = modal;
+  modal.classList.add('is-open');
+  modal.setAttribute('aria-hidden', 'false');
+  const closeBtn = modal.querySelector('.modal-close-btn');
+  if (closeBtn) closeBtn.focus();
+}
+
+function closeStepModal() {
+  if (!activeModalEl) return;
+  activeModalEl.classList.remove('is-open');
+  activeModalEl.setAttribute('aria-hidden', 'true');
+  activeModalEl = null;
+  if (lastModalTrigger && typeof lastModalTrigger.focus === 'function') {
+    lastModalTrigger.focus();
+    lastModalTrigger = null;
+  }
+}
+
+function switchStepModal(modalId) {
+  openStepModal(modalId);
+}
+
+function initModals() {
+  document.querySelectorAll('.step-modal').forEach((modal) => {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeStepModal();
+    });
+  });
+}
+
 function showSlide(n, slidesList, counterEl) {
+  if (activeModalEl) closeStepModal();
   if (!slidesList.length) return;
   if (n < 0) n = 0;
   if (n >= slidesList.length) n = slidesList.length - 1;
@@ -153,7 +195,14 @@ function initTimers() {
 }
 
 document.addEventListener('keydown', (e) => {
-  if (document.activeElement && (document.activeElement.tagName === 'SELECT' || document.activeElement.tagName === 'BUTTON')) return;
+  if (activeModalEl) {
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      closeStepModal();
+    }
+    return;
+  }
+  if (document.activeElement && (document.activeElement.tagName === 'SELECT' || document.activeElement.tagName === 'BUTTON' || document.activeElement.tagName === 'SUMMARY')) return;
   if (e.key === 'ArrowRight' || e.key === ' ') {
     e.preventDefault();
     nextSlide();
@@ -165,4 +214,5 @@ document.addEventListener('keydown', (e) => {
 
 initSelect();
 initTimers();
+initModals();
 showSlide(0, slides, counter);
