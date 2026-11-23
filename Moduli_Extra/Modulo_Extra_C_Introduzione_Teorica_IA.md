@@ -27,7 +27,7 @@ Due definizioni aiutano a capirla bene:
 Nel 1955 **John McCarthy** propose un progetto di ricerca di due mesi con dieci scienziati. L'incontro si svolse nell'estate del **1956** al **Dartmouth College**, negli Stati Uniti. In quella occasione McCarthy usò per la prima volta il termine **Artificial Intelligence (AI)**.
 
 Fin dall'inizio gli studiosi si divisero in due posizioni diverse:
-* **IA forte (Strong AI / General AI)**: punta a costruire una macchina con una vera mente umana. Questa macchina avrebbe consapevolezza, comprensione del mondo e capacità di svolgere qualsiasi compito.
+* **IA forte (Strong AI / General AI)**: punta a costruire una macchina con una vera mente come quella umana. Questa macchina avrebbe consapevolezza, comprensione del mondo e capacità di svolgere qualsiasi compito.
 * **IA debole (Weak AI / Narrow AI)**: sostiene che un computer simula solo alcuni processi umani. Questa macchina svolge bene compiti specifici, ma resta priva di coscienza e di ragionamento generale.
 
 ![Confronto tra IA forte come scienza e IA debole come ingegneria](assets_modulo_c/s05_image2.png)
@@ -46,7 +46,7 @@ Negli anni '60 le traduzioni automatiche produssero errori famosi. La frase *"Th
 
 Tre limiti causarono il **primo inverno dell'IA** (taglio dei fondi nel **1966**):
 * scarsa **potenza di calcolo** dei computer dell'epoca;
-* pochi **dati** disponibili e memorie enormi e costose;
+* pochi **dati** disponibili e memorie molto ingombranti e costose;
 * metodi e tecniche di ricerca ancora immaturi.
 
 Negli anni '80 arrivò una nuova ondata di entusiasmo grazie ai **sistemi esperti**. Questi programmi risolvevano problemi complessi in un singolo settore specifico, come la diagnostica medica. Ogni **sistema esperto** aveva tre parti:
@@ -127,14 +127,7 @@ Quando riceve una domanda in cinese (**input**), usa il manuale e consegna una r
 
 ![Illustrazione dell'esperimento mentale della Stanza Cinese di John Searle](assets_modulo_c/s15_image10.png)
 
-### Come descrive l'IA Nello Cristianini e cos'è il CAPTCHA?
-Nel libro *"La scorciatoia"* (2023), lo scienziato **Nello Cristianini** chiarisce un punto essenziale. Una macchina mostra intelligenza quando agisce in modo efficace in situazioni nuove, anche senza un cervello umano. L'IA non sogna e non riflette: usa potenti **scorciatoie statistiche**. Conoscere questi limiti aiuta a usarla in modo responsabile.
-
-Un'applicazione quotidiana del Test di Turing al contrario è il **CAPTCHA** (*Completely Automated Public Turing test to tell Computers and Humans Apart*). In questo test un computer chiede all'utente di leggere parole distorte o selezionare immagini per dimostrare di essere umano.
-
-![Esempi di Test di Turing inverso CAPTCHA e reCAPTCHA](assets_modulo_c/s17_image12.jpg)
-
-> **Checkpoint `[B2 → C3]`**: *Collega (`[B2]`) l'esperimento della **Stanza Cinese** al concetto di "scorciatoia statistica" di Cristianini. Poi applica (`[C3]`): se un chatbot risponde bene a una domanda di storia, come puoi verificare se ha davvero capito o se sta solo combinando parole?*
+> **Checkpoint `[B2 → C3]`**: *Collega (`[B2]`) il **Test di Turing** all'esperimento della **Stanza Cinese** di John Searle. Poi applica (`[C3]`): se un chatbot risponde bene a una domanda di storia, come puoi verificare se ha davvero capito o se sta solo combinando parole?*
 
 ---
 
@@ -168,87 +161,6 @@ Nell'**apprendimento supervisionato** usiamo cinque elementi fondamentali:
 Nella **classificazione** (*classification*), il modello assegna a ogni input una categoria precisa (**output discreto**). Alcuni esempi sono il riconoscimento dei volti, il filtro **spam** delle e-mail o la distinzione tra foto di cani e gatti.
 
 ![Schema di classificazione supervisionata con foto di cani e gatti](assets_modulo_c/s20_image19.png)
-
-### Come funziona l'algoritmo KNN?
-L'algoritmo **KNN** (*K-Nearest Neighbors*) classifica un nuovo dato guardando i **K esempi più vicini** nel training dataset. La classe più frequente tra questi vicini vince. Se scegliamo `K=3` il risultato può cambiare rispetto a `K=7`.
-
-![Grafico dell'algoritmo KNN con confronto tra K=3 e K=7](assets_modulo_c/s21_image17.jpg)
-
-Il **KNN** è un algoritmo "pigro" (*lazy*): memorizza gli esempi e calcola la distanza solo quando arriva un nuovo dato. Per misurare la vicinanza usa due metriche principali:
-* **Distanza Euclidea**: misura il percorso diretto in linea retta tra due punti.
-* **Distanza Manhattan** (o del tassista): misura il percorso seguendo solo spostamenti orizzontali e verticali sugli assi.
-
-![Confronto grafico e formule tra distanza euclidea e distanza del tassista (Manhattan)](assets_modulo_c/s21_image14.png)
-
-### Come funziona l'algoritmo Naive Bayes?
-L'algoritmo **Naive Bayes** usa il **teorema di Bayes** per calcolare la probabilità di una classe. Si chiama *naive* ("ingenuo") perché assume che tutte le caratteristiche siano indipendenti tra loro. Nonostante questa semplificazione, funziona molto bene nei **filtri antispam**.
-
-$$P(A \mid B) = \frac{P(B \mid A) \cdot P(A)}{P(B)}$$
-
-![Schema di filtro e-mail tra Posta in arrivo e Spam](assets_modulo_c/s22_image16.png)
-
-Nel classico esempio del **gioco del golf**, il modello decide se giocare (`Yes` o `No`) osservando meteo, temperatura, umidità e vento su 14 giorni passati. Moltiplicando le probabilità condizionate per il caso *Rainy, Cool, High, True*, l'algoritmo ottiene `P(No|X) = 0,80` contro `P(Yes|X) = 0,20` e prevede `No`.
-
-![Dataset di 14 esempi per decidere se giocare a golf](assets_modulo_c/s23_image20.png)
-
-![Tabella delle probabilità condizionate per Outlook, Temp, Humidity e Windy](assets_modulo_c/s23_image25.png)
-
-### Come funziona la Regressione lineare semplice?
-Nella **regressione** (*regression*), l'output è un valore numerico continuo, come il prezzo di una casa o l'andamento di un titolo in borsa. Il modello cerca la curva che approssima meglio i dati reali, evitando sia errori troppo grandi sia curve troppo rigide sui singoli punti (**overfitting**).
-
-![Grafico di regressione con punti sperimentali e curva approssimante](assets_modulo_c/s24_image28.png)
-
-![Confronto tra tre modelli di regressione: lineare, curva ottimale e modello troppo complesso](assets_modulo_c/s24_image24.png)
-
-Nella **regressione lineare semplice** cerchiamo la retta $y = mx + q$ tramite il **metodo dei minimi quadrati**, che riduce al minimo la somma dei quadrati degli scarti verticali:
-
-$$m = \frac{n \sum xy - \sum x \sum y}{n \sum x^2 - (\sum x)^2} \qquad q = \frac{\sum y - m \sum x}{n}$$
-
-**Esempio pratico `[C3]`**: con i punti $(1, 2)$, $(2, 3)$ e $(3, 5)$ otteniamo $n = 3$, $\sum x = 6$, $\sum y = 10$, $\sum xy = 23$ e $\sum x^2 = 14$. Le formule restituiscono $m = 1,5$ e $q \approx 0,33$, quindi la retta stimata è $y = 1,5x + 0,33$.
-
-![Calcolo passo-passo di m e q nell'esempio di regressione lineare semplice](assets_modulo_c/s26_image36.png)
-
-Ecco la stessa procedura tradotta in **codice C++**:
-
-```cpp
-#include <iostream>
-using namespace std;
-
-void regLin(double x[], double y[], int n, double &m, double &q) {
-    double sum_x = 0, sum_y = 0, sum_xy = 0, sum_x2 = 0;
-    for (int i = 0; i < n; i++) {
-        sum_x += x[i];
-        sum_y += y[i];
-        sum_xy += x[i] * y[i];
-        sum_x2 += x[i] * x[i];
-    }
-    m = (n * sum_xy - sum_x * sum_y) / (n * sum_x2 - sum_x * sum_x);
-    q = (sum_y - m * sum_x) / n;
-}
-
-int main() {
-    const int n = 3;
-    double x[n] = {1, 2, 3};
-    double y[n] = {2, 3, 5};
-    double m, q;
-    regLin(x, y, n, m, q);
-    cout << "Retta: y = " << m << "x + " << q << endl;
-    return 0;
-}
-```
-
-### Come raggruppa i dati l'algoritmo K-means?
-L'algoritmo **K-means** appartiene all'**apprendimento non supervisionato** e raggruppa i dati simili in **cluster** senza etichette iniziali. Procede in quattro passi ripetuti:
-1. sceglie a caso `K` punti centrali chiamati **centroidi**;
-2. calcola la distanza tra ogni punto e i centroidi;
-3. assegna ogni punto al centroide più vicino;
-4. sposta ogni centroide al centro medio del proprio gruppo e ripete il ciclo.
-
-Per scegliere il numero migliore di gruppi (`K`), si usa il **metodo del gomito** (*elbow method*): si osserva il punto in cui la curva dell'errore piega bruscamente.
-
-![Animazione dei passi dell'algoritmo K-means con 3 centroidi](assets_modulo_c/s28_image44.gif)
-
-![Grafico del Metodo del Gomito (Elbow Method) per individuare il valore ottimale di k](assets_modulo_c/s28_image38.png)
 
 ### Come funziona l'Apprendimento con Rinforzo?
 Nell'**apprendimento con rinforzo** (*Reinforcement Learning*), un **agente** esplora un ambiente dinamico per raggiungere un obiettivo, come parcheggiare un'auto o vincere una partita. Dopo ogni azione l'agente riceve un **feedback**: una **ricompensa** se agisce bene o una **punizione** se sbaglia. L'agente salva l'esperienza nella sua **Knowledge Base (KB)** e cerca di massimizzare la ricompensa totale.
@@ -332,14 +244,32 @@ L'**Intelligenza Artificiale Generativa** crea nuovi contenuti originali: testi,
 | **DeepSeek** | Azienda cinese (2023) che sviluppa **LLM open source** efficienti, come **DeepSeek-R1**. | ![Logo DeepSeek](assets_modulo_c/s39_image62.png) |
 | **Claude** | Assistente di **Anthropic** (2021), addestrato con **Constitutional AI** per sicurezza, ragionamento e analisi di testi lunghi. | ![Logo Claude](assets_modulo_c/s40_image57.png) |
 
-### Come funziona un Chatbot come ChatGPT?
-Al centro di ChatGPT opera un **Large Language Model (LLM)** addestrato su miliardi di testi. Il modello genera una frase una parola alla volta, calcolando le probabilità della parola successiva in base al contesto (**n-gram** e sequenze apprese).
+### Come funziona Google Gemini?
+Al centro di **Google Gemini** opera un **Large Language Model (LLM)** di nuova generazione. Il modello genera ogni risposta parola dopo parola, calcolando la probabilità della parola successiva in base al contesto.
 
-![Tabella delle probabilità della parola successiva in ChatGPT](assets_modulo_c/s44_image61.png)
+![Tabella delle probabilità della parola successiva in un modello linguistico](assets_modulo_c/s44_image61.png)
 
-Se scegliesse sempre la parola più probabile, produrrebbe risposte sempre uguali. Per rendere il testo naturale, usa un parametro chiamato **temperatura** (ad esempio `0,8`) che introduce variabilità controllata. Inoltre mantiene la memoria della conversazione nella stessa chat (**prompt chaining**).
+Se il modello scegliesse sempre la parola più probabile, produrrebbe testi ripetitivi. Per ottenere risposte naturali, usa un parametro chiamato **temperatura** che introduce una variabilità controllata. Inoltre ricorda la conversazione nella stessa sessione grazie a un'ampia **finestra di contesto** (**prompt chaining**).
 
-![Interfaccia di una sessione di ChatGPT con cronologia e casella prompt](assets_modulo_c/s43_image58.png)
+**Google Gemini** si distingue per quattro caratteristiche chiave:
+* **Multimodalità nativa**: elabora insieme testo, fotografie, PDF, audio, video e schemi grafici.
+* **Modalità Rapida (*Flash*) e Ragionamento (*Thinking*)**: sceglie risposte veloci per testi semplici oppure scompone problemi complessi passo dopo passo.
+* **Gemini Canvas**: apre un documento accanto alla chat per modificare singole frasi con un clic.
+* **Gem**: permette di creare assistenti personalizzati con istruzioni permanenti (per esempio per una materia scolastica).
+
+### Qual è la differenza tra Chatbot e Agente IA?
+Un **Chatbot** e un **Agente IA** (*AI Agent*) usano spesso lo stesso modello linguistico, ma lavorano in modo diverso.
+
+| Caratteristica | Chatbot IA | Agente IA (*AI Agent*) |
+| :--- | :--- | :--- |
+| **Come riceve il compito** | Risponde a una singola richiesta per volta. | Riceve un obiettivo ampio e complesso. |
+| **Autonomia** | Attende sempre il comando successivo dell'utente. | Pianifica da solo una sequenza di passi intermedi. |
+| **Uso di strumenti** | Produce testo o immagini dentro la chat. | Usa strumenti esterni: web, **Google Drive**, **Documenti**, **Gmail** o codice. |
+| **Controllo finale** | L'utente copia e usa la risposta. | L'agente verifica i risultati intermedi e consegna un prodotto completo. |
+
+**Esempio pratico nell'ecosistema Google Gemini `[C3]`**:
+* **Uso come Chatbot**: apri **Gemini** e scrivi *"Riassumi in 8 righe il ciclo dell'acqua per una prima media"*. Gemini risponde subito nella chat e si ferma.
+* **Uso come Agente IA**: attivi **Gemini Deep Research** (oppure **Gemini** collegato alle estensioni di **Google Workspace**) con l'obiettivo *"Prepara una ricerca sul ciclo dell'acqua con fonti affidabili, confronta i dati e crea un documento strutturato"*. L'agente crea un piano di lavoro, consulta in autonomia decine di pagine web, verifica le informazioni, organizza il report con le citazioni e lo esporta direttamente in **Google Documenti**. Il docente mantiene sempre la supervisione finale (**Human-in-the-Loop**).
 
 ### Come si scrivono prompt efficaci (Prompt Engineering)?
 Il **prompt** è la richiesta che scriviamo al chatbot. Il **Prompt Engineering** studia come formulare istruzioni chiare per ottenere risposte precise. Ricorda di tutelare sempre la privacy e di evitare l'inserimento di dati personali sensibili.
@@ -351,38 +281,31 @@ Per migliorare un prompt puoi indicare **registro linguistico**, **tono**, **for
 
 ---
 
-## Parte 7 — Allenamento Progressivo: da `[A1]` a `[C3]`
-
-1. **Ricordare `[A1]`**: Elenca le 3 parti di un **sistema esperto** e i 3 tipi principali di **Machine Learning**.
-2. **Comprendere le relazioni `[B2]`**: Spiega perché la **programmazione tradizionale** differisce dal **Machine Learning** e perché un **LLM** genera risposte probabilistiche senza possedere comprensione umana (collega **Test di Turing** e **Stanza Cinese**).
-3. **Applicare `[C3]`**:
-   * Classifica ciascun problema scegliendo tra **Classificazione**, **Regressione**, **Clustering** o **Rinforzo**: *(a)* prevedere il consumo elettrico di domani; *(b)* dividere i clienti di un negozio in 4 gruppi simili senza etichette; *(c)* riconoscere una mail di spam; *(d)* addestrare un robot a camminare senza cadere.
-   * Scrivi un **prompt** in formato **RTF** per chiedere a un chatbot una sintesi accessibile sul **percettrone** per uno studente di scuola secondaria.
-
----
-
-## Parte 8 — Tabella Glossario dei Termini Tecnici
+## Parte 7 — Tabella Glossario dei Termini Tecnici
 
 | Termine Tecnico | Spiegazione semplice (Easy-to-Read) | Esempio pratico |
 | :--- | :--- | :--- |
-| **Algoritmo** | Sequenza ordinata di passi chiari per risolvere un problema. | La ricetta passo-passo per calcolare la retta di regressione. |
+| **Agente IA (AI Agent)** | Sistema IA che pianifica più passaggi in autonomia e usa strumenti esterni per raggiungere un obiettivo. | **Gemini Deep Research** che cerca fonti, confronta dati ed esporta un report in Google Documenti. |
+| **Algoritmo** | Sequenza ordinata di passi chiari per risolvere un problema. | Le istruzioni passo-passo che una rete segue per aggiornare i propri pesi. |
 | **Algoritmo Genetico (GA)** | Algoritmo ispirato all'evoluzione di Darwin che migliora le soluzioni per selezioni, **crossover** e **mutazioni**. | Ottimizzare il percorso di un veicolo virtuale su un circuito. |
 | **Apprendimento con Rinforzo** | Metodo in cui un agente impara provando azioni e ricevendo ricompense o punizioni. | Un software che impara a parcheggiare un'auto o giocare a Go. |
-| **Apprendimento Non Supervisionato** | Metodo di ML che trova gruppi o schemi nei dati senza etichette iniziali. | L'algoritmo **K-means** che divide dati in cluster simili. |
+| **Apprendimento Non Supervisionato** | Metodo di ML che trova gruppi o schemi nei dati senza etichette iniziali. | Suddividere in autonomia un elenco di documenti per argomento simile. |
 | **Apprendimento Supervisionato** | Metodo di ML che impara da esempi già etichettati (*input* + *output* corretto). | Addestrare un modello a distinguere foto di cani e gatti. |
 | **Backpropagation** | Algoritmo che calcola l'errore finale di una rete neurale e aggiorna i pesi all'indietro. | Correggere i pesi di una rete profonda per riconoscere meglio i volti. |
-| **CAPTCHA** | Test di Turing inverso che verifica se l'utente di un sito è un umano o un bot. | Selezionare i riquadri con i numeri civici prima di inviare un modulo. |
+| **Chatbot IA** | Programma che dialoga con l'utente in chat rispondendo a una richiesta alla volta. | Chiedere a Gemini in chat di semplificare un paragrafo di storia. |
 | **Classificazione** | Compito di ML che assegna un dato a una categoria precisa (**output discreto**). | Smistare le e-mail tra "Posta in arrivo" e "Spam". |
-| **Clustering (K-means)** | Tecnica che raggruppa dati simili attorno a punti centrali detti **centroidi**. | Dividere gli studenti o i clienti in gruppi con abitudini affini. |
+| **Clustering** | Tecnica di apprendimento non supervisionato che raggruppa dati con caratteristiche simili. | Dividere un insieme di utenti in gruppi con abitudini affini. |
 | **Deep Learning** | Branca del ML che usa **reti neurali profonde** con molti strati nascosti (**DNN**). | Riconoscimento vocale, visione artificiale e traduttori moderni. |
-| **Distanza Euclidea / Manhattan** | Due modi matematici per misurare la vicinanza tra punti nell'algoritmo **KNN**. | Linea retta (Euclidea) contro percorso a isolati cittadini (Manhattan). |
+| **Finestra di contesto** | Quantità massima di testo, immagini o documenti che un modello ricorda in una sessione. | Caricare un intero capitolo in PDF dentro Gemini senza perdere le prime pagine. |
 | **Fuzzy Logic (Logica sfumata)** | Logica che usa valori graduali tra 0 e 1 invece del solo vero/falso. | Descrivere una persona di 180 cm come "abbastanza alta". |
+| **Gem** | Assistente personalizzato dentro Google Gemini con istruzioni fisse salvate dal docente. | Un Gem di Scienze che genera sempre schede Easy-to-Read con glossario. |
+| **Gemini Canvas** | Spazio di lavoro affiancato alla chat di Gemini per modificare parti specifiche di un testo. | Selezionare un solo paragrafo della scheda e chiedere di accorciarlo. |
 | **IA Debole (Narrow AI)** | Sistema progettato per svolgere bene un compito specifico, senza coscienza. | Un navigatore satellitare, un filtro spam o un chatbot attuale. |
 | **IA Forte (General AI)** | Ipotesi teorica di una macchina con mente, coscienza e intelligenza pari a quella umana. | Macchine coscienti della fantascienza (oggi non esistenti). |
-| **IA Generativa** | Branca dell'IA capace di creare nuovi testi, immagini, audio o codice originali. | ChatGPT, Google Gemini, Microsoft Copilot, Claude, DeepSeek. |
-| **Large Language Model (LLM)** | Grande modello linguistico addestrato su miliardi di testi per prevedere e generare linguaggio. | Il motore linguistico alla base di Gemini e ChatGPT. |
-| **Machine Learning (ML)** | Branca dell'IA in cui i computer imparano regole direttamente dai dati. | Un sistema che prevede i prezzi delle case dai dati storici. |
-| **Naive Bayes** | Algoritmo probabilistico basato sul teorema di Bayes che assume caratteristiche indipendenti. | Filtro antispam o previsione del meteo per giocare a golf. |
+| **IA Generativa** | Branca dell'IA capace di creare nuovi testi, immagini, audio o codice originali. | Google Gemini, ChatGPT, Microsoft Copilot, Claude, DeepSeek. |
+| **Large Language Model (LLM)** | Grande modello linguistico addestrato su miliardi di testi per prevedere e generare linguaggio. | Il motore linguistico alla base di Google Gemini. |
+| **Machine Learning (ML)** | Branca dell'IA in cui i computer imparano regole direttamente dai dati. | Un sistema che impara a classificare immagini o prevedere valori numerici. |
+| **Multimodalità** | Capacità di un modello IA di elaborare insieme testo, immagini, audio, video e PDF. | Caricare la foto di una pagina del libro in Gemini per creare una scheda. |
 | **Percettrone** | Modello matematico del singolo neurone artificiale con ingressi, pesi, bias e funzione di attivazione. | Rete minima capace di imparare l'operatore logico AND. |
 | **Prompt / Prompt Engineering** | Richiesta inviata a un chatbot e tecnica per scriverla in modo chiaro ed efficace. | Usare gli schemi **RTF**, **CTF** o **RASCEF** in una chat IA. |
 | **Regressione** | Compito di ML che prevede un numero continuo a partire da dati noti. | Stimare il prezzo futuro di una casa in base ai metri quadrati. |
