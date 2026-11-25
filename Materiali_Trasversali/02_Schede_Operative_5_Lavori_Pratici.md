@@ -28,7 +28,7 @@
 * **Modulo**: Accessibilità, autonomia e studio degli studenti (`4h = 4/20`).
 * **Cartella Drive**: `Corso_Valutare_Per_Crescere / 01_Incontro1_Studio_Accessibile`
 * **Esempi di riferimento nel Ricettario**: [#01 Italiano](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-01), [#02 Italiano L2/NAI](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-02), [#07 Matematica](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-07), [#11 Inglese](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-11), [#16 Geografia](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-16), [#18 Scienze](01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-18).
-* **Materiali di emergenza**: se non hai un testo tuo, prendi uno dei brani pronti nel [Kit Materiali Campione](04_Kit_Materiali_Campione_Pronti_Aula.md#parte-1--testi-campione-pronti-per-lincontro-1-fase-1a).
+* **Materiali di emergenza**: se non hai un testo tuo, prendi uno dei brani pronti nel [Kit Materiali Campione](04_Kit_Materiali_Campione_Pronti_Aula.md#parte-1).
 * **Obiettivo**: partire da una pagina del libro di testo o da una propria dispensa per costruire un pacchetto di studio che abbatta le barriere di decodifica e memoria di lavoro (BES, DSA, L. 104, NAI, ADHD) nel rispetto del GDPR, accompagnando lo studente da `1. Ricordare` a `2. Comprendere` e `3. Applicare`.
 
 ---
@@ -36,7 +36,7 @@
 ### Fase 1A (Blocco 1 · `30 min` · 3 Micro-Step) — La Scheda di Studio *Easy-to-Read* con Gemini Multimodale e Canvas
 
 #### Step 1A.1 — Riscaldamento "Confronto Lampo" (`5 min`)
-1. **Scegli il testo di partenza**: prendi una pagina del tuo libro di testo (o un tuo breve testo disciplinare di 1ª, 2ª o 3ª media su cui lavorerai lungo tutti e 5 gli incontri). Se non hai un file pronto, apri il [Kit Materiali Campione](04_Kit_Materiali_Campione_Pronti_Aula.md#parte-1--testi-campione-pronti-per-lincontro-1-fase-1a) e copia uno dei 4 testi pronti.
+1. **Scegli il testo di partenza**: prendi una pagina del tuo libro di testo (o un tuo breve testo disciplinare di 1ª, 2ª o 3ª media su cui lavorerai lungo tutti e 5 gli incontri). Se non hai un file pronto, apri il [Kit Materiali Campione](04_Kit_Materiali_Campione_Pronti_Aula.md#parte-1) e copia uno dei 4 testi pronti.
 2. **Apri Google Gemini**: vai su `https://gemini.google.com` ed effettua l'accesso con il tuo account Google.
 3. **Esegui il test con il prompt ingenuo**: clicca su **"+ Nuova chat"**, incolla il testo scelto e scrivi una richiesta generica di una sola riga, ad esempio: *"Riassumi questo testo per la scuola media e fai 3 domande"*.
 4. **Osserva i limiti in 30 secondi**: nota i tre difetti tipici di un prompt non guidato: (1) un **muro di testo** con frasi lunghe e dense, (2) **termini tecnici** non spiegati o eliminati, (3) domande solo di memoria (**LOTS 1**) senza alcun aiuto (*scaffolding*).
@@ -146,7 +146,7 @@
 
 ### Fase 2A (Blocco 1 · `30 min` · 3 Micro-Step) — "Radiografia" di una Verifica Reale con Gemini Multimodale
 
-* **Step 2A.1 — Selezione della Verifica di Partenza (`5 min`)**: prendi il PDF, il testo o la **foto** di una tua verifica tradizionale; se non ne hai una a portata di mano, copia una delle **4 Verifiche Tradizionali Campione** (Lettere, STEM, Lingue, Tecnico-Artistiche) dal [Kit Materiali Campione](04_Kit_Materiali_Campione_Pronti_Aula.md#parte-2--4-verifiche-tradizionali-campione-per-lincontro-2-fase-2a).
+* **Step 2A.1 — Selezione della Verifica di Partenza (`5 min`)**: prendi il PDF, il testo o la **foto** di una tua verifica tradizionale; se non ne hai una a portata di mano, copia una delle **4 Verifiche Tradizionali Campione** (Lettere, STEM, Lingue, Tecnico-Artistiche) dal [Kit Materiali Campione](04_Kit_Materiali_Campione_Pronti_Aula.md#parte-2).
 * **Step 2A.2 — Radiografia Tassonomica su Gemini (`15 min`)**: carica la verifica in **Google Gemini** e incolla il **Prompt di Radiografia Tassonomica**:
 
 ```text
@@ -338,7 +338,7 @@ N. | Livello LOTS/HOTS e Codice [A-D][1-6] | Testo della Domanda | Opzione A | O
 ### Fase 5A (Blocco 1 · Area 3 · `50 min` · 3 Micro-Step Unificati) — Dal Video + Dispensa alla Verifica Multimodale
 
 * **Step 5A.1 — Selezione del Video Didattico (`5 min`)**:
-  1. Usa il link di un tuo breve video YouTube (3–6 minuti, con sottotitoli attivi) oppure scegli subito uno dei video già verificati nella [Mini-Playlist Video Testati](04_Kit_Materiali_Campione_Pronti_Aula.md#parte-3--guida-alla-mini-playlist-video-youtube-per-lincontro-5-fase-5a).
+  1. Usa il link di un tuo breve video YouTube (3–6 minuti, con sottotitoli attivi) oppure scegli subito uno dei video già verificati nella [Mini-Playlist Video Testati](04_Kit_Materiali_Campione_Pronti_Aula.md#parte-3).
 * **Step 5A.2 — Generazione Unificata delle Domande con Minutaggio su NotebookLM (`20 min`)**:
   1. Apri il tuo taccuino **NotebookLM** (creato all'Incontro 1), aggiungi l'**URL del video YouTube** come nuova fonte accanto alla tua dispensa e lancia il prompt qui sotto:
 

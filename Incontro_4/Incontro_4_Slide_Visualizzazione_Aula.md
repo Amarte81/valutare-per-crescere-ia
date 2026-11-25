@@ -9,7 +9,7 @@
 >   * `00:00 – 01:50` **Blocco 1 · AREA 1 (110 min · 2h nominali)**: Anatomia dei quesiti inclusivi (zero doppie negazioni, 3 opzioni, distrattori diagnostici e non ortografici), quiz a scelta multipla di livello **HOTS**, generazione della tabella su Gemini con **"Esporta in Fogli"** e **Lavoro Pratico 4 — Fase 4A (50')**.
 >   * `01:50 – 02:10` ☕ **PAUSA CENTRALE (20 min)**.
 >   * `02:10 – 04:00` **Blocco 2 · AREA 2 (110 min · 2h nominali)**: **Google Moduli in chiave inclusiva** (feedback automatico sulla risposta, immagini di supporto e **percorsi condizionali ramificati LOTS → HOTS**), panoramica su **Wordwall** e **Quizizz** (senza timer + *Read Aloud*) e **Lavoro Pratico 4 — Fase 4B (55')**.  
-> * Per la proiezione sulla LIM apri [Incontro_4_Presentazione_LIM.html](Incontro_4_Presentazione_LIM.html) (con diagramma animato delle ramificazioni e schermate mockup di Google Moduli) o la versione PC [Incontro_4_Presentazione_Aula.html](Incontro_4_Presentazione_Aula.html).
+> * Per la proiezione interattiva in aula apri [Incontro_4_Presentazione_Aula.html](Incontro_4_Presentazione_Aula.html) (con diagramma animato delle ramificazioni e schermate mockup di Google Moduli).
 
 ---
 

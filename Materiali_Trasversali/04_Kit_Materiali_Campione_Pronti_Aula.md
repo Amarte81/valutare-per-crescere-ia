@@ -9,6 +9,7 @@
 
 ---
 
+<a id="parte-1"></a>
 ## Parte 1 — Testi Campione Pronti per l'Incontro 1 (Fase 1A)
 
 ### Campione 1A — Area Lettere / Storia (1ª Media): *Il Sistema Curtense*
@@ -25,6 +26,7 @@
 
 ---
 
+<a id="parte-2"></a>
 ## Parte 2 — 4 Verifiche Tradizionali Campione per l'Incontro 2 (Fase 2A: "Radiografia")
 
 > *(Queste 4 verifiche contengono **volutamente** i difetti tipici delle prove tradizionali — prevalenza di `LOTS 1 — Ricordare`, doppie negazioni, consegne multiple non numerate, assenza di scaffolding — così da rendere immediatamente evidente il risultato della "Radiografia" con Gemini!)*
@@ -55,6 +57,7 @@
 
 ---
 
+<a id="parte-3"></a>
 ## Parte 3 — Guida alla Mini-Playlist Video YouTube per l'Incontro 5 (Fase 5A)
 
 Prima dell'Incontro 5, il formatore predispone nella cartella Drive condivisa del corso un file `Playlist_Video_Testati_Incontro5` contenente **1 link YouTube già collaudato (durata 3–5 minuti, con sottotitoli/trascrizione attiva per NotebookLM)** per ciascuna macro-area disciplinare:

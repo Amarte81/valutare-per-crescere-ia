@@ -10,7 +10,7 @@
 >   * `00:00 – 01:50` **Blocco 1 (110 min · 2h nominali)**: Dal voto al *Valutare per crescere*, progettazione con Gemini della **Rubrica KSM × Anderson & Krathwohl**, traduzione in **Scheda di Autovalutazione Studente**, esportazione in **Google Fogli / Griglie di Classroom** e **Lavoro Pratico 3 — Fase 3A (40')**.
 >   * `01:50 – 02:10` ☕ **PAUSA CENTRALE (20 min)**.
 >   * `02:10 – 04:00` **Blocco 2 (110 min · 2h nominali)**: Dal feedback retrospettivo al **Feed-Forward (`🌟 Glow → 🔍 Grow → 🚀 Next Step`)**, generazione di micro-attività di recupero mirato, **Lavoro Pratico 3 — Fase 3B (45')** e deontologia del feedback (*Human-in-the-Loop*).  
-> * Per la proiezione sulla LIM apri [Incontro_3_Presentazione_LIM.html](Incontro_3_Presentazione_LIM.html) (con animazioni, diagrammi SVG e mockup d'interfaccia) o la versione standard [Incontro_3_Presentazione_Aula.html](Incontro_3_Presentazione_Aula.html).
+> * Per la proiezione interattiva in aula apri [Incontro_3_Presentazione_Aula.html](Incontro_3_Presentazione_Aula.html) (con animazioni, diagrammi SVG e mockup d'interfaccia).
 
 ---
 

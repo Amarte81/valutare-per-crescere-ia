@@ -9,7 +9,7 @@
 >   * `00:00 – 01:50` **Blocco 1 · AREA 3 (110 min · 2h nominali)**: Perché la valutazione multimodale (video + audio + testo + immagini) moltiplica l'inclusione, i 3 percorsi online (**Google NotebookLM Multimodale**, **Google Moduli + Video YouTube**, **Edpuzzle**), demo lampo della soluzione locale **Lumi Education (H5P)** e **Lavoro Pratico 5 — Fase 5A (50')**.
 >   * `01:50 – 02:10` ☕ **PAUSA CENTRALE (20 min)**.
 >   * `02:10 – 04:00` **Blocco 2 · VERIFICHIAMO PARTE III (110 min · 2h nominali)**: Orchestrazione dell'intero Kit Valutativo in **Google Classroom** (assegnazione differenziata senza stigma), presentazione del **Modulo Extra B (Prova Orale Inclusiva)**, **Lavoro Pratico 5 — Fase 5B (Scheda di Regia + Peer-Review in 5 Semafori, 45')** e **Showcase Finale tra Dipartimenti (40')**.  
-> * Per la proiezione sulla LIM apri [Incontro_5_Presentazione_LIM.html](Incontro_5_Presentazione_LIM.html) (con player video interattivo animato, mockup di Google Classroom e mappa visuale del Kit) o la versione PC [Incontro_5_Presentazione_Aula.html](Incontro_5_Presentazione_Aula.html).
+> * Per la proiezione interattiva in aula apri [Incontro_5_Presentazione_Aula.html](Incontro_5_Presentazione_Aula.html) (con player video interattivo animato, mockup di Google Classroom e mappa visuale del Kit).
 
 ---
 
