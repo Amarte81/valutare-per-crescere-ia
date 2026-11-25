@@ -81,7 +81,7 @@ Nelle 20 ore del corso (5 incontri da 4 ore), ogni docente ha costruito sul prop
 ```mermaid
 flowchart TB
     K1["1. Incontro 1 · Pacchetto di Studio Accessibile<br/>(Scheda Easy-to-Read + Mappa Mentale PNG + Audio Overview)"]
-    K2["2. Incontro 2 · Verifica UDL Multilivello<br/>(Versione A Facilitata, B Standard, C Potenziamento + Gem)"]
+    K2["2. Incontro 2 · Verifica UDL Multilivello<br/>(Versione A Facilitata, B Standard, C Potenziamento + Skill)"]
     K3["3. Incontro 3 · Rubrica KSM & Feedback Formativo<br/>(Griglia K 35% · S 40% · M 25% + Autovalutazione + Feed-Forward)"]
     K4["4. Incontro 4 · Banca Quesiti & Quiz Digitale<br/>(10 Quesiti LOTS→HOTS in Fogli + Google Modulo Ramificato)"]
     K5["5. Incontro 5 · Verifica Integrata a Video e Materiali<br/>(NotebookLM / Moduli+YouTube / Edpuzzle)"]

@@ -15,7 +15,7 @@
 | Incontro (4h) | Modulo del Corso | Sottocartella Google Drive | Fase A (nel Blocco 1 · `00:00–01:50`) | Fase B (nel Blocco 2 · `02:10–04:00`) | Output Finale della Giornata |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Incontro 1** | Accessibilità, autonomia e studio (`4/20`) | `01_Incontro1_Studio_Accessibile` | **Fase 1A (`30'` · 3 step)**: Riscaldamento (`5'`) → Scheda *Easy-to-Read* su Gemini (`15'`) → Esporta e formatta Lexend (`10'`) | **Fase 1B (`45'` · ordine anti-attesa)**: Avvia Audio Overview (`5'`) → Mappa Mentale PNG (`15'`) → Chat con citazioni (`15'`) → Ascolto/Salvataggio Audio (`10'`) | **1. Pacchetto di Studio Accessibile e Multisensoriale** |
-| **Incontro 2** | VerifichIAmo con l'IA — Parte I (`4h su 10/20`) | `02_Incontro2_Verifica_UDL_Multilivello` | **Fase 2A (`30'` · 3 step)**: Scelta verifica propria o campione (`5'`) → Radiografia LOTS→HOTS (`15'`) → Confronto in coppia (`10'`) | **Fase 2B (`55'` · *Prompt Chaining*)**: Genera e valida Versione B + Correttorio (`20'`) → Genera A e C parallele + Canvas (`20'`) → Crea Gem (`15'`) | **2. Verifica UDL a 3 Livelli + Correttorio `[A-D][1-6]`** |
+| **Incontro 2** | VerifichIAmo con l'IA — Parte I (`4h su 10/20`) | `02_Incontro2_Verifica_UDL_Multilivello` | **Fase 2A (`30'` · 3 step)**: Scelta verifica propria o campione (`5'`) → Radiografia LOTS→HOTS (`15'`) → Confronto in coppia (`10'`) | **Fase 2B (`55'` · *Prompt Chaining*)**: Genera e valida Versione B + Correttorio (`20'`) → Genera A e C parallele + Canvas (`20'`) → Crea Skill (`15'`) | **2. Verifica UDL a 3 Livelli + Correttorio `[A-D][1-6]`** |
 | **Incontro 3** | VerifichIAmo con l'IA — Parte II (`4h su 10/20`) | `03_Incontro3_Rubrica_KSM_e_Feedback` | **Fase 3A (`40'` · 3 step)**: Rubrica KSM in Fogli (`15'`) → Audit descrittori + opzione Template Classroom (`15'`) → Autovalutazione Studente (`10'`) | **Fase 3B (`45'` · 3 step)**: Test tono su 1 errore reale (`10'`) → Kit 3 profili K/S/M (`20'`) → 1 Micro-Attività di recupero curata in Lexend (`15'`) | **3. Rubrica KSM + Autovalutazione + Kit Feedback** |
 | **Incontro 4** | Area 1 Domande IA (`2/20`) + Area 2 Quiz Digitali (`2/20`) | `04_Incontro4_Banca_Quesiti_e_Quiz_Digitale` | **Fase 4A (`50'` · Area 1)**: Genera 10 quesiti in Fogli (`20'`) → Audit distrattori in coppia (`15'`) → Importazione lampo Wordwall/Quizizz (`15'`) | **Fase 4B (`55'` · Area 2)**: Mini-Modulo Pilota 4 quesiti (`20'`) → 1 Ramificazione condizionale (`20'`) → Collaudo incrociato "lato studente" (`15'`) | **4. Banca Quesiti in Fogli + Google Modulo Ramificato** |
 | **Incontro 5** | Area 3 Video/Materiali (`2/20`) + VerifichIAmo III (`2h su 10/20`) | `05_Incontro5_Verifica_Multimodale_e_Kit_Finale` | **Fase 5A (`50'` · Area 3)**: Selezione video da playlist testata (`5'`) → Domande con minutaggio su NotebookLM (`20'`) → Moduli+Video o Edpuzzle/Lumi (`25'`) | **Fase 5B (`45'` · VerifichIAmo III)**: Scheda Regia 1 Pagina (`10'`) → Simulazione assegnazione differenziata su Classroom (`15'`) → Peer-Review (`20'`) | **5. Verifica Multimodale + Kit Valutativo Completo** |
@@ -135,7 +135,7 @@
 ---
 
 ## 🛠️ LAVORO PRATICO 2 — Incontro 2 (4 ore)
-### *Dalla "Radiografia" alla Verifica UDL Multilivello sulla Scala LOTS → HOTS (con Gemini Thinking, Canvas e Gem)*
+### *Dalla "Radiografia" alla Verifica UDL Multilivello sulla Scala LOTS → HOTS (con Gemini Thinking, Canvas e Skill)*
 
 * **Modulo**: VerifichIAmo con l'Intelligenza Artificiale — Parte I (`4h su 10/20`).
 * **Cartella Drive**: `Corso_Valutare_Per_Crescere / 02_Incontro2_Verifica_UDL_Multilivello`
@@ -161,7 +161,7 @@ Restituisci:
 
 ---
 
-### Fase 2B (Blocco 2 · `55 min` · 3 Micro-Step a *Prompt Chaining*) — Co-Progettazione Incrementale della Verifica UDL a 3 Livelli e del "Gem"
+### Fase 2B (Blocco 2 · `55 min` · 3 Micro-Step a *Prompt Chaining*) — Co-Progettazione Incrementale della Verifica UDL a 3 Livelli e della "Skill"
 
 > 💡 **Perché *Prompt Chaining* in 2 mosse invece di un solo mega-prompt?** Chiedere 3 versioni × 6 quesiti + correttorio in un colpo solo aumenta il rischio di output troncati o errori nei calcoli. Costruendo prima la **Versione B** e validandola, le **Versioni A e C** nasceranno perfettamente parallele e prive di errori!
 
@@ -194,8 +194,8 @@ Impagina in modo pulito pronto per "Esporta in Documenti".
 ```
 
   2. Usa **Gemini Canvas** per rifinire col mouse almeno 1–2 consegne (es. accorciare una frase nella Versione A), clicca su **"Esporta in Documenti"**, formatta in **Lexend `12 pt`** (`interlinea 1,5`) e salva in `02_Incontro2_Verifica_UDL_Multilivello`.
-* **Step 2B.3 — Crea il tuo "Gem" Disciplinare Permanente (`15 min` · Binario Approfondimento / Opzionale)**:
-  1. Menu laterale di Gemini → **Gestore dei Gem → Nuovo Gem**.
+* **Step 2B.3 — Crea la tua "Skill" Disciplinare Permanente (`15 min` · Binario Approfondimento / Opzionale)**:
+  1. Menu laterale di Gemini → **Skill → + Nuova Skill**.
   2. Nome: `"Progettista Verifiche UDL - [Tua Materia]"`, incolla nelle **Istruzioni** le regole fisse dei Prompt 2B.1 e 2B.2 e salva.
 
 ---

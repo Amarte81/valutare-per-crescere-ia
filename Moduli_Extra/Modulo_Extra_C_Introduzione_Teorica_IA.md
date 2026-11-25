@@ -255,7 +255,7 @@ Se il modello scegliesse sempre la parola più probabile, produrrebbe testi ripe
 * **Multimodalità nativa**: elabora insieme testo, fotografie, PDF, audio, video e schemi grafici.
 * **Modalità Rapida (*Flash*) e Ragionamento (*Thinking*)**: sceglie risposte veloci per testi semplici oppure scompone problemi complessi passo dopo passo.
 * **Gemini Canvas**: apre un documento accanto alla chat per modificare singole frasi con un clic.
-* **Gem**: permette di creare assistenti personalizzati con istruzioni permanenti (per esempio per una materia scolastica).
+* **Skill**: permette di creare competenze e assistenti personalizzati con istruzioni permanenti (per esempio per una materia scolastica).
 
 ### Qual è la differenza tra Chatbot e Agente IA?
 Un **Chatbot** e un **Agente IA** (*AI Agent*) usano spesso lo stesso modello linguistico, ma lavorano in modo diverso.
@@ -298,7 +298,7 @@ Per migliorare un prompt puoi indicare **registro linguistico**, **tono**, **for
 | **Deep Learning** | Branca del ML che usa **reti neurali profonde** con molti strati nascosti (**DNN**). | Riconoscimento vocale, visione artificiale e traduttori moderni. |
 | **Finestra di contesto** | Quantità massima di testo, immagini o documenti che un modello ricorda in una sessione. | Caricare un intero capitolo in PDF dentro Gemini senza perdere le prime pagine. |
 | **Fuzzy Logic (Logica sfumata)** | Logica che usa valori graduali tra 0 e 1 invece del solo vero/falso. | Descrivere una persona di 180 cm come "abbastanza alta". |
-| **Gem** | Assistente personalizzato dentro Google Gemini con istruzioni fisse salvate dal docente. | Un Gem di Scienze che genera sempre schede Easy-to-Read con glossario. |
+| **Skill (su Gemini)** | Competenza / assistente personalizzato dentro Google Gemini con istruzioni fisse salvate dal docente. | Una Skill di Scienze che genera sempre schede Easy-to-Read con glossario. |
 | **Gemini Canvas** | Spazio di lavoro affiancato alla chat di Gemini per modificare parti specifiche di un testo. | Selezionare un solo paragrafo della scheda e chiedere di accorciarlo. |
 | **IA Debole (Narrow AI)** | Sistema progettato per svolgere bene un compito specifico, senza coscienza. | Un navigatore satellitare, un filtro spam o un chatbot attuale. |
 | **IA Forte (General AI)** | Ipotesi teorica di una macchina con mente, coscienza e intelligenza pari a quella umana. | Macchine coscienti della fantascienza (oggi non esistenti). |

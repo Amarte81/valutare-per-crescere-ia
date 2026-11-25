@@ -16,7 +16,7 @@ Per ciascun incontro sono evidenziati:
 | :---: | :---: | :--- | :--- |
 | **O1.1** | Incontro 1 (Fase 1A) | 30' troppo stretti per principianti assoluti; rischio perdita tempo nella ricerca del testo | Scomposizione in **3 micro-step (5' + 15' + 10')** con riscaldamento *"Prompt ingenuo vs R-C-N-A-F"* + cartella di **testi campione pronti** |
 | **O1.2** | Incontro 1 (Fase 1B) | Tempi di attesa durante la generazione dell'*Audio Overview* su 20–25 PC simultanei | **Inversione dell'ordine degli step**: lanciare subito l'Audio Overview in background (Step 1), poi fare Mappa Mentale e chat mentre l'audio elabora |
-| **O2.1** | Incontro 2 (Fase 2B) | Mega-prompt unico per 3 versioni × 6 quesiti + correttorio: alto rischio di output troncati e controllo difficile | **Prompt Chaining in 3 step**: Step 1 genera e valida solo Versione B → Step 2 genera A e C parallele + rifinitura Canvas → Step 3 crea il Gem |
+| **O2.1** | Incontro 2 (Fase 2B) | Mega-prompt unico per 3 versioni × 6 quesiti + correttorio: alto rischio di output troncati e controllo difficile | **Prompt Chaining in 3 step**: Step 1 genera e valida solo Versione B → Step 2 genera A e C parallele + rifinitura Canvas → Step 3 crea la Skill |
 | **O2.2** | Incontro 2 (Fase 2A) | Docenti sprovvisti in laboratorio di una vecchia verifica in PDF/foto | Predisporre una cartella Drive con **4 Verifiche Tradizionali Campione** (Lettere, STEM, Lingue, Tecnico-Artistiche) per partire al minuto zero |
 | **O3.1** | Incontro 3 (Fase 3A) | La tabella esportata da Gemini in Google Fogli **non è importabile direttamente** nelle Griglie di Classroom senza il template ufficiale | **3 step**: Step 1 Rubrica KSM in Fogli → Step 2 Audit descrittori (zero avverbi vaghi) + copia opzionale nel **Template ufficiale Classroom** → Step 3 Autovalutazione |
 | **O3.2** | Incontro 3 (Fase 3B) | Simulare 3 profili astratti + 3 micro-attività tutte insieme rischia output generici e poco spendibili | **3 step**: Step 1 test su **1 errore reale** della propria classe (calibrazione tono) → Step 2 estensione ai 3 profili K/S/M → Step 3 **1 sola micro-attività** ma curata e pronta da stampare |
@@ -45,7 +45,7 @@ Per ciascun incontro sono evidenziati:
 ---
 
 ### Incontro 2 — Lavoro Pratico 2 (*Radiografia e Verifica UDL a 3 Livelli*)
-* **Attuale**: Fase 2A (`30'`) + Fase 2B (`55'`) con un unico mega-prompt per 3 versioni + correttorio + Gem.
+* **Attuale**: Fase 2A (`30'`) + Fase 2B (`55'`) con un unico mega-prompt per 3 versioni + correttorio + Skill.
 * **Proposta progressiva**:
   * **Fase 2A (`30'`)**:
     * *Step 2A.1 (`5'`)*: carica la tua verifica (o scegli 1 delle **4 Verifiche Campione** dalla cartella Drive del corso).
@@ -54,7 +54,7 @@ Per ciascun incontro sono evidenziati:
   * **Fase 2B (`55'`) — Prompt Chaining (costruzione incrementale)**:
     * *Step 2B.1 (`20'` — Cuore della prova)*: attiva Gemini *Thinking* e genera **solo la Versione B (Standard)** (6 quesiti 40/40/20 con Q5 *Caccia all'errore*) + Correttorio `[A-D][1-6]`; esegui subito il controllo calcoli/contenuti.
     * *Step 2B.2 (`20'` — Differenziazione UDL)*: nella stessa chat chiedi *"Sulla base della Versione B validata, genera la Versione A (Facilitata/Equipollente con scaffolding) e la Versione C (Potenziamento)"*; rifinisci 1–2 quesiti in **Canvas** ed **Esporta in Documenti** (`02_Incontro2_Verifica_UDL_Multilivello`).
-    * *Step 2B.3 (`15'` — Automazione / Approfondimento)*: salva le istruzioni nel tuo **Gem disciplinare permanente**.
+    * *Step 2B.3 (`15'` — Automazione / Approfondimento)*: salva le istruzioni nella tua **Skill disciplinare permanente**.
 
 ---
 

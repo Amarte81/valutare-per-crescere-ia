@@ -21,10 +21,10 @@
 * **Scansione**:
   * `00:00 – 01:50` **Blocco 1 (110')**: Matrice A&K × KSM, Comandi pratici di Gemini e **Fase 2A: Radiografia di una verifica reale (30')**
   * `01:50 – 02:10` ☕ **PAUSA CENTRALE (20 min)**
-  * `02:10 – 04:00` **Blocco 2 (110')**: Gemini Canvas 3 Livelli, creazione del **Gem**, **Fase 2B: Verifica UDL (55')** e Controllo Critico
+  * `02:10 – 04:00` **Blocco 2 (110')**: Gemini Canvas 3 Livelli, creazione della **Skill**, **Fase 2B: Verifica UDL (55')** e Controllo Critico
 
 > 🎤 **Cosa è importante dire a voce (5 min)**:  
-> *"Nell'Incontro 1 abbiamo costruito il pacchetto di studio accessibile. Oggi non ripetiamo nulla di ciò che abbiamo già visto: entriamo subito nella progettazione pratica delle **verifiche scritte di Italiano, Grammatica, Storia e Inglese** usando **Google Gemini for Education**. L'obiettivo di queste 4 ore è duplice: primo, fare la 'radiografia' di una nostra vecchia verifica per vedere dove si annidano le barriere; secondo, uscire alle 18:00 con una **Verifica UDL completa su 3 livelli paralleli** e con il nostro **assistente Gem personalizzato** già salvato nell'account scolastico."*
+> *"Nell'Incontro 1 abbiamo costruito il pacchetto di studio accessibile. Oggi non ripetiamo nulla di ciò che abbiamo già visto: entriamo subito nella progettazione pratica delle **verifiche scritte di Italiano, Grammatica, Storia e Inglese** usando **Google Gemini for Education**. L'obiettivo di queste 4 ore è duplice: primo, fare la 'radiografia' di una nostra vecchia verifica per vedere dove si annidano le barriere; secondo, uscire alle 18:00 con una **Verifica UDL completa su 3 livelli paralleli** e con la nostra **Skill personalizzata** già salvata nell'account scolastico."*
 
 ---
 
@@ -66,7 +66,7 @@
 1. **Tasto `+` → Google Drive / Foto**: allega direttamente dal tuo Drive il Documento Google o il PDF del brano antologico, della scheda di storia o della vecchia verifica.
 2. **Selettore → Modello *Thinking* (Ragionamento)**: verifica in anticipo il rispetto delle quote `40/40/20` e la coerenza dell'errore simulato.
 3. **Gemini Canvas → Modifica col Mouse**: seleziona **1 sola domanda** nel pannello destro e usa la barra flottante per chiedere *"Riduci a livello A1"* o *"Dividi in sintagmi con /"*.
-4. **Esporta in Fogli / Documenti & Gem**: *Esporta in Fogli* per la tabella diagnostica della Radiografia; *Esporta in Documenti* per la verifica a 3 livelli; *Gem* per salvare le regole.
+4. **Esporta in Fogli / Documenti & Skill**: *Esporta in Fogli* per la tabella diagnostica della Radiografia; *Esporta in Documenti* per la verifica a 3 livelli; *Skill* per salvare le regole.
 
 > 🎤 **Cosa è importante dire a voce e mostrare live sullo schermo (15 min)**:  
 > *"Facciamo subito pratica sull'interfaccia di Google Gemini for Education, senza ripetere la teoria di ieri. Guardate i 4 punti dove cliccheremo oggi:  
@@ -121,7 +121,7 @@
 ---
 
 ## 🔵 BLOCCO 2 (`02:10 – 04:00` · 110 min / 2h nominali)
-### *Gemini Canvas per le 3 Versioni UDL, Creazione del Gem di Italiano/Storia e Inglese, Prompt Chaining (Fase 2B · 55') e Controllo Critico*
+### *Gemini Canvas per le 3 Versioni UDL, Creazione della Skill di Italiano/Storia e Inglese, Prompt Chaining (Fase 2B · 55') e Controllo Critico*
 
 ---
 
@@ -136,18 +136,37 @@
 
 ---
 
-### SLIDE 10 — Demo Live 2: Crea il tuo "Gem" di Italiano/Storia o di Inglese (3 minuti!)
-* **Menu laterale di Gemini → Gestore dei Gem → Nuovo Gem**:
-  * 📘 **Gem Italiano / Grammatica / Storia**: memorizza righe numerate, sintagmi con `/`, *Box Bussola* e *Detective Grammaticale / Anacronismo*.
-  * 🇬🇧 **Gem English L2 (Livello A1/A2)**: memorizza taratura QCER A1/A2, consegne bilingui, *Word Bank* e **zero errori di spelling nei distrattori**.
+### SLIDE 10 — Che Cos'è una "Skill" su Gemini? Il Collega che Non Dimentica le Regole
+* **Confronto immediato per capire lo strumento**:
+  * ❌ **Chat Normale = "Il Supplente del Giorno"**: ogni nuova chat riparte da zero e costringe a reincollare ogni volta 20 righe di regole (Anderson & Krathwohl, pesi KSM `40/40/20`, righe numerate, tutele DSA).
+  * ✅ **Skill = "Il Collega di Cattedra"**: è una **competenza / assistente Gemini personalizzata** che memorizza una sola volta per tutto l'anno le tue regole fisse (*System Instructions*). Quando la attivi, scrivi solo classe e argomento!
+* **I 4 passi per crearla (`Menu a sinistra → Skill → + Nuova Skill`)**:
+  1. **Passo 1 (`Gestore delle Skill`)**: apri il menu laterale sinistro di Gemini e clicca su `Skill → + Nuova Skill`.
+  2. **Passo 2 (`Nome + Istruzioni Fisse`)**: assegna il nome e incolla nel campo **Istruzioni** le regole permanenti della tua materia.
+  3. **Passo 3 (`File da Drive +`)** *(opzionale)*: nella sezione **Conoscenze** allega da Google Drive la programmazione di dipartimento o la griglia KSM d'istituto.
+  4. **Passo 4 (`Salva & Riusa`)**: clicca **Salva** in alto a destra → da quel momento bastano 3 righe per generare ogni nuova verifica.
 
-> 🎤 **Cosa è importante dire a voce e mostrare live (10 min)**:  
-> *"Guardate quanto tempo vi fa risparmiare la funzione **Gem** di Google Gemini. Se insegnate Italiano e Storia, create un Gem chiamato `Verifiche UDL - Italiano e Storia`; se insegnate Inglese, chiamatelo `Verifiche UDL - English A1/A2`. Dentro il campo 'Istruzioni' incollate una volta per tutte le regole della vostra materia (che tra poco copieremo dalla Slide 12). Da domani in poi, quando siete a scuola o a casa e vi serve una verifica sull'analisi logica o sul Past Simple, aprite il vostro Gem e scrivete solo le 3 righe che vedete nei riquadri qui sulla slide!"*
+> 🎤 **Cosa è importante dire a voce (5 min)**:  
+> *"Prima di costruirla insieme, chiariamo che cos'è una **Skill** su Google Gemini. Usate questa metafora: la **chat normale di Gemini è come un supplente che entra in classe per la prima volta ogni mattina** — ogni volta dovete rispiegargli da zero che siete alla scuola media, cos'è la Tassonomia di Anderson & Krathwohl, che volete il 40% di K, 40% di S e 20% di M, le righe numerate e le regole per la dislessia. La **Skill, invece, è il vostro collega di cattedra**: il primo giorno gli date il foglio con le regole fisse della vostra materia nel campo **Istruzioni** e magari gli allegate da Google Drive la programmazione nel campo **Conoscenze**. La Skill le memorizza per tutto l'anno scolastico!"*
 
 ---
 
-### SLIDE 11 — 6 Modelli Pronti nel Ricettario (Italiano, Grammatica, Storia, Inglese)
-* Clicca direttamente sulla card della tua materia per aprire il prompt specifico nel Ricettario:
+### SLIDE 11 — Demo Live 2: Costruiamo la Skill di Italiano/Storia o di Inglese (3 minuti!)
+* **Due modelli completi pronti da copiare sulla slide (nei menu a fisarmonica)**:
+  * 📘 **Skill `Verifiche UDL — Italiano & Storia`**:
+    * `📋 1. Copia le "Istruzioni" permanenti (Italiano/Storia)` (da incollare nel campo *Istruzioni* di `Nuova Skill`);
+    * `⚡ 2. Mini-Prompt quotidiano` (3 righe per testarla subito nell'Anteprima).
+  * 🇬🇧 **Skill `Verifiche UDL — English L2 (A1/A2)`**:
+    * `📋 1. Copia le "Istruzioni" permanenti (English L2)` (con consegne bilingui e divieto assoluto di distrattori ortografici per DSA);
+    * `⚡ 2. Mini-Prompt quotidiano` (3 righe sul *Past Simple*).
+
+> 🎤 **Cosa è importante dire a voce e mostrare live (5 min)**:  
+> *"Adesso facciamolo insieme in 3 minuti: aprite nel menu a sinistra di Gemini **Skill → Nuova Skill**. Sulla Slide 11 non dovete scrivere nulla a mano: se insegnate Lettere cliccate sulla prima barra a fisarmonica nella card blu **`📋 1. Copia le Istruzioni permanenti (Italiano/Storia)`** e incollatele nel campo **Istruzioni** della vostra Skill; se insegnate Inglese cliccate sulla prima barra nella card verde **`📋 1. Copia le Istruzioni permanenti (English L2)`**. Poi cliccate sulla seconda barra **`⚡ 2. Mini-Prompt quotidiano`**, incollatelo nell'anteprima a destra per vedere come risponde e cliccate su **Salva**!"*
+
+---
+
+### SLIDE 12 — 6 Modelli Pronti nel Ricettario (Italiano, Grammatica, Storia, Inglese)
+* Clicca direttamente sul pulsante della tua materia per aprire il popup con il prompt specifico pronto da copiare:
   1. 📘 **[#03 Italiano Narrativa (3ª)](../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-03)**: Comprensione testo a 3 livelli con righe numerate e *Caccia all'errore interpretativo*.
   2. 📘 **[#04 Italiano Grammatica (2ª)](../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-04)**: Analisi logica con *Box Bussola*, sintagmi `/` e *Detective Grammaticale*.
   3. 🏛️ **[#14 Storia Feudalesimo (1ª)](../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-14)**: Linea del tempo compensativa, tabella *curtis* e *Caccia all'anacronismo*.
@@ -156,11 +175,11 @@
   6. 📐🎨 **[Altri Esempi (#08, #22, #24)](../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-08)**: Modelli per Matematica, Tecnologia e Arte.
 
 > 🎤 **Cosa è importante dire a voce (5 min)**:  
-> *"Su questa slide avete i link diretti ai modelli già pronti per ciascuna delle vostre discipline: cliccando sul titolo blu o verde si apre in una nuova scheda il prompt già compilato per Narrativa, Grammatica, Storia, Reading di Inglese e Grammar di Inglese. Potete partire da lì o usare il flusso in 2 mosse della prossima slide."*
+> *"Su questa slide avete i pulsanti diretti ai modelli già pronti per ciascuna delle vostre discipline: cliccando su **`📋 Apri & Copia Prompt`** si apre direttamente nella slide la finestra con il prompt già compilato per Narrativa, Grammatica, Storia, Reading di Inglese e Grammar di Inglese. Potete partire da lì o usare il flusso in 2 mosse della prossima slide."*
 
 ---
 
-### SLIDE 12 — Prompt Chaining in 2 Mosse (`2B.1 → 2B.2`): Prima Valida B, Poi Genera A e C
+### SLIDE 13 — Prompt Chaining in 2 Mosse (`2B.1 → 2B.2`): Prima Valida B, Poi Genera A e C
 * **Perché non fare un unico mega-prompt per tutte e 3 le versioni?**
   * Se chiediamo 18 quesiti + correttorio in un colpo solo, l'IA rischia di tagliare le risposte o propagare una frase ambigua su tutti e 3 i livelli.
 * **Il trucco professionale del *Prompt Chaining* in 2 invii nella stessa chat**:
@@ -172,20 +191,20 @@
 
 ---
 
-### SLIDE 13 — 🛠️ LAVORO PRATICO 2 · FASE 2B (`02:40 – 03:35` · 55 Minuti in 3 Step)
+### SLIDE 14 — 🛠️ LAVORO PRATICO 2 · FASE 2B (`02:40 – 03:35` · 55 Minuti in 3 Step)
 * **Step 2B.1 (`20'`)**: Attiva **Thinking + Canvas**, lancia la **Mossa 1** sul tuo argomento di Italiano, Grammatica, Storia o Inglese e controlla il correttorio `[A-D][1-6]`.
 * **Step 2B.2 (`20'`)**: Lancia la **Mossa 2**, modifica almeno 1 domanda col mouse in **Canvas**, clicca **Esporta in Documenti** (*Lexend `12 pt`, interlinea `1,5`*) e salva in `02_Incontro2_Verifica_UDL_Multilivello`.
-* **Step 2B.3 (`15'`)**: Apri **Gestore dei Gem → Nuovo Gem** e incolla le regole fisse della tua materia per avere l'assistente pronto tutto l'anno.
+* **Step 2B.3 (`15'`)**: Apri **Skill → + Nuova Skill** e incolla le regole fisse della tua materia (dalla Slide 11) per avere l'assistente pronto tutto l'anno.
 
 > 🎤 **Cosa è importante dire a voce durante il giro tra i banchi (55 min)**:  
-> Avviare il timer da `55:00` sulla Slide 13. Passando tra le postazioni dei docenti di Italiano e Inglese:  
+> Avviare il timer da `55:00` sulla Slide 14. Passando tra le postazioni dei docenti di Italiano e Inglese:  
 > 1. Verificare che i docenti di **Italiano/Storia** abbiano fatto numerare le righe del brano nella Versione A e abbiano inserito il rimando `(Cerca tra riga X e Y)`.  
 > 2. Verificare che i docenti di **Grammatica** abbiano le barrette `/` tra i sintagmi e il *Box Bussola* in cima alla Versione A.  
 > 3. Verificare che i docenti di **Inglese** abbiano le consegne bilingui, la *Word Bank* e che nel Quesito 5 (*Grammar Detective*) l'errore sia morfosintattico e non di *spelling*.
 
 ---
 
-### SLIDE 14 — Controllo Critico (*Human-in-the-Loop*) in Italiano, Storia e Inglese (`03:35 – 03:50` · 15 min)
+### SLIDE 15 — Controllo Critico (*Human-in-the-Loop*) in Italiano, Storia e Inglese (`03:35 – 03:50` · 15 min)
 1. **Fedeltà al Testo & Correttorio**: Gemini non deve chiedere dettagli assenti nel brano; controllare che l'analisi dei complementi nel correttorio sia esatta.
 2. **Livello 11–14 Anni & QCER A1/A2**: in Inglese verificare che non compaiano strutture fuori programma (es. *Present Perfect* in 1ª media); in Italiano/Storia evitare lessico da biennio delle superiori.
 3. **Un Solo Verbo per Consegna**: zero doppie negazioni e zero richieste multiple accorpate.
@@ -196,11 +215,11 @@
 
 ---
 
-### SLIDE 15 — Checklist di Fine Giornata 2 & Anticipazione Incontro 3 (`03:50 – 04:00` · 10 min)
+### SLIDE 16 — Checklist di Fine Giornata 2 & Anticipazione Incontro 3 (`03:50 – 04:00` · 10 min)
 * **Verifica nella cartella Google Drive `02_Incontro2_Verifica_UDL_Multilivello`**:
   - [x] Foglio Google con la **Tabella Diagnostica della Radiografia** (Fase 2A);
   - [x] Documento Google con la **Verifica UDL a 3 Livelli + Correttorio `[A-D][1-6]`** (Fase 2B);
-  - [x] **Gem disciplinare** salvato nel proprio account Gemini;
+  - [x] **Skill disciplinare** salvata nel proprio account Gemini;
   - [ ] 🔒 **Effettuare il LOGOUT dal browser del laboratorio!**
 
 > 🎤 **Cosa è importante dire a voce in chiusura (10 min)**:  

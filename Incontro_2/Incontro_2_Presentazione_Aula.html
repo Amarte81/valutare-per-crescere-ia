@@ -18,7 +18,7 @@
     <div class="controls">
       <button id="prev-btn" onclick="prevSlide()" title="Slide precedente (Freccia Sinistra)">◀ Prec</button>
       <select id="slide-select" onchange="jumpToSlide(this.value)" aria-label="Seleziona slide"></select>
-      <span id="counter" class="badge">Slide 1 / 15</span>
+      <span id="counter" class="badge">Slide 1 / 16</span>
       <button id="next-btn" onclick="nextSlide()" title="Slide successiva (Freccia Destra / Spazio)">Succ ▶</button>
       <button onclick="toggleFullScreen()" title="Schermo intero">⛶ Schermo Intero</button>
     </div>
@@ -39,7 +39,7 @@
           <h2>🎯 Cosa Facciamo Oggi in Laboratorio</h2>
           <ul>
             <li><strong>Bussola A&amp;K (4×6) + KSM</strong> applicata alle verifiche.</li>
-            <li><strong>Pratica su Gemini for Education</strong>: Drive, Thinking, Canvas e Gem.</li>
+            <li><strong>Pratica su Gemini for Education</strong>: Drive, Thinking, Canvas e Skill.</li>
             <li><strong>Fase 2A (30')</strong>: Radiografia di una verifica reale.</li>
             <li><strong>Fase 2B (55')</strong>: Verifica UDL a 3 Livelli + <em>"Caccia all'errore"</em>.</li>
           </ul>
@@ -50,7 +50,7 @@
             <tr><th>Orario</th><th>Attività</th></tr>
             <tr><td><code>00:00 – 01:50</code></td><td>🟢 <strong>Blocco 1 (110')</strong> · Matrice A&amp;K × KSM, Comandi Gemini e <strong>Fase 2A: Radiografia (30')</strong></td></tr>
             <tr><td><code>01:50 – 02:10</code></td><td>☕ <strong>PAUSA CENTRALE (20 min)</strong></td></tr>
-            <tr><td><code>02:10 – 04:00</code></td><td>🔵 <strong>Blocco 2 (110')</strong> · Canvas 3 Livelli, Gem, <strong>Fase 2B: Verifica UDL (55')</strong> e Controllo</td></tr>
+            <tr><td><code>02:10 – 04:00</code></td><td>🔵 <strong>Blocco 2 (110')</strong> · Canvas 3 Livelli, Skill, <strong>Fase 2B: Verifica UDL (55')</strong> e Controllo</td></tr>
           </table>
         </div>
       </div>
@@ -159,8 +159,8 @@
           <p>Evidenzia col mouse <strong>1 sola domanda</strong> nel pannello destro: usa la barra flottante per chiedere <em>"Riduci a livello A1"</em> o <em>"Metti le barrette / ai sintagmi"</em>.</p>
         </div>
         <div class="card highlight-amber">
-          <h2>4️⃣ Esporta in Fogli / Documenti &amp; Gem</h2>
-          <p>Usa <strong>Esporta in Fogli</strong> per la tabella della <em>Radiografia</em>, <strong>Esporta in Documenti</strong> per la verifica a 3 livelli e salva le regole in un <strong>Gem</strong>!</p>
+          <h2>4️⃣ Esporta in Fogli / Documenti &amp; Skill</h2>
+          <p>Usa <strong>Esporta in Fogli</strong> per la tabella della <em>Radiografia</em>, <strong>Esporta in Documenti</strong> per la verifica a 3 livelli e salva le regole in una <strong>Skill</strong>!</p>
         </div>
       </div>
     </section>
@@ -258,7 +258,6 @@ Restituisci:
 2. La percentuale attuale di quesiti LOTS (1-2), Ponte (3-4) e HOTS (5-6);
 3. Tre proposte concrete per riequilibrare la prova al 40% K / 40% S / 20% M senza abbassare gli obiettivi.</div>
       </details>
-      <div class="timer-widget" data-minutes="30" data-label="Lavoro Pratico 2 · Fase 2A (5' + 15' + 10')"></div>
     </section>
 
     <!-- SLIDE 8 (PAUSA CENTRALE) -->
@@ -266,7 +265,7 @@ Restituisci:
       <div class="card highlight-amber" style="text-align:center; padding:2.6rem 2rem; margin-top:1.5rem;">
         <div class="slide-kicker">Stacco Ergonomico di Metà Pomeriggio · 01:50 – 02:10</div>
         <h1 style="font-size:3rem; margin:1rem 0;"><span class="coffee-float">☕</span> PAUSA CENTRALE — 20 Minuti</h1>
-        <p style="font-size:1.3rem; color:var(--muted);">Pausa caffè e movimento!<br/>Al rientro (<code>02:10</code>): <strong>Gemini Canvas per le 3 Versioni UDL, creazione del Gem di Italiano/Storia e Inglese e Fase 2B!</strong></p>
+        <p style="font-size:1.3rem; color:var(--muted);">Pausa caffè e movimento!<br/>Al rientro (<code>02:10</code>): <strong>Gemini Canvas per le 3 Versioni UDL, creazione della Skill di Italiano/Storia e Inglese e Fase 2B!</strong></p>
         <div class="timer-widget" data-minutes="20" data-label="Countdown Pausa Centrale" style="max-width:560px; margin:1.6rem auto 0;"></div>
       </div>
     </section>
@@ -305,31 +304,109 @@ Restituisci:
       </div>
     </section>
 
-    <!-- SLIDE 10 (GEM PER ITALIANO/STORIA E INGLESE) -->
-    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="10. Demo Live 2: Crea il tuo Gem (Italiano & Inglese)">
+    <!-- SLIDE 10 (CHE COS'È UNA SKILL SU GEMINI E COME FUNZIONA IN 4 PASSI) -->
+    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="10. Che cos'è una Skill su Google Gemini?">
       <div class="slide-header">
-        <div class="slide-kicker">Automazione in 3 Minuti · Menu Laterale → Gestore dei Gem → Nuovo Gem</div>
-        <h1>Crea il tuo "Gem" di Italiano/Storia o di Inglese</h1>
+        <div class="slide-kicker">Prima di Crearla · Capire lo Strumento in 60 Secondi</div>
+        <h1>Che Cos'è una "Skill" su Gemini? Il Collega che Non Dimentica le Regole</h1>
       </div>
-      <div class="grid-2">
-        <div class="card highlight-blue">
-          <h2>📘 Gem Italiano / Grammatica / Storia</h2>
-          <p>Salva nelle <strong>Istruzioni</strong>: righe numerate, sintagmi con <code>/</code>, <em>Box Bussola</em> e <em>Detective Grammaticale / Anacronismo</em>.</p>
-          <div class="prompt-box" style="margin-top:0.5rem;"><button class="copy-btn" onclick="copyPrompt(this)">📋 Copia Test Italiano</button>Classe: 2ª media · Materia: Italiano Grammatica
-Argomento: Soggetto, Predicato, Compl. Oggetto e Termine
-[Allego da Drive le frasi o il brano]</div>
+      <div class="grid-2" style="margin-bottom:0.85rem;">
+        <div class="card highlight-red">
+          <h2>❌ Chat Normale = "Il Supplente del Giorno"</h2>
+          <p>Ogni nuova chat <strong>riparte da zero</strong>: devi incollare ogni volta 20 righe di regole (Anderson &amp; Krathwohl, pesi KSM <code>40/40/20</code>, righe numerate, tutele DSA).</p>
         </div>
         <div class="card highlight-green">
-          <h2>🇬🇧 Gem English L2 (Livello A1/A2)</h2>
-          <p>Salva nelle <strong>Istruzioni</strong>: taratura QCER A1/A2, consegne bilingui, <em>Word Bank</em> e <strong>zero errori di spelling nei distrattori</strong>.</p>
-          <div class="prompt-box" style="margin-top:0.5rem;"><button class="copy-btn" onclick="copyPrompt(this)">📋 Copia Test Inglese</button>Classe: 2ª media (Level A1+/A2) · Topic: Past Simple
-3 Nuclei: regular verbs, irregular verbs, negative with didn't + base form</div>
+          <h2>✅ Skill = "Il Collega di Cattedra"</h2>
+          <p>È una <strong>competenza / assistente Gemini personalizzata</strong> che memorizza <strong>una sola volta per tutto l'anno</strong> le tue regole fisse. Quando la attivi, scrivi solo <strong>classe e argomento</strong>!</p>
+        </div>
+      </div>
+      <div class="steps-grid" style="grid-template-columns:repeat(4, 1fr);">
+        <div class="step-card step-blue">
+          <div class="step-card-top"><span class="step-num">Passo 1</span><span class="step-time">Menu</span></div>
+          <h2>Gestore delle Skill</h2>
+          <p>Nel menu a sinistra di Gemini clicca su <strong>Skill → + Nuova Skill</strong>.</p>
+        </div>
+        <div class="step-card step-purple">
+          <div class="step-card-top"><span class="step-num">Passo 2</span><span class="step-time">Nome + Regole</span></div>
+          <h2>Istruzioni Fisse</h2>
+          <p>Dai un <strong>Nome</strong> e incolla nel campo <strong>Istruzioni</strong> le regole UDL/KSM della tua materia.</p>
+        </div>
+        <div class="step-card step-amber">
+          <div class="step-card-top"><span class="step-num">Passo 3</span><span class="step-time">Opzionale</span></div>
+          <h2>File da Drive (<code>+</code>)</h2>
+          <p>In <strong>Conoscenze</strong> puoi allegare da Drive la programmazione o la griglia KSM d'istituto.</p>
+        </div>
+        <div class="step-card step-green">
+          <div class="step-card-top"><span class="step-num">Passo 4</span><span class="step-time">Pronta!</span></div>
+          <h2>Salva &amp; Riusa</h2>
+          <p>Clicca <strong>Salva</strong>: da oggi ti bastano <strong>3 righe</strong> per creare ogni nuova verifica!</p>
         </div>
       </div>
     </section>
 
-    <!-- SLIDE 11 (ESEMPI FOCUS ITALIANO, GRAMMATICA, STORIA, INGLESE + POPUP COPIABILI) -->
-    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="11. Modelli Pronti nel Ricettario (Italiano, Storia, Inglese)">
+    <!-- SLIDE 11 (DEMO LIVE 2: LE 2 SKILL PRONTE CON ISTRUZIONI COPIABILI A FISARMONICA) -->
+    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="11. Demo Live 2: Costruiamo la Skill (Italiano & Inglese)">
+      <div class="slide-header">
+        <div class="slide-kicker">Demo Live 2 (3 Minuti) · Copia le Istruzioni Permanenti e Incollale in "Nuova Skill"</div>
+        <h1>Costruiamo la Skill di Italiano/Storia o di Inglese</h1>
+      </div>
+      <div class="grid-2">
+        <div class="card highlight-blue">
+          <h2>📘 Skill: <code>Verifiche UDL — Italiano &amp; Storia</code></h2>
+          <p>Memorizza per sempre: <strong>righe numerate</strong>, frasi divise in sintagmi con <code>/</code>, <em>Box Bussola</em>, <em>Detective Grammaticale</em> e <em>Caccia all'Anacronismo</em>.</p>
+          <details class="prompt-accordion" style="margin-top:0.55rem;">
+            <summary>
+              <span>📋 1. Copia le "Istruzioni" permanenti (Italiano/Storia)</span>
+              <span class="accordion-hint"></span>
+            </summary>
+            <div class="prompt-box"><button class="copy-btn" onclick="copyPrompt(this)">📋 Copia Istruzioni Skill Italiano/Storia</button>Agisci come docente esperto di Italiano (Narrativa e Grammatica) e Storia nella Scuola Secondaria di I Grado e progettista UDL.
+Ogni volta che ti indico una CLASSE, una MATERIA e un ARGOMENTO (o ti allego un brano da Google Drive), progetta una verifica strutturata secondo la Tassonomia di Anderson & Krathwohl (Conoscenze A-D x Processi 1-6) e il Criterio KSM (40% K / 40% S / 20% M) con 6 quesiti:
+- Q1-Q2 LOTS (1. Ricordare / 2. Comprendere — Asse K, codici [A1, B2]);
+- Q3-Q4 Ponte (3. Applicare / 4. Analizzare — Asse S, codici [C3, B4]);
+- Q5 HOTS (5. Valutare — Asse M, codice [B5/C5/D4]): "Caccia all'errore" (Narrativa: fallo motivazionale; Grammatica: "Il Detective Grammaticale"; Storia: "Caccia all'Anacronismo");
+- Q6 HOTS (6. Creare / Riflettere — Asse M, codice [B6/D5]): breve produzione o riflessione metacognitiva.
+REGOLE FISSE UDL/DSA: 1) Numera sempre le righe dei brani [Riga 1]...; 2) In Grammatica dividi le frasi in sintagmi con "/" e inserisci il Box Bussola; 3) In Storia usa una Linea del Tempo compensativa; 4) Nella Mossa 1 genera VERSIONE B + CORRETTORIO [A-D][1-6] e KSM; quando ti scrivo "Procedi con A e C", genera VERSIONE A (Facilitata con banca parole e sentence starters) e VERSIONE C (Potenziamento).</div>
+          </details>
+          <details class="prompt-accordion">
+            <summary>
+              <span>⚡ 2. Mini-Prompt quotidiano (3 righe per usarla!)</span>
+              <span class="accordion-hint"></span>
+            </summary>
+            <div class="prompt-box"><button class="copy-btn" onclick="copyPrompt(this)">📋 Copia Test Italiano/Grammatica</button>Classe: 2ª media · Materia: Italiano Grammatica
+Argomento: Soggetto, Predicato, Compl. Oggetto e Termine
+[Allego da Drive le frasi o il brano]</div>
+          </details>
+        </div>
+        <div class="card highlight-green">
+          <h2>🇬🇧 Skill: <code>Verifiche UDL — English L2 (A1/A2)</code></h2>
+          <p>Memorizza per sempre: livello <strong>QCER A1/A2</strong>, consegne bilingui, <em>Word Bank</em> e <em>Grammar Detective</em> con <strong>zero trappole di spelling per DSA</strong>.</p>
+          <details class="prompt-accordion" style="margin-top:0.55rem;">
+            <summary>
+              <span>📋 1. Copia le "Istruzioni" permanenti (English L2)</span>
+              <span class="accordion-hint"></span>
+            </summary>
+            <div class="prompt-box"><button class="copy-btn" onclick="copyPrompt(this)">📋 Copia Istruzioni Skill Inglese</button>Agisci come docente esperto di Lingua Inglese (L2) nella Scuola Secondaria di I Grado (livelli QCER A1 in 1ª media, A1+/A2 in 2ª e A2 in 3ª media) e specialista in accessibilità glottodidattica per alunni con DSA e BES.
+Ogni volta che ti indico CLASSE, TOPIC e NUCLEI GRAMMATICALI/LESSICALI, progetta una verifica di 6 quesiti bilanciata secondo Anderson & Krathwohl (4x6) e il Criterio KSM (40% K / 40% S / 20% M):
+- Q1-Q2 LOTS (1. Ricordare / 2. Comprendere — Asse K, codici [A1, B2]): Reading/Vocabulary con parole chiave in grassetto;
+- Q3-Q4 Ponte (3. Applicare / 4. Analizzare — Asse S, codici [C3, B4]): Grammar in context e trasformazione comunicativa;
+- Q5 HOTS (5. Valutare — Asse M, codice [C5/D4]): "Grammar Detective" (3 frasi di uno studente immaginario con un errore morfosintattico o comunicativo da individuare e correggere);
+- Q6 HOTS (6. Creare — Asse M, codice [C6]): Guided Writing di 3-4 frasi personali con sentence starters.
+REGOLE FISSE ANTI-BARRIERA DSA: 1) Consegne bilingui (Inglese + traduzione italiana tra parentesi); 2) VIETATO inserire errori basati su puro spelling o lettere invertite (es. friend/freind, went/wnet): usa SOLO errori morfosintattici (es. "Yesterday I didn't went"); 3) Nella Mossa 1 genera VERSIONE B + CORRETTORIO [A-D][1-6]; quando ti scrivo "Procedi con A e C", genera VERSIONE A (con Word Bank e 3 opzioni) e VERSIONE C (Potenziamento).</div>
+          </details>
+          <details class="prompt-accordion">
+            <summary>
+              <span>⚡ 2. Mini-Prompt quotidiano (3 righe per usarla!)</span>
+              <span class="accordion-hint"></span>
+            </summary>
+            <div class="prompt-box"><button class="copy-btn" onclick="copyPrompt(this)">📋 Copia Test Inglese</button>Classe: 2ª media (Level A1+/A2) · Topic: Past Simple
+3 Nuclei: regular verbs, irregular verbs, negative with didn't + base form</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 12 (ESEMPI FOCUS ITALIANO, GRAMMATICA, STORIA, INGLESE + POPUP COPIABILI) -->
+    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="12. Modelli Pronti nel Ricettario (Italiano, Storia, Inglese)">
       <div class="slide-header">
         <div class="slide-kicker">Dal Ricettario dei 30 Esempi · Clicca su un Modello per Aprire e Copiare il Prompt</div>
         <h1>6 Modelli Pronti per il Laboratorio di Oggi</h1>
@@ -384,8 +461,8 @@ Argomento: Soggetto, Predicato, Compl. Oggetto e Termine
       </div>
     </section>
 
-    <!-- SLIDE 12 (PROMPT CHAINING SENZA MURI DI TESTO: ACCORDIONS SEPARATI) -->
-    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="12. Prompt Chaining (2B.1 -> 2B.2)">
+    <!-- SLIDE 13 (PROMPT CHAINING SENZA MURI DI TESTO: ACCORDIONS SEPARATI) -->
+    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="13. Prompt Chaining (2B.1 -> 2B.2)">
       <div class="slide-header">
         <div class="slide-kicker">Costruzione Incrementale in Gemini Thinking + Canvas (Zero Output Troncati)</div>
         <h1>Prompt Chaining in 2 Mosse: Prima Valida B, Poi Genera A e C</h1>
@@ -425,11 +502,11 @@ Argomento: Soggetto, Predicato, Compl. Oggetto e Termine
       </details>
     </section>
 
-    <!-- SLIDE 13 -->
-    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="13. LAVORO 2 · Fase 2B (55' in 3 Step)">
+    <!-- SLIDE 14 -->
+    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="14. LAVORO 2 · Fase 2B (55' in 3 Step)">
       <div class="slide-header">
         <div class="slide-kicker">Laboratorio Hands-On · <code>02:40 – 03:35</code> (55 Minuti · 3 Micro-Step Progressivi)</div>
-        <h1>🛠️ LAVORO PRATICO 2 · FASE 2B: Verifica UDL a 3 Livelli &amp; Gem</h1>
+        <h1>🛠️ LAVORO PRATICO 2 · FASE 2B: Verifica UDL a 3 Livelli &amp; Skill</h1>
       </div>
       <div class="steps-grid">
         <div class="step-card step-green">
@@ -444,15 +521,15 @@ Argomento: Soggetto, Predicato, Compl. Oggetto e Termine
         </div>
         <div class="step-card step-purple">
           <div class="step-card-top"><span class="step-num">Step 2B.3</span><span class="step-time">15 min</span></div>
-          <h2>Salva il tuo Gem</h2>
-          <p>Apri <strong>Gestore dei Gem → Nuovo Gem</strong> e incolla le regole fisse per avere il tuo assistente pronto tutto l'anno!</p>
+          <h2>Salva la tua Skill</h2>
+          <p>Apri <strong>Skill → + Nuova Skill</strong> e incolla le regole fisse (dalla Slide 11) per avere il tuo assistente pronto tutto l'anno!</p>
         </div>
       </div>
       <div class="timer-widget" data-minutes="55" data-label="Lavoro Pratico 2 · Fase 2B (20' + 20' + 15')"></div>
     </section>
 
-    <!-- SLIDE 14 -->
-    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="14. Controllo Critico Human-in-the-Loop">
+    <!-- SLIDE 15 -->
+    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="15. Controllo Critico Human-in-the-Loop">
       <div class="slide-header">
         <div class="slide-kicker">Validazione tra Pari (<code>03:35 – 03:50</code> · 15 min)</div>
         <h1>Controllo Critico (<em>Human-in-the-Loop</em>) in Italiano, Storia e Inglese</h1>
@@ -477,8 +554,8 @@ Argomento: Soggetto, Predicato, Compl. Oggetto e Termine
       </div>
     </section>
 
-    <!-- SLIDE 15 -->
-    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="15. Checklist Finale e Ponte verso Incontro 3">
+    <!-- SLIDE 16 -->
+    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="16. Checklist Finale e Ponte verso Incontro 3">
       <div class="slide-header">
         <div class="slide-kicker">Chiusura Incontro 2 di 5 (<code>03:50 – 04:00</code>) · Arrivederci all'Incontro 3!</div>
         <h1>Checklist di Fine Giornata 2 &amp; Anticipazione Incontro 3</h1>
@@ -489,7 +566,7 @@ Argomento: Soggetto, Predicato, Compl. Oggetto e Termine
           <ul>
             <li>✔ Foglio Google con la <strong>Tabella Diagnostica della Radiografia</strong> (Fase 2A).</li>
             <li>✔ Documento Google con la <strong>Verifica UDL a 3 Livelli + Correttorio <code>[A-D][1-6]</code></strong> in <code>02_Incontro2_Verifica_UDL_Multilivello</code>.</li>
-            <li>✔ <strong>Gem disciplinare</strong> salvato in Gemini.</li>
+            <li>✔ <strong>Skill disciplinare</strong> salvata in Gemini.</li>
             <li>🔒 <strong>Effettua il LOGOUT dal browser del laboratorio!</strong></li>
           </ul>
         </div>

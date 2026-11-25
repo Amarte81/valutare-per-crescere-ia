@@ -82,7 +82,7 @@ Nel [Ricettario dei 30 Esempi](../Materiali_Trasversali/01_Ricettario_Prompt_30_
 ### SLIDE 7 — Il Cerchio si Chiude: I 5 Tasselli del tuo Kit Valutativo Inclusivo
 Guarda la tua cartella Google Drive `Corso_Valutare_Per_Crescere`:
 1. 📁 **`01_Incontro1_Studio_Accessibile`**: Scheda *Easy-to-Read* + Glossario + **Mappa Mentale PNG e Audio Overview** (NotebookLM).
-2. 📁 **`02_Incontro2_Verifica_UDL_Multilivello`**: Verifica a **3 Livelli** (`A Facilitata, B Standard, C Potenziamento`) bilanciata **LOTS → HOTS** con *"Caccia all'errore"* + **Gem**.
+2. 📁 **`02_Incontro2_Verifica_UDL_Multilivello`**: Verifica a **3 Livelli** (`A Facilitata, B Standard, C Potenziamento`) bilanciata **LOTS → HOTS** con *"Caccia all'errore"* + **Skill**.
 3. 📁 **`03_Incontro3_Rubrica_KSM_e_Feedback`**: **Rubrica KSM × Anderson & Krathwohl** in Fogli + **Scheda Autovalutazione** + **Feedback *Feed-Forward* e Micro-Recupero**.
 4. 📁 **`04_Incontro4_Banca_Quesiti_e_Quiz_Digitale`**: **Banca di 10 quesiti in Fogli** + **Google Modulo Quiz ramificato**.
 5. 📁 **`05_Incontro5_Verifica_Multimodale_e_Kit_Finale`**: **Verifica integrata a Video/Materiali** + **Scheda di Regia per la Classe**.

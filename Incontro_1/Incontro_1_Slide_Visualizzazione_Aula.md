@@ -66,7 +66,7 @@ Non siamo più davanti a una semplice "chat testuale". Ecco le **4 leve nuove** 
 | :--- | :--- |
 | 📸 **1. Multimodalità Nativa** | Carichi la **foto della pagina del libro cartaceo**, una mappa, un grafico o un PDF: Gemini legge testo + immagini insieme senza ricopiare nulla. |
 | 🧠 **2. Modello Rapido (*Flash*) vs Ragionamento (*Thinking*)** | *Flash* per adattare testi e creare glossari in 3 secondi; *Thinking* (ragionamento passo-passo) per problemi STEM, domande HOTS e *"Caccia all'errore"*. |
-| ✍️ **3. Gemini Canvas & Gem** | In **Canvas** modifichi o semplifichi una sola frase selezionandola col mouse; con i **Gem** salvi il tuo assistente disciplinare permanente. |
+| ✍️ **3. Gemini Canvas & Skill** | In **Canvas** modifichi o semplifichi una sola frase selezionandola col mouse; con le **Skill** salvi il tuo assistente disciplinare permanente. |
 | 📄 **4. Esportazione in 1 Clic** | Pulsante diretto **"Esporta in Documenti"** o **"Esporta in Fogli"** direttamente nel tuo Google Drive. |
 
 ---
@@ -220,4 +220,4 @@ Distribuzione proporzionale alle 30 ore settimanali della Scuola Secondaria di I
   - [x] Mappa Mentale PNG (e/o Audio Overview) generata su NotebookLM;
   - [ ] 🔒 **Effettuare il LOGOUT dal proprio account Google sul PC del laboratorio!**
 
-> 🚀 **Nel prossimo incontro (Incontro 2 di 5 — 4 ore)**: entreremo nel cuore di **"VerifichIAmo con l'IA (Parte I)"** usando il modello di **Ragionamento (*Thinking*)**, la **Multimodalità** e **Gemini Canvas/Gem** per progettare sullo stesso argomento la **Verifica UDL Multilivello (Facilitata, Standard, Potenziamento)** bilanciata sulla scala **LOTS → HOTS**!
+> 🚀 **Nel prossimo incontro (Incontro 2 di 5 — 4 ore)**: entreremo nel cuore di **"VerifichIAmo con l'IA (Parte I)"** usando il modello di **Ragionamento (*Thinking*)**, la **Multimodalità** e **Gemini Canvas/Skill** per progettare sullo stesso argomento la **Verifica UDL Multilivello (Facilitata, Standard, Potenziamento)** bilanciata sulla scala **LOTS → HOTS**!

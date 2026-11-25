@@ -1,7 +1,7 @@
 # Dispensa di Studio e Approfondimento — Incontro 2 di 5 (4 ore)
 
 ## VALUTARE PER CRESCERE
-### *VerifichIAmo con l'IA (Parte I): uso pratico di Google Gemini for Education (Thinking, Drive, Canvas e Gem) per progettare Verifiche UDL Multilivello secondo la Tassonomia di Anderson & Krathwohl e il Criterio KSM (con focus su Italiano, Grammatica, Storia e Inglese)*
+### *VerifichIAmo con l'IA (Parte I): uso pratico di Google Gemini for Education (Thinking, Drive, Canvas e Skill) per progettare Verifiche UDL Multilivello secondo la Tassonomia di Anderson & Krathwohl e il Criterio KSM (con focus su Italiano, Grammatica, Storia e Inglese)*
 
 > [!NOTE]
 > **Come utilizzare questa dispensa**  
@@ -75,7 +75,7 @@ Nel formulare il punto **[A] Accessibilità** del prompt, il docente distingue i
 
 ---
 
-## Capitolo 4 — Uso Pratico degli Strumenti di Google Gemini for Education: Drive, Thinking, Canvas, Prompt Chaining e Gem
+## Capitolo 4 — Uso Pratico degli Strumenti di Google Gemini for Education: Drive, Thinking, Canvas, Prompt Chaining e Skill
 
 ### 4.1 Guida Pratica Passo-Passo all'Interfaccia di Google Gemini for Education
 Per lavorare in modo rapido ed efficace durante il laboratorio (e a casa), ecco la sequenza esatta dei **5 strumenti pratici** dentro l'ambiente **[Google Gemini](https://gemini.google.com/)** integrato con **[Google Workspace for Education](https://edu.google.com/intl/ALL_it/workspace-for-education/)**:
@@ -86,14 +86,61 @@ Per lavorare in modo rapido ed efficace durante il laboratorio (e a casa), ecco 
 | **2. Attivare il Modello di Ragionamento (*Thinking*)** | Selettore del modello in alto a sinistra (o nel box del prompt) → **[Ragionamento / Thinking](https://ai.google.dev/gemini-api/docs/thinking?hl=it)** | Obbliga Gemini a verificare prima la coerenza tra brano e domande, il bilanciamento `40% LOTS / 40% Ponte / 20% HOTS` e la correttezza grammaticale dell'errore simulato nel *Detective Grammaticale*. |
 | **3. Usare il *Prompt Chaining* in 2 Mosse (`2B.1 → 2B.2`)** | Stessa conversazione di chat in 2 invii consecutivi | **Mossa 1**: genera e valida *solo* la **Versione B (Standard)** + il Correttorio `[A-D][1-6]`.<br>**Mossa 2**: validata la B, chiede a Gemini di generare in parallelo la **Versione A (Facilitata)** e la **Versione C (Potenziamento)** sugli stessi identici obiettivi (evitando tagli o disallineamenti!). |
 | **4. Rifinire chirurgicamente in [Gemini Canvas](https://support.google.com/gemini/answer/16047329?hl=it)** | Pulsante **Canvas** nella barra del prompt → **Seleziona col mouse una singola domanda** nel pannello destro | Compare la barra flottante (*Chiedi a Gemini* / icone di modifica rapida): puoi evidenziare **una sola consegna** o **un solo paragrafo in inglese** e scrivere *"Riduci a livello A1 QCER"*, *"Aggiungi 2 sentence starters"* o *"Dividi la frase in sintagmi con le barrette /"*, lasciando intatto il resto della verifica! |
-| **5. Salvare il [Gem](https://support.google.com/gemini/answer/15235603?hl=it) ed Esportare in 1 clic** | Menu laterale → **Gestore dei Gem → Nuovo Gem**;<br>In fondo alla risposta → **Condividi ed esporta → Esporta in Documenti / Fogli** | • Il pulsante **"Esporta in Fogli"** (sotto la tabella della *Radiografia*) crea subito il Foglio Google diagnostico.<br>• Il pulsante **"Esporta in Documenti"** crea il file della verifica pronto per il font **[Lexend](https://fonts.google.com/specimen/Lexend)** (`12 pt`, interlinea `1,5`).<br>• Il **Gem** memorizza per tutto l'anno le tue regole disciplinari! |
+| **5. Salvare la [Skill](https://support.google.com/gemini/answer/15235603?hl=it) ed Esportare in 1 clic** | Menu laterale → **Skill (Gestore delle Skill) → + Nuova Skill**;<br>In fondo alla risposta → **Condividi ed esporta → Esporta in Documenti / Fogli** | • Il pulsante **"Esporta in Fogli"** (sotto la tabella della *Radiografia*) crea subito il Foglio Google diagnostico.<br>• Il pulsante **"Esporta in Documenti"** crea il file della verifica pronto per il font **[Lexend](https://fonts.google.com/specimen/Lexend)** (`12 pt`, interlinea `1,5`).<br>• La **Skill** memorizza per tutto l'anno le tue regole disciplinari! |
 
 ---
 
-### 4.2 Configurare i "Gem" Permanenti per Italiano/Storia e per Inglese
-Creando un **[Gem personalizzato](https://support.google.com/gemini/answer/15235603?hl=it)** con **[istruzioni di sistema (*System Instructions*)](https://ai.google.dev/gemini-api/docs/system-instructions?hl=it)** stabili, l'insegnante non deve più riscrivere i vincoli tassonomici e inclusivi ogni settimana:
-* **Gem `"Progettista Verifiche UDL — Italiano & Storia"`**: pre-istruito per numerare sempre le righe dei brani, segmentare le frasi di grammatica in sintagmi con `/`, inserire il *Box Bussola* o la *Linea del Tempo* in Versione A e proporre nel Quesito 5 il *Detective Grammaticale* o la *Caccia all'Anacronismo*.
-* **Gem `"Progettista Verifiche UDL — English L2 (A1/A2)"`**: pre-istruito per graduare i testi sul livello [QCER (*CEFR*)](https://it.wikipedia.org/wiki/Quadro_comune_europeo_di_riferimento_per_la_conoscenza_delle_lingue) A1/A2, inserire le consegne bilingui (Inglese + traduzione italiana tra parentesi), aggiungere la *Word Bank* e progettare il *Grammar Detective* **senza mai usare distrattori basati su refusi ortografici o lettere invertite**.
+### 4.2 Che Cos'è una "Skill" su Gemini e Come Configurare le Skill Permanenti per Italiano/Storia e Inglese
+
+Nella **chat normale di Google Gemini**, ogni nuova conversazione riparte da zero (come un *"supplente del giorno"* a cui bisogna rispiegare ogni mattina la classe, la tassonomia di Anderson & Krathwohl, i pesi KSM `40/40/20` e le regole di accessibilità per alunni con DSA o BES).  
+Una **[Skill personalizzata su Gemini](https://support.google.com/gemini/answer/15235603?hl=it)** è invece una **competenza / assistente IA permanente** (come il *"collega di cattedra"* che conosce già le tue regole da settembre a giugno): memorizza una volta per tutte le tue **[istruzioni di sistema (*System Instructions*)](https://ai.google.dev/gemini-api/docs/system-instructions?hl=it)** e i tuoi documenti di riferimento su Google Drive.
+
+#### Come si crea una Skill su Gemini in 4 passi (3 minuti)
+Nel menu laterale sinistro di Google Gemini clicca su **`Skill (Gestore delle Skill)` → `+ Nuova Skill`** e compila i 4 campi della schermata:
+
+| Campo di `Nuova Skill` | Cosa inserire | Vantaggio pratico per il docente |
+| :--- | :--- | :--- |
+| **1. Nome** | Es. `Verifiche UDL — Italiano & Storia` oppure `Verifiche UDL — English L2 (A1/A2)` | Compare sempre nel menu laterale sinistro di Gemini, pronta in 1 clic. |
+| **2. Istruzioni (*System Instructions*)** | Incolla il blocco di regole permanenti qui sotto (Anderson & Krathwohl `4×6`, pesi KSM `40/40/20`, struttura a 3 livelli A/B/C, righe numerate o vincoli DSA). | Non dovrai **mai più** riscrivere o ricopiare prompt lunghi 20 righe: la Skill applicherà queste regole in automatico a ogni tua richiesta. |
+| **3. Conoscenze (*Knowledge* da Google Drive)** *(opzionale)* | Clicca su `+` per allegare da Google Drive la programmazione di dipartimento o la griglia KSM d'istituto. | La Skill consulta automaticamente i tuoi documenti ufficiali senza doverli ricaricare ogni volta. |
+| **4. Anteprima & `Salva`** | Nel pannello destro di *Anteprima* scrivi solo 3 righe (*Classe + Argomento + Brano*) per testarla, poi clicca **`Salva`** in alto a destra. | Da quel momento ti bastano **3 righe di prompt** per generare verifiche complete a 3 livelli. |
+
+---
+
+#### 📘 Modello 1 — Istruzioni permanenti per la Skill `"Verifiche UDL — Italiano & Storia"`
+Copia e incolla questo testo nel campo **Istruzioni** della tua nuova Skill di Lettere:
+
+```text
+Agisci come docente esperto di Italiano (Narrativa e Grammatica) e Storia nella Scuola Secondaria di I Grado e progettista UDL.
+Ogni volta che ti indico una CLASSE, una MATERIA e un ARGOMENTO (o ti allego un brano da Google Drive), progetta una verifica strutturata secondo la Tassonomia di Anderson & Krathwohl (Conoscenze A-D x Processi 1-6) e il Criterio KSM (40% K / 40% S / 20% M) con 6 quesiti:
+- Q1-Q2 LOTS (1. Ricordare / 2. Comprendere — Asse K, codici [A1, B2]);
+- Q3-Q4 Ponte (3. Applicare / 4. Analizzare — Asse S, codici [C3, B4]);
+- Q5 HOTS (5. Valutare — Asse M, codice [B5/C5/D4]): "Caccia all'errore" (in Narrativa: fallo motivazionale; in Grammatica: "Il Detective Grammaticale"; in Storia: "Caccia all'Anacronismo");
+- Q6 HOTS (6. Creare / Riflettere — Asse M, codice [B6/D5]): breve produzione o riflessione metacognitiva.
+REGOLE FISSE DI ACCESSIBILITÀ (UDL / DSA / BES):
+1. Numera sempre le righe dei brani [Riga 1], [Riga 2]...;
+2. In Grammatica dividi le frasi in sintagmi con barrette "/" e inserisci il "Box Bussola";
+3. In Storia non chiedere date isolate a memoria ma usa una Linea del Tempo compensativa;
+4. Nella Mossa 1 genera sempre prima la VERSIONE B (Standard) + CORRETTORIO con codici [A-D][1-6] e KSM; quando ti scrivo "Procedi con A e C", genera la VERSIONE A (Facilitata con banca parole, rimandi di riga e sentence starters) e la VERSIONE C (Potenziamento).
+```
+
+---
+
+#### 🇬🇧 Modello 2 — Istruzioni permanenti per la Skill `"Verifiche UDL — English L2 (A1/A2)"`
+Copia e incolla questo testo nel campo **Istruzioni** della tua nuova Skill di Inglese:
+
+```text
+Agisci come docente esperto di Lingua Inglese (L2) nella Scuola Secondaria di I Grado (livelli QCER A1 in 1ª media, A1+/A2 in 2ª e A2 in 3ª media) e specialista in accessibilità glottodidattica per alunni con DSA e BES.
+Ogni volta che ti indico CLASSE, TOPIC e NUCLEI GRAMMATICALI/LESSICALI, progetta una verifica di 6 quesiti bilanciata secondo Anderson & Krathwohl (4x6) e il Criterio KSM (40% K / 40% S / 20% M):
+- Q1-Q2 LOTS (1. Ricordare / 2. Comprendere — Asse K, codici [A1, B2]): Reading/Vocabulary con parole chiave in grassetto;
+- Q3-Q4 Ponte (3. Applicare / 4. Analizzare — Asse S, codici [C3, B4]): Grammar in context e trasformazione comunicativa;
+- Q5 HOTS (5. Valutare — Asse M, codice [C5/D4]): "Grammar Detective" (3 frasi di uno studente immaginario con un errore morfosintattico o comunicativo da individuare e spiegare);
+- Q6 HOTS (6. Creare — Asse M, codice [C6]): Guided Writing di 3-4 frasi personali con sentence starters.
+REGOLE FISSE ANTI-BARRIERA PER DSA IN INGLESE L2:
+1. Scrivi tutte le consegne in formato bilingue: Inglese + traduzione italiana tra parentesi;
+2. VIETATO inserire nei distrattori o nel Grammar Detective errori basati su puro spelling o lettere invertite (es. friend/freind, went/wnet): usa SOLO errori morfosintattici o di regola (es. "Yesterday I didn't went");
+3. Nella Mossa 1 genera la VERSIONE B (Standard) + CORRETTORIO [A-D][1-6] e KSM; quando ti scrivo "Procedi con A e C", genera la VERSIONE A (Facilitata con Word Bank, 3 opzioni invece di cloze muto e sentence starters) e la VERSIONE C (Potenziamento).
+```
 
 ---
 
@@ -128,14 +175,14 @@ Prima di stampare o assegnare su Google Classroom la verifica generata da Gemini
 | **Docimologia** | Scienza che studia i criteri e gli strumenti di valutazione scolastica per garantirne validità, attendibilità, trasparenza ed equità. | [Wikipedia IT — Docimologia](https://it.wikipedia.org/wiki/Docimologia) |
 | **Doppia negazione** | Struttura sintattica (*"Quale non è scorretto..."*) che moltiplica il carico sulla memoria di lavoro e induce in errore anche chi padroneggia l'argomento. | [Wikipedia IT — Doppia negazione](https://it.wikipedia.org/wiki/Doppia_negazione) |
 | **Error Analysis ("Caccia all'errore")** | Strategia didattica e valutativa di livello HOTS (`5. Valutare`) in cui lo studente analizza una frase, una traduzione o un testo contenente un errore mirato per individuarlo e correggerlo. | [Wikipedia EN — Error analysis in education](https://en.wikipedia.org/wiki/Error_analysis_%28mathematics%29) |
-| **Gem (Google Gemini)** | Assistente IA personalizzato che memorizza stabilmente le istruzioni di sistema del docente (materia, classe, regole UDL e LOTS→HOTS) per riutilizzarle tutto l'anno. | [Guida di Google Gemini — Creare e gestire i Gem](https://support.google.com/gemini/answer/15235603?hl=it) |
 | **Gemini Canvas** | Ambiente di editing interattivo affiancato alla chat di Gemini che consente di selezionare col mouse e modificare singole frasi o quesiti senza rigenerare l'intera verifica. | [Guida di Google Gemini — Usare Canvas](https://support.google.com/gemini/answer/16047329?hl=it) |
 | **Metacognizione** | Consapevolezza e capacità di riflettere sui propri processi di apprendimento, sugli errori commessi e sulle strategie per migliorarsi (Dimensione `D` di Anderson & Krathwohl e Asse `M` del Criterio KSM). | [Wikipedia IT — Metacognizione](https://it.wikipedia.org/wiki/Metacognizione) |
 | **Modelli di Ragionamento (*Thinking Models*)** | Modelli IA (come Gemini *Thinking*) che eseguono una catena di pensiero interna prima di rispondere, verificando il rispetto simultaneo dei vincoli tassonomici e linguistici. | [Google AI for Developers — Gemini Thinking](https://ai.google.dev/gemini-api/docs/thinking?hl=it) |
 | **Prompt Chaining (Concatenazione di Prompt)** | Tecnica di *Prompt Engineering* che scompone un compito complesso in 2 mosse sequenziali (Mossa 1: Versione B validata → Mossa 2: Versioni A e C parallele), migliorando precisione e controllo. | [Google Cloud — Che cos'è il Prompt Engineering](https://cloud.google.com/discover/what-is-prompt-engineering?hl=it) |
 | **Prove Equipollenti vs Differenziate** | Le prove *equipollenti* mantengono gli stessi obiettivi curricolari variando canali/tempi/supporti (PDP/PEI curricolare); le prove *differenziate* sono tarate sugli obiettivi personalizzati del PEI (L. 104/92). | [Ministero dell'Istruzione e del Merito — Inclusione e Nuovo PEI](https://www.mim.gov.it/inclusione-e-nuovo-pei) |
 | **QCER / CEFR (Quadro Comune Europeo)** | Standard europeo che descrive i livelli di competenza nelle lingue straniere (nella scuola media: verso il livello `A2` per Inglese e `A1` per la seconda lingua comunitaria). | [Wikipedia IT — Quadro comune europeo di riferimento per le lingue](https://it.wikipedia.org/wiki/Quadro_comune_europeo_di_riferimento_per_la_conoscenza_delle_lingue) |
-| **System Instructions (Istruzioni di sistema)** | Regole permanenti di comportamento, ruolo, tono e formato fornite a monte al modello IA (ad esempio dentro un *Gem*) che guidano tutte le risposte successive. | [Google AI for Developers — System Instructions](https://ai.google.dev/gemini-api/docs/system-instructions?hl=it) |
+| **Skill (su Google Gemini)** | Assistente / competenza IA personalizzata che memorizza stabilmente le istruzioni di sistema del docente (materia, classe, regole UDL e LOTS→HOTS) per riutilizzarle tutto l'anno. | [Guida di Google Gemini — Creare e gestire Skill personalizzate](https://support.google.com/gemini/answer/15235603?hl=it) |
+| **System Instructions (Istruzioni di sistema)** | Regole permanenti di comportamento, ruolo, tono e formato fornite a monte al modello IA (ad esempio dentro una *Skill*) che guidano tutte le risposte successive. | [Google AI for Developers — System Instructions](https://ai.google.dev/gemini-api/docs/system-instructions?hl=it) |
 
 ---
 
@@ -147,5 +194,5 @@ Tutte le fonti esterne di riferimento citate in questa dispensa sono valutate lu
 | :--- | :--- | :--- | :--- | :---: |
 | **Normattiva & Ministero dell'Istruzione e del Merito (MIM)** (*D.Lgs. 62/2017, L. 170/2010, Nuovo PEI D.Lgs. 66/2017*) | **[A5/B5]** Fonti normative primarie vigenti dello Stato Italiano in materia di valutazione e inclusione scolastica. | **[C5]** Procedure e distinzioni vincolanti su prove equipollenti, differenziate, PDP e PEI. | **[D5]** Massima ufficialità istituzionale; riferimento normativo imprescindibile. | **Livello A** *(Primaria / Gold Standard)* |
 | **CAST — Universal Design for Learning Guidelines** (`udlguidelines.cast.org`) | **[B5/B6]** Framework psicopedagogico primario internazionale per la progettazione accessibile e lo *scaffolding*. | **[C5/C6]** Linee guida operative verificate empiricamente su rappresentazione, espressione e coinvolgimento. | **[D5/D6]** Standard scientifico aperto, privo di bias commerciali, validato a livello internazionale. | **Livello A** *(Primaria / Gold Standard)* |
-| **Documentazione Ufficiale Google AI & Supporto Gemini** (*Gemini Thinking, System Instructions, Gemini Canvas, Gem, Workspace for Education*) | **[A5/B4]** Documentazione tecnica primaria sulle architetture di ragionamento e sulle interfacce di lavoro di Gemini. | **[C4/C5]** Procedure tecniche dirette, riproducibili e aggiornate per l'uso in aula. | **[B4/D5]** Fonte ufficiale del produttore, triangolata con i principi indipendenti di docimologia e UDL per mantenerne un uso critico. | **Livello B** *(Qualificata / Ufficiale)* |
+| **Documentazione Ufficiale Google AI & Supporto Gemini** (*Gemini Thinking, System Instructions, Gemini Canvas, Skill, Workspace for Education*) | **[A5/B4]** Documentazione tecnica primaria sulle architetture di ragionamento e sulle interfacce di lavoro di Gemini. | **[C4/C5]** Procedure tecniche dirette, riproducibili e aggiornate per l'uso in aula. | **[B4/D5]** Fonte ufficiale del produttore, triangolata con i principi indipendenti di docimologia e UDL per mantenerne un uso critico. | **Livello B** *(Qualificata / Ufficiale)* |
 | **Voci Enciclopediche Tecniche, Linguistiche e Psicopedagogiche (Wikipedia IT/EN, ISSalute)** (*Docimologia, Anderson & Krathwohl, QCER/CEFR, Error Analysis, Metacognizione, Pragmatica*) | **[A2/B4]** Sintesi terminologiche chiare e ben referenziate per il ripasso rapido da parte dei docenti. | **[C3/C4]** Definizioni coerenti con la letteratura primaria citata in bibliografia. | **[B4/D3]** Scopo puramente informativo; utilizzate come supporto lessicale verificato sulle fonti primarie. | **Livello B / C** *(Qualificata / Divulgativa verificata)* |
