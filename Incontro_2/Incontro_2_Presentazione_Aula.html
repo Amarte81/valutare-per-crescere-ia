@@ -173,17 +173,26 @@
       </div>
       <p>Niente blocco del foglio bianco: l'alunno analizza la risposta di uno <strong>studente immaginario</strong> e corregge l'errore con una frase-avvio (<em>sentence starter</em>)!</p>
       <div class="grid-3">
-        <div class="card highlight-blue">
-          <h2>📘 <a href="../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.html#esempio-04" target="_blank">Grammatica (#04) ↗</a></h2>
-          <p><strong>Detective Grammaticale:</strong><br/><em>"A Luca / piace / il latte"</em> → <span class="err-pill">a Luca = Sogg.</span> ❌<br/>👉 <span class="ok-pill">il latte = Sogg.</span> (a Luca = Termine!)</p>
+        <div class="card highlight-blue" style="display:flex; flex-direction:column; justify-content:space-between; gap:0.75rem;">
+          <div>
+            <h2>📘 Grammatica (#04)</h2>
+            <p><strong>Detective Grammaticale:</strong><br/><em>"A Luca / piace / il latte"</em> → <span class="err-pill">a Luca = Sogg.</span> ❌<br/>👉 <span class="ok-pill">il latte = Sogg.</span> (a Luca = Termine!)</p>
+          </div>
+          <button type="button" class="step-open-btn" onclick="openStepModal('modal-ex-04', this)">📋 Apri &amp; Copia Prompt #04</button>
         </div>
-        <div class="card highlight-amber">
-          <h2>🏛️ <a href="../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.html#esempio-14" target="_blank">Storia (#14) ↗</a></h2>
-          <p><strong>Caccia all'Anacronismo:</strong><br/><em>"Nel 1000 i servi coltivavano <span class="err-pill">patate e pomodori</span>"</em> ❌<br/>👉 <span class="ok-pill">Arrivati dall'America dopo il 1492!</span></p>
+        <div class="card highlight-amber" style="display:flex; flex-direction:column; justify-content:space-between; gap:0.75rem;">
+          <div>
+            <h2>🏛️ Storia (#14)</h2>
+            <p><strong>Caccia all'Anacronismo:</strong><br/><em>"Nel 1000 i servi coltivavano <span class="err-pill">patate e pomodori</span>"</em> ❌<br/>👉 <span class="ok-pill">Arrivati dall'America dopo il 1492!</span></p>
+          </div>
+          <button type="button" class="step-open-btn" onclick="openStepModal('modal-ex-14', this)">📋 Apri &amp; Copia Prompt #14</button>
         </div>
-        <div class="card highlight-green">
-          <h2>🇬🇧 <a href="../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.html#esempio-12" target="_blank">Inglese (#12) ↗</a></h2>
-          <p><strong>Grammar Detective:</strong><br/><em>"Yesterday Sara <span class="err-pill">didn't went</span>"</em> ❌<br/>👉 <span class="ok-pill">didn't go</span> (<strong>MAI</strong> errori di spelling tipo <em>wnet</em> per DSA!)</p>
+        <div class="card highlight-green" style="display:flex; flex-direction:column; justify-content:space-between; gap:0.75rem;">
+          <div>
+            <h2>🇬🇧 Inglese (#12)</h2>
+            <p><strong>Grammar Detective:</strong><br/><em>"Yesterday Sara <span class="err-pill">didn't went</span>"</em> ❌<br/>👉 <span class="ok-pill">didn't go</span> (<strong>MAI</strong> errori di spelling tipo <em>wnet</em> per DSA!)</p>
+          </div>
+          <button type="button" class="step-open-btn" onclick="openStepModal('modal-ex-12', this)">📋 Apri &amp; Copia Prompt #12</button>
         </div>
       </div>
     </section>
@@ -319,36 +328,58 @@ Argomento: Soggetto, Predicato, Compl. Oggetto e Termine
       </div>
     </section>
 
-    <!-- SLIDE 11 (ESEMPI FOCUS ITALIANO, GRAMMATICA, STORIA, INGLESE) -->
+    <!-- SLIDE 11 (ESEMPI FOCUS ITALIANO, GRAMMATICA, STORIA, INGLESE + POPUP COPIABILI) -->
     <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="11. Modelli Pronti nel Ricettario (Italiano, Storia, Inglese)">
       <div class="slide-header">
-        <div class="slide-kicker">Dal Ricettario dei 30 Esempi · Clicca sul Titolo per Aprire il Prompt Completo</div>
+        <div class="slide-kicker">Dal Ricettario dei 30 Esempi · Clicca su un Modello per Aprire e Copiare il Prompt</div>
         <h1>6 Modelli Pronti per il Laboratorio di Oggi</h1>
       </div>
       <div class="grid-3">
-        <div class="card highlight-blue">
-          <h2>📘 <a href="../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.html#esempio-03" target="_blank">#03 Italiano Narrativa ↗</a></h2>
-          <p>Comprensione testo (3ª media) a 3 livelli con righe numerate e <em>Caccia all'errore interpretativo</em>.</p>
+        <div class="card highlight-blue" style="display:flex; flex-direction:column; justify-content:space-between; gap:0.65rem;">
+          <div>
+            <h2>📘 #03 Italiano Narrativa</h2>
+            <p>Comprensione testo (3ª media) a 3 livelli con righe numerate e <em>Caccia all'errore interpretativo</em>.</p>
+          </div>
+          <button type="button" class="step-open-btn" onclick="openStepModal('modal-ex-03', this)">📋 Apri &amp; Copia Prompt #03</button>
         </div>
-        <div class="card highlight-blue">
-          <h2>📘 <a href="../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.html#esempio-04" target="_blank">#04 Italiano Grammatica ↗</a></h2>
-          <p>Analisi logica (2ª media) con <em>Box Bussola</em>, sintagmi divisi da <code>/</code> e <em>Detective Grammaticale</em>.</p>
+        <div class="card highlight-blue" style="display:flex; flex-direction:column; justify-content:space-between; gap:0.65rem;">
+          <div>
+            <h2>📘 #04 Italiano Grammatica</h2>
+            <p>Analisi logica (2ª media) con <em>Box Bussola</em>, sintagmi divisi da <code>/</code> e <em>Detective Grammaticale</em>.</p>
+          </div>
+          <button type="button" class="step-open-btn" onclick="openStepModal('modal-ex-04', this)">📋 Apri &amp; Copia Prompt #04</button>
         </div>
-        <div class="card highlight-amber">
-          <h2>🏛️ <a href="../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.html#esempio-14" target="_blank">#14 Storia Feudalesimo ↗</a></h2>
-          <p>Verifica 1ª media con linea del tempo compensativa, tabella sulla <em>curtis</em> e <em>Caccia all'anacronismo</em>.</p>
+        <div class="card highlight-amber" style="display:flex; flex-direction:column; justify-content:space-between; gap:0.65rem;">
+          <div>
+            <h2>🏛️ #14 Storia Feudalesimo</h2>
+            <p>Verifica 1ª media con linea del tempo compensativa, tabella sulla <em>curtis</em> e <em>Caccia all'anacronismo</em>.</p>
+          </div>
+          <button type="button" class="step-open-btn" onclick="openStepModal('modal-ex-14', this)">📋 Apri &amp; Copia Prompt #14</button>
         </div>
-        <div class="card highlight-green">
-          <h2>🇬🇧 <a href="../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.html#esempio-11" target="_blank">#11 Inglese Reading A1 ↗</a></h2>
-          <p><em>Daily Routine</em> (1ª media) graduata su più livelli con verbi in grassetto e <em>Word Bank</em> fonetica.</p>
+        <div class="card highlight-green" style="display:flex; flex-direction:column; justify-content:space-between; gap:0.65rem;">
+          <div>
+            <h2>🇬🇧 #11 Inglese Reading A1</h2>
+            <p><em>Daily Routine</em> (1ª media) graduata su più livelli con verbi in grassetto e <em>Word Bank</em> fonetica.</p>
+          </div>
+          <button type="button" class="step-open-btn" onclick="openStepModal('modal-ex-11', this)">📋 Apri &amp; Copia Prompt #11</button>
         </div>
-        <div class="card highlight-green">
-          <h2>🇬🇧 <a href="../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.html#esempio-12" target="_blank">#12 Inglese Past Simple ↗</a></h2>
-          <p>Verifica grammaticale 2ª media con <em>Grammar Detective</em> (zero trappole ortografiche per DSA!).</p>
+        <div class="card highlight-green" style="display:flex; flex-direction:column; justify-content:space-between; gap:0.65rem;">
+          <div>
+            <h2>🇬🇧 #12 Inglese Past Simple</h2>
+            <p>Verifica grammaticale 2ª media con <em>Grammar Detective</em> (zero trappole ortografiche per DSA!).</p>
+          </div>
+          <button type="button" class="step-open-btn" onclick="openStepModal('modal-ex-12', this)">📋 Apri &amp; Copia Prompt #12</button>
         </div>
-        <div class="card highlight-purple">
-          <h2>📐🎨 <a href="../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.html#esempio-08" target="_blank">Altri Esempi (#08, #22, #24) ↗</a></h2>
-          <p>Modelli UDL a 3 livelli per Matematica, Tecnologia e Lettura d'opera d'Arte con Gemini Vision.</p>
+        <div class="card highlight-purple" style="display:flex; flex-direction:column; justify-content:space-between; gap:0.65rem;">
+          <div>
+            <h2>📐🎨 Altri Esempi (#08, #22, #24)</h2>
+            <p>Modelli UDL a 3 livelli per Matematica, Tecnologia e Lettura d'opera d'Arte con Gemini Vision.</p>
+          </div>
+          <div style="display:flex; gap:0.4rem; flex-wrap:wrap;">
+            <button type="button" class="step-open-btn" style="flex:1; min-width:85px; padding:0.42rem 0.45rem; font-size:0.8rem;" onclick="openStepModal('modal-ex-08', this)">📐 #08</button>
+            <button type="button" class="step-open-btn" style="flex:1; min-width:85px; padding:0.42rem 0.45rem; font-size:0.8rem;" onclick="openStepModal('modal-ex-22', this)">⚙️ #22</button>
+            <button type="button" class="step-open-btn" style="flex:1; min-width:85px; padding:0.42rem 0.45rem; font-size:0.8rem;" onclick="openStepModal('modal-ex-24', this)">🎨 #24</button>
+          </div>
         </div>
       </div>
     </section>
@@ -474,6 +505,281 @@ Argomento: Soggetto, Predicato, Compl. Oggetto e Termine
       </div>
     </section>
   </main>
+
+  <!-- POPUP MODALI ESEMPI RICETTARIO (INCONTRO 2) -->
+  <div id="modal-ex-03" class="step-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-ex03" aria-hidden="true">
+    <div class="step-modal-dialog">
+      <div class="step-modal-header">
+        <div class="step-modal-title-wrap">
+          <span class="step-modal-kicker">Esempio #03 · Italiano Narrativa (3ª Media) · Gemini Thinking + Canvas</span>
+          <h3 id="modal-title-ex03">📘 Verifica UDL a 3 Livelli — Comprensione e Analisi del Testo Narrativo</h3>
+        </div>
+        <button type="button" class="modal-close-btn" onclick="closeStepModal()">✕ Chiudi</button>
+      </div>
+      <div class="step-modal-body">
+        <div class="trainer-note" style="margin-top:0;">
+          <strong>Profilo:</strong> Classe eterogenea (Vers. A DSA/BES · Vers. B Standard · Vers. C Potenziamento) · <strong>Scala:</strong> <code>LOTS [A1, B2] (40%) → Ponte [C3, B4] (40%) → HOTS [B5, D5] (20%)</code>
+        </div>
+        <div class="prompt-box" style="margin-top:0;"><button class="copy-btn" onclick="copyPrompt(this)">📋 Copia Prompt #03</button>[R] Agisci come docente di Italiano di 3ª media ed esperto di progettazione di prove UDL secondo Anderson &amp; Krathwohl e il Criterio KSM.
+[C] Classe 3ª media (13-14 anni), anche in preparazione alla prova scritta d'esame.
+[N] Sulla base del brano allegato, progetta una verifica di comprensione e analisi di 6 quesiti così bilanciati:
+- Q1-Q2 [A1, B2 - Asse K]: informazioni esplicite e messaggio centrale del testo;
+- Q3-Q4 [C3, B4 - Asse S]: figure retoriche/scelte lessicali dell'autore e divisione in sequenze;
+- Q5 [B5 - Asse M]: "Caccia all'errore interpretativo" (presenta un'interpretazione errata del testo scritta da un lettore frettoloso: lo studente deve trovare l'errore citando una frase del brano);
+- Q6 [D5/B6 - Asse M]: riflessione argomentata personale di 5-6 righe collegata al presente.
+[A] Genera 3 versioni parallele:
+- Versione A (Facilitata per DSA/BES): righe del brano numerate, nei quesiti indica tra parentesi "(Cerca tra riga 4 e riga 8)", per Q3-Q4 tabella semicompilata, per Q5-Q6 fornisci 2 sentence starters ("Non sono d'accordo con questa lettura perché alla riga...", "Questo episodio mi fa pensare a...").
+- Versione B (Standard): righe numerate e consegne ad alta leggibilità.
+- Versione C (Potenziamento): nel Q6 chiedi un confronto intertestuale con un altro autore studiato.
+[F] Restituisci le 3 versioni pronte per "Esporta in Documenti" + il correttorio con codici [A-D][1-6].</div>
+      </div>
+      <div class="step-modal-footer">
+        <span style="font-size:0.84rem; color:var(--muted);">Premi <code>Esc</code> o clicca fuori per chiudere</span>
+        <div class="step-modal-nav">
+          <button type="button" onclick="switchStepModal('modal-ex-04')">#04 Grammatica ▶</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-ex-04" class="step-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-ex04" aria-hidden="true">
+    <div class="step-modal-dialog">
+      <div class="step-modal-header">
+        <div class="step-modal-title-wrap">
+          <span class="step-modal-kicker">Esempio #04 · Italiano / Grammatica (2ª Media) · Gemini Thinking</span>
+          <h3 id="modal-title-ex04">📘 Analisi Logica Inclusiva &amp; "Il Detective Grammaticale"</h3>
+        </div>
+        <button type="button" class="modal-close-btn" onclick="closeStepModal()">✕ Chiudi</button>
+      </div>
+      <div class="step-modal-body">
+        <div class="trainer-note" style="margin-top:0;">
+          <strong>Profilo:</strong> DSA (dislessia/disortografia) e memoria procedurale fragile · <strong>Scala:</strong> <code>LOTS [B1] → Ponte [C3, C4] → HOTS [C5, D4]</code>
+        </div>
+        <div class="prompt-box" style="margin-top:0;"><button class="copy-btn" onclick="copyPrompt(this)">📋 Copia Prompt #04</button>[R] Agisci come docente di Italiano di 2ª media specializzato in didattica della grammatica valenziale e inclusiva.
+[C] Classe 2ª media (12 anni).
+[N] Progetta una verifica di analisi logica su Soggetto, Predicato (verbale/nominale), Complemento Oggetto, Termine, Luogo e Tempo che non richieda di imparare etichette a memoria [A1], ma valuti il ragionamento sulla funzione dei sintagmi nella frase [C3, C4, C5].
+[A] Per aggirare le barriere della dislessia e della memoria di lavoro:
+- inserisci in testa alla verifica un "Box Bussola" con le 4 domande-guida per riconoscere i complementi;
+- spezza già le frasi in sintagmi separati da barrette (es. "Al mattino / il cane di Sara / rincorre / una palla / in giardino");
+- evita frasi con soggetti sottintesi ambigui o inversioni poetiche;
+- inserisci l'esercizio HOTS "Il Detective Grammaticale" (3 frasi già analizzate da uno studente immaginario con 1 errore ciascuna da scovare e correggere).
+[F] Produci Versione Facilitata (con opzioni a scelta per ogni sintagma) e Versione Standard, pronte per Google Documenti.</div>
+      </div>
+      <div class="step-modal-footer">
+        <div class="step-modal-nav">
+          <button type="button" onclick="switchStepModal('modal-ex-03')">◀ #03 Narrativa</button>
+        </div>
+        <div class="step-modal-nav">
+          <button type="button" onclick="switchStepModal('modal-ex-14')">#14 Storia ▶</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-ex-14" class="step-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-ex14" aria-hidden="true">
+    <div class="step-modal-dialog">
+      <div class="step-modal-header">
+        <div class="step-modal-title-wrap">
+          <span class="step-modal-kicker">Esempio #14 · Storia (1ª Media) · Gemini Thinking + Canvas</span>
+          <h3 id="modal-title-ex14">🏛️ Verifica UDL sul Feudalesimo &amp; "Lo Storico Cerca l'Errore"</h3>
+        </div>
+        <button type="button" class="modal-close-btn" onclick="closeStepModal()">✕ Chiudi</button>
+      </div>
+      <div class="step-modal-body">
+        <div class="trainer-note" style="margin-top:0;">
+          <strong>Profilo:</strong> DSA/BES (linea del tempo compensativa inclusa) · <strong>Scala:</strong> <code>LOTS [A1, B2] → Ponte [B3, B4] → HOTS [B5, D4]</code>
+        </div>
+        <div class="prompt-box" style="margin-top:0;"><button class="copy-btn" onclick="copyPrompt(this)">📋 Copia Prompt #14</button>[R] Agisci come docente di Storia di 1ª media esperto in didattica per quadri di civiltà e valutazione inclusiva UDL.
+[C] Classe 1ª media (11 anni) — Argomento: Il Feudalesimo e la società medievale.
+[N] Progetta una verifica su 3 livelli (A Facilitata, B Standard, C Potenziamento) che NON chieda date isolate a memoria, ma valuti i processi cognitivi lungo la scala LOTS -&gt; HOTS:
+- Q1 [A1/B1 - Ricordare con supporto]: collocare nella piramide feudale Signore, Vassallo, Valvassore e Servi della gleba;
+- Q2 [B2 - Comprendere]: spiegare lo scambio reciproco della cerimonia dell'investitura (omaggio/fedeltà in cambio del beneficio/feudo);
+- Q3 [B3 - Applicare a un caso]: leggere la breve giornata di "Guglielmo" (4 righe) e dedurre a quale ordine della società medievale appartiene motivando la risposta;
+- Q4 [B4 - Analizzare]: confrontare in una tabella 2 differenze tra curtes (pars dominica vs pars massaricia);
+- Q5 [B5 - Valutare / HOTS]: "Lo Storico Cerca l'Errore": in un breve racconto sul castello medievale sono stati nascosti 2 anacronismi/errori storici (es. i contadini che mangiano patate e pomodori nell'Anno Mille!): l'alunno deve scovarli e spiegare perché sono impossibili.
+[A] Nella Versione A inserisci in testa una mini-linea del tempo di riferimento, una banca parole per Q1-Q2, la tabella di Q4 già impostata con la prima riga compilata come esempio e un suggerimento per i 2 anacronismi di Q5.
+[F] Restituisci le 3 versioni pronte per "Esporta in Documenti" + griglia rapida di correzione con codici [A-D][1-6].</div>
+      </div>
+      <div class="step-modal-footer">
+        <div class="step-modal-nav">
+          <button type="button" onclick="switchStepModal('modal-ex-04')">◀ #04 Grammatica</button>
+        </div>
+        <div class="step-modal-nav">
+          <button type="button" onclick="switchStepModal('modal-ex-11')">#11 Inglese A1 ▶</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-ex-11" class="step-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-ex11" aria-hidden="true">
+    <div class="step-modal-dialog">
+      <div class="step-modal-header">
+        <div class="step-modal-title-wrap">
+          <span class="step-modal-kicker">Esempio #11 · Inglese (1ª Media · QCER A1) · Gemini Flash + Canvas</span>
+          <h3 id="modal-title-ex11">🇬🇧 Reading Graduata "Daily Routine" con Word Bank Fonetica</h3>
+        </div>
+        <button type="button" class="modal-close-btn" onclick="closeStepModal()">✕ Chiudi</button>
+      </div>
+      <div class="step-modal-body">
+        <div class="trainer-note" style="margin-top:0;">
+          <strong>Profilo:</strong> Dislessia (lingua ortograficamente opaca → supporto fonetico intuitivo) · <strong>Scala:</strong> <code>LOTS [A1, B2] → Ponte [C3]</code>
+        </div>
+        <div class="prompt-box" style="margin-top:0;"><button class="copy-btn" onclick="copyPrompt(this)">📋 Copia Prompt #11</button>[R] Agisci come docente di Inglese nella Scuola Secondaria di I grado specializzato nell'insegnamento delle lingue straniere ad alunni con DSA (glottodidattica accessibile).
+[C] Classe 1ª media (11 anni, livello QCER A1).
+[N] Scrivi un breve testo di Reading (circa 100 parole) sulla "Daily Routine" di uno studente londinese di 11 anni (Present Simple, avverbi di frequenza, orari).
+[A] Poiché l'inglese è una lingua ortograficamente opaca che affatica gli studenti con dislessia:
+- genera 2 versioni del testo: Versione Facilitata (frasi corte in elenco cronologico con orario all'inizio di ogni riga e verbi del Present Simple in GRASSETTO) e Versione Standard;
+- crea una tabella "Word Bank" di 8 verbi/espressioni con: Parola inglese | Pronuncia semplificata per italofoni (es. "get up -&gt; ghet ap") | Traduzione in italiano;
+- evita domande aperte che richiedano spelling complesso: usa 4 quesiti di comprensione (2 True/False e 2 di riordino cronologico delle azioni).
+[F] Impagina in modo pulito per "Esporta in Documenti".</div>
+      </div>
+      <div class="step-modal-footer">
+        <div class="step-modal-nav">
+          <button type="button" onclick="switchStepModal('modal-ex-14')">◀ #14 Storia</button>
+        </div>
+        <div class="step-modal-nav">
+          <button type="button" onclick="switchStepModal('modal-ex-12')">#12 Past Simple ▶</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-ex-12" class="step-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-ex12" aria-hidden="true">
+    <div class="step-modal-dialog">
+      <div class="step-modal-header">
+        <div class="step-modal-title-wrap">
+          <span class="step-modal-kicker">Esempio #12 · Inglese (2ª Media · QCER A1+/A2) · Gemini → Fogli / Moduli</span>
+          <h3 id="modal-title-ex12">🇬🇧 Past Simple &amp; "Grammar Detective" (Zero Trappole di Spelling)</h3>
+        </div>
+        <button type="button" class="modal-close-btn" onclick="closeStepModal()">✕ Chiudi</button>
+      </div>
+      <div class="step-modal-body">
+        <div class="trainer-note" style="margin-top:0;">
+          <strong>Profilo:</strong> DSA (valuta la regola morfosintattica, mai refusi ortografici) · <strong>Scala:</strong> <code>LOTS [A1, B2] → Ponte [C3] → HOTS [C4, C5]</code>
+        </div>
+        <div class="prompt-box" style="margin-top:0;"><button class="copy-btn" onclick="copyPrompt(this)">📋 Copia Prompt #12</button>[R] Agisci come docente di Inglese di 2ª media esperto in valutazione linguistica inclusiva.
+[C] Classe 2ª media (12 anni, livello A1+/A2) — Argomento: Past Simple (affermativa, negativa con didn't + forma base, interrogativa).
+[N] Genera una banca di 10 quesiti a scelta multipla (3 opzioni A, B, C):
+- 4 quesiti LOTS/Ponte [B2, C3]: completare frasi in contesto con la forma corretta del Past Simple;
+- 3 quesiti Ponte [C3]: scegliere la domanda corretta per una risposta data;
+- 3 quesiti HOTS "Grammar Detective" [C4, C5]: individuare e correggere l'errore tipico (es. "Yesterday I didn't went to school").
+[A] IMPORTANTE per gli alunni con dislessia/disortografia: i distrattori NON devono mai essere parole scritte con lettere invertite o errori ortografici visivamente confondenti (es. NON mettere "went / wnet / wetn"), ma devono testare la regola grammaticale (es. "didn't go / didn't went / not went"). Inserisci il feedback formativo in italiano semplice.
+[F] Tabella pronta per "Esporta in Fogli": N. | Livello e Codice | Sentence/Question | Option A | Option B | Option C | Correct Answer | Hint (in italiano) | Formative Feedback (in italiano).</div>
+      </div>
+      <div class="step-modal-footer">
+        <div class="step-modal-nav">
+          <button type="button" onclick="switchStepModal('modal-ex-11')">◀ #11 Inglese A1</button>
+        </div>
+        <div class="step-modal-nav">
+          <button type="button" onclick="switchStepModal('modal-ex-08')">#08 Matematica ▶</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-ex-08" class="step-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-ex08" aria-hidden="true">
+    <div class="step-modal-dialog">
+      <div class="step-modal-header">
+        <div class="step-modal-title-wrap">
+          <span class="step-modal-kicker">Esempio #08 · Matematica (2ª Media) · Gemini Thinking</span>
+          <h3 id="modal-title-ex08">📐 Verifica UDL sul Teorema di Pitagora &amp; "Caccia all'Errore Matematico"</h3>
+        </div>
+        <button type="button" class="modal-close-btn" onclick="closeStepModal()">✕ Chiudi</button>
+      </div>
+      <div class="step-modal-body">
+        <div class="trainer-note" style="margin-top:0;">
+          <strong>Profilo:</strong> DSA/discalculia (formulario + terne pitagoriche intere) · <strong>Scala:</strong> <code>LOTS [B1, B2] → Ponte [C3, C4] → HOTS [C5, D4]</code>
+        </div>
+        <div class="prompt-box" style="margin-top:0;"><button class="copy-btn" onclick="copyPrompt(this)">📋 Copia Prompt #08</button>[R] Agisci come docente di Matematica di 2ª media. ATTIVA IL CONTROLLO RIGOROSO DEI CALCOLI.
+[C] Classe 2ª media (12 anni) — Verifica sul Teorema di Pitagora applicato al triangolo rettangolo e al rettangolo.
+[N] Progetta una verifica di 5 quesiti bilanciati sulla scala LOTS -&gt; HOTS:
+- Q1 [B2 - Asse K]: riconoscere cateti e ipotenusa anche quando il triangolo rettangolo è ruotato;
+- Q2-Q3 [C3 - Asse S]: calcolo dell'ipotenusa e di un cateto in problemi geometrici concreti (es. una scala appoggiata a un muro);
+- Q4 [C4/C5 - Asse M]: "Caccia all'errore matematico" (mostra lo svolgimento di uno studente immaginario che per trovare un cateto ha SOMMATO i quadrati invece di sottrarli: l'alunno deve individuare il passaggio errato, spiegare perché non ha senso geometricamente e correggerlo);
+- Q5 [C6/D5 - Asse M]: problema inverso o verifica se una terna di misure forma un angolo retto.
+[A] Genera 3 versioni (A Facilitata, B Standard, C Potenziamento):
+- Nella Versione A (per DSA/discalculia): inserisci in alto il Box Formulario con le 2 formule dirette, usa esclusivamente terne pitagoriche che diano radici quadrate esatte intere (es. 3-4-5, 6-8-10, 5-12-13) per valutare il procedimento geometrico senza bloccare l'alunno sui decimali, e dividi Q2 e Q3 in "Dati / Passo 1 / Passo 2".
+[F] Restituisci le 3 versioni complete di soluzioni verificate e codici [A-D][1-6].</div>
+      </div>
+      <div class="step-modal-footer">
+        <div class="step-modal-nav">
+          <button type="button" onclick="switchStepModal('modal-ex-12')">◀ #12 Past Simple</button>
+        </div>
+        <div class="step-modal-nav">
+          <button type="button" onclick="switchStepModal('modal-ex-22')">#22 Tecnologia ▶</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-ex-22" class="step-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-ex22" aria-hidden="true">
+    <div class="step-modal-dialog">
+      <div class="step-modal-header">
+        <div class="step-modal-title-wrap">
+          <span class="step-modal-kicker">Esempio #22 · Tecnologia (3ª Media) · Gemini Multimodale + Thinking</span>
+          <h3 id="modal-title-ex22">⚙️ Fonti Energetiche, Centrale Elettrica &amp; "Caccia al Guasto"</h3>
+        </div>
+        <button type="button" class="modal-close-btn" onclick="closeStepModal()">✕ Chiudi</button>
+      </div>
+      <div class="step-modal-body">
+        <div class="trainer-note" style="margin-top:0;">
+          <strong>Profilo:</strong> BES/DSA (schema a blocchi numerati 1→2→3→4 + tabella pro/contro) · <strong>Scala:</strong> <code>LOTS [A1, B2] → Ponte [B3, B4] → HOTS [B5, C6]</code>
+        </div>
+        <div class="prompt-box" style="margin-top:0;"><button class="copy-btn" onclick="copyPrompt(this)">📋 Copia Prompt #22</button>[R] Agisci come docente di Tecnologia nella Scuola Secondaria di I grado.
+[C] Classe 3ª media (13-14 anni) — Argomento: Fonti di energia rinnovabili/non rinnovabili e trasformazioni energetiche in una centrale elettrica (a partire dallo schema allegato).
+[N] Progetta una verifica su 3 livelli (A Facilitata, B Standard, C Potenziamento) articolata in 5 quesiti lungo la scala LOTS -&gt; HOTS:
+- Q1 [A1, B1 - Ricordare/Classificare]: classificare 6 fonti energetiche in rinnovabili ed esauribili;
+- Q2 [B2, C2 - Comprendere un processo tecnico]: ricostruire i 4 passaggi di trasformazione dell'energia nella centrale (es. da energia meccanica dell'acqua -&gt; turbina -&gt; alternatore -&gt; energia elettrica);
+- Q3 [B4 - Analizzare]: confrontare in tabella vantaggi e limiti di 2 fonti rinnovabili (es. solare vs idroelettrico);
+- Q4 [C5 - Valutare / HOTS "Caccia al guasto/errore tecnico"]: in uno schema di impianto energetico domestico c'è una scelta tecnica sbagliata (es. pannelli fotovoltaici installati su una parete esposta a Nord in ombra o confusione tra solare termico e fotovoltaico): lo studente deve individuare l'errore e correggerlo;
+- Q5 [B6 - Creare / HOTS]: scegliere il mix energetico più adatto per un'isola del Mediterraneo motivando la scelta.
+[A] Nella Versione A (BES/DSA): per Q2 fornisci i 4 blocchi del processo già scritti da collegare con frecce numerate 1-&gt;2-&gt;3-&gt;4; per Q4 e Q5 inserisci un suggerimento tecnico e l'avvio della frase di risposta.
+[F] Restituisci le 3 versioni + correttorio con codici [A-D][1-6].</div>
+      </div>
+      <div class="step-modal-footer">
+        <div class="step-modal-nav">
+          <button type="button" onclick="switchStepModal('modal-ex-08')">◀ #08 Matematica</button>
+        </div>
+        <div class="step-modal-nav">
+          <button type="button" onclick="switchStepModal('modal-ex-24')">#24 Arte ▶</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-ex-24" class="step-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-ex24" aria-hidden="true">
+    <div class="step-modal-dialog">
+      <div class="step-modal-header">
+        <div class="step-modal-title-wrap">
+          <span class="step-modal-kicker">Esempio #24 · Arte e Immagine (2ª Media) · Gemini Multimodale (Vision) + Canvas</span>
+          <h3 id="modal-title-ex24">🎨 Lettura Guidata di un'Opera d'Arte (LOTS → HOTS)</h3>
+        </div>
+        <button type="button" class="modal-close-btn" onclick="closeStepModal()">✕ Chiudi</button>
+      </div>
+      <div class="step-modal-body">
+        <div class="trainer-note" style="margin-top:0;">
+          <strong>Profilo:</strong> BES/DSA/NAI (scheda di lettura visiva strutturata in 4 tappe) · <strong>Scala:</strong> <code>LOTS [A1, B2] → Ponte [C3, B4] → HOTS [B5, B6]</code>
+        </div>
+        <div class="prompt-box" style="margin-top:0;"><button class="copy-btn" onclick="copyPrompt(this)">📋 Copia Prompt #24</button>[R] Agisci come docente di Arte e Immagine nella Scuola Secondaria di I grado.
+[C] Classe 2ª media (12 anni) — Argomento: Lettura guidata di un'opera del Rinascimento (es. "La Primavera" di Botticelli o "L'Ultima Cena" di Leonardo, a partire dall'immagine caricata).
+[N] Progetta una scheda di verifica/lettura dell'opera articolata in 4 tappe lungo la scala LOTS -&gt; HOTS:
+- Tappa 1 (Osservare e Ricordare - LOTS [A1]): carta d'identità dell'opera e riconoscimento dei personaggi/elementi principali;
+- Tappa 2 (Comprendere e Applicare il linguaggio visivo - Ponte [B2, C3]): analisi guidata di linee di forza, prospettiva, luce e colori caldi/freddi;
+- Tappa 3 (Analizzare e Valutare - HOTS [B4, B5]): "L'Occhio del Critico d'Arte": confrontare un dettaglio dell'opera con un'opera medievale precedente per spiegare cosa è cambiato nella rappresentazione dello spazio e delle emozioni;
+- Tappa 4 (Rielaborare - HOTS [B6]): scegliere tra 2 modalità espressive UDL (scrivere una breve didascalia per un museo per ragazzi OPPURE progettare uno schizzo che riprenda la composizione dell'opera in chiave moderna).
+[A] Genera una Versione Facilitata (con scelte guidate a crocette per le Tappe 1-2 e frasi-avvio per la Tappa 3) e una Versione Standard.
+[F] Documento pronto per "Esporta in Documenti".</div>
+      </div>
+      <div class="step-modal-footer">
+        <div class="step-modal-nav">
+          <button type="button" onclick="switchStepModal('modal-ex-22')">◀ #22 Tecnologia</button>
+        </div>
+        <div class="step-modal-nav">
+          <button type="button" onclick="closeStepModal()">✕ Chiudi</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer>
     <div>Corso di Formazione Docenti: <strong>VALUTARE PER CRESCERE</strong> · 5 Incontri da 4 Ore (Incontro 2 di 5)</div>
