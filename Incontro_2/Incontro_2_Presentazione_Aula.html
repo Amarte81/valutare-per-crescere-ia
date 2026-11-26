@@ -18,7 +18,7 @@
     <div class="controls">
       <button id="prev-btn" onclick="prevSlide()" title="Slide precedente (Freccia Sinistra)">◀ Prec</button>
       <select id="slide-select" onchange="jumpToSlide(this.value)" aria-label="Seleziona slide"></select>
-      <span id="counter" class="badge">Slide 1 / 16</span>
+      <span id="counter" class="badge">Slide 1 / 17</span>
       <button id="next-btn" onclick="nextSlide()" title="Slide successiva (Freccia Destra / Spazio)">Succ ▶</button>
       <button onclick="toggleFullScreen()" title="Schermo intero">⛶ Schermo Intero</button>
     </div>
@@ -31,14 +31,14 @@
       <div class="slide-header">
         <div class="slide-kicker">Incontro 2 di 5 (4 ore) · VerifichIAmo con l'Intelligenza Artificiale (Parte I · 4h su 10/20)</div>
         <h1>Progettare Verifiche UDL con Gemini for Education</h1>
-        <p style="color:var(--accent); font-size:1.22rem; margin-top:0.3rem;">Focus Pratico: Italiano, Grammatica, Storia e Inglese · Matrice Anderson &amp; Krathwohl (4×6) × Criterio KSM</p>
+        <p style="color:var(--accent); font-size:1.22rem; margin-top:0.3rem;">Concetti Generali + Esempi Specifici per Narrativa, Grammatica, Geografia, Inglese e Matematica · Matrice A&amp;K (4×6) × KSM</p>
       </div>
       <img class="hero-banner" src="../assets/img/hero_inc2.jpg" alt="Un unico obiettivo che si divide in 3 percorsi UDL paralleli verso lo stesso traguardo" />
       <div class="grid-2">
         <div class="card highlight-green">
           <h2>🎯 Cosa Facciamo Oggi in Laboratorio</h2>
           <ul>
-            <li><strong>Bussola A&amp;K (4×6) + KSM</strong> applicata alle verifiche.</li>
+            <li><strong>Concetti generali A&amp;K (4×6) + KSM</strong> ed <strong>esempi specifici per materia</strong> (menù a tendina).</li>
             <li><strong>Pratica su Gemini for Education</strong>: Drive, Thinking, Canvas e Skill.</li>
             <li><strong>Fase 2A (30')</strong>: Radiografia di una verifica reale.</li>
             <li><strong>Fase 2B (55')</strong>: Verifica UDL a 3 Livelli + <em>"Caccia all'errore"</em>.</li>
@@ -97,50 +97,303 @@
       </div>
     </section>
 
-    <!-- SLIDE 3 (BUSSOLA AUTOSUFFICIENTE ANDERSON & KRATHWOHL 4x6 + KSM) -->
-    <section class="slide" data-block="Blocco 1 · 00:00–01:50" data-badge="b1" data-title="3. Bussola: Matrice A&K (4×6) × Criterio KSM">
-      <div class="slide-header">
-        <div class="slide-kicker">Bussola Completa per Leggere i Codici [A-D][1-6] in Gemini</div>
-        <h1>Matrice Anderson &amp; Krathwohl (4×6) × KSM in Verifica</h1>
+    <!-- SLIDE 3 (CONCETTI GENERALI: MATRICE ANDERSON & KRATHWOHL 4x6 + CRITERIO KSM) -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:50" data-badge="b1" data-title="3. Concetti Generali: Matrice A&K (4×6) × Criterio KSM">
+      <div class="slide-header" style="margin-bottom:0.65rem; padding-bottom:0.55rem;">
+        <div class="slide-kicker">Bussola Docimologica · Leggere i Codici [A-D][1-6] in Google Gemini</div>
+        <h1>Concetti Generali: Matrice Anderson &amp; Krathwohl (4×6) × KSM</h1>
       </div>
-      <div class="visual-box" style="margin-top:0; margin-bottom:0.7rem; padding:0.7rem 1rem; display:flex; justify-content:space-between; flex-wrap:wrap; gap:0.5rem; font-size:0.95rem;">
-        <span><strong>4 Conoscenze:</strong> <code style="color:#4ade80;">A</code> Fattuale (dati/lessico) · <code style="color:#4ade80;">B</code> Concettuale (relazioni) · <code style="color:#38bdf8;">C</code> Procedurale (regole/metodi) · <code style="color:#c084fc;">D</code> Metacognitiva (autocorrezione)</span>
-        <span><strong>6 Processi:</strong> <code>1</code> Ricordare · <code>2</code> Comprendere · <code>3</code> Applicare · <code>4</code> Analizzare · <code>5</code> Valutare · <code>6</code> Creare</span>
+      <div class="grid-2" style="margin-top:0.4rem; margin-bottom:0.55rem; gap:0.9rem;">
+        <div class="card highlight-blue" style="padding:0.78rem 1.05rem;">
+          <h2 style="font-size:1.12rem; margin-bottom:0.32rem;">🧱 4 Dimensioni della Conoscenza (Lettera <code>A–D</code>)</h2>
+          <ul style="gap:0.2rem;">
+            <li style="font-size:0.93rem;"><code style="color:#4ade80; font-weight:700;">A</code> <strong>Fattuale</strong>: dati essenziali, lessico, terminologia di base.</li>
+            <li style="font-size:0.93rem;"><code style="color:#4ade80; font-weight:700;">B</code> <strong>Concettuale</strong>: relazioni causa-effetto, categorie, modelli.</li>
+            <li style="font-size:0.93rem;"><code style="color:#38bdf8; font-weight:700;">C</code> <strong>Procedurale</strong>: regole applicate in contesto, metodi e algoritmi.</li>
+            <li style="font-size:0.93rem;"><code style="color:#c084fc; font-weight:700;">D</code> <strong>Metacognitiva</strong>: strategie, autocorrezione e analisi dell'errore.</li>
+          </ul>
+        </div>
+        <div class="card highlight-purple" style="padding:0.78rem 1.05rem;">
+          <h2 style="font-size:1.12rem; margin-bottom:0.32rem;">⚙️ 6 Processi Cognitivi (Numero <code>1–6</code> · LOTS → HOTS)</h2>
+          <ul style="gap:0.2rem;">
+            <li style="font-size:0.93rem;"><strong>LOTS <code>1–2</code> (Base)</strong>: <code>1</code> Ricordare · <code>2</code> Comprendere</li>
+            <li style="font-size:0.93rem;"><strong>Ponte <code>3–4</code> (Operativo)</strong>: <code>3</code> Applicare · <code>4</code> Analizzare</li>
+            <li style="font-size:0.93rem;"><strong>HOTS <code>5–6</code> (Critico/Creativo)</strong>: <code>5</code> Valutare · <code>6</code> Creare</li>
+            <li style="font-size:0.93rem;"><strong>Codice = Lettera + Numero</strong>: es. <code>[B2]</code> relazioni · <code>[C5]</code> valutare procedure.</li>
+          </ul>
+        </div>
       </div>
-      <table>
+      <table style="margin-top:0;">
         <thead>
           <tr>
-            <th>Asse KSM &amp; Quota</th>
-            <th>Codici A&amp;K</th>
-            <th>Italiano (Narrativa &amp; Grammatica) e Storia</th>
-            <th>Inglese L2 (Livello A1 / A2)</th>
+            <th style="padding:0.52rem 0.85rem; width:21%;">Asse KSM &amp; Quota</th>
+            <th style="padding:0.52rem 0.85rem; width:14%;">Codici A&amp;K</th>
+            <th style="padding:0.52rem 0.85rem; width:34%;">Che cosa valuta in generale nella verifica</th>
+            <th style="padding:0.52rem 0.85rem; width:31%;">Principio di Scaffolding UDL (Versione A)</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>🟢 <strong>K · Knowledge (~40%)</strong><br/><em>Sapere (A + B)</em></td>
-            <td><strong>LOTS 1–2</strong><br/><code>[A1, B1, B2]</code></td>
-            <td>Fatti del brano (righe numerate), piramide feudale con banca parole, funzione del predicato.</td>
-            <td>Matching vocaboli con <em>Word Bank</em>, comprensione globale di un breve <em>Reading</em>.</td>
+            <td style="padding:0.48rem 0.85rem; font-size:0.93rem;">🟢 <strong>K · Knowledge (~40%)</strong><br/><em>Il Sapere (A + B)</em></td>
+            <td style="padding:0.48rem 0.85rem; font-size:0.93rem; white-space:nowrap;"><strong>LOTS 1–2</strong><br/><code>[A1, B1, B2]</code></td>
+            <td style="padding:0.48rem 0.85rem; font-size:0.93rem;">Riconoscere i concetti chiave, il lessico fondante e le relazioni principali dell'argomento.</td>
+            <td style="padding:0.48rem 0.85rem; font-size:0.93rem;">Banche parole, riferimenti puntuali, mappe o formulari (zero pura memoria meccanica).</td>
           </tr>
           <tr>
-            <td>🔵 <strong>S · Skills (~40%)</strong><br/><em>Saper Fare (C)</em></td>
-            <td><strong>Ponte 3–4</strong><br/><code>[C3, B4, C4]</code></td>
-            <td>Analisi logica su sintagmi già divisi (<code>/</code>), tabella di confronto tra sequenze o ceti storici.</td>
-            <td>Completare un dialogo usando il <em>Past Simple</em> (affermativa / negativa con <em>didn't</em>).</td>
+            <td style="padding:0.48rem 0.85rem; font-size:0.93rem;">🔵 <strong>S · Skills (~40%)</strong><br/><em>Il Saper Fare (C)</em></td>
+            <td style="padding:0.48rem 0.85rem; font-size:0.93rem; white-space:nowrap;"><strong>Ponte 3–4</strong><br/><code>[C3, B4, C4]</code></td>
+            <td style="padding:0.48rem 0.85rem; font-size:0.93rem;">Applicare regole, procedure e metodi in contesto; scomporre e confrontare informazioni.</td>
+            <td style="padding:0.48rem 0.85rem; font-size:0.93rem;">Tracce guidate <em>step-by-step</em>, testi/frasi già segmentati e tabelle comparative impostate.</td>
           </tr>
           <tr>
-            <td>🟣 <strong>M · Mindset (~20%)</strong><br/><em>Metacognizione (D)</em></td>
-            <td><strong>HOTS 5–6</strong><br/><code>[B5, C5, D4, B6]</code></td>
-            <td><strong>Detective Grammaticale</strong>, <strong>Caccia all'Anacronismo</strong> o finale/riflessione con <em>sentence starters</em>.</td>
-            <td><strong>Grammar Detective</strong> (trovare l'errore in <em>"I didn't went"</em>) + 3 frasi personali guidate.</td>
+            <td style="padding:0.48rem 0.85rem; font-size:0.93rem;">🟣 <strong>M · Mindset (~20%)</strong><br/><em>Metacognizione (D)</em></td>
+            <td style="padding:0.48rem 0.85rem; font-size:0.93rem; white-space:nowrap;"><strong>HOTS 5–6</strong><br/><code>[B5, C5, D4, B6]</code></td>
+            <td style="padding:0.48rem 0.85rem; font-size:0.93rem;">Individuare e correggere un errore ragionato (<em>Error Analysis</em>) o rielaborare in modo personale.</td>
+            <td style="padding:0.48rem 0.85rem; font-size:0.93rem;">Quesiti <em>"Caccia all'errore"</em> (zero blocco da foglio bianco) + frasi-avvio (<em>sentence starters</em>).</td>
           </tr>
         </tbody>
       </table>
+      <div class="subject-bridge-banner">
+        <div class="subject-bridge-text">
+          <div class="subject-bridge-title">🎯 <strong>Esempi specifici per le materie disponibili!</strong> Clicca su una materia o apri il menù a tendina nella Slide 4:</div>
+          <div class="subject-bridge-tags">
+            <button type="button" class="subject-mini-btn" onclick="openSubjectExample('narrativa', 3)">📖 Narrativa italiana</button>
+            <button type="button" class="subject-mini-btn" onclick="openSubjectExample('grammatica', 3)">🧩 Grammatica italiana</button>
+            <button type="button" class="subject-mini-btn" onclick="openSubjectExample('geografia', 3)">🌍 Geografia</button>
+            <button type="button" class="subject-mini-btn" onclick="openSubjectExample('inglese', 3)">🇬🇧 Inglese</button>
+            <button type="button" class="subject-mini-btn" onclick="openSubjectExample('matematica', 3)">📐 Matematica</button>
+          </div>
+        </div>
+        <button type="button" class="subject-bridge-cta" onclick="nextSlide()">📚 Menù Esempi per Materia ▶</button>
+      </div>
     </section>
 
-    <!-- SLIDE 4 (USO PRATICO DI GOOGLE GEMINI FOR EDUCATION - ZERO RIPETIZIONI INC. 1) -->
-    <section class="slide" data-block="Blocco 1 · 00:00–01:50" data-badge="b1" data-title="4. Guida Pratica: I 4 Comandi di Gemini for Education">
+    <!-- SLIDE 4 (ESEMPI SPECIFICI PER MATERIA CON MENÙ A TENDINA BEN VISIBILE) -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:50" data-badge="b1" data-title="4. Esempi Specifici per Materia (Menù a Tendina)">
+      <div class="slide-header" style="margin-bottom:0.85rem; padding-bottom:0.65rem;">
+        <div class="slide-kicker">Applicazione Disciplinare · Dal Modello Generale ai Quesiti Reali di Verifica</div>
+        <h1>Esempi Specifici per Materia (Matrice A&amp;K × KSM)</h1>
+      </div>
+
+      <div class="subject-selector-box">
+        <div class="subject-selector-main">
+          <div class="subject-selector-info">
+            <span class="subject-selector-kicker">🔽 Menù Esempi Disciplinari · 5 Materie</span>
+            <label for="subject-examples-select" class="subject-selector-label">Seleziona la materia dal menù a tendina per vedere gli esempi specifici:</label>
+          </div>
+          <div class="subject-select-wrap">
+            <select id="subject-examples-select" class="subject-select-dropdown" onchange="selectSubjectExample(this.value)" aria-label="Seleziona esempi specifici per materia">
+              <option value="narrativa">📖 Narrativa italiana</option>
+              <option value="grammatica">🧩 Grammatica italiana</option>
+              <option value="geografia">🌍 Geografia</option>
+              <option value="inglese">🇬🇧 Inglese</option>
+              <option value="matematica">📐 Matematica</option>
+            </select>
+          </div>
+        </div>
+        <div class="subject-quick-pills" role="group" aria-label="Scelta rapida materia">
+          <span class="subject-quick-label">Accesso rapido materie:</span>
+          <button type="button" class="subject-pill is-active" data-subject="narrativa" aria-pressed="true" onclick="selectSubjectExample('narrativa')">📖 Narrativa italiana</button>
+          <button type="button" class="subject-pill" data-subject="grammatica" aria-pressed="false" onclick="selectSubjectExample('grammatica')">🧩 Grammatica italiana</button>
+          <button type="button" class="subject-pill" data-subject="geografia" aria-pressed="false" onclick="selectSubjectExample('geografia')">🌍 Geografia</button>
+          <button type="button" class="subject-pill" data-subject="inglese" aria-pressed="false" onclick="selectSubjectExample('inglese')">🇬🇧 Inglese</button>
+          <button type="button" class="subject-pill" data-subject="matematica" aria-pressed="false" onclick="selectSubjectExample('matematica')">📐 Matematica</button>
+        </div>
+      </div>
+
+      <!-- PANNELLO 1: NARRATIVA ITALIANA -->
+      <div class="subject-panel is-active" data-subject="narrativa">
+        <div class="subject-panel-head">
+          <div class="subject-panel-title">📖 Narrativa italiana <span>· Comprensione e analisi di un brano antologico (1ª–3ª media)</span></div>
+          <button type="button" class="step-open-btn" style="width:auto; margin-top:0; padding:0.38rem 0.8rem;" onclick="openStepModal('modal-ex-03', this)">📋 Apri &amp; Copia Prompt Narrativa (#03)</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th style="width:20%;">Asse KSM &amp; Quota</th>
+              <th style="width:13%;">Codici A&amp;K</th>
+              <th style="width:35%;">Esempio di Quesito (Versione B Standard)</th>
+              <th style="width:32%;">Supporto UDL / DSA (Versione A)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>🟢 <strong>K · Knowledge (~40%)</strong><br/><em>Sapere (A + B)</em></td>
+              <td><strong>LOTS 1–2</strong><br/><code>[A1, B2]</code></td>
+              <td>Individuare dati espliciti (personaggi, tempo, luogo) e spiegare perché il protagonista compie una scelta decisiva.</td>
+              <td><strong>Righe del brano numerate</strong> con indicazione <code>(Cerca tra riga 4 e riga 9)</code> e banca parole essenziale.</td>
+            </tr>
+            <tr>
+              <td>🔵 <strong>S · Skills (~40%)</strong><br/><em>Saper Fare (C)</em></td>
+              <td><strong>Ponte 3–4</strong><br/><code>[C3, B4]</code></td>
+              <td>Dividere il racconto in sequenze narrative e confrontare il cambiamento di due personaggi tra inizio e finale.</td>
+              <td><strong>Tabella comparativa già impostata</strong> (<em>Inizio / Finale</em>) con la prima riga svolta come modello.</td>
+            </tr>
+            <tr>
+              <td>🟣 <strong>M · Mindset (~20%)</strong><br/><em>Metacognizione (D)</em></td>
+              <td><strong>HOTS 5–6</strong><br/><code>[B5, D4, B6]</code></td>
+              <td><strong>Caccia all'errore interpretativo</strong> (smentire la tesi errata di un lettore frettoloso citando il testo) + finale/riflessione personale.</td>
+              <td>Rimando alle righe chiave + <strong>2 <em>sentence starters</em></strong> (<em>"Non sono d'accordo perché alla riga… il brano dice…"</em>).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PANNELLO 2: GRAMMATICA ITALIANA -->
+      <div class="subject-panel" data-subject="grammatica">
+        <div class="subject-panel-head">
+          <div class="subject-panel-title">🧩 Grammatica italiana <span>· Analisi logica della frase e funzioni sintattiche (2ª media)</span></div>
+          <button type="button" class="step-open-btn" style="width:auto; margin-top:0; padding:0.38rem 0.8rem;" onclick="openStepModal('modal-ex-04', this)">📋 Apri &amp; Copia Prompt Grammatica (#04)</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th style="width:20%;">Asse KSM &amp; Quota</th>
+              <th style="width:13%;">Codici A&amp;K</th>
+              <th style="width:35%;">Esempio di Quesito (Versione B Standard)</th>
+              <th style="width:32%;">Supporto UDL / DSA (Versione A)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>🟢 <strong>K · Knowledge (~40%)</strong><br/><em>Sapere (A + B)</em></td>
+              <td><strong>LOTS 1–2</strong><br/><code>[B1, B2]</code></td>
+              <td>Riconoscere il predicato della frase e distinguere se esprime un'azione del soggetto o una sua qualità/condizione.</td>
+              <td><strong>Box Bussola</strong> in testa alla verifica con le domande-guida (zero definizioni astratte a memoria).</td>
+            </tr>
+            <tr>
+              <td>🔵 <strong>S · Skills (~40%)</strong><br/><em>Saper Fare (C)</em></td>
+              <td><strong>Ponte 3–4</strong><br/><code>[C3, C4]</code></td>
+              <td>Analizzare la funzione logica dei sintagmi in contesto (Soggetto, Oggetto, Termine, Tempo e Luogo).</td>
+              <td>Frasi <strong>già divise in sintagmi con <code>/</code></strong> (<em>"Al mattino / il cane / rincorre / la palla"</em>) e scelta tra 3 opzioni.</td>
+            </tr>
+            <tr>
+              <td>🟣 <strong>M · Mindset (~20%)</strong><br/><em>Metacognizione (D)</em></td>
+              <td><strong>HOTS 5–6</strong><br/><code>[C5, D4, C6]</code></td>
+              <td><strong>Detective Grammaticale</strong>: correggere l'errore in <em>"A Luca / piace / il latte"</em> (<code>a Luca = Soggetto</code> ❌) + espansione guidata.</td>
+              <td>Indizio sul verbo <em>piacere</em> + <strong>frase-avvio</strong> (<em>"L'errore è in ___ perché chi compie l'azione è ___"</em>).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PANNELLO 3: GEOGRAFIA -->
+      <div class="subject-panel" data-subject="geografia">
+        <div class="subject-panel-head">
+          <div class="subject-panel-title">🌍 Geografia <span>· Lettura di carte tematiche, climi, ambienti ed economia (1ª–2ª media)</span></div>
+          <button type="button" class="step-open-btn" style="width:auto; margin-top:0; padding:0.38rem 0.8rem;" onclick="openStepModal('modal-ex-geo', this)">📋 Apri &amp; Copia Prompt Geografia</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th style="width:20%;">Asse KSM &amp; Quota</th>
+              <th style="width:13%;">Codici A&amp;K</th>
+              <th style="width:35%;">Esempio di Quesito (Versione B Standard)</th>
+              <th style="width:32%;">Supporto UDL / DSA (Versione A)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>🟢 <strong>K · Knowledge (~40%)</strong><br/><em>Sapere (A + B)</em></td>
+              <td><strong>LOTS 1–2</strong><br/><code>[A1, B2]</code></td>
+              <td>Individuare su carta tematica fasce climatiche/ambienti e spiegare come altitudine o mare influenzano il clima.</td>
+              <td><strong>Carta ad alto contrasto</strong> con <em>Guida visiva in 3 mosse</em> sulla legenda e glossario geografico essenziale.</td>
+            </tr>
+            <tr>
+              <td>🔵 <strong>S · Skills (~40%)</strong><br/><em>Saper Fare (C)</em></td>
+              <td><strong>Ponte 3–4</strong><br/><code>[C3, B4]</code></td>
+              <td>Collegare le caratteristiche fisiche di una regione (pianure, fiumi, coste) ai settori economici e confrontare i dati di 2 Paesi.</td>
+              <td><strong>Tabella comparativa pre-impostata</strong> con indicatori evidenziati e frecce <em>territorio → attività</em>.</td>
+            </tr>
+            <tr>
+              <td>🟣 <strong>M · Mindset (~20%)</strong><br/><em>Metacognizione (D)</em></td>
+              <td><strong>HOTS 5–6</strong><br/><code>[B5, D4, B6]</code></td>
+              <td><strong>Caccia all'errore geografico</strong> (es. <em>"Sulla costa norvegese il mare gela sempre perché è a Nord"</em> → Corrente del Golfo!) + proposta green.</td>
+              <td>Richiamo visivo sulla carta dei climi + <strong><em>sentence starter</em></strong> (<em>"L'affermazione è errata perché sulla carta…"</em>).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PANNELLO 4: INGLESE -->
+      <div class="subject-panel" data-subject="inglese">
+        <div class="subject-panel-head">
+          <div class="subject-panel-title">🇬🇧 Inglese <span>· Reading Comprehension e uso comunicativo (Livello QCER A1 / A2)</span></div>
+          <button type="button" class="step-open-btn" style="width:auto; margin-top:0; padding:0.38rem 0.8rem;" onclick="openStepModal('modal-ex-12', this)">📋 Apri &amp; Copia Prompt Inglese (#12)</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th style="width:20%;">Asse KSM &amp; Quota</th>
+              <th style="width:13%;">Codici A&amp;K</th>
+              <th style="width:35%;">Esempio di Quesito (Versione B Standard)</th>
+              <th style="width:32%;">Supporto UDL / DSA (Versione A)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>🟢 <strong>K · Knowledge (~40%)</strong><br/><em>Sapere (A + B)</em></td>
+              <td><strong>LOTS 1–2</strong><br/><code>[A1, B2]</code></td>
+              <td>Associare i vocaboli chiave alle azioni e comprendere il senso globale di un breve <em>Reading</em> graduato.</td>
+              <td><strong>Consegne bilingui</strong> (EN + IT), verbi in <strong>grassetto</strong> e <strong><em>Word Bank</em></strong> con pronuncia intuitiva.</td>
+            </tr>
+            <tr>
+              <td>🔵 <strong>S · Skills (~40%)</strong><br/><em>Saper Fare (C)</em></td>
+              <td><strong>Ponte 3–4</strong><br/><code>[C3, C4]</code></td>
+              <td>Completare un dialogo autentico al <em>Past Simple</em> (affermativa, negativa con <em>didn't</em>) e riordinare domande <em>Wh-</em>.</td>
+              <td><strong>Scelta tra 3 opzioni grammaticali</strong> (<em>went / didn't go / did go</em>) invece del completamento libero.</td>
+            </tr>
+            <tr>
+              <td>🟣 <strong>M · Mindset (~20%)</strong><br/><em>Metacognizione (D)</em></td>
+              <td><strong>HOTS 5–6</strong><br/><code>[C5, D4, C6]</code></td>
+              <td><strong>Grammar Detective</strong>: scovare e correggere l'errore in <em>"Yesterday Sara didn't went"</em> + 3 frasi personali guidate.</td>
+              <td><strong>Zero trappole di spelling</strong> (mai <em>went/wnet</em> per DSA!) + <strong><em>sentence starters</em></strong> pronti per il writing.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PANNELLO 5: MATEMATICA -->
+      <div class="subject-panel" data-subject="matematica">
+        <div class="subject-panel-head">
+          <div class="subject-panel-title">📐 Matematica <span>· Geometria e problemi reali (es. Teorema di Pitagora · 2ª media)</span></div>
+          <button type="button" class="step-open-btn" style="width:auto; margin-top:0; padding:0.38rem 0.8rem;" onclick="openStepModal('modal-ex-08', this)">📋 Apri &amp; Copia Prompt Matematica (#08)</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th style="width:20%;">Asse KSM &amp; Quota</th>
+              <th style="width:13%;">Codici A&amp;K</th>
+              <th style="width:35%;">Esempio di Quesito (Versione B Standard)</th>
+              <th style="width:32%;">Supporto UDL / DSA (Versione A)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>🟢 <strong>K · Knowledge (~40%)</strong><br/><em>Sapere (A + B)</em></td>
+              <td><strong>LOTS 1–2</strong><br/><code>[B1, B2]</code></td>
+              <td>Riconoscere cateti, angolo retto e ipotenusa anche in un triangolo ruotato e associarli alla relazione pitagorica.</td>
+              <td><strong>Box Formulario illustrato</strong> in cima alla pagina con figura già disegnata e lati evidenziati.</td>
+            </tr>
+            <tr>
+              <td>🔵 <strong>S · Skills (~40%)</strong><br/><em>Saper Fare (C)</em></td>
+              <td><strong>Ponte 3–4</strong><br/><code>[C3, C4]</code></td>
+              <td>Risolvere problemi geometrici concreti (es. scala appoggiata a un muro) calcolando ipotenusa o cateto mancante.</td>
+              <td><strong>Terne pitagoriche intere</strong> (<code>3-4-5</code>, <code>6-8-10</code>, zero blocchi sui decimali) e schema <strong>Dati → Passo 1 → Passo 2</strong>.</td>
+            </tr>
+            <tr>
+              <td>🟣 <strong>M · Mindset (~20%)</strong><br/><em>Metacognizione (D)</em></td>
+              <td><strong>HOTS 5–6</strong><br/><code>[C5, D4, C6]</code></td>
+              <td><strong>Caccia all'errore matematico</strong>: trovare il passaggio errato di chi ha <em>sommato</em> i quadrati cercando un cateto + verifica terna.</td>
+              <td>Domanda-guida (<em>"Può un cateto essere più lungo dell'ipotenusa?"</em>) + <strong><em>sentence starter</em></strong> per spiegare la correzione.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SLIDE 5 (USO PRATICO DI GOOGLE GEMINI FOR EDUCATION - ZERO RIPETIZIONI INC. 1) -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:50" data-badge="b1" data-title="5. Guida Pratica: I 4 Comandi di Gemini for Education">
       <div class="slide-header">
         <div class="slide-kicker">Operatività in Laboratorio · Dove Cliccare in Google Gemini for Education</div>
         <h1>I 4 Strumenti Pratici di Gemini per le Verifiche</h1>
@@ -165,8 +418,8 @@
       </div>
     </section>
 
-    <!-- SLIDE 5 -->
-    <section class="slide" data-block="Blocco 1 · 00:00–01:50" data-badge="b1" data-title="5. Error Analysis: Caccia all'Errore (HOTS 5)">
+    <!-- SLIDE 6 -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:50" data-badge="b1" data-title="6. Error Analysis: Caccia all'Errore (HOTS 5)">
       <div class="slide-header">
         <div class="slide-kicker">HOTS 5 — Valutare [B5, C5, D4] · Asse M Accessibile anche a BES/DSA/NAI</div>
         <h1>La "Caccia all'Errore" in Grammatica, Storia e Inglese</h1>
@@ -197,8 +450,8 @@
       </div>
     </section>
 
-    <!-- SLIDE 6 -->
-    <section class="slide" data-block="Blocco 1 · 00:00–01:50" data-badge="b1" data-title="6. Prove Equipollenti vs Differenziate">
+    <!-- SLIDE 7 -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:50" data-badge="b1" data-title="7. Prove Equipollenti vs Differenziate">
       <div class="slide-header">
         <div class="slide-kicker">Cornice Normativa · D.Lgs. 62/2017 · L. 170/2010 · Nuovo PEI</div>
         <h1>Cosa Scrivere a Gemini: Equipollente vs Differenziata</h1>
@@ -224,11 +477,11 @@
       </div>
     </section>
 
-    <!-- SLIDE 7 (FASE 2A SENZA MURI DI TESTO: 3 STEP CARDS + ACCORDION) -->
-    <section class="slide" data-block="Blocco 1 · 00:00–01:50" data-badge="b1" data-title="7. LAVORO 2 · Fase 2A: Radiografia Verifica (30')">
+    <!-- SLIDE 8 (FASE 2A SENZA MURI DI TESTO: 3 STEP CARDS + ACCORDION) -->
+    <section class="slide" data-block="Blocco 1 · 00:00–01:50" data-badge="b1" data-title="8. LAVORO 2 · Fase 2A: Radiografia Verifica (30')">
       <div class="slide-header">
         <div class="slide-kicker">🛠️ LAVORO PRATICO 2 · FASE 2A (<code>01:20 – 01:50</code> · 30 Minuti)</div>
-        <h1>"Radiografia" di una Verifica di Italiano, Storia o Inglese</h1>
+        <h1>"Radiografia" di una Verifica Reale della Tua Materia</h1>
       </div>
       <div class="steps-grid">
         <div class="step-card step-green">
@@ -252,7 +505,7 @@
           <span>📋 Prompt di Radiografia Tassonomica (Clicca per copiare o mostrare)</span>
           <span class="accordion-hint"></span>
         </summary>
-        <div class="prompt-box"><button class="copy-btn" onclick="copyPrompt(this)">📋 Copia Prompt Radiografia</button>Analizza questa verifica di [Italiano / Grammatica / Storia / Inglese] per la classe [1ª / 2ª / 3ª] della Scuola Secondaria di I grado secondo la Tassonomia di Anderson & Krathwohl (Conoscenze A Fattuale, B Concettuale, C Procedurale, D Metacognitiva x Processi 1. Ricordare, 2. Comprendere, 3. Applicare, 4. Analizzare, 5. Valutare, 6. Creare) e il Criterio KSM (Knowledge, Skills, Mindset/Metacognition).
+        <div class="prompt-box"><button class="copy-btn" onclick="copyPrompt(this)">📋 Copia Prompt Radiografia</button>Analizza questa verifica di [Narrativa / Grammatica / Geografia / Storia / Inglese / Matematica] per la classe [1ª / 2ª / 3ª] della Scuola Secondaria di I grado secondo la Tassonomia di Anderson & Krathwohl (Conoscenze A Fattuale, B Concettuale, C Procedurale, D Metacognitiva x Processi 1. Ricordare, 2. Comprendere, 3. Applicare, 4. Analizzare, 5. Valutare, 6. Creare) e il Criterio KSM (Knowledge, Skills, Mindset/Metacognition).
 Restituisci:
 1. Una TABELLA DIAGNOSTICA (pronta per Esporta in Fogli) con colonne: N. Quesito | Processo e Codice [A-D][1-6] | Asse KSM | Barriere linguistiche, grafiche o mnemoniche per alunni con DSA, BES o Italiano L2;
 2. La percentuale attuale di quesiti LOTS (1-2), Ponte (3-4) e HOTS (5-6);
@@ -260,8 +513,8 @@ Restituisci:
       </details>
     </section>
 
-    <!-- SLIDE 8 (PAUSA CENTRALE) -->
-    <section class="slide" data-block="Pausa Centrale · 01:50–02:10" data-badge="pausa" data-title="8. PAUSA CENTRALE (20 minuti)">
+    <!-- SLIDE 9 (PAUSA CENTRALE) -->
+    <section class="slide" data-block="Pausa Centrale · 01:50–02:10" data-badge="pausa" data-title="9. PAUSA CENTRALE (20 minuti)">
       <div class="card highlight-amber" style="text-align:center; padding:2.6rem 2rem; margin-top:1.5rem;">
         <div class="slide-kicker">Stacco Ergonomico di Metà Pomeriggio · 01:50 – 02:10</div>
         <h1 style="font-size:3rem; margin:1rem 0;"><span class="coffee-float">☕</span> PAUSA CENTRALE — 20 Minuti</h1>
@@ -270,8 +523,8 @@ Restituisci:
       </div>
     </section>
 
-    <!-- SLIDE 9 -->
-    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="9. Gemini Canvas: Verifica UDL su 3 Livelli">
+    <!-- SLIDE 10 -->
+    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="10. Gemini Canvas: Verifica UDL su 3 Livelli">
       <div class="slide-header">
         <div class="slide-kicker">Blocco 2 (<code>02:10 – 04:00</code>) · Demo Live 1</div>
         <h1>Co-Progettare 3 Versioni Parallele in Gemini Canvas</h1>
@@ -304,8 +557,8 @@ Restituisci:
       </div>
     </section>
 
-    <!-- SLIDE 10 (CHE COS'È UNA SKILL SU GEMINI E COME FUNZIONA IN 4 PASSI) -->
-    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="10. Che cos'è una Skill su Google Gemini?">
+    <!-- SLIDE 11 (CHE COS'È UNA SKILL SU GEMINI E COME FUNZIONA IN 4 PASSI) -->
+    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="11. Che cos'è una Skill su Google Gemini?">
       <div class="slide-header">
         <div class="slide-kicker">Prima di Crearla · Capire lo Strumento in 60 Secondi</div>
         <h1>Che Cos'è una "Skill" su Gemini? Il Collega che Non Dimentica le Regole</h1>
@@ -344,8 +597,8 @@ Restituisci:
       </div>
     </section>
 
-    <!-- SLIDE 11 (DEMO LIVE 2: LE 2 SKILL PRONTE CON ISTRUZIONI COPIABILI A FISARMONICA) -->
-    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="11. Demo Live 2: Costruiamo la Skill (Italiano & Inglese)">
+    <!-- SLIDE 12 (DEMO LIVE 2: LE 2 SKILL PRONTE CON ISTRUZIONI COPIABILI A FISARMONICA) -->
+    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="12. Demo Live 2: Costruiamo la Skill (Italiano & Inglese)">
       <div class="slide-header">
         <div class="slide-kicker">Demo Live 2 (3 Minuti) · Copia le Istruzioni Permanenti e Incollale in "Nuova Skill"</div>
         <h1>Costruiamo la Skill di Italiano/Storia o di Inglese</h1>
@@ -405,11 +658,11 @@ REGOLE FISSE ANTI-BARRIERA DSA: 1) Consegne bilingui (Inglese + traduzione itali
       </div>
     </section>
 
-    <!-- SLIDE 12 (ESEMPI FOCUS ITALIANO, GRAMMATICA, STORIA, INGLESE + POPUP COPIABILI) -->
-    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="12. Modelli Pronti nel Ricettario (Italiano, Storia, Inglese)">
+    <!-- SLIDE 13 (ESEMPI FOCUS ITALIANO, GRAMMATICA, STORIA, INGLESE, GEOGRAFIA, MATEMATICA + POPUP COPIABILI) -->
+    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="13. Modelli Pronti nel Ricettario (Italiano, Storia, Inglese, STEM)">
       <div class="slide-header">
         <div class="slide-kicker">Dal Ricettario dei 30 Esempi · Clicca su un Modello per Aprire e Copiare il Prompt</div>
-        <h1>6 Modelli Pronti per il Laboratorio di Oggi</h1>
+        <h1>Modelli Pronti per il Laboratorio di Oggi</h1>
       </div>
       <div class="grid-3">
         <div class="card highlight-blue" style="display:flex; flex-direction:column; justify-content:space-between; gap:0.65rem;">
@@ -449,20 +702,21 @@ REGOLE FISSE ANTI-BARRIERA DSA: 1) Consegne bilingui (Inglese + traduzione itali
         </div>
         <div class="card highlight-purple" style="display:flex; flex-direction:column; justify-content:space-between; gap:0.65rem;">
           <div>
-            <h2>📐🎨 Altri Esempi (#08, #22, #24)</h2>
-            <p>Modelli UDL a 3 livelli per Matematica, Tecnologia e Lettura d'opera d'Arte con Gemini Vision.</p>
+            <h2>🌍📐🎨 Geografia, Mat. &amp; Altri</h2>
+            <p>Modelli UDL a 3 livelli per Geografia, Matematica (#08), Tecnologia (#22) e Arte (#24).</p>
           </div>
-          <div style="display:flex; gap:0.4rem; flex-wrap:wrap;">
-            <button type="button" class="step-open-btn" style="flex:1; min-width:85px; padding:0.42rem 0.45rem; font-size:0.8rem;" onclick="openStepModal('modal-ex-08', this)">📐 #08</button>
-            <button type="button" class="step-open-btn" style="flex:1; min-width:85px; padding:0.42rem 0.45rem; font-size:0.8rem;" onclick="openStepModal('modal-ex-22', this)">⚙️ #22</button>
-            <button type="button" class="step-open-btn" style="flex:1; min-width:85px; padding:0.42rem 0.45rem; font-size:0.8rem;" onclick="openStepModal('modal-ex-24', this)">🎨 #24</button>
+          <div style="display:flex; gap:0.35rem; flex-wrap:wrap;">
+            <button type="button" class="step-open-btn" style="flex:1; min-width:72px; padding:0.42rem 0.4rem; font-size:0.78rem;" onclick="openStepModal('modal-ex-geo', this)">🌍 Geo</button>
+            <button type="button" class="step-open-btn" style="flex:1; min-width:72px; padding:0.42rem 0.4rem; font-size:0.78rem;" onclick="openStepModal('modal-ex-08', this)">📐 #08</button>
+            <button type="button" class="step-open-btn" style="flex:1; min-width:72px; padding:0.42rem 0.4rem; font-size:0.78rem;" onclick="openStepModal('modal-ex-22', this)">⚙️ #22</button>
+            <button type="button" class="step-open-btn" style="flex:1; min-width:72px; padding:0.42rem 0.4rem; font-size:0.78rem;" onclick="openStepModal('modal-ex-24', this)">🎨 #24</button>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SLIDE 13 (PROMPT CHAINING SENZA MURI DI TESTO: ACCORDIONS SEPARATI) -->
-    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="13. Prompt Chaining (2B.1 -> 2B.2)">
+    <!-- SLIDE 14 (PROMPT CHAINING SENZA MURI DI TESTO: ACCORDIONS SEPARATI) -->
+    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="14. Prompt Chaining (2B.1 -> 2B.2)">
       <div class="slide-header">
         <div class="slide-kicker">Costruzione Incrementale in Gemini Thinking + Canvas (Zero Output Troncati)</div>
         <h1>Prompt Chaining in 2 Mosse: Prima Valida B, Poi Genera A e C</h1>
@@ -481,12 +735,12 @@ REGOLE FISSE ANTI-BARRIERA DSA: 1) Consegne bilingui (Inglese + traduzione itali
           <span>1️⃣ MOSSA 1 (Prompt 2B.1) — Genera Versione B Standard + Correttorio [A-D][1-6]</span>
           <span class="accordion-hint"></span>
         </summary>
-        <div class="prompt-box"><button class="copy-btn" onclick="copyPrompt(this)">📋 Copia Mossa 1 (2B.1)</button>[R] Agisci come docente esperto di [Italiano / Grammatica / Storia / Inglese] nella Scuola Secondaria di I Grado e progettista UDL secondo Anderson & Krathwohl (4x6: Conoscenze A-D x Processi 1-6) e Criterio KSM.
+        <div class="prompt-box"><button class="copy-btn" onclick="copyPrompt(this)">📋 Copia Mossa 1 (2B.1)</button>[R] Agisci come docente esperto di [Italiano / Grammatica / Geografia / Storia / Inglese / Matematica] nella Scuola Secondaria di I Grado e progettista UDL secondo Anderson & Krathwohl (4x6: Conoscenze A-D x Processi 1-6) e Criterio KSM.
 [C] Classe [1ª / 2ª / 3ª] media (durata prova: 45-50 minuti).
 [N] Progetta la VERSIONE B (Standard) su [ARGOMENTO] (nuclei fondanti: [ELENCA 3 NUCLEI]) con 6 quesiti:
 - Q1-Q2 LOTS (1. Ricordare / 2. Comprendere — Asse K, codici [A1, B2]);
 - Q3-Q4 Ponte (3. Applicare / 4. Analizzare — Asse S, codici [C3, B4]);
-- Q5 HOTS (5. Valutare — Asse M, codice [B5/C5/D4]): "Caccia all'errore" (Detective Grammaticale / Caccia all'Anacronismo / Grammar Detective);
+- Q5 HOTS (5. Valutare — Asse M, codice [B5/C5/D4]): "Caccia all'errore" (Detective Grammaticale / Caccia all'Anacronismo / Errore Geografico o Matematico / Grammar Detective);
 - Q6 HOTS (6. Creare / Riflettere — Asse M, codice [B6/D5]): breve produzione o riflessione guidata.
 [A] Un solo verbo d'azione per consegna, zero doppie negazioni (in Inglese: consegne bilingui e zero trappole di spelling).
 [F] Restituisci VERSIONE B + CORRETTORIO COMPLETO con i codici [A-D][1-6] e gli assi K-S-M di ogni quesito.</div>
@@ -497,13 +751,13 @@ REGOLE FISSE ANTI-BARRIERA DSA: 1) Consegne bilingui (Inglese + traduzione itali
           <span class="accordion-hint"></span>
         </summary>
         <div class="prompt-box"><button class="copy-btn" onclick="copyPrompt(this)">📋 Copia Mossa 2 (2B.2)</button>La Versione B è validata. Ora genera sugli STESSI obiettivi cognitivi:
-1. VERSIONE A (Facilitata/Equipollente per BES, DSA, NAI): consegne passo-passo, parole chiave in grassetto, banca parole/Word Bank per Q1-Q2 (con righe numerate o linea del tempo), tabella semicompilata o frasi divise in sintagmi "/" per Q3-Q4, suggerimento e sentence starter per Q5-Q6 ("L'errore si trova... perché...").
+1. VERSIONE A (Facilitata/Equipollente per BES, DSA, NAI): consegne passo-passo, parole chiave in grassetto, banca parole/Word Bank per Q1-Q2 (con righe numerate, carta guidata, formulario o linea del tempo), tabella semicompilata o frasi divise in sintagmi "/" per Q3-Q4, suggerimento e sentence starter per Q5-Q6 ("L'errore si trova... perché...").
 2. VERSIONE C (Potenziamento): sostituisce Q6 con una sfida aperta di livello HOTS 6 (confronto intertestuale o produzione creativa). Impagina pronto per "Esporta in Documenti".</div>
       </details>
     </section>
 
-    <!-- SLIDE 14 -->
-    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="14. LAVORO 2 · Fase 2B (55' in 3 Step)">
+    <!-- SLIDE 15 -->
+    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="15. LAVORO 2 · Fase 2B (55' in 3 Step)">
       <div class="slide-header">
         <div class="slide-kicker">Laboratorio Hands-On · <code>02:40 – 03:35</code> (55 Minuti · 3 Micro-Step Progressivi)</div>
         <h1>🛠️ LAVORO PRATICO 2 · FASE 2B: Verifica UDL a 3 Livelli &amp; Skill</h1>
@@ -512,7 +766,7 @@ REGOLE FISSE ANTI-BARRIERA DSA: 1) Consegne bilingui (Inglese + traduzione itali
         <div class="step-card step-green">
           <div class="step-card-top"><span class="step-num">Step 2B.1</span><span class="step-time">20 min</span></div>
           <h2>Mossa 1: Versione B</h2>
-          <p>Attiva <strong>Thinking + Canvas</strong>, lancia la <strong>Mossa 1</strong> sul tuo argomento di Italiano, Storia o Inglese e controlla il correttorio <code>[A-D][1-6]</code>.</p>
+          <p>Attiva <strong>Thinking + Canvas</strong>, lancia la <strong>Mossa 1</strong> sul tuo argomento disciplinare e controlla il correttorio <code>[A-D][1-6]</code>.</p>
         </div>
         <div class="step-card step-blue">
           <div class="step-card-top"><span class="step-num">Step 2B.2</span><span class="step-time">20 min</span></div>
@@ -522,14 +776,14 @@ REGOLE FISSE ANTI-BARRIERA DSA: 1) Consegne bilingui (Inglese + traduzione itali
         <div class="step-card step-purple">
           <div class="step-card-top"><span class="step-num">Step 2B.3</span><span class="step-time">15 min</span></div>
           <h2>Salva la tua Skill</h2>
-          <p>Apri <strong>Skill → + Nuova Skill</strong> e incolla le regole fisse (dalla Slide 11) per avere il tuo assistente pronto tutto l'anno!</p>
+          <p>Apri <strong>Skill → + Nuova Skill</strong> e incolla le regole fisse (dalla Slide 12) per avere il tuo assistente pronto tutto l'anno!</p>
         </div>
       </div>
       <div class="timer-widget" data-minutes="55" data-label="Lavoro Pratico 2 · Fase 2B (20' + 20' + 15')"></div>
     </section>
 
-    <!-- SLIDE 15 -->
-    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="15. Controllo Critico Human-in-the-Loop">
+    <!-- SLIDE 16 -->
+    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="16. Controllo Critico Human-in-the-Loop">
       <div class="slide-header">
         <div class="slide-kicker">Validazione tra Pari (<code>03:35 – 03:50</code> · 15 min)</div>
         <h1>Controllo Critico (<em>Human-in-the-Loop</em>) in Italiano, Storia e Inglese</h1>
@@ -554,8 +808,8 @@ REGOLE FISSE ANTI-BARRIERA DSA: 1) Consegne bilingui (Inglese + traduzione itali
       </div>
     </section>
 
-    <!-- SLIDE 16 -->
-    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="16. Checklist Finale e Ponte verso Incontro 3">
+    <!-- SLIDE 17 -->
+    <section class="slide" data-block="Blocco 2 · 02:10–04:00" data-badge="b2" data-title="17. Checklist Finale e Ponte verso Incontro 3">
       <div class="slide-header">
         <div class="slide-kicker">Chiusura Incontro 2 di 5 (<code>03:50 – 04:00</code>) · Arrivederci all'Incontro 3!</div>
         <h1>Checklist di Fine Giornata 2 &amp; Anticipazione Incontro 3</h1>
@@ -748,6 +1002,41 @@ REGOLE FISSE ANTI-BARRIERA DSA: 1) Consegne bilingui (Inglese + traduzione itali
           <button type="button" onclick="switchStepModal('modal-ex-11')">◀ #11 Inglese A1</button>
         </div>
         <div class="step-modal-nav">
+          <button type="button" onclick="switchStepModal('modal-ex-geo')">🌍 Geografia ▶</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-ex-geo" class="step-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-exgeo" aria-hidden="true">
+    <div class="step-modal-dialog">
+      <div class="step-modal-header">
+        <div class="step-modal-title-wrap">
+          <span class="step-modal-kicker">Modello Geografia (#16–#17) · 1ª–2ª Media · Gemini Multimodale + Thinking</span>
+          <h3 id="modal-title-exgeo">🌍 Verifica UDL a 3 Livelli — Climi, Carte Tematiche &amp; "Caccia all'Errore Geografico"</h3>
+        </div>
+        <button type="button" class="modal-close-btn" onclick="closeStepModal()">✕ Chiudi</button>
+      </div>
+      <div class="step-modal-body">
+        <div class="trainer-note" style="margin-top:0;">
+          <strong>Profilo:</strong> DSA/BES/NAI (lettura guidata della carta + zero capitali isolate a memoria) · <strong>Scala:</strong> <code>LOTS [A1, B2] (40%) → Ponte [C3, B4] (40%) → HOTS [B5, B6] (20%)</code>
+        </div>
+        <div class="prompt-box" style="margin-top:0;"><button class="copy-btn" onclick="copyPrompt(this)">📋 Copia Prompt Geografia</button>[R] Agisci come docente di Geografia nella Scuola Secondaria di I grado ed esperto di progettazione di prove UDL accessibili visivamente e linguisticamente.
+[C] Classe 2ª media (12 anni) — Argomento: Climi, ambienti e settori economici in Europa (a partire dalla carta tematica o tabella dati allegata).
+[N] Progetta una verifica di 6 quesiti bilanciata secondo Anderson &amp; Krathwohl e il Criterio KSM (40% K / 40% S / 20% M), evitando il puro nozionismo mnemonico:
+- Q1-Q2 [A1, B2 - Asse K]: individuare sulla carta le fasce climatiche principali e spiegare come latitudine, altitudine o Corrente del Golfo influenzano la temperatura;
+- Q3-Q4 [C3, B4 - Asse S]: collegare la morfologia di una regione europea (es. pianure navigabili, coste, rilievi) alle attività economiche prevalenti e confrontare in tabella i dati di 2 Paesi;
+- Q5 [B5 - Asse M]: "Caccia all'errore geografico" (presenta la deduzione sbagliata di un viaggiatore distratto, es. "Sulla costa atlantica della Norvegia il mare è sempre ghiacciato perché si trova molto a Nord": lo studente deve individuare l'errore osservando la carta e correggerlo);
+- Q6 [B6/D5 - Asse M]: proporre una scelta sostenibile di mobilità o energia adatta al territorio analizzato.
+[A] Genera 3 versioni parallele (A Facilitata, B Standard, C Potenziamento):
+- Nella Versione A (DSA/BES/NAI): inserisci una "Guida in 3 Mosse per leggere la carta", un mini-glossario di 5 termini chiave, la tabella di Q4 già impostata e 2 sentence starters per Q5-Q6 ("L'affermazione non è corretta perché osservando la carta...", "Per questo territorio consiglierei...").
+[F] Restituisci le 3 versioni pronte per "Esporta in Documenti" + correttorio con codici [A-D][1-6] e KSM.</div>
+      </div>
+      <div class="step-modal-footer">
+        <div class="step-modal-nav">
+          <button type="button" onclick="switchStepModal('modal-ex-12')">◀ #12 Past Simple</button>
+        </div>
+        <div class="step-modal-nav">
           <button type="button" onclick="switchStepModal('modal-ex-08')">#08 Matematica ▶</button>
         </div>
       </div>
@@ -780,7 +1069,7 @@ REGOLE FISSE ANTI-BARRIERA DSA: 1) Consegne bilingui (Inglese + traduzione itali
       </div>
       <div class="step-modal-footer">
         <div class="step-modal-nav">
-          <button type="button" onclick="switchStepModal('modal-ex-12')">◀ #12 Past Simple</button>
+          <button type="button" onclick="switchStepModal('modal-ex-geo')">◀ 🌍 Geografia</button>
         </div>
         <div class="step-modal-nav">
           <button type="button" onclick="switchStepModal('modal-ex-22')">#22 Tecnologia ▶</button>

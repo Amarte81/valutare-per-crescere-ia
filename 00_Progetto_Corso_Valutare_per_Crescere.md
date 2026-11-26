@@ -16,7 +16,7 @@
 | **Competenze d'ingresso** | Conoscenza di **Google Workspace for Education**; dimestichezza con l'IA generativa **eterogenea** (da nulla a media) |
 | **Focus tecnologico** | **Google Gemini** (nuovi modelli multimodali, di ragionamento *Thinking*, Canvas/Skill ed esportazione diretta in Workspace), **Google NotebookLM** (incluse Mappe Mentali e Audio Overview) e gli strumenti gratuiti dell'ecosistema **Google Workspace for Education**, affiancati da soluzioni gratuite per quiz/video e per la privacy sul PC personale |
 | **Attestazione e attivazione** | Nessun attestato/esame finale obbligatorio; attivazione continua tramite **5 Lavori Pratici progressivi in aula (1 per ciascuna giornata)** che compongono un **Kit Valutativo Inclusivo** spendibile subito in classe |
-| **Moduli extra opzionali** | **2 Moduli Aggiuntivi Facoltativi** (messi a disposizione in Drive/Classroom per i soli docenti interessati) |
+| **Moduli extra opzionali** | **3 Moduli Aggiuntivi Facoltativi** (messi a disposizione in Drive/Classroom per i soli docenti interessati) |
 
 ---
 
@@ -131,13 +131,13 @@ Con **5 incontri da 4 ore** (ossia **10 blocchi da 2 ore nominali / 110' netti c
 
 ### Incontro 2 (Giorno 2 · 4h) — *VerifichIAmo con l'IA (Parte I): LOTS → HOTS e Verifiche UDL Multilivello con Gemini*
 * **Modulo coperto**: **VerifichIAmo con l'Intelligenza Artificiale — Parte I (`4h su 10h`)**.
-* **Obiettivo operativo**: usare il modello di **Ragionamento (*Thinking*)** di Gemini, l'input multimodale e *Gemini Canvas/Skill* per progettare verifiche accessibili su 3 livelli (Facilitata/Equipollente, Standard, Potenziamento) bilanciate lungo la scala **LOTS → HOTS**.
+* **Obiettivo operativo**: usare il modello di **Ragionamento (*Thinking*)** di Gemini, l'input multimodale e *Gemini Canvas/Skill* per progettare verifiche accessibili su 3 livelli (Facilitata/Equipollente, Standard, Potenziamento) bilanciate lungo la scala **LOTS → HOTS**, distinguendo nitidamente i **concetti generali** della matrice **Anderson & Krathwohl (`4 × 6`) × Criterio KSM** dalla loro **declinazione disciplinare tramite menù a tendina interattivo** per **Narrativa italiana, Grammatica italiana, Geografia, Inglese e Matematica**.
 
 | Fascia | Blocco | Contenuti e Attività |
 | :--- | :--- | :--- |
-| `00:00 – 01:50` | **Blocco 1** *(110' · 2h nom.)* | • **Dal Prompt di Studio al Prompt di Verifica (`R-C-N-A-F`) (25')**: perché un prompt generico produce verifiche all'80% mnemoniche (`LOTS 1`) o taglia i quesiti di ragionamento nelle prove per BES/DSA.<br>• **Governare Gemini con la scala LOTS → HOTS, il Criterio KSM e le Prove Equipollenti vs Differenziate (55')**: la matrice di Anderson & Krathwohl (`1. Ricordare → 6. Creare`); quando attivare il modello di **Ragionamento (*Thinking*)** di Gemini per problemi STEM passo-passo e per progettare quesiti inclusivi di livello **HOTS (`5. Valutare — "Caccia all'errore"`)** con *scaffolding* e *sentence starters*; distinzione normativa (D.Lgs. 62/2017, L. 170/2010, Nuovo PEI) tra **prove equipollenti** e **prove differenziate**.<br>• **🛠️ LAVORO PRATICO 2 — Fase 2A: "Radiografia" Multimodale di una Verifica Reale (30')**: caricare la foto o il PDF di una verifica tradizionale di scuola media e far generare a Gemini la tabella diagnostica LOTS/HOTS e barriere linguistiche/grafiche. |
+| `00:00 – 01:50` | **Blocco 1** *(110' · 2h nom.)* | • **Dal Prompt di Studio al Prompt di Verifica (`R-C-N-A-F`) (25')**: perché un prompt generico produce verifiche all'80% mnemoniche (`LOTS 1`) o taglia i quesiti di ragionamento nelle prove per BES/DSA.<br>• **Concetti Generali A&K (`4 × 6`) × KSM, Menù Esempi per Materia e Prove Equipollenti vs Differenziate (55')**: inquadramento separato dei **concetti generali** (`4 Conoscenze A–D`, `6 Processi 1–6`, quote `40% K / 40% S / 20% M`) seguito dall'esplorazione tramite **menù a tendina ad alta visibilità** degli esempi specifici per **Narrativa italiana, Grammatica italiana, Geografia, Inglese e Matematica**; uso pratico di Gemini for Education (`+` Drive, *Thinking*, *Canvas*, *Esporta*), quesiti **HOTS (`5. Valutare — "Caccia all'errore"`)** con *sentence starters* e distinzione normativa (D.Lgs. 62/2017, L. 170/2010, Nuovo PEI) tra **prove equipollenti** e **prove differenziate**.<br>• **🛠️ LAVORO PRATICO 2 — Fase 2A: "Radiografia" Multimodale di una Verifica Reale (30')**: caricare la foto o il PDF di una verifica tradizionale di scuola media e far generare a Gemini la tabella diagnostica LOTS/HOTS e barriere linguistiche/grafiche esportabile in Google Fogli. |
 | `01:50 – 02:10` | **Pausa** *(20')* | *Pausa centrale di decompressione, caffè e movimento* |
-| `02:10 – 04:00` | **Blocco 2** *(110' · 2h nom.)* | • **Co-progettare in Gemini Canvas la Verifica UDL su 3 Livelli + Creazione Skill (30')**: generare in parallelo **Versione A (Facilitata/Equipollente)**, **Versione B (Standard)** e **Versione C (Potenziamento)** sullo stesso nucleo tematico; salvare le istruzioni in una **Skill disciplinare permanente**.<br>• **🛠️ LAVORO PRATICO 2 — Fase 2B (55')**: ogni docente progetta con Gemini (*Thinking* + *Canvas*) la propria **Verifica UDL Multilivello** sull'argomento scelto al Giorno 1 (bilanciamento: ~40% LOTS, ~40% Ponte Applicare/Analizzare, ~20% HOTS con *"Caccia all'errore"* guidata), completa di correttorio ed esportata in Google Documenti nella cartella `02_Incontro2_Verifica_UDL_Multilivello`.<br>• **Controllo Critico (*Human-in-the-Loop*) e Confronto per Dipartimenti (25')**: verifica dell'assenza di allucinazioni, doppie negazioni o calcoli errati e restituzione in aula. |
+| `02:10 – 04:00` | **Blocco 2** *(110' · 2h nom.)* | • **Co-progettare in Gemini Canvas la Verifica UDL su 3 Livelli + Creazione Skill (30')**: generare tramite *Prompt Chaining* **Versione B (Standard)** + Correttorio `[A-D][1-6]` e poi in parallelo **Versione A (Facilitata/Equipollente)** e **Versione C (Potenziamento)** sullo stesso nucleo tematico; salvare le istruzioni permanenti in una **Skill disciplinare**.<br>• **🛠️ LAVORO PRATICO 2 — Fase 2B (55')**: ogni docente progetta con Gemini (*Thinking* + *Canvas*) la propria **Verifica UDL Multilivello** sull'argomento scelto al Giorno 1 (bilanciamento: ~40% LOTS, ~40% Ponte Applicare/Analizzare, ~20% HOTS con *"Caccia all'errore"* guidata), completa di correttorio ed esportata in Google Documenti nella cartella `02_Incontro2_Verifica_UDL_Multilivello`.<br>• **Controllo Critico (*Human-in-the-Loop*) e Confronto per Dipartimenti (25')**: verifica dell'assenza di allucinazioni, doppie negazioni o calcoli errati e restituzione in aula. |
 
 ---
 
@@ -210,17 +210,21 @@ I **30 esempi di prompt e output IA** (su Gemini e NotebookLM) rispecchiano esat
 ## 9. Mappa dei Materiali del Progetto
 
 1. **Incontro 1 (4h — Accessibilità, autonomia e studio)**:
-   * `Incontro_1/Incontro_1_Presentazione_Aula.html` (Slide deck interattivo per la lezione in laboratorio);
+   * `Incontro_1/Incontro_1_Presentazione_Aula.html` (Slide deck interattivo per la lezione in laboratorio · **17 slide**);
    * `Incontro_1/Incontro_1_Slide_Visualizzazione_Aula.md` (Traccia visuale e note di regia su 4 ore);
    * `Incontro_1/Incontro_1_Dispensa_Studio_Approfondito.md` (Manuale discorsivo di approfondimento con link esterni su tutti i termini tecnici, Glossario e Valutazione KSM delle fonti).
 2. **Incontro 2 (4h — VerifichIAmo con l'IA Parte I: LOTS → HOTS e Verifiche UDL Multilivello)**:
-   * `Incontro_2/Incontro_2_Presentazione_Aula.html` (Slide deck interattivo per la lezione in laboratorio);
-   * `Incontro_2/Incontro_2_Slide_Visualizzazione_Aula.md` (Traccia visuale e note di regia su 4 ore);
-   * `Incontro_2/Incontro_2_Dispensa_Studio_Approfondito.md` (Manuale discorsivo di approfondimento con link esterni, Glossario e Valutazione KSM delle fonti).
-3. **Incontri 3, 4 e 5 (4h ciascuno)** *(da produrre con la medesima doppia struttura: Presentazione d'aula + Dispensa di approfondimento con link tecnici)*.
-4. **Asset Condivisi per le Presentazioni d'Aula**:
-   * `assets/presentazione.css` (Foglio di stile condiviso per tutti gli incontri);
-   * `assets/presentazione.js` (Script condiviso di navigazione, schermo intero e copia prompt).
+   * `Incontro_2/Incontro_2_Presentazione_Aula.html` (Slide deck interattivo per la lezione in laboratorio · **17 slide**, con **Slide 3** dedicata ai concetti generali della matrice Anderson & Krathwohl `4 × 6` × KSM e **Slide 4** dotata di **menù a tendina ad alta visibilità** per selezionare gli esempi specifici di **Narrativa italiana, Grammatica italiana, Geografia, Inglese e Matematica** + popup modali dei prompt copiabili);
+   * `Incontro_2/Incontro_2_Slide_Visualizzazione_Aula.md` (Traccia visuale su 17 slide, script del formatore e note di regia su 4 ore);
+   * `Incontro_2/Incontro_2_Dispensa_Studio_Approfondito.md` (Manuale discorsivo di approfondimento con separazione tra concetti generali ed esempi specifici per materia, link esterni, Glossario e Valutazione KSM delle fonti).
+3. **Incontri 3, 4 e 5 (4h ciascuno)**:
+   * `Incontro_3/Incontro_3_Presentazione_Aula.html`, `Incontro_3/Incontro_3_Slide_Visualizzazione_Aula.md`, `Incontro_3/Incontro_3_Dispensa_Studio_Approfondito.md` (VerifichIAmo Parte II: Rubriche KSM, Autovalutazione e Feedback · **14 slide**);
+   * `Incontro_4/Incontro_4_Presentazione_Aula.html`, `Incontro_4/Incontro_4_Slide_Visualizzazione_Aula.md`, `Incontro_4/Incontro_4_Dispensa_Studio_Approfondito.md` (Area 1 Domande con l'IA + Area 2 Quiz Digitali · **14 slide**);
+   * `Incontro_5/Incontro_5_Presentazione_Aula.html`, `Incontro_5/Incontro_5_Slide_Visualizzazione_Aula.md`, `Incontro_5/Incontro_5_Dispensa_Studio_Approfondito.md` (Area 3 Video/Materiali + VerifichIAmo Parte III Kit Finale · **14 slide**).
+4. **Asset Condivisi e Portale Web**:
+   * `index.html` (Portale principale di accesso rapido a tutti i 5 incontri, materiali trasversali e moduli extra);
+   * `assets/presentazione.css` (Foglio di stile condiviso, inclusi i componenti ad alta visibilità per il selettore a tendina degli esempi disciplinari e i popup modali);
+   * `assets/presentazione.js` (Script condiviso di navigazione, schermo intero, timer, popup modali, copia prompt e selettore interattivo degli esempi per materia).
 5. **Materiali Trasversali**:
    * `Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md` (30 esempi mappati sui 5 incontri);
    * `Materiali_Trasversali/02_Schede_Operative_5_Lavori_Pratici.md` (Schede operative progressive a micro-step dei **5 Lavori Pratici**, ciascuno articolato in **Fase A nel Blocco 1** e **Fase B nel Blocco 2**);

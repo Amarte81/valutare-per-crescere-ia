@@ -1,30 +1,30 @@
-# Traccia Slide per il Formatore (con Note di Regia e Cosa Dire in Aula) — Incontro 2 di 5 (4 ore)
+# Traccia Slide per il Formatore (con Note di Regia e Cosa Dire in Aula) — Incontro 2 di 5 (4 ore · 17 Slide)
 
 ## VALUTARE PER CRESCERE
-### *VerifichIAmo con l'IA (Parte I): uso pratico di Google Gemini for Education per progettare Verifiche UDL Multilivello secondo Anderson & Krathwohl (`4 × 6`) e Criterio KSM (Italiano, Grammatica, Storia e Inglese)*
+### *VerifichIAmo con l'IA (Parte I): uso pratico di Google Gemini for Education per progettare Verifiche UDL Multilivello secondo Anderson & Krathwohl (`4 × 6`) e Criterio KSM (Concetti Generali + Menù a Tendina Esempi Specifici per Narrativa italiana, Grammatica italiana, Geografia, Inglese e Matematica)*
 
 > [!TIP]
 > **Come usare questa Traccia durante la lezione**  
-> * Le slide proiettate in [Incontro_2_Presentazione_Aula.html](Incontro_2_Presentazione_Aula.html) sono state progettate **senza muri di testo** (testi sintetici, grafici SVG e prompt racchiusi in menu a fisarmonica apribili con 1 clic).  
+> * Le **17 slide** proiettate in [Incontro_2_Presentazione_Aula.html](Incontro_2_Presentazione_Aula.html) sono state progettate **senza muri di testo**: la **Slide 3** isola i **concetti generali** della Matrice Anderson & Krathwohl (`4 × 6`) × Criterio KSM (con un banner ad alta visibilità di collegamento agli esempi disciplinari), mentre la **Slide 4** offre un **menù a tendina interattivo ben visibile** (affiancato da pulsanti rapidi sincronizzati) per selezionare in tempo reale gli esempi specifici di **Narrativa italiana, Grammatica italiana, Geografia, Inglese e Matematica**.  
 > * Poiché **i corsisti guarderanno quasi esclusivamente le slide e non leggeranno la dispensa**, sotto ogni slide di questa traccia trovi il box **🎤 Cosa è importante dire a voce (Script del Formatore)** con i concetti chiave, le spiegazioni dei codici tassonomici e i passaggi esatti da mostrare a schermo in **Google Gemini for Education**.
 
 ---
 
 ## 🟢 BLOCCO 1 (`00:00 – 01:50` · 110 min / 2h nominali)
-### *Matrice Anderson & Krathwohl (`4 × 6`) × KSM, Comandi Pratici di Gemini for Education, "Caccia all'Errore" e Radiografia (Fase 2A)*
+### *Concetti Generali A&K (`4 × 6`) × KSM, Menù Esempi per Materia, Comandi Pratici di Gemini for Education, "Caccia all'Errore" e Radiografia (Fase 2A)*
 
 ---
 
 ### SLIDE 1 — Progettare Verifiche UDL con Gemini for Education
 * **Incontro 2 di 5 (4 ore)**: *VerifichIAmo con l'IA — Parte I (`4h su 10/20`)*
-* **Focus pratico**: Italiano (Narrativa e Grammatica), Storia e Inglese · Matrice Anderson & Krathwohl (`4 × 6`) × Criterio KSM.
+* **Focus pratico**: Concetti Generali della Matrice Anderson & Krathwohl (`4 × 6`) × Criterio KSM + **Menù a tendina con esempi specifici per Narrativa italiana, Grammatica italiana, Geografia, Inglese e Matematica** (oltre a Storia, Tecnologia e Arte nel Ricettario).
 * **Scansione**:
-  * `00:00 – 01:50` **Blocco 1 (110')**: Matrice A&K × KSM, Comandi pratici di Gemini e **Fase 2A: Radiografia di una verifica reale (30')**
+  * `00:00 – 01:50` **Blocco 1 (110')**: Concetti generali A&K × KSM, Menù esempi per materia, Comandi pratici di Gemini e **Fase 2A: Radiografia di una verifica reale (30')**
   * `01:50 – 02:10` ☕ **PAUSA CENTRALE (20 min)**
   * `02:10 – 04:00` **Blocco 2 (110')**: Gemini Canvas 3 Livelli, creazione della **Skill**, **Fase 2B: Verifica UDL (55')** e Controllo Critico
 
 > 🎤 **Cosa è importante dire a voce (5 min)**:  
-> *"Nell'Incontro 1 abbiamo costruito il pacchetto di studio accessibile. Oggi non ripetiamo nulla di ciò che abbiamo già visto: entriamo subito nella progettazione pratica delle **verifiche scritte di Italiano, Grammatica, Storia e Inglese** usando **Google Gemini for Education**. L'obiettivo di queste 4 ore è duplice: primo, fare la 'radiografia' di una nostra vecchia verifica per vedere dove si annidano le barriere; secondo, uscire alle 18:00 con una **Verifica UDL completa su 3 livelli paralleli** e con la nostra **Skill personalizzata** già salvata nell'account scolastico."*
+> *"Nell'Incontro 1 abbiamo costruito il pacchetto di studio accessibile. Oggi entriamo subito nella progettazione pratica delle **verifiche scritte inclusive**: prima vedremo in modo pulito i **concetti generali** della Matrice Anderson & Krathwohl × KSM validi per tutte le discipline, e subito dopo selezioneremo dal **menù a tendina** gli esempi specifici per **Narrativa italiana, Grammatica italiana, Geografia, Inglese e Matematica**. L'obiettivo di queste 4 ore è duplice: fare la 'radiografia' di una nostra vecchia verifica e uscire alle 18:00 con una **Verifica UDL completa su 3 livelli paralleli** e con la nostra **Skill personalizzata** già salvata nell'account scolastico."*
 
 ---
 
@@ -43,26 +43,38 @@
 
 ---
 
-### SLIDE 3 — Bussola: Matrice Anderson & Krathwohl (`4 × 6`) × Criterio KSM in Verifica
-* **Legenda dei codici `[A-D][1-6]` visualizzata in alto**:
-  * **4 Conoscenze**: `A` Fattuale (dati/lessico) · `B` Concettuale (relazioni/cause) · `C` Procedurale (regole/metodi) · `D` Metacognitiva (autocorrezione).
-  * **6 Processi**: `1` Ricordare · `2` Comprendere · `3` Applicare · `4` Analizzare · `5` Valutare · `6` Creare.
-* **Tabella operativa per Italiano, Grammatica, Storia e Inglese**:
-  * 🟢 **K · Knowledge (~40% · Sapere `A + B` · LOTS `1–2`)**: fatti del brano con righe numerate, piramide feudale con banca parole, *matching* vocaboli inglesi con *Word Bank*.
-  * 🔵 **S · Skills (~40% · Saper Fare `C` · Ponte `3–4`)**: analisi logica su sintagmi già divisi (`/`), tabella di confronto tra ceti storici, dialogo in inglese da completare al *Past Simple*.
-  * 🟣 **M · Mindset (~20% · Metacognizione `D` · HOTS `5–6`)**: *Detective Grammaticale*, *Caccia all'Anacronismo*, *Grammar Detective* (`"I didn't went"`) + produzione con *sentence starters*.
+### SLIDE 3 — Concetti Generali: Matrice Anderson & Krathwohl (`4 × 6`) × Criterio KSM
+* **Le due coordinate generali dei codici `[A-D][1-6]` (separate dagli esempi disciplinari)**:
+  * **4 Dimensioni della Conoscenza (`A – D` · *Cosa valutiamo*)**: `A` Fattuale (dati essenziali, lessico) · `B` Concettuale (relazioni causa-effetto, categorie, modelli) · `C` Procedurale (regole in contesto, metodi, algoritmi) · `D` Metacognitiva (strategie, autocorrezione, analisi dell'errore).
+  * **6 Processi Cognitivi (`1 – 6` · *Come ragiona lo studente*)**: **LOTS `1–2`** (`1` Ricordare · `2` Comprendere) → **Ponte `3–4`** (`3` Applicare · `4` Analizzare) → **HOTS `5–6`** (`5` Valutare · `6` Creare).
+* **Sintesi generale degli Assi KSM in verifica (`40% / 40% / 20%`)**:
+  * 🟢 **K · Knowledge (~40% · Il Sapere `A + B` · LOTS `1–2`)**: riconoscere concetti chiave, lessico fondante e nessi essenziali *(Scaffolding UDL: banche parole, riferimenti puntuali, mappe o formulari)*.
+  * 🔵 **S · Skills (~40% · Il Saper Fare `C` · Ponte `3–4`)**: applicare regole e procedure in contesto, scomporre e confrontare informazioni *(Scaffolding UDL: tracce step-by-step, segmentazioni e tabelle pre-impostate)*.
+  * 🟣 **M · Mindset (~20% · Metacognizione `D` · HOTS `5–6`)**: individuare e correggere un errore ragionato (*Error Analysis*) o rielaborare in modo personale *(Scaffolding UDL: "Caccia all'errore" + sentence starters)*.
+* **Banner evidenziato in giallo ambra in fondo alla slide**: segnala in modo immediatamente visibile la disponibilità degli esempi specifici per materia, con pulsanti diretti per **Narrativa italiana, Grammatica italiana, Geografia, Inglese e Matematica** che aprono direttamente la **Slide 4** già impostata sulla materia scelta.
 
-> 🎤 **Cosa è importante dire a voce (15 min — FONDAMENTALE perché i corsisti non leggono la dispensa!)**:  
-> *"Fermiamoci due minuti su questa slide perché è la vostra bussola per tutto il corso. Nei prompt che useremo tra poco vedrete codici come `[A1]`, `[B2]`, `[C3]`, `[C5, D4]`. Cosa significano?  
-> La **lettera (`A, B, C, D`)** dice a Gemini **CHE TIPO DI CONOSCENZA** stiamo valutando:  
-> – **`A` (Fattuale)** e **`B` (Concettuale)** formano l'asse **K (Knowledge, il Sapere, 40% della verifica)**: in Italiano/Storia sono i fatti del racconto e il perché avvengono; in Inglese sono il lessico (*Word Bank*) e il senso globale del *Reading*.  
-> – **`C` (Procedurale)** forma l'asse **S (Skills, il Saper Fare, 40% della verifica)**: saper applicare una procedura! In Grammatica è fare l'analisi logica dei sintagmi; in Inglese è applicare la regola di `didn't + forma base` dentro un dialogo; in Storia è confrontare due fonti in tabella.  
-> – **`D` (Metacognitiva)** insieme ai livelli alti `5. Valutare` e `6. Creare` forma l'asse **M (Mindset e Metacognizione, 20% della verifica)**: accorgersi di un errore, giustificare una scelta, rielaborare.  
-> Il **numero (`1..6`)** indica il gradino cognitivo da **LOTS (`1-2`)** a **Ponte (`3-4`)** fino a **HOTS (`5-6`)**. Quando chiediamo a Gemini di mettere i codici `[A-D][1-6]` nel correttorio, abbiamo il controllo matematico che la verifica non sia tutta appiattita su `[A1]`!"*
+> 🎤 **Cosa è importante dire a voce (8 min — FONDAMENTALE perché fissa le regole generali per tutti i docenti!)**:  
+> *"Prima di calarci nelle singole discipline, fissiamo su questa slide i **concetti generali** che valgono per qualunque materia. Nei prompt vedrete codici come `[A1]`, `[B2]`, `[C3]`, `[C5, D4]`:  
+> – La **lettera (`A, B, C, D`)** dice a Gemini **CHE COSA** valutiamo: `A` e `B` costruiscono l'asse **K (Knowledge, 40%)**, `C` costruisce l'asse **S (Skills, 40%)**, `D` guida l'asse **M (Mindset e Metacognizione, 20%)**.  
+> – Il **numero (`1..6`)** indica il gradino cognitivo da **LOTS (`1-2`)** a **Ponte (`3-4`)** fino a **HOTS (`5-6`)**.  
+> Notate il riquadro giallo in fondo alla slide: cliccando direttamente sulla vostra materia o sul pulsante **`📚 Menù Esempi per Materia ▶`** passiamo subito agli esempi concreti!"*
 
 ---
 
-### SLIDE 4 — Guida Pratica: I 4 Strumenti di Google Gemini for Education per le Verifiche
+### SLIDE 4 — Esempi Specifici per Materia (Menù a Tendina)
+* **Barra interattiva ad alta visibilità in testa alla slide** con **menù a tendina (`#subject-examples-select`)** + pulsanti di accesso rapido sincronizzati per selezionare gli esempi specifici di **5 materie**:
+  1. 📖 **Narrativa italiana**: righe numerate `(Cerca tra riga 4 e 9)` (`K`), tabella di confronto sequenze/personaggi (`S`), *Caccia all'errore interpretativo* + *sentence starters* (`M`) + pulsante diretto al Prompt `#03`.
+  2. 🧩 **Grammatica italiana**: *Box Bussola* (`K`), frasi già divise in sintagmi con `/` (`S`), *Detective Grammaticale* su *"A Luca / piace / il latte"* (`M`) + pulsante diretto al Prompt `#04`.
+  3. 🌍 **Geografia**: lettura guidata di carte ad alto contrasto e relazione fattori-clima (`K`), collegamento morfologia → economia e confronto dati in tabella (`S`), *Caccia all'errore geografico* (es. Corrente del Golfo in Norvegia) (`M`) + pulsante diretto al Prompt Geografia.
+  4. 🇬🇧 **Inglese**: consegne bilingui + *Word Bank* con pronuncia intuitiva (`K`), dialogo al *Past Simple* con 3 opzioni grammaticali (`S`), *Grammar Detective* su *"didn't went"* senza trappole di *spelling* per DSA (`M`) + pulsante diretto al Prompt `#12`.
+  5. 📐 **Matematica**: *Box Formulario* con triangolo ruotato (`K`), problemi reali con terne pitagoriche intere `3-4-5` e schema `Dati → Passo 1 → Passo 2` (`S`), *Caccia all'errore matematico* di chi somma i quadrati cercando un cateto (`M`) + pulsante diretto al Prompt `#08`.
+
+> 🎤 **Cosa è importante dire a voce e mostrare live (7 min)**:  
+> *"Guardate il riquadro evidenziato in alto: da questo **menù a tendina** (o dai pulsanti rapidi subito sotto) possiamo selezionare in tempo reale gli esempi specifici per **Narrativa italiana, Grammatica italiana, Geografia, Inglese e Matematica**. Mostriamone due o tre in base ai docenti presenti in aula: notate come cambiano i contenuti disciplinari, ma la colonna vertebrale `40% K / 40% S / 20% M` e il principio dello scaffolding UDL nella Versione A restino identici! Inoltre, in alto a destra di ogni scheda materia avete già il pulsante **`📋 Apri & Copia Prompt`** pronto per il laboratorio."*
+
+---
+
+### SLIDE 5 — Guida Pratica: I 4 Strumenti di Google Gemini for Education per le Verifiche
 1. **Tasto `+` → Google Drive / Foto**: allega direttamente dal tuo Drive il Documento Google o il PDF del brano antologico, della scheda di storia o della vecchia verifica.
 2. **Selettore → Modello *Thinking* (Ragionamento)**: verifica in anticipo il rispetto delle quote `40/40/20` e la coerenza dell'errore simulato.
 3. **Gemini Canvas → Modifica col Mouse**: seleziona **1 sola domanda** nel pannello destro e usa la barra flottante per chiedere *"Riduci a livello A1"* o *"Dividi in sintagmi con /"*.
@@ -77,7 +89,7 @@
 
 ---
 
-### SLIDE 5 — La "Caccia all'Errore" (`HOTS 5 — Asse M`) in Grammatica, Storia e Inglese
+### SLIDE 6 — La "Caccia all'Errore" (`HOTS 5 — Asse M`) in Grammatica, Storia e Inglese
 * 📘 **[Grammatica (#04)](../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-04) — *Detective Grammaticale***: *"A Luca / piace / il latte"* → `a Luca = Soggetto` ❌ → `il latte = Soggetto` (`a Luca = Termine`!).
 * 🏛️ **[Storia (#14)](../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-14) — *Caccia all'Anacronismo***: *"Nel 1000 i servi coltivavano patate e pomodori"* ❌ → *Arrivati dall'America dopo il 1492!*
 * 🇬🇧 **[Inglese (#12)](../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-12) — *Grammar Detective***: *"Yesterday Sara didn't went"* ❌ → `didn't go` (**MAI** errori di spelling tipo *wnet* per DSA!).
@@ -91,7 +103,7 @@
 
 ---
 
-### SLIDE 6 — Cosa Scrivere a Gemini: Prova Equipollente vs Prova Differenziata
+### SLIDE 7 — Cosa Scrivere a Gemini: Prova Equipollente vs Prova Differenziata
 * **Prova Equipollente (Versione A — PDP / BES / NAI)**:
   * **Stessi obiettivi cognitivi e voto fino a 10/10**, con supporti compensativi:
   * *Italiano/Storia*: righe numerate `(Cerca a riga 4–8)`, sintagmi divisi da `/`, linea del tempo.
@@ -104,19 +116,19 @@
 
 ---
 
-### SLIDE 7 — 🛠️ LAVORO PRATICO 2 · FASE 2A (`01:20 – 01:50` · 30 Minuti)
-### *"Radiografia" di una Verifica di Italiano, Storia o Inglese*
+### SLIDE 8 — 🛠️ LAVORO PRATICO 2 · FASE 2A (`01:20 – 01:50` · 30 Minuti)
+### *"Radiografia" di una Verifica Reale della Propria Materia*
 * **Step 2A.1 (`5'`)**: Carica in Gemini col tasto `+` una tua vecchia verifica da Drive/foto (o usa una prova pronta dal [Kit Materiali Campione](../Materiali_Trasversali/04_Kit_Materiali_Campione_Pronti_Aula.md)).
 * **Step 2A.2 (`15'`)**: Apri il menu a fisarmonica sulla slide, clicca **`📋 Copia Prompt Radiografia`** e incollalo in Gemini.
 * **Step 2A.3 (`10'`)**: Clicca **`Esporta in Fogli`** sotto la tabella diagnostica generata da Gemini e confronta con il collega le percentuali LOTS vs HOTS.
 
 > 🎤 **Cosa è importante dire a voce per lanciare il laboratorio (avviando il Timer da 30:00 sulla slide)**:  
-> *"Tocca a voi per i prossimi 30 minuti! Prendete una vostra vecchia verifica di Italiano, Grammatica, Storia o Inglese (se non l'avete su Drive, cliccate sul link 'Kit Campione' nella Card 1 dove ci sono verifiche tradizionali già pronte da testare). Cliccate sulla barra blu in basso nella slide per copiare il **Prompt di Radiografia**: Gemini vi costruirà una tabella con il codice `[A-D][1-6]` e l'asse `K-S-M` di ogni vostra vecchia domanda e vi dirà la percentuale esatta di domande mnemoniche. Appena esce la tabella, provate tutti il pulsante **Esporta in Fogli**!"*
+> *"Tocca a voi per i prossimi 30 minuti! Prendete una vostra vecchia verifica (se non l'avete su Drive, cliccate sul link 'Kit Campione' nella Card 1 dove ci sono verifiche tradizionali già pronte da testare per Lettere, STEM, Lingue e Tecnico-Artistiche). Cliccate sulla barra blu in basso nella slide per copiare il **Prompt di Radiografia**: Gemini vi costruirà una tabella con il codice `[A-D][1-6]` e l'asse `K-S-M` di ogni vostra vecchia domanda e vi dirà la percentuale esatta di domande mnemoniche. Appena esce la tabella, provate tutti il pulsante **Esporta in Fogli**!"*
 
 ---
 
-## ☕ SLIDE 8 — PAUSA CENTRALE (`01:50 – 02:10` · 20 minuti)
-> 🎤 **Nota di Regia**: Avviare il timer da `20:00` sulla Slide 8. Durante gli ultimi 2 minuti prima del rientro, verificare che tutti abbiano aperto **Gemini Canvas**.
+## ☕ SLIDE 9 — PAUSA CENTRALE (`01:50 – 02:10` · 20 minuti)
+> 🎤 **Nota di Regia**: Avviare il timer da `20:00` sulla Slide 9. Durante gli ultimi 2 minuti prima del rientro, verificare che tutti abbiano aperto **Gemini Canvas**.
 
 ---
 
@@ -125,7 +137,7 @@
 
 ---
 
-### SLIDE 9 — Co-Progettare 3 Versioni Parallele in Gemini Canvas
+### SLIDE 10 — Co-Progettare 3 Versioni Parallele in Gemini Canvas
 * **Un unico nucleo fondante → 3 percorsi paralleli verso lo stesso traguardo**:
   * 🟢 **Versione A (Facilitata)**: righe numerate, sintagmi divisi da `/`, *Word Bank*, tabelle semicompilate e *sentence starters* per Q5–Q6.
   * 🔵 **Versione B (Standard)**: stessi 6 quesiti bilanciati `40% K / 40% S / 20% M` senza supporti precompilati.
@@ -136,7 +148,7 @@
 
 ---
 
-### SLIDE 10 — Che Cos'è una "Skill" su Gemini? Il Collega che Non Dimentica le Regole
+### SLIDE 11 — Che Cos'è una "Skill" su Gemini? Il Collega che Non Dimentica le Regole
 * **Confronto immediato per capire lo strumento**:
   * ❌ **Chat Normale = "Il Supplente del Giorno"**: ogni nuova chat riparte da zero e costringe a reincollare ogni volta 20 righe di regole (Anderson & Krathwohl, pesi KSM `40/40/20`, righe numerate, tutele DSA).
   * ✅ **Skill = "Il Collega di Cattedra"**: è una **competenza / assistente Gemini personalizzata** che memorizza una sola volta per tutto l'anno le tue regole fisse (*System Instructions*). Quando la attivi, scrivi solo classe e argomento!
@@ -151,7 +163,7 @@
 
 ---
 
-### SLIDE 11 — Demo Live 2: Costruiamo la Skill di Italiano/Storia o di Inglese (3 minuti!)
+### SLIDE 12 — Demo Live 2: Costruiamo la Skill di Italiano/Storia o di Inglese (3 minuti!)
 * **Due modelli completi pronti da copiare sulla slide (nei menu a fisarmonica)**:
   * 📘 **Skill `Verifiche UDL — Italiano & Storia`**:
     * `📋 1. Copia le "Istruzioni" permanenti (Italiano/Storia)` (da incollare nel campo *Istruzioni* di `Nuova Skill`);
@@ -161,25 +173,25 @@
     * `⚡ 2. Mini-Prompt quotidiano` (3 righe sul *Past Simple*).
 
 > 🎤 **Cosa è importante dire a voce e mostrare live (5 min)**:  
-> *"Adesso facciamolo insieme in 3 minuti: aprite nel menu a sinistra di Gemini **Skill → Nuova Skill**. Sulla Slide 11 non dovete scrivere nulla a mano: se insegnate Lettere cliccate sulla prima barra a fisarmonica nella card blu **`📋 1. Copia le Istruzioni permanenti (Italiano/Storia)`** e incollatele nel campo **Istruzioni** della vostra Skill; se insegnate Inglese cliccate sulla prima barra nella card verde **`📋 1. Copia le Istruzioni permanenti (English L2)`**. Poi cliccate sulla seconda barra **`⚡ 2. Mini-Prompt quotidiano`**, incollatelo nell'anteprima a destra per vedere come risponde e cliccate su **Salva**!"*
+> *"Adesso facciamolo insieme in 3 minuti: aprite nel menu a sinistra di Gemini **Skill → Nuova Skill**. Sulla Slide 12 non dovete scrivere nulla a mano: se insegnate Lettere cliccate sulla prima barra a fisarmonica nella card blu **`📋 1. Copia le Istruzioni permanenti (Italiano/Storia)`** e incollatele nel campo **Istruzioni** della vostra Skill; se insegnate Inglese cliccate sulla prima barra nella card verde **`📋 1. Copia le Istruzioni permanenti (English L2)`**. Poi cliccate sulla seconda barra **`⚡ 2. Mini-Prompt quotidiano`**, incollatelo nell'anteprima a destra per vedere come risponde e cliccate su **Salva**!"*
 
 ---
 
-### SLIDE 12 — 6 Modelli Pronti nel Ricettario (Italiano, Grammatica, Storia, Inglese)
+### SLIDE 13 — Modelli Pronti nel Ricettario (Italiano, Storia, Inglese, Geografia, Matematica)
 * Clicca direttamente sul pulsante della tua materia per aprire il popup con il prompt specifico pronto da copiare:
   1. 📘 **[#03 Italiano Narrativa (3ª)](../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-03)**: Comprensione testo a 3 livelli con righe numerate e *Caccia all'errore interpretativo*.
   2. 📘 **[#04 Italiano Grammatica (2ª)](../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-04)**: Analisi logica con *Box Bussola*, sintagmi `/` e *Detective Grammaticale*.
   3. 🏛️ **[#14 Storia Feudalesimo (1ª)](../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-14)**: Linea del tempo compensativa, tabella *curtis* e *Caccia all'anacronismo*.
   4. 🇬🇧 **[#11 Inglese Reading A1 (1ª)](../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-11)**: *Daily Routine* graduata con verbi in grassetto e *Word Bank* fonetica.
   5. 🇬🇧 **[#12 Inglese Past Simple (2ª)](../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-12)**: Verifica grammaticale con *Grammar Detective* (zero trappole ortografiche per DSA).
-  6. 📐🎨 **[Altri Esempi (#08, #22, #24)](../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-08)**: Modelli per Matematica, Tecnologia e Arte.
+  6. 🌍📐🎨 **[Geografia, Matematica e Altri (#16–#17, #08, #22, #24)](../Materiali_Trasversali/01_Ricettario_Prompt_30_Esempi_Scuola_Media.md#esempio-08)**: Modelli per Geografia, Matematica, Tecnologia e Arte.
 
 > 🎤 **Cosa è importante dire a voce (5 min)**:  
-> *"Su questa slide avete i pulsanti diretti ai modelli già pronti per ciascuna delle vostre discipline: cliccando su **`📋 Apri & Copia Prompt`** si apre direttamente nella slide la finestra con il prompt già compilato per Narrativa, Grammatica, Storia, Reading di Inglese e Grammar di Inglese. Potete partire da lì o usare il flusso in 2 mosse della prossima slide."*
+> *"Su questa slide avete i pulsanti diretti ai modelli già pronti per ciascuna delle vostre discipline: cliccando su **`📋 Apri & Copia Prompt`** si apre direttamente nella slide la finestra con il prompt già compilato per Narrativa, Grammatica, Storia, Reading di Inglese, Grammar di Inglese, Geografia e Matematica. Potete partire da lì o usare il flusso in 2 mosse della prossima slide."*
 
 ---
 
-### SLIDE 13 — Prompt Chaining in 2 Mosse (`2B.1 → 2B.2`): Prima Valida B, Poi Genera A e C
+### SLIDE 14 — Prompt Chaining in 2 Mosse (`2B.1 → 2B.2`): Prima Valida B, Poi Genera A e C
 * **Perché non fare un unico mega-prompt per tutte e 3 le versioni?**
   * Se chiediamo 18 quesiti + correttorio in un colpo solo, l'IA rischia di tagliare le risposte o propagare una frase ambigua su tutti e 3 i livelli.
 * **Il trucco professionale del *Prompt Chaining* in 2 invii nella stessa chat**:
@@ -191,21 +203,21 @@
 
 ---
 
-### SLIDE 14 — 🛠️ LAVORO PRATICO 2 · FASE 2B (`02:40 – 03:35` · 55 Minuti in 3 Step)
-* **Step 2B.1 (`20'`)**: Attiva **Thinking + Canvas**, lancia la **Mossa 1** sul tuo argomento di Italiano, Grammatica, Storia o Inglese e controlla il correttorio `[A-D][1-6]`.
+### SLIDE 15 — 🛠️ LAVORO PRATICO 2 · FASE 2B (`02:40 – 03:35` · 55 Minuti in 3 Step)
+* **Step 2B.1 (`20'`)**: Attiva **Thinking + Canvas**, lancia la **Mossa 1** sul tuo argomento disciplinare e controlla il correttorio `[A-D][1-6]`.
 * **Step 2B.2 (`20'`)**: Lancia la **Mossa 2**, modifica almeno 1 domanda col mouse in **Canvas**, clicca **Esporta in Documenti** (*Lexend `12 pt`, interlinea `1,5`*) e salva in `02_Incontro2_Verifica_UDL_Multilivello`.
-* **Step 2B.3 (`15'`)**: Apri **Skill → + Nuova Skill** e incolla le regole fisse della tua materia (dalla Slide 11) per avere l'assistente pronto tutto l'anno.
+* **Step 2B.3 (`15'`)**: Apri **Skill → + Nuova Skill** e incolla le regole fisse della tua materia (dalla Slide 12) per avere l'assistente pronto tutto l'anno.
 
 > 🎤 **Cosa è importante dire a voce durante il giro tra i banchi (55 min)**:  
-> Avviare il timer da `55:00` sulla Slide 14. Passando tra le postazioni dei docenti di Italiano e Inglese:  
+> Avviare il timer da `55:00` sulla Slide 15. Passando tra le postazioni dei docenti:  
 > 1. Verificare che i docenti di **Italiano/Storia** abbiano fatto numerare le righe del brano nella Versione A e abbiano inserito il rimando `(Cerca tra riga X e Y)`.  
-> 2. Verificare che i docenti di **Grammatica** abbiano le barrette `/` tra i sintagmi e il *Box Bussola* in cima alla Versione A.  
+> 2. Verificare che i docenti di **Grammatica/Geografia/Matematica** abbiano rispettivamente le barrette `/` col *Box Bussola*, la *Guida alla lettura della carta* o il *Box Formulario* con terne intere in cima alla Versione A.  
 > 3. Verificare che i docenti di **Inglese** abbiano le consegne bilingui, la *Word Bank* e che nel Quesito 5 (*Grammar Detective*) l'errore sia morfosintattico e non di *spelling*.
 
 ---
 
-### SLIDE 15 — Controllo Critico (*Human-in-the-Loop*) in Italiano, Storia e Inglese (`03:35 – 03:50` · 15 min)
-1. **Fedeltà al Testo & Correttorio**: Gemini non deve chiedere dettagli assenti nel brano; controllare che l'analisi dei complementi nel correttorio sia esatta.
+### SLIDE 16 — Controllo Critico (*Human-in-the-Loop*) in Italiano, Storia e Inglese (`03:35 – 03:50` · 15 min)
+1. **Fedeltà al Testo & Correttorio**: Gemini non deve chiedere dettagli assenti nel brano; controllare che l'analisi dei complementi o dei calcoli nel correttorio sia esatta.
 2. **Livello 11–14 Anni & QCER A1/A2**: in Inglese verificare che non compaiano strutture fuori programma (es. *Present Perfect* in 1ª media); in Italiano/Storia evitare lessico da biennio delle superiori.
 3. **Un Solo Verbo per Consegna**: zero doppie negazioni e zero richieste multiple accorpate.
 4. **Dignità Cognitiva nella Versione A**: verificare che il Quesito 5 (*Caccia all'errore*) sia presente anche nella prova facilitata con *sentence starters*.
@@ -215,7 +227,7 @@
 
 ---
 
-### SLIDE 16 — Checklist di Fine Giornata 2 & Anticipazione Incontro 3 (`03:50 – 04:00` · 10 min)
+### SLIDE 17 — Checklist di Fine Giornata 2 & Anticipazione Incontro 3 (`03:50 – 04:00` · 10 min)
 * **Verifica nella cartella Google Drive `02_Incontro2_Verifica_UDL_Multilivello`**:
   - [x] Foglio Google con la **Tabella Diagnostica della Radiografia** (Fase 2A);
   - [x] Documento Google con la **Verifica UDL a 3 Livelli + Correttorio `[A-D][1-6]`** (Fase 2B);

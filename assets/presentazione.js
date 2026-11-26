@@ -212,6 +212,29 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
+function selectSubjectExample(subjectKey) {
+  if (!subjectKey) return;
+  const selectEl = document.getElementById('subject-examples-select');
+  if (selectEl && selectEl.value !== subjectKey) {
+    selectEl.value = subjectKey;
+  }
+  document.querySelectorAll('.subject-panel[data-subject]').forEach((panel) => {
+    const active = panel.dataset.subject === subjectKey;
+    panel.classList.toggle('is-active', active);
+  });
+  document.querySelectorAll('.subject-pill[data-subject]').forEach((pill) => {
+    const active = pill.dataset.subject === subjectKey;
+    pill.classList.toggle('is-active', active);
+    pill.setAttribute('aria-pressed', active ? 'true' : 'false');
+  });
+}
+
+function openSubjectExample(subjectKey, slideIdx) {
+  const targetIdx = typeof slideIdx === 'number' ? slideIdx : 3;
+  selectSubjectExample(subjectKey);
+  showSlide(targetIdx, slides, counter);
+}
+
 initSelect();
 initTimers();
 initModals();
